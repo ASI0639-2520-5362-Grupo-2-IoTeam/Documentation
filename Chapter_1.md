@@ -179,10 +179,14 @@ PlantCare fue diseñado para ayudar a los usuarios a mantener plantas saludables
 ### 1.1.2. Perfiles de integrantes del equipo
 |           Foto                        |                                                                                                                                                                                                                                                                                                    Descripción                                                                                                                                                                                                                                                                                                    |
 | :------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  |            |
+| | ||
+| [![foto-alexander-797.jpg](https://i.postimg.cc/9Xw4d68h/foto-alexander-797.jpg)](https://postimg.cc/rzcFcP2n) |        **Cantoral Sedamano, Alexander Alberto - u20181b152** <br> Estudiante de Ingeniería de Software con sólidos conocimientos en programación de aplicaciones web, manejo intermedio de bases de datos con SQL y experiencia en el uso de herramientas tecnológicas de diversos rubros.<br>Destaco por mi capacidad para presentar y analizar información mediante Excel y Power BI, así como por mi participación activa en el desarrollo y despliegue de soluciones de software.<br>Además, cuento con habilidades versátiles en el uso de herramientas comunes para el trabajo universitario. En el ámbito de las habilidades blandas, me caracterizo por ser organizado, comprometido con la calidad de las entregas y por saber trabajar eficientemente en equipo.|
 |  |          |
 |  |             |
 | |
+
+
+
 ## 1.2. Solution Profile
 
 ### 1.2.1 Antecedentes y problemática
@@ -317,7 +321,7 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
 <table border="1" cellpadding="10" cellspacing="0">
     <tr>
         <td><strong>Lean UX Canvas</strong></td>
-        <td><strong>Fecha:</strong> 05/0*/2025</td>
+        <td><strong>Fecha:</strong> 05/09/2025</td>
         <td><strong>Primera Iteración</strong></td>
     </tr>
     <tr>
@@ -383,4 +387,4 @@ Para asegurar el éxito de PlantCare, hemos identificado dos segmentos clave que
 
 - **Segmento 1 – Personas ocupadas (departamentos/oficinas):** profesionales con jornada completa, viven en departamentos, suelen tener 1–5 plantas decorativas. Buscan soluciones que requieran poco mantenimiento y ofrezcan tranquilidad.
 
-- **Segmento 2 – Aficionados amateurs:** personas con más plantas (5–20), desean optimizar salud de sus colecciones, les interesa las recomendaciones para diferentes especies.
+- **Segmento 2 – Aficionados:** personas con más plantas (5–20), desean optimizar salud de sus colecciones, les interesa las recomendaciones para diferentes especies.
