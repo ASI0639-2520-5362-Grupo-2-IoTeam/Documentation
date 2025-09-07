@@ -243,6 +243,43 @@ Es una maceta inteligente de gama premium que incorpora sensores de humedad, tem
 
 ### 2.2.1. Diseño de entrevistas.
 
+Segmento 1: Personas ocupadas (departamentos/oficinas)
+
+Objetivo: entender cómo encaja el kit en su vida diaria y qué tanto valoran la automatización.
+
+¿Con qué frecuencia olvidas regar tus plantas?
+¿Qué sientes cuando notas que una planta se está marchitando por falta de riego?
+¿Tienes plantas en tu oficina o departamento? ¿Cuántas aproximadamente?
+¿Cuánto tiempo dedicas al cuidado de tus plantas en una semana típica?
+¿Usas actualmente algún recordatorio o app para no olvidar regarlas?
+¿Qué tan importante es para ti mantener tus plantas saludables como parte de la decoración/ambiente?
+¿Qué dificultades encuentras al cuidar plantas en un entorno de oficina o departamento?
+¿Estarías dispuesto(a) a instalar un dispositivo IoT en tus macetas? ¿Por qué sí o por qué no?
+¿Qué valor tendría para ti recibir notificaciones en el celular cuando una planta necesita agua?
+¿Cuánto estarías dispuesto(a) a pagar por un servicio que evite que tus plantas mueran por descuido?
+
+Segmento 2: Aficionados que cuidan varias macetas en casa
+
+Objetivo: descubrir nivel de compromiso, detalle en el cuidado y apertura a usar tecnología.
+
+¿Cuántas plantas tienes actualmente en casa?
+¿Qué tipo de plantas coleccionas o te gustan más (ej. cactus, helechos, suculentas)?
+¿Cómo haces actualmente para organizar o recordar el riego de cada planta?
+¿Has tenido alguna planta que se murió por exceso o falta de riego?
+¿Te interesa llevar un historial de cómo evoluciona la salud de tus plantas?
+¿Usas alguna app o cuaderno para registrar tus cuidados de plantas?
+¿Qué opinas de tener gráficas y estadísticas de humedad/estado de tus macetas?
+¿Qué tan dispuesto(a) estarías a invertir en tecnología para optimizar el cuidado de tus plantas?
+¿Qué funcionalidades extra te interesarían (ej. integración con clima local, recomendaciones personalizadas)?
+¿Prefieres pagar una suscripción mensual con beneficios o una sola compra de hardware sin servicios adicionales?
+
+**Preguntas complementarias**
+- Edad, género, distrito de residencia.  
+- Ocupación y nivel de estudios.  
+- ¿Qué dispositivos usas con mayor frecuencia (celular, tablet, laptop)?  
+- ¿En qué canales digitales pasas más tiempo (redes sociales, apps de productividad, etc.)?  
+- ¿Qué marcas o productos tecnológicos usas y confías? 
+
 ### 2.2.2. Registro de entrevistas.
 
 ### 2.2.3. Análisis de entrevistas.
