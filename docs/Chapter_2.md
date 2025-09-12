@@ -319,6 +319,18 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 
 ---
 
+**Entrevistado:** Natalia Ramirez <br>
+**Sexo:** Femenino <br>
+**Edad:** 61 años<br>
+**Domicilio:** San Martin de porres<br>
+**Inicio de la Entrevista:** 26:24<br>
+**Duración de la Entrevista:** 3:00<br>
+
+**Resumen de la Entrevista:** <br>
+Natalia es una gran aficionada por las plantas y disfruta mucho de cuidarlas en casa, donde ha logrado reunir una gran variedad que va desde coloridas flores hasta frondosos helechos. Ella siempre se ha encargado del riego de manera manual y siguiendo su propia intuición, sin apoyarse en ninguna guía o sistema especializado, lo que le da un toque personal a su rutina diaria. Sin embargo, últimamente ha mostrado interés en explorar nuevas formas de optimizar el cuidado de sus plantas, especialmente a través de la tecnología. Aunque no está muy familiarizada con herramientas digitales, le atrae la idea de probar aplicaciones que le permitan visualizar gráficos y estadísticas sobre el estado de sus plantas, ya que considera que podría aprender mucho de esos datos y tomar mejores decisiones. Además, le resulta muy interesante la posibilidad de contar con una función que le muestre información sobre el clima, para poder adaptar el riego y los cuidados de sus plantas de acuerdo con las condiciones ambientales. Natalia menciona que preferiría acceder a este tipo de servicio mediante una suscripción, siempre y cuando el producto logre convencerla con su utilidad y facilidad de uso.
+
+---
+
 ## 2.3. Needfinding.
 
 ### 2.3.1. User Personas.
