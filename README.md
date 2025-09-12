@@ -52,22 +52,40 @@ Ciclo 2025-01
 [URL del Repositorio]  
 **[https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam](https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam)**
 
+Github Collaboration Insights proporciona un cronograma que muestra las principales ramas y los procesos de fusión que han ocurrido. Todas las ramas se han generado siguiendo los principios de GitFlow, lo que garantiza una organización efectiva al utilizar un sistema de control de versiones.
+
+Alexander Alberto Cantoral Sedamano (AlexlmL)
+
+Se divieron las siguientes ramas para la colaboración en el proyecto:
+
+main
+develop
+
 ## Contenido
 
-- Student Outcome
+1. [Capítulo I: Introducción](docs/chapter-1.md#capítulo-i-presentacion)
+   1.1. [Startup Profile](docs/chapter-1.md#11-startup-profile)
 
-1. Capítulo I: Presentación
-   - 1.1. Startup Profile
-     - 1.1.1. Descripción de la Startup
-     - 1.1.2. Perfiles de integrantes del equipo
-   - 1.2. Solution Profile
-     - 1.2.1. Antecedentes y problemática
-     - 1.2.2. Lean UX Process
-       - 1.2.2.1. Lean UX Problem Statements
-       - 1.2.2.2. Lean UX Assumptions
-       - 1.2.2.3. Lean UX Hypothesis Statements
-       - 1.2.2.4. Lean UX Canvas
-   - 1.3. Segmentos objetivo
+    1.1.1. [Descripción de la Startup](docs/chapter-1.md#111-descripción-de-la-startup)
+
+    1.1.2. [Perfiles de integrantes del equipo](docs/chapter-1.md#112-perfiles-de-integrantes-del-equipo)
+
+    1.2. [Solution Profile](docs/chapter-1.md#12-solution-profile)
+
+    1.2.1. [Antecedentes y problemática](docs/chapter-1.md#121-antecedentes-y-problemática)
+
+    1.2.2. [Lean UX Process](docs/chapter-1.md#122-lean-ux-process)
+
+    1.2.2.1. [Lean UX Problem Statements](docs/chapter-1.md#1221-lean-ux-problem-statements)
+     
+    1.2.2.2. [Lean UX Assumptions](docs/chapter-1.md#1222-lean-ux-assumptions)   
+
+    1.2.2.3. [Lean UX Hypothesis Statements](docs/chapter-1.md#1223-lean-ux-hypothesis-statements)
+
+    1.2.2.4. [Lean UX Canvas](docs/chapter-1.md#1224-lean-ux-canvas)
+
+    1.3. [Segmentos Objetivo](docs/chapter-1.md#13-segmentos-objetivos)
+    
 2. Capítulo II: Requirements Elicitation & Analysis
    - 2.1. Competidores
      - 2.1.1. Análisis competitivo
@@ -125,30 +143,8 @@ Ciclo 2025-01
   - 5.4. Applications UX/UI Desing
     - 5.4.1. Applications Wireflow Diagrams
     - 5.4.2. Applications Mock-ups
-    - 5.4.3. Applications User Flow Diagrams
+    - 5.4.3. Applications User Flow DiagramsF
   - 5.5. Applications Prototyping
-- Capítulo VI: Product Implementation, Validation & Deployment
-  - 6.1. Software Configuration Management
-    - 6.1.1. Software Development Environment Configuration
-    - 6.1.2. Source Code Management
-    - 6.1.3. Source Code Style Guide & Conventions
-    - 6.1.4. Software Deployment Configuration
-      6.2. Landing Page, Services & Applications Implementation
-  * 6.2.X. Sprint X
-    - 6.2.X.1. Sprint Planning X
-    - 6.2.X.2. Aspect Leaders and Collaborators
-    - 6.2.X.2. Sprint Backlog 1
-    - 6.2.X.3. Development Evidence for Sprint Review
-    - 6.2.X.4. Testing Suite Evidence for Sprint Review
-    - 6.2.X.5. Execution Evidence for Sprint Review
-    - 6.2.X.6. Services Documentation Evidence for Sprint Review
-    - 6.2.X.7. Software Deployment Evidence for Sprint Review
-    - 6.2.X.8. Team Collaboration Insights during Sprint
-  - 6.3. Validation Interviews
-    - 6.3.1. Diseño de Entrevistas
-    - 6.3.2. Registro de Entrevistas
-    - 6.3.3. Evaluaciones según heurísticas
-  - 6.4. Video About-the-Product
 - Conclusiones y recomendaciones.
 - Video About-the-team
 - Bibliografía
