@@ -280,9 +280,30 @@ Objetivo: descubrir nivel de compromiso, detalle en el cuidado y apertura a usar
 - ¿En qué canales digitales pasas más tiempo (redes sociales, apps de productividad, etc.)?  
 - ¿Qué marcas o productos tecnológicos usas y confías? 
 
-### 2.2.2. Registro de entrevistas.
+### 2.2.2. Registro de entrevistas. 
 
-### 2.2.3. Análisis de entrevistas.
+Las entrevitas están agrupadas en el siguiente link subido a Stream de Office: 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9 
+
+# Segmento 1: Personas ocupadas (departamentos/oficinas)
+Entrevistado: 
+Sexo: 
+Edad: 
+Domicilio: 
+Inicio de la Entrevista: 0:00 
+Duración de la Entrevista: 0:00 
+
+# Segmento 2: Aficionados que cuidan varias macetas en casa
+
+Entrevistada: Ana 
+Sexo: Femenino 
+Edad: 57 años 
+Domicilio: Puente Piedra 
+Inicio de la Entrevista: 19:10 
+Duración de la Entrevista: 4:05 
+
+Resumen de la Entrevista: 
+Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y lirios, que colecciona con dedicación. Las riega cada 3 o 4 días, aunque en algunas ocasiones se ha olvidado de hacerlo. En particular, recuerda el caso de un pino que murió por falta de conocimiento en su cuidado. Considera útil una aplicación que le permita seguir la evolución de sus plantas y consultar estadísticas, lo cual le ayudaría a evitar situaciones similares. Además, sugiere que una integración con el pronóstico del clima sería beneficiosa, ya que las condiciones climáticas variables afectan directamente a sus plantas.
 
 ## 2.3. Needfinding.
 
