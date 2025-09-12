@@ -283,7 +283,7 @@ Objetivo: descubrir nivel de compromiso, detalle en el cuidado y apertura a usar
 ### 2.2.2. Registro de entrevistas. 
 
 Las entrevitas están agrupadas en el siguiente link subido a Stream de Office: 
- [`[https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EenhPQh7QtNJv8TMRTHvYP0BzjPaqB_rTUv0wqjPt7JQIQ?e=FNTg1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9)`]([https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EenhPQh7QtNJv8TMRTHvYP0BzjPaqB_rTUv0wqjPt7JQIQ?e=FNTg1h&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9))
+[Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9)
 
 # Segmento 1: Personas ocupadas (departamentos/oficinas)
 **Entrevistado:**  <br>
@@ -304,6 +304,18 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 
 **Resumen de la Entrevista:** <br>
 Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y lirios, que colecciona con dedicación. Las riega cada 3 o 4 días, aunque en algunas ocasiones se ha olvidado de hacerlo. En particular, recuerda el caso de un pino que murió por falta de conocimiento en su cuidado. Considera útil una aplicación que le permita seguir la evolución de sus plantas y consultar estadísticas, lo cual le ayudaría a evitar situaciones similares. Además, sugiere que una integración con el pronóstico del clima sería beneficiosa, ya que las condiciones climáticas variables afectan directamente a sus plantas.
+
+---
+
+**Entrevistado:** Vasco <br>
+**Sexo:** Masculino <br>
+**Edad:** 24 años<br>
+**Domicilio:** San Miguel <br>
+**Inicio de la Entrevista:** 16:10<br>
+**Duración de la Entrevista:** 3:00<br>
+
+**Resumen de la Entrevista:** <br>
+Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalmente suculentas y helechos. Actualmente no utiliza ninguna herramienta para organizar el riego, guiándose solo por observación, lo que en ocasiones ha provocado la muerte de algunas plantas por exceso de agua. Le interesa llevar un historial de la salud de sus plantas y considera útil contar con gráficas y estadísticas de humedad. Estaría dispuesto a invertir en tecnología siempre que no sea costosa y facilite el cuidado, valorando especialmente funciones como alertas de riego personalizadas y adaptación al clima local. Prefiere una compra única de hardware en lugar de pagar suscripciones mensuales.
 
 ---
 
