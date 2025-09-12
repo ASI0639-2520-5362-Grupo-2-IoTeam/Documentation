@@ -63,29 +63,29 @@ develop
 
 ## Contenido
 
-1. [Capítulo I: Introducción](docs/chapter-1.md#capítulo-i-presentacion)
-   1.1. [Startup Profile](docs/chapter-1.md#11-startup-profile)
+1. [Capítulo I: Introducción](docs/Chapter_1.md#capítulo-i-presentación)
+    1.1. [Startup Profile](docs/Chapter_1.md#11-startup-profile)
 
     1.1.1. [Descripción de la Startup](docs/chapter-1.md#111-descripción-de-la-startup)
 
-    1.1.2. [Perfiles de integrantes del equipo](docs/chapter-1.md#112-perfiles-de-integrantes-del-equipo)
+    1.1.2. [Perfiles de integrantes del equipo](docs/Chapter_1.md#112-perfiles-de-integrantes-del-equipo)
 
-    1.2. [Solution Profile](docs/chapter-1.md#12-solution-profile)
+    1.2. [Solution Profile](docs/Chapter_1.md#12-solution-profile)
 
-    1.2.1. [Antecedentes y problemática](docs/chapter-1.md#121-antecedentes-y-problemática)
+    1.2.1. [Antecedentes y problemática](docs/Chapter_1.md#121-antecedentes-y-problemática)
 
-    1.2.2. [Lean UX Process](docs/chapter-1.md#122-lean-ux-process)
+    1.2.2. [Lean UX Process](docs/Chapter_1.md#122-lean-ux-process)
 
-    1.2.2.1. [Lean UX Problem Statements](docs/chapter-1.md#1221-lean-ux-problem-statements)
+    1.2.2.1. [Lean UX Problem Statements](docs/Chapter_1.md#1221-lean-ux-problem-statements)
      
-    1.2.2.2. [Lean UX Assumptions](docs/chapter-1.md#1222-lean-ux-assumptions)   
+    1.2.2.2. [Lean UX Assumptions](docs/Chapter_1.md#1222-lean-ux-assumptions)   
 
-    1.2.2.3. [Lean UX Hypothesis Statements](docs/chapter-1.md#1223-lean-ux-hypothesis-statements)
+    1.2.2.3. [Lean UX Hypothesis Statements](docs/Chapter_1.md#1223-lean-ux-hypothesis-statements)
 
-    1.2.2.4. [Lean UX Canvas](docs/chapter-1.md#1224-lean-ux-canvas)
+    1.2.2.4. [Lean UX Canvas](docs/Chapter_1.md#1224-lean-ux-canvas)
 
-    1.3. [Segmentos Objetivo](docs/chapter-1.md#13-segmentos-objetivos)
-    
+    1.3. [Segmentos Objetivo](docs/Chapter_1.md#13-segmentos-objetivos)
+
 2. Capítulo II: Requirements Elicitation & Analysis
    - 2.1. Competidores
      - 2.1.1. Análisis competitivo
