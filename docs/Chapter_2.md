@@ -377,7 +377,19 @@ Las entrevistas realizadas a personas con colecciones de 5 a 20 plantas (como Pa
 
 ## 2.3. Needfinding.
 
+A través de la observación, entrevistas y análisis, se busca profundizar en las problemáticas que enfrentan nuestros segmentos objetivos. Este apartado se enfoca en recopilar información relevante que sirva como base para la creación del User Persona, User Task Matrix, User Journey Maps y Empathy Mapping.
+
 ### 2.3.1. User Personas.
+
+Se trata de una representación ficticia de un usuario, basada en datos reales de comportamientos observados. Estas representaciones incluyen detalles como edad, ocupación, motivaciones y frustraciones, lo que ayuda a orientar la toma de decisiones y a crear productos más efectivos, enfocados en las necesidades reales del usuario. La herramienta que se utilizó para mostrar la información fue UXPressia.
+
+**Segmento Objetivo 1: Personas ocupadas (departamentos/oficinas)**
+
+Este perfil refleja a un estudiante universitario que busca incorporar plantas a su rutina como una forma de mejorar su espacio y reducir el estrés, pero que enfrenta obstáculos por su falta de tiempo, experiencia y constancia. Está abierto a usar tecnología que le facilite el cuidado y le brinde recordatorios prácticos, sin complicarse.
+
+[![Paolo-Loayza.png](https://i.postimg.cc/Dw2q6rW5/Paolo-Loayza.png)](https://postimg.cc/mt5z2FyF)
+
+**Segmento Objetivo 2: Aficionados que cuidan varias macetas en casa**
 
 ### 2.3.2. User Task Matrix.
 
