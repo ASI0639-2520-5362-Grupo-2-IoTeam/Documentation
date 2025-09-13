@@ -337,6 +337,7 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y anturios, que riega de forma manual siguiendo un calendario, aunque ha perdido algunas plantas por exceso de fertilizante o riego. Actualmente no utiliza ninguna aplicación ni herramienta digital, solo anota fechas en un calendario, pero muestra gran interés en contar con una app que le recuerde los riegos, registre la evolución de sus plantas y le brinde estadísticas o alertas sobre problemas como marchitez, exceso de agua o falta de luz. Además, estaría dispuesta a pagar por una suscripción mensual siempre que el costo sea razonable y la aplicación le aporte beneficios claros, pues considera sus plantas valiosas y desea cuidarlas mejor.
 
 ---
+[![entrevistadsad.png](https://i.postimg.cc/zf6LgmMJ/entrevistadsad.png)](https://postimg.cc/94PX6kCS)
 
 **Entrevistado:** Natalia Ramirez <br>
 **Sexo:** Femenino <br>
