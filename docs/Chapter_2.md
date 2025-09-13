@@ -297,7 +297,20 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regarlas unas 3 veces al mes debido a permanecer ocupado por la universidad. Cuenta con 3 plantas en su departamento. Dedica entre 1 a 2 horas por semana para regarlas, además, no usa ningún recordatorio para no olvidar regarlas. Nos cuenta además que comparte las plantas con su abuelita, compartiendo ambos la responsabilidad de cuidar las plantas. Menciona que es complicado tener plantas en su departamento, debido al poco espacio que tiene en su hogar, lo que le limita mucho los lugares en los que puede colocarlos. Considera útil el hecho de usar un dispositivo IoT para no estar tan al pendiente y poder recordar con mayor facilidad el cuidado de sus plantas.
 
 ---
+[![image.png](https://i.ibb.co/MyyNDg2t/Captura-de-pantalla-2025-09-12-222330.png)](https://ibb.co/xKK5S2CB)
 
+
+**Entrevistado:** Stefano <br>
+**Sexo:** Masculino <br>
+**Edad:** 20 <br>
+**Domicilio:** San Miguel  <br>
+**Inicio de la Entrevista:** 3:57 <br>
+**Duración de la Entrevista:** 9:39 <br>
+
+**Resumen de la Entrevista:** <br>
+Stefano nos cuenta que le gusta tener plantas en su casa ya que considera que le da un aspecto distinto a su casa, piensa que le da vida y disfruta de tenerlas. Sin embargo, al ser actualmente una persona ocupada no le da el tiempo necesario a regarlas o a darles el mantenimiento debido. Entre las mayores dificultades esta principalmente la falta de tiempo y el estrés por jornada laboral, estos factores hacen que olvide frecuentemente darle mantenimiento a sus plantas. Afirma que la solución PlantCare sería de gran ayuda, ya que le ayudaria a no simplemente tener un monitoreo de ellas, sino además poder darles el mantenimiento debido sin necesidad de estar recordandolo por su cuenta.
+
+---
 ##### Segmento 2: Aficionados que cuidan varias macetas en casa
 
 **Entrevistado:** Ana <br>
