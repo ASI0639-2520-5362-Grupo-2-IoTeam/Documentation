@@ -288,7 +288,7 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 # Segmento 1: Personas ocupadas (departamentos/oficinas)
 **Entrevistado:** Oscar <br>
 **Sexo:** Masculino <br>
-**Edad:**20 <br>
+**Edad:** 20 <br>
 **Domicilio:** Puente Piedra  <br>
 **Inicio de la Entrevista:** 00:00 <br>
 **Duración de la Entrevista:** 03:56 <br>
