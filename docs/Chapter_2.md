@@ -285,7 +285,7 @@ Objetivo: descubrir nivel de compromiso, detalle en el cuidado y apertura a usar
 Las entrevitas están agrupadas en el siguiente link subido a Stream de Office: 
 [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9)
 
-# Segmento 1: Personas ocupadas (departamentos/oficinas)
+##### Segmento 1: Personas ocupadas (departamentos/oficinas)
 **Entrevistado:** Oscar <br>
 **Sexo:** Masculino <br>
 **Edad:** 20 <br>
@@ -298,7 +298,7 @@ Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regar
 
 ---
 
-# Segmento 2: Aficionados que cuidan varias macetas en casa
+##### Segmento 2: Aficionados que cuidan varias macetas en casa
 
 **Entrevistado:** Ana <br>
 **Sexo:** Femenino <br>
@@ -322,6 +322,20 @@ Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y
 **Resumen de la Entrevista:** <br>
 Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalmente suculentas y helechos. Actualmente no utiliza ninguna herramienta para organizar el riego, guiándose solo por observación, lo que en ocasiones ha provocado la muerte de algunas plantas por exceso de agua. Le interesa llevar un historial de la salud de sus plantas y considera útil contar con gráficas y estadísticas de humedad. Estaría dispuesto a invertir en tecnología siempre que no sea costosa y facilite el cuidado, valorando especialmente funciones como alertas de riego personalizadas y adaptación al clima local. Prefiere una compra única de hardware en lugar de pagar suscripciones mensuales.
 
+
+---
+
+[![image.png](https://i.postimg.cc/HLTT5Hkm/image.png)](https://postimg.cc/CR6yT38r)
+
+**Entrevistado:** Maria Sedamano <br>
+**Sexo:** Femenino <br>
+**Edad:** 50 años<br>
+**Domicilio:** Comas<br>
+**Inicio de la Entrevista:** 23:14<br>
+**Duración de la Entrevista:** 26:15<br>
+**Resumen de la Entrevista:** <br>
+La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y anturios, que riega de forma manual siguiendo un calendario, aunque ha perdido algunas plantas por exceso de fertilizante o riego. Actualmente no utiliza ninguna aplicación ni herramienta digital, solo anota fechas en un calendario, pero muestra gran interés en contar con una app que le recuerde los riegos, registre la evolución de sus plantas y le brinde estadísticas o alertas sobre problemas como marchitez, exceso de agua o falta de luz. Además, estaría dispuesta a pagar por una suscripción mensual siempre que el costo sea razonable y la aplicación le aporte beneficios claros, pues considera sus plantas valiosas y desea cuidarlas mejor.
+
 ---
 
 **Entrevistado:** Natalia Ramirez <br>
@@ -335,6 +349,8 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 Natalia es una gran aficionada por las plantas y disfruta mucho de cuidarlas en casa, donde ha logrado reunir una gran variedad que va desde coloridas flores hasta frondosos helechos. Ella siempre se ha encargado del riego de manera manual y siguiendo su propia intuición, sin apoyarse en ninguna guía o sistema especializado, lo que le da un toque personal a su rutina diaria. Sin embargo, últimamente ha mostrado interés en explorar nuevas formas de optimizar el cuidado de sus plantas, especialmente a través de la tecnología. Aunque no está muy familiarizada con herramientas digitales, le atrae la idea de probar aplicaciones que le permitan visualizar gráficos y estadísticas sobre el estado de sus plantas, ya que considera que podría aprender mucho de esos datos y tomar mejores decisiones. Además, le resulta muy interesante la posibilidad de contar con una función que le muestre información sobre el clima, para poder adaptar el riego y los cuidados de sus plantas de acuerdo con las condiciones ambientales. Natalia menciona que preferiría acceder a este tipo de servicio mediante una suscripción, siempre y cuando el producto logre convencerla con su utilidad y facilidad de uso.
 
 ---
+### 2.2.3. Análisis de entrevistas. 
+
 
 ## 2.3. Needfinding.
 
