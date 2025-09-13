@@ -325,6 +325,8 @@ Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y
 
 ---
 
+[![entrevista.png](https://i.postimg.cc/qqxpHLzb/entrevista.png)](https://postimg.cc/hQvk9V8T)
+
 **Entrevistado:** Vasco <br>
 **Sexo:** Masculino <br>
 **Edad:** 24 años<br>
