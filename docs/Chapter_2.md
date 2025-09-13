@@ -286,12 +286,17 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9)
 
 # Segmento 1: Personas ocupadas (departamentos/oficinas)
-**Entrevistado:**  <br>
-**Sexo:**  <br>
-**Edad:** <br>
-**Domicilio:**   <br>
-**Inicio de la Entrevista:** <br>
-**Duración de la Entrevista:** <br>
+**Entrevistado:** Oscar <br>
+**Sexo:** Masculino <br>
+**Edad:**20 <br>
+**Domicilio:** Puente Piedra  <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 03:56 <br>
+
+**Resumen de la Entrevista:** <br>
+Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regarlas unas 3 veces al mes debido a permanecer ocupado por la universidad. Cuenta con 3 plantas en su departamento. Dedica entre 1 a 2 horas por semana para regarlas, además, no usa ningún recordatorio para no olvidar regarlas. Nos cuenta además que comparte las plantas con su abuelita, compartiendo ambos la responsabilidad de cuidar las plantas. Menciona que es complicado tener plantas en su departamento, debido al poco espacio que tiene en su hogar, lo que le limita mucho los lugares en los que puede colocarlos. Considera útil el hecho de usar un dispositivo IoT para no estar tan al pendiente y poder recordar con mayor facilidad el cuidado de sus plantas.
+
+---
 
 # Segmento 2: Aficionados que cuidan varias macetas en casa
 
@@ -322,7 +327,7 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 **Entrevistado:** Natalia Ramirez <br>
 **Sexo:** Femenino <br>
 **Edad:** 61 años<br>
-**Domicilio:** San Martin de porres<br>
+**Domicilio:** San Martin de Porres<br>
 **Inicio de la Entrevista:** 26:24<br>
 **Duración de la Entrevista:** 3:00<br>
 
