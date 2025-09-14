@@ -387,9 +387,13 @@ Se trata de una representación ficticia de un usuario, basada en datos reales d
 
 Este perfil refleja a un estudiante universitario que busca incorporar plantas a su rutina como una forma de mejorar su espacio y reducir el estrés, pero que enfrenta obstáculos por su falta de tiempo, experiencia y constancia. Está abierto a usar tecnología que le facilite el cuidado y le brinde recordatorios prácticos, sin complicarse.
 
-[![Paolo-Loayza.png](https://i.postimg.cc/Dw2q6rW5/Paolo-Loayza.png)](https://postimg.cc/mt5z2FyF)
+[![Paolo-Loayza.png](https://i.postimg.cc/kGbCRRFd/Paolo-Loayza.png)](https://postimg.cc/PvT9BxR6)
 
 **Segmento Objetivo 2: Aficionados que cuidan varias macetas en casa**
+
+Este perfil refleja a una persona apasionada por las plantas, que ha convertido el cuidado de su colección en parte de su rutina y bienestar diario. Tiene conocimientos básicos o intermedios, disfruta investigando sobre especies, y encuentra satisfacción en ver crecer sus plantas. Aunque ya tiene experiencia, busca herramientas que le ayuden a organizar mejor los cuidados, registrar sus avances y seguir aprendiendo.
+
+[![Luz-Ramos.png](https://i.postimg.cc/1z3fnMgh/Luz-Ramos.png)](https://postimg.cc/yD2V2mXv)
 
 ### 2.3.2. User Task Matrix.
 
