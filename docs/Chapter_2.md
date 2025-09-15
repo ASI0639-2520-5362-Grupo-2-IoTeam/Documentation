@@ -387,15 +387,54 @@ Se trata de una representación ficticia de un usuario, basada en datos reales d
 
 Este perfil refleja a un estudiante universitario que busca incorporar plantas a su rutina como una forma de mejorar su espacio y reducir el estrés, pero que enfrenta obstáculos por su falta de tiempo, experiencia y constancia. Está abierto a usar tecnología que le facilite el cuidado y le brinde recordatorios prácticos, sin complicarse.
 
-[![Paolo-Loayza.png](https://i.postimg.cc/kGbCRRFd/Paolo-Loayza.png)](https://postimg.cc/PvT9BxR6)
+[![Paolo-Loayza-1.png](https://i.postimg.cc/8kFxMPCX/Paolo-Loayza-1.png)](https://postimg.cc/hhBCqnTV)
 
 **Segmento Objetivo 2: Aficionados que cuidan varias macetas en casa**
 
 Este perfil refleja a una persona apasionada por las plantas, que ha convertido el cuidado de su colección en parte de su rutina y bienestar diario. Tiene conocimientos básicos o intermedios, disfruta investigando sobre especies, y encuentra satisfacción en ver crecer sus plantas. Aunque ya tiene experiencia, busca herramientas que le ayuden a organizar mejor los cuidados, registrar sus avances y seguir aprendiendo.
 
-[![Luz-Ramos.png](https://i.postimg.cc/1z3fnMgh/Luz-Ramos.png)](https://postimg.cc/yD2V2mXv)
+[![Luz-Ramos-1.png](https://i.postimg.cc/KjdND2Jd/Luz-Ramos-1.png)](https://postimg.cc/64fnBDs0)
 
 ### 2.3.2. User Task Matrix.
+
+El User Task Matrix permite identificar y comparar los procesos clave de cada segmento, destacando sus similitudes en cuanto a frecuencia e importancia.
+
+|**Necesidad / Función**|**Importancia (Personas ocupadas)**|**Frecuencia (Personas ocupadas)**|**Importancia (Aficionados)**|**Frecuencia (Aficionados)**|
+| :- | :- | :- | :- | :- |
+|Revisar manualmente la humedad del suelo |Alta|Media|Alta|Media|
+|Interpretar señales visuales de la planta |Alta|Baja|Alta|Media|
+|Regar las plantas en horarios fijos |Media|Baja|Media|Media|
+|Consultar fuentes variadas para saber cuándo y cuánto regar|Media|Baja|Alta|Alta|
+|Revisar el clima manualmente para ajustar el riego |Media|Baja|Media|Media|
+|Tomar notas manuales del riego |Baja|Baja|Media|Media|
+|Caminar por todo el jardín o cultivo para revisar planta por planta|Baja|Baja|Alta|Alta|
+
+En la matriz presentada, se pueden observar las siguientes tareas con mayor frecuencia e importancia:
+
+- **Personas ocupadas**:
+
+  - **Revisar manualmente la humedad del suelo**  
+    Funcionalidad **más crítica**, con **importancia alta y frecuencia media**.
+    Las personas ocupadas necesitan un sistema confiable para medir la humedad del suelo, facilitando el riego de sus plantas.
+
+  - **Regar las plantas en horarios fijos y revisar el clima manualmente**  
+    Tareas de **media importancia** pero **frecuencia baja**.
+
+  - **Tomar notas manuales del riego**  
+    De **importancia y frecuencia baja**. No forman parte de su rutina diaria, por lo que pueden ofrecerse como funciones secundarias u opcionales.
+
+- **Aficionados que cuidan varias macetas en casa**:
+
+  - **Consultar fuentes variadas para saber cuándo y cuánto regar**  
+    Funcionalidad **más crítica**, con **alta importancia y frecuencia**.
+    Requieren de herramientas externas para garantizar el cuidado de sus plantas.
+
+  - **Interpretar señales visuales de la planta**  
+    Tareas de **alta importancia** pero **frecuencia media**.
+    Requieren experiencia para comprobar el estado de la planta.
+
+  - **Caminar por todo el jardín o cultivo para revisar planta por planta**  
+    Actividad de **alta importancia** y de **frecuencia alta**.
 
 ### 2.3.3. User Journey Mapping.
 
