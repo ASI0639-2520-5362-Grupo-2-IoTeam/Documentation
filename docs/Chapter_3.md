@@ -127,3 +127,5 @@
 |42|US-042|Cancelar suscripción|Como usuario, quiero cancelar mi suscripción en cualquier momento para dejar de pagar por el servicio premium.|2|
 |43|US-043|Ver historial de pagos|Como usuario, quiero ver mi historial de pagos de suscripción para tener control de mi facturación.|2|
 |44|US-044|Notificación de renovación|Como usuario, quiero recibir notificaciones de renovación próxima para asegurarme de tener fondos disponibles.|2|
+
+Link del trello: https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
