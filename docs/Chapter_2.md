@@ -451,6 +451,7 @@ El User Journey Mapping fue creado con el objetivo de entender cómo los usuario
 En este User Journey Map se muestra la experiencia actual de una persona ocupada que vive en un departamento y va a regar sus plantas.
 
 **Enlace para visualizar el User Journey Map en UXPressia:** [https://uxpressia.com/w/KPfTT/m/KDKL7](https://uxpressia.com/w/KPfTT/m/KDKL7)
+
 [![Paolo-Loayza-2.png](https://i.postimg.cc/PqPg6wMR/Paolo-Loayza-2.png)](https://postimg.cc/3yQfNWVX)
 
 #### Segmento 2: Aficionados que cuidan varias macetas en casa
@@ -458,12 +459,30 @@ En este User Journey Map se muestra la experiencia actual de una persona ocupada
 En este User Journey Map se muestra la experiencia actual de una aficionada a las plantas que vive en una casa con su familia y tiene que regar varias plantas.
 
 **Enlace para visualizar el User Journey Map en UXPressia:** [https://uxpressia.com/w/KPfTT/m/Obqwo](https://uxpressia.com/w/KPfTT/m/Obqwo)
+
 [![Luz-Ramos-2.png](https://i.postimg.cc/sxLmgw8Y/Luz-Ramos-2.png)](https://postimg.cc/V0jn7Bzv)
 
 ### 2.3.4. Empathy Mapping.
 
 Para desarrollar el Empathy Map, nos basamos en la información recopilada de nuestros dos User Personas, quienes representan a nuestros segmentos objetivo. Este recurso nos facilita una comprensión más profunda de las necesidades, pensamientos, emociones y conductas de los usuarios, lo que nos permite crear soluciones mejor adaptadas a sus expectativas y experiencias reales.
 
+#### Segmento 1: Personas ocupadas
+
+En el siguiente Empathy Map tenemos a Paolo Loayza, un joven que vive en un departamento. Él lucha diariamente para conservar sus plantas en buen estado.
+
+**Enlace para visualizar el Empathy Map de Proveedores realizado en UXPressia:**
+[https://uxpressia.com/w/KPfTT/p/APA2m](https://uxpressia.com/w/KPfTT/p/APA2m)
+
+[![Paolo-Loayza-3.png](https://i.postimg.cc/2Sx7MkGR/Paolo-Loayza-3.png)](https://postimg.cc/WdhZJPxX)
+
+#### Segmento 2: Aficionados que cuidan varias macetas en casa
+
+En el siguiente Empathy Map observamos a Luz Ramos, una mujer que vive en casa con su familia. Ella es una aficionada a las plantas que cuida con mayor frecuencia de ellas.
+
+**Enlace para visualizar el Empathy Map de Proveedores realizado en UXPressia:**
+[https://uxpressia.com/w/KPfTT/p/MY9Lq](https://uxpressia.com/w/KPfTT/p/MY9Lq)
+
+[![Luz-Ramos-3.png](https://i.postimg.cc/5tS98Gfm/Luz-Ramos-3.png)](https://postimg.cc/t17HjBZ1)
 ## 2.4. Big Picture EventStorming.
 
 Es un taller colaborativo diseñado para que un grupo de personas (desarrolladores, expertos en el negocio, gerentes de producto, etc.) exploren y entiendan un dominio de negocio complejo de manera rápida.
