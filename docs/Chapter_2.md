@@ -387,11 +387,17 @@ Se trata de una representación ficticia de un usuario, basada en datos reales d
 
 Este perfil refleja a un estudiante universitario que busca incorporar plantas a su rutina como una forma de mejorar su espacio y reducir el estrés, pero que enfrenta obstáculos por su falta de tiempo, experiencia y constancia. Está abierto a usar tecnología que le facilite el cuidado y le brinde recordatorios prácticos, sin complicarse.
 
+**Enlace para visualizar el User Persona en UXPressia:**
+[https://uxpressia.com/w/KPfTT/p/MSWWh](https://uxpressia.com/w/KPfTT/p/MSWWh)
+
 [![Paolo-Loayza-1.png](https://i.postimg.cc/8kFxMPCX/Paolo-Loayza-1.png)](https://postimg.cc/hhBCqnTV)
 
 **Segmento Objetivo 2: Aficionados que cuidan varias macetas en casa**
 
 Este perfil refleja a una persona apasionada por las plantas, que ha convertido el cuidado de su colección en parte de su rutina y bienestar diario. Tiene conocimientos básicos o intermedios, disfruta investigando sobre especies, y encuentra satisfacción en ver crecer sus plantas. Aunque ya tiene experiencia, busca herramientas que le ayuden a organizar mejor los cuidados, registrar sus avances y seguir aprendiendo.
+
+**Enlace para visualizar el User Persona en UXPressia:**
+[https://uxpressia.com/w/KPfTT/p/a9ZBy](https://uxpressia.com/w/KPfTT/p/a9ZBy)
 
 [![Luz-Ramos-1.png](https://i.postimg.cc/KjdND2Jd/Luz-Ramos-1.png)](https://postimg.cc/64fnBDs0)
 
@@ -438,7 +444,25 @@ En la matriz presentada, se pueden observar las siguientes tareas con mayor frec
 
 ### 2.3.3. User Journey Mapping.
 
+El User Journey Mapping fue creado con el objetivo de entender cómo los usuarios experimentan nuestra plataforma. Este proceso describe paso a paso las acciones que realizan, los posibles obstáculos que enfrentan y las emociones que experimentan durante la interacción. De esta manera, nos permite detectar áreas de mejora para optimizar la usabilidad y aumentar la satisfacción del usuario.
+
+#### Segmento 1: Personas ocupadas
+
+En este User Journey Map se muestra la experiencia actual de una persona ocupada que vive en un departamento y va a regar sus plantas.
+
+**Enlace para visualizar el User Journey Map en UXPressia:** [https://uxpressia.com/w/KPfTT/m/KDKL7](https://uxpressia.com/w/KPfTT/m/KDKL7)
+[![Paolo-Loayza-2.png](https://i.postimg.cc/PqPg6wMR/Paolo-Loayza-2.png)](https://postimg.cc/3yQfNWVX)
+
+#### Segmento 2: Aficionados que cuidan varias macetas en casa
+
+En este User Journey Map se muestra la experiencia actual de una aficionada a las plantas que vive en una casa con su familia y tiene que regar varias plantas.
+
+**Enlace para visualizar el User Journey Map en UXPressia:** [https://uxpressia.com/w/KPfTT/m/Obqwo](https://uxpressia.com/w/KPfTT/m/Obqwo)
+[![Luz-Ramos-2.png](https://i.postimg.cc/sxLmgw8Y/Luz-Ramos-2.png)](https://postimg.cc/V0jn7Bzv)
+
 ### 2.3.4. Empathy Mapping.
+
+Para desarrollar el Empathy Map, nos basamos en la información recopilada de nuestros dos User Personas, quienes representan a nuestros segmentos objetivo. Este recurso nos facilita una comprensión más profunda de las necesidades, pensamientos, emociones y conductas de los usuarios, lo que nos permite crear soluciones mejor adaptadas a sus expectativas y experiencias reales.
 
 ## 2.4. Big Picture EventStorming.
 
