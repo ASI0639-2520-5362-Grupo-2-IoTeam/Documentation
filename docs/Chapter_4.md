@@ -157,6 +157,21 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
 
 #### 4.1.1.2 Domain Message Flows Modeling.
 
+ Los Domain Message Flows modelan las interacciones entre los diferentes bounded contexts, mostrando
+ cómo se comunican entre sí mediante comandos, eventos y consultas. A continuación, presentamos los flujos
+ de mensaje para cuatro escenarios clave de nuestra aplicación:
+
+ [![Event-Storming-plantcare-12.jpg](https://i.postimg.cc/hGf7ZXMc/Event-Storming-plantcare-12.jpg)](https://postimg.cc/LqFXn6rb)
+
+
+ [![Event-Storming-plantcare-13.jpg](https://i.postimg.cc/wMdyB0zj/Event-Storming-plantcare-13.jpg)](https://postimg.cc/YGbqnNj5)
+
+ [![Event-Storming-plantcare-14.jpg](https://i.postimg.cc/28GbzQKC/Event-Storming-plantcare-14.jpg)](https://postimg.cc/WhDb8kVy)
+
+ [![Event-Storming-plantcare-15.jpg](https://i.postimg.cc/CK3dvmzs/Event-Storming-plantcare-15.jpg)](https://postimg.cc/HJtpn00r)
+
+ Estos flujos de mensaje son pilares fundamentales de la arquitectura del sistema, ya que revelan cómo los distintos Bounded Contexts se coordinan de forma coherente, asíncrona y bien definida. Al mapear cada comando, evento y consulta, no solo visualizamos el flujo de información entre componentes, sino que también identificamos puntos críticos de acoplamiento, posibles cuellos de botella en la comunicación y oportunidades para optimizar la escalabilidad y la resiliencia. Además, garantizan que la arquitectura esté alineada con los casos de uso del negocio, asegurando que cada interacción tenga propósito, trazabilidad y cumplimiento de contratos de dominio fundamentales para construir un sistema robusto, mantenible y adaptativo a largo plazo.
+
 #### 4.1.1.3 Bounded Context Canvases.
 
 #### 4.1.2. Context Mapping.
