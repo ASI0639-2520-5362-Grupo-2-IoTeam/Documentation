@@ -236,7 +236,7 @@ Durante el proceso, el equipo consideró las siguientes buenas prácticas:
 #### Evidencia gráfica
 Al finalizar, los mapas de contexto resultantes se documentaron en forma de diagramas visuales. Estos diagramas muestran tanto los **bounded contexts** como las relaciones entre ellos, junto con los patrones aplicados.  
 
-Aquí se insertará la imagen del diagrama Mermaid exportado a formato gráfico:
+Aquí se insertará la imagen del diagrama  exportado a formato gráfico:
 
 [![Untitled-diagram-Mermaid-Chart-2025-09-18-233901.png](https://i.postimg.cc/VsBHNnbf/Untitled-diagram-Mermaid-Chart-2025-09-18-233901.png)](https://postimg.cc/grjKSwDQ)
 
