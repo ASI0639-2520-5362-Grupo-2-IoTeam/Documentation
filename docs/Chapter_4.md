@@ -181,7 +181,7 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
  nuestros cuatro bounded contexts identificados, que nos ayudaron a definir claramente las responsabilidades
  y límites de cada uno.
 
- [![Event-Storming-plantcare-18.jpg](https://i.postimg.cc/wT3KR8bv/Event-Storming-plantcare-18.jpg)](https://postimg.cc/1fx7bTSh)
+[![Event-Storming-plantcare-18.jpg](https://i.postimg.cc/wT3KR8bv/Event-Storming-plantcare-18.jpg)](https://postimg.cc/1fx7bTSh)
 
  [![Event-Storming-plantcare-19.jpg](https://i.postimg.cc/CL23jPW4/Event-Storming-plantcare-19.jpg)](https://postimg.cc/SJW14rQX)
 
