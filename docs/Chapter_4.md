@@ -265,20 +265,93 @@ Aquí se insertará la imagen del diagrama  exportado a formato gráfico:
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: <Bounded Context Name>
+## 4.2.1. Bounded Context: Auth&Identity
+### 4.2.1.1. Domain Layer. 
+### 4.2.1.2. Interface Layer. 
+### 4.2.1.3. Application Layer. 
+### 4.2.1.4. Infrastructure Layer. 
+### 4.2.1.5. Bounded Context Software Architecture ### Component Level Diagrams. 
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.1.6.1. Bounded Context Domain Layer Class ### Diagrams. 
+### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.1. Domain Layer.
+## 4.2.2. Bounded Context: Plant Management
+### 4.2.2.1. Domain Layer. 
+### 4.2.2.2. Interface Layer. 
+### 4.2.2.3. Application Layer. 
+### 4.2.2.4. Infrastructure Layer. 
+### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.2.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.2. Interface Layer.
+## 4.2.3. Bounded Context: Device Management IoT
+### 4.2.3.1. Domain Layer. 
+### 4.2.3.2. Interface Layer. 
+### 4.2.3.3. Application Layer. 
+### 4.2.3.4. Infrastructure Layer. 
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.3. Application Layer.
+## 4.2.4. Bounded Context: Data Telemetry
+### 4.2.4.1. Domain Layer. 
+### 4.2.4.2. Interface Layer. 
+### 4.2.4.3. Application Layer. 
+### 4.2.4.4. Infrastructure Layer. 
+### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.4. Infrastructure Layer.
+## 4.2.5. Bounded Context: Notification & Rules Engine
+### 4.2.5.1. Domain Layer. 
+### 4.2.5.2. Interface Layer. 
+### 4.2.5.3. Application Layer. 
+### 4.2.5.4. Infrastructure Layer. 
+### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.5.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
+## 4.2.6. Bounded Context: Analysis&Report
+### 4.2.6.1. Domain Layer. 
+### 4.2.6.2. Interface Layer. 
+### 4.2.6.3. Application Layer. 
+### 4.2.6.4. Infrastructure Layer. 
+### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.6.6.2. Bounded Context Database Design Diagram.
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
+## 4.2.7. Bounded Context: Community/Social
+### 4.2.7.1. Domain Layer. 
+### 4.2.7.2. Interface Layer. 
+### 4.2.7.3. Application Layer. 
+### 4.2.7.4. Infrastructure Layer. 
+### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.7.6.2. Bounded Context Database Design Diagram.
+ 
+## 4.2.8. Bounded Context: Billing and Subscription
+### 4.2.8.1. Domain Layer. 
+### 4.2.8.2. Interface Layer. 
+### 4.2.8.3. Application Layer. 
+### 4.2.8.4. Infrastructure Layer. 
+### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.8.6.2. Bounded Context Database Design Diagram.
+ 
+## 4.2.9. Bounded Context: Platform
+### 4.2.9.1. Domain Layer. 
+### 4.2.9.2. Interface Layer. 
+### 4.2.9.3. Application Layer. 
+### 4.2.9.4. Infrastructure Layer. 
+### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams. 
+### 4.2.9.6.2. Bounded Context Database Design Diagram.
 
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram.
