@@ -264,7 +264,9 @@ Aquí se insertará la imagen del diagrama  exportado a formato gráfico:
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
 ## 4.2. Tactical-Level Domain-Driven Design
+En esta sección, el equipo aborda el diseño táctico de la solución siguiendo los principios de Domain‑Driven Design (DDD), traduciendo los Bounded Contexts previamente definidos en patrones y estructuras de código concretos. Cada subcapítulo se centra en uno de los contextos, describiendo sus agregados, repositorios, servicios de dominio y fábricas, así como las variantes y contratos que rigen su comportamiento interno. De este modo, se conecta la visión estratégica del dominio con decisiones de implementación precisas, garantizando que el software refleje fielmente las reglas de negocio y mantenga la coherencia del lenguaje ubicuo.
 
+Para cada Bounded Context, se propone una arquitectura modular basada en capas tácticas, modelos de entidad, lógica de dominio, interfaces de infraestructura y adaptadores, y se aplican patrones de diseño. Además, se incluyen diagramas de clases. Este enfoque permite iterar rápidamente sobre el diseño interno sin perder alineación con los objetivos del negocio ni generar acoplamientos indebidos entre contextos (Ford et al., 2021).
 ## 4.2.1. Bounded Context: Auth&Identity
 ### 4.2.1.1. Domain Layer. 
 ### 4.2.1.2. Interface Layer. 
