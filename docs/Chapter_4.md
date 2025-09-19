@@ -268,6 +268,9 @@ En esta sección, el equipo aborda el diseño táctico de la solución siguiendo
 
 Para cada Bounded Context, se propone una arquitectura modular basada en capas tácticas, modelos de entidad, lógica de dominio, interfaces de infraestructura y adaptadores, y se aplican patrones de diseño. Además, se incluyen diagramas de clases. Este enfoque permite iterar rápidamente sobre el diseño interno sin perder alineación con los objetivos del negocio ni generar acoplamientos indebidos entre contextos (Ford et al., 2021).
 ## 4.2.1. Bounded Context: Auth&Identity
+
+En la capa de dominio de Auth & Identity se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de la autenticación e identidad de los usuarios. Aquí residen las reglas de negocio que garantizan la seguridad, consistencia y control de acceso de todo el sistema.
+
 ### 4.2.1.1. Domain Layer. 
 ### 4.2.1.2. Interface Layer. 
 ### 4.2.1.3. Application Layer. 
