@@ -154,8 +154,9 @@ develop
 
 ## Student Outcome
 
-| **Criterio Específico** | **Acciones Realizadas** | **Conclusiones** |
+| **Criterio Específico** | **Acciones Realizadas** | **Conclusiones** | 
 | ----------------------- | ----------------------- | ---------------- |
+| ----------------------- | Ernesto Casaverde TB1: -Strategic-Level Domain-Driven -Design Design-Level EventStorming -Candidate Context Discovery -Domain Message Flows Modeling -Bounded Context Canvases - Context Mapping  | ---------------- |
 
 |
 |Trabaja en equipo para proporcionar liderazgo en forma conjunta| | |
