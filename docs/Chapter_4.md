@@ -174,6 +174,19 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
 
 #### 4.1.1.3 Bounded Context Canvases.
 
+
+ Los Bounded Context Canvases son herramientas visuales que nos permiten documentar las características
+ fundamentales de cada contexto delimitado, capturando su propósito estratégico, modelo de dominio,
+ lenguaje ubicuo, políticas y relaciones con otros contextos. A continuación, presentamos los canvases para
+ nuestros cuatro bounded contexts identificados, que nos ayudaron a definir claramente las responsabilidades
+ y límites de cada uno.
+
+ [![Event-Storming-plantcare-18.jpg](https://i.postimg.cc/wT3KR8bv/Event-Storming-plantcare-18.jpg)](https://postimg.cc/1fx7bTSh)
+
+ [![Event-Storming-plantcare-19.jpg](https://i.postimg.cc/CL23jPW4/Event-Storming-plantcare-19.jpg)](https://postimg.cc/SJW14rQX)
+
+ <img src="https://i.postimg.cc/Hk7f30m1/Event-Storming-plantcare-20.jpg" alt="Event Storming Plantcare" width="480"/>
+
 #### 4.1.2. Context Mapping.
 
 En esta sección se explica y evidencia el proceso de elaboración de un conjunto de *context maps*, es decir, visualizaciones de las relaciones estructurales entre los **bounded contexts** identificados en el dominio. El equipo realizó una revisión de la información recolectada durante la fase de *EventStorming* y la utilizó para producir los diseños candidatos.  
