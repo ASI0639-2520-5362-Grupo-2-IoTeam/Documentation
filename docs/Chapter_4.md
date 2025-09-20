@@ -1097,6 +1097,78 @@ No implementa reglas de negocio directamente, sino que delega al dominio, manten
 |Evento	|PlantProfileDeletedEvent|
 
 ### 4.2.2.4. Infrastructure Layer. 
+
+La capa de infraestructura del Bounded Context Plant Management actúa como puente entre la lógica de negocio y los mecanismos técnicos de persistencia, integración con API externas y comunicación con servicios de sensores o monitoreo ambiental.
+
+Aquí se implementan las dependencias necesarias para la gestión de perfiles de plantas, condiciones configuradas, estados e historial, garantizando la interacción confiable con bases de datos y proveedores externos de información botánica.
+
+Esta capa concreta las abstracciones definidas en el dominio a través de repositorios, contextos de base de datos y servicios técnicos. Su diseño asegura un desacoplamiento respecto a la lógica central, permitiendo reemplazar o evolucionar tecnologías sin alterar las reglas de negocio. Además, aporta eficiencia, escalabilidad y robustez en la gestión del ciclo de vida de las plantas dentro del sistema.
+
+**Repositorios**
+**PlantProfileRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	PlantProfileRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar entidades de perfiles de plantas|
+|Interfaz	|IPlantProfileRepository|
+
+**PlantStatusRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar estados actuales de las plantas|
+|Interfaz	|IPlantStatusRepository|
+
+**PlantHistoryRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantHistoryRepository|
+|Categoría	|Repositorio|
+|Propósito	|Almacenar y recuperar el historial de cambios de estado de las plantas|
+|Interfaz	|IPlantHistoryRepository|
+
+**PlantConditionRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar condiciones ideales configuradas de plantas|
+|Interfaz	|IPlantConditionRepository|
+
+**ORM Context**
+**PlantDbContext**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantDbContext|
+|Categoría	|ORM Context|
+|Propósito	|Punto central de acceso a la base de datos para perfiles, estados, condiciones e historial de plantas|
+
+**Servicios Técnicos**
+**ExternalPlantApiService**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ExternalPlantApiService|
+|Categoría	|Servicio Técnico|
+|Propósito|	Integración con API externa de información botánica (búsqueda y detalles de plantas)|
+|Interfaz	|IExternalPlantApiService|
+
+**SensorIntegrationService**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorIntegrationService|
+|Categoría	|Servicio Técnico|
+|Propósito	|Conectar el sistema con sensores IoT para recolectar datos de humedad, luz, temperatura y crecimiento|
+|Interfaz	|ISensorIntegrationService|
+
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
