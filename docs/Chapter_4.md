@@ -726,7 +726,11 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams.
 #### 4.2.1.6.1. Bounded Context Domain Layer Class ### Diagrams. 
 
+[![TL3-DIi-D04-Bxl-Kmov24g-BNdk-G1dj-G40-j-Fi2-G7-PB1-Gax4r-Iaxsusqd-G3x-MMP-VRRxs-Utef-Xqy-Cuego-Du-SYW2-Ey-Ose-OSLr8-Ds59-GR.png](https://i.postimg.cc/GhcGGMwz/TL3-DIi-D04-Bxl-Kmov24g-BNdk-G1dj-G40-j-Fi2-G7-PB1-Gax4r-Iaxsusqd-G3x-MMP-VRRxs-Utef-Xqy-Cuego-Du-SYW2-Ey-Ose-OSLr8-Ds59-GR.png)](https://postimg.cc/rzPDLNpt)
+
 #### 4.2.1.6.2. Bounded Context Database Design Diagram.
+
+[![12-2025-09-20-03-39.png](https://i.postimg.cc/yYv9PF7K/12-2025-09-20-03-39.png)](https://postimg.cc/3d0dr0yf)
 
 ## 4.2.2. Bounded Context: Plant Management
 ### 4.2.2.1. Domain Layer. 
