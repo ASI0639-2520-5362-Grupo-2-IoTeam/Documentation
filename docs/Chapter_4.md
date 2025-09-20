@@ -1750,7 +1750,10 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 |Categoría	|ORM Context|
 |Propósito	|Punto central de acceso a la base de datos para dispositivos, telemetría y conectividad|
 
-### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams.
+
+[![structurizr-106438-Container-001-2.png](https://i.postimg.cc/1Xpzd1k2/structurizr-106438-Container-001-2.png)](https://postimg.cc/gL2dwQkH)
+
 ### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
