@@ -286,6 +286,9 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EYpd3umB9VZGiPRW58fSYIkB-otn2hpbIBkBy8tHaQd2YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cEw7m9)
 
 ##### Segmento 1: Personas ocupadas (departamentos/oficinas)
+
+[![image.png](https://i.postimg.cc/T3KwXGD4/image.png)](https://postimg.cc/75yDgFX3)
+
 **Entrevistado:** Oscar <br>
 **Sexo:** Masculino <br>
 **Edad:** 20 <br>
