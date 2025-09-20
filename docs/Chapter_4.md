@@ -2909,6 +2909,15 @@ _Tabla de métodos de Plans_
 
 
 ### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams. 
+
+[![Billing-Subscription-Component.png](https://i.postimg.cc/7ZhBqdGN/Billing-Subscription-Component.png)](https://postimg.cc/G40PQMjB)
+
 ### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams. 
+
+[![Billing-Subscription-Class-Diagram.png](https://i.postimg.cc/j5Hc8rmR/Billing-Subscription-Class-Diagram.png)](https://postimg.cc/FdK0Rwh6)
+
 #### 4.2.8.6.2. Bounded Context Database Design Diagram.
+
+[![Billing-Subscription-Design-Diagram.png](https://i.postimg.cc/d3nBYjJX/Billing-Subscription-Design-Diagram.png)](https://postimg.cc/CnBDCDBH)
+
