@@ -708,6 +708,158 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 ## 4.2.2. Bounded Context: Plant Management
 ### 4.2.2.1. Domain Layer. 
+
+En la capa de dominio de PlantProfile se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de los perfiles de plantas. Aquí residen las reglas de negocio que garantizan la consistencia, trazabilidad y control del estado de cada planta en el sistema.
+
+**PlantProfile**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfile|
+|Categoría	|Aggregate Root|
+|Propósito	|Representar el perfil de una planta registrada en el sistema, incluyendo su tipo, condiciones ideales y estado actual.|
+
+**Atributos de PlantProfile**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|plantProfileId	|PlantProfileId	|Privada	|Identificador único del perfil|
+|plantType	|PlantType	|Privada	|Tipo de planta (ej. cactus, orquídea)|
+|conditions	|PlantConditions	|Privada	|Condiciones ideales configuradas|
+|currentState	|PlantState	|Privada	|Estado actual de la planta|
+|status	|ProfileStatus	|Privada	|Estado del perfil (activo, archivado, eliminado)|
+|createdAt	|DateTime	|Privada	|Fecha de creación|
+|archivedAt	|DateTime?	|Privada	|Fecha de archivado (si aplica)|
+
+**Métodos de PlantProfile**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|ConfigureConditions	|void	|public	|Configura condiciones ideales de la planta|
+|UpdateState	|void	|public	|Actualiza el estado de la planta|
+|Archive	|void	|public	|Archiva el perfil de la planta|
+|Delete	|void	|public	|Elimina definitivamente el perfil|
+|Restore	|void	|public	|Restaura un perfil archivado|
+
+**Value Objects**
+
+**PlantProfileId**
+
+| Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileId|
+|Categoría |Value Object|
+|Propósito |Identificador único del perfil de planta|
+
+**Atributos de PlantProfileId**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|----------|--------------------|-------------|------------------------------------------|
+|value	|Guid / Long	|private	|Identificador único numérico o GUID|
+
+**PlantType**
+
+| Propiedad	| Valor|
+|-------------|---------------------------------------------------------------------------------------|
+|Nombre| PlantType|
+|Categoría |Value Object|
+|Propósito |Representar el tipo de planta seleccionada (ej. cactus, orquídea).|
+
+**PlantConditions**
+
+| Propiedad | Valor|
+|--------------|---------------------------------------------------------------------------------------|
+|Nombre |PlantConditions|
+|Categoría |Value Object|
+|Propósito| Conjunto de condiciones ideales configuradas para el crecimiento de la planta.|
+
+Atributos: temperatura, humedad, luz, riego.
+
+**PlantState**
+
+| Propiedad	| Valor|
+|--------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantState|
+|Categoría| Value Object|
+|Propósito|Estado actual de la planta (ej. saludable, en riesgo, muerta).|
+
+**ProfileStatus**
+
+| Propiedad	 | Valor|
+|------------|---------------------------------------------------------------------------------------|
+| Nombre	    |ProfileStatus|
+|Categoría |Value Object|
+|Propósito| Representar el estado del perfil (activo, archivado, eliminado).|
+
+**Entidades auxiliares**
+
+**PlantHistory**
+
+|Propiedad|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantHistory|
+|Categoría| Entity|
+|Propósito |Registrar cambios históricos de estado o condiciones en una planta.|
+
+Atributos:
+
+historyId
+
+plantProfileId
+
+eventType (estado actualizado, condiciones cambiadas, archivado, eliminado)
+
+occurredAt
+
+**Domain Services**
+**PlantLifecycleManager**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantLifecycleManager|
+|Categoría|	Domain Service|
+|Propósito	|Gestionar reglas de negocio sobre el ciclo de vida de una planta (ej. eliminación tras 30 días de archivado).|
+
+**Métodos de PlantLifecycleManager**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|CheckArchiveExpiration	|bool	|public|	Verifica si una planta archivada debe eliminarse|
+|ApplyStateRules	|void	|public	|Aplica reglas de negocio según estado de la planta|
+
+**Repositorios
+IPlantProfileRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|IPlantProfileRepository|
+|Categoría	|Repository|
+|Propósito	|Persistencia de perfiles de planta|
+
+**Métodos de IPlantProfileRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetByIdAsync	|PlantProfile?|	public|	Obtiene perfil por Id|
+|SaveAsync	|PlantProfile	|public	|Persiste perfil|
+|DeleteAsync	|bool	|public|	Elimina perfil|
+|ArchiveAsync|	bool	|public	|Archiva perfil|
+
+**IPlantHistoryRepository**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|IPlantHistoryRepository|
+|Categoría	|Repository|
+|Propósito	|Gestionar registros históricos de perfiles de planta|
+
+**Métodos de IPlantHistoryRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|LogEvent	|void	|public|	Registra un evento en el historial|
+|GetHistory	|List<PlantHistory>|	public|	Obtiene historial de un perfil de planta|
+
 ### 4.2.2.2. Interface Layer. 
 ### 4.2.2.3. Application Layer. 
 ### 4.2.2.4. Infrastructure Layer. 
