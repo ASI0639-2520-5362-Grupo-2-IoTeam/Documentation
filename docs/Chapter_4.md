@@ -1194,6 +1194,191 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 ## 4.2.3. Bounded Context: Device Management IoT
 ### 4.2.3.1. Domain Layer. 
+En la capa de dominio del Bounded Context Device Management IoT se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de los dispositivos y sus sensores asociados. Aquí residen las reglas de negocio que garantizan la operación segura, confiable y consistente de los dispositivos IoT, desde el emparejamiento con la cuenta hasta la recolección de datos en tiempo real, diagnóstico y control de estado.
+
+**Aggregate Root**
+**Device**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|Device|
+|Categoría	|Aggregate Root|
+|Propósito	|Representar un dispositivo IoT registrado, emparejado con una cuenta y que administra sus sensores.|
+
+**Atributos de Device**
+
+|Nombre	|Tipo de dato|	Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|deviceId	|DeviceId	|Privada	|Identificador único del dispositivo|
+|ownerId	|Guid	|Privada	|Identificador del usuario dueño del dispositivo|
+|Name	|string	|Privada	|Nombre asignado al dispositivo|
+|Status	|DeviceStatus|	Privada|	Estado del dispositivo (activo, desconectado, suspendido)|
+|PairedAt	|DateTime|	Privada	Fecha de emparejamiento|
+|LastSyncAt	|DateTime|	Privada	Última sincronización de datos|
+
+**Métodos de Device**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|PairWithAccount	|void	|public	|Empareja el dispositivo con la cuenta de usuario|
+|Unpair|	void	|public	|Desempareja el dispositivo y detiene sus servicios|
+|Activate|	void	|public	|Activa el dispositivo|
+|Deactivate	|void	|public	|Desactiva el dispositivo|
+|UpdateFirmware	|void	|public	|Aplica una actualización de firmware|
+|RestoreConnection	|void	|public	|Restaura la conexión perdida|
+|OpenDiagnosticSession	|DiagnosticSession	|public|	Inicia una sesión de monitoreo o diagnóstico|
+
+**Value Objects**
+**DeviceId**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceId|
+|Categoría	|Value Object|
+|Propósito	|Identificador único del dispositivo|
+
+**Atributos de DeviceId**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|Value	|Guid/Long|	Privada	|Identificador único numérico o GUID|
+
+**SensorId**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorId|
+|Categoría	|Value Object|
+|Propósito	|Identificador único de un sensor dentro de un dispositivo|
+
+**Atributos de SensorId**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|Value	|Guid/Long|	Privada	|Identificador único numérico o GUID|
+
+**Entities**
+**Sensor**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	Sensor|
+|Categoría|	Entity|
+|Propósito	|Representar un sensor IoT (temperatura, humedad, luz, etc.) instalado en un dispositivo.|
+
+**Atributos de Sensor**
+
+|Nombre	|Tipo de dato|	Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|sensorId	|SensorId	|Privada	|Identificador único del sensor|
+|Type	|SensorType	|Privada|	Tipo de sensor (temperatura, humedad, luz, etc.)|
+|Status|	SensorStatus	|Privada	|Estado del sensor (activo, calibrado, error)|
+|LastCalibrationAt	|DateTime	|Privada	|Última fecha de calibración|
+|LastReadingAt	|DateTime	|Privada	|Última lectura registrada|
+
+**SensorReading**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorReading|
+|Categoría	|Entity|
+|Propósito	|Representar una lectura tomada por un sensor en tiempo real.|
+
+**Atributos de SensorReading**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|ReadingId	|Guid	|Privada	|Identificador único de la lectura|
+|SensorId	|SensorId	|Privada	|Sensor asociado a la lectura|
+|Value	|decimal	|Privada	|Valor de la lectura|
+|Unit	|string	|Privada	|Unidad de medida (°C, %, lx, etc.)|
+|Timestamp	|DateTime	|Privada	|Fecha y hora de la lectura|
+|ErrorFlag	|bool	|Privada	|Indica si la lectura fue inválida o fuera de rango|
+
+**DiagnosticSession**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DiagnosticSession|
+|Categoría	|Entity|
+|Propósito	|Representar una sesión de diagnóstico o monitoreo en tiempo real.|
+
+**Atributos de DiagnosticSession**
+
+|Nombre|	Tipo de dato|	Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|SessionId	|Guid	|Privada	|Identificador único de la sesión|
+|DeviceId	|DeviceId	|Privada	|Dispositivo asociado|
+|StartedAt	|DateTime	|Privada	|Fecha de inicio de la sesión|
+|EndedAt	|DateTime	|Privada	|Fecha de cierre (si aplica)|
+|IsActive	|bool	|Privada	|Indica si la sesión está activa|
+
+**Domain Services**
+**SensorMonitor**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorMonitor|
+|Categoría	|Domain Service|
+|Propósito	|Gestionar la recolección y validación de datos en tiempo real de sensores.|
+
+**Métodos de SensorMonitor**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|---------------|------------------|---------------|-----------------------------------------------------|
+|CollectReading	|SensorReading	|public|	Recolecta una lectura de un sensor en tiempo real|
+|ValidateReading	|bool	|public	|Valida si la lectura está dentro de los rangos esperados|
+|SyncData	|void	|public	|Sincroniza las lecturas con la nube|
+
+**Repositorios**
+**IDeviceRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|IDeviceRepository|
+|Categoría|	Repository|
+|Propósito	|Persistencia y gestión del ciclo de vida de los dispositivos|
+
+**Métodos de IDeviceRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetByIdAsync	|Device?	|public|	Obtiene un dispositivo por su Id|
+|SaveAsync	|Device	|public	|Persiste un dispositivo|
+|DeleteAsync	|bool	|public	|Elimina lógicamente un dispositivo|
+
+**ISensorRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ISensorRepository|
+|Categoría	|Repository|
+|Propósito	|Persistencia de sensores asociados a dispositivos|
+
+**Métodos de ISensorRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetByIdAsync	|Sensor?	|public|	Obtiene un sensor por Id|
+|SaveAsync	|Sensor	|public|	Persiste un sensor|
+|DeleteAsync	|bool	|public	|Elimina un sensor|
+
+**ISensorReadingRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ISensorReadingRepository|
+|Categoría|	Repository|
+|Propósito|	Almacenar y recuperar lecturas de sensores|
+
+**Métodos de ISensorReadingRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetBySensorId|	List<SensorReading>	|public|	Obtiene lecturas por sensor|
+|SaveAsync	|SensorReading	|public	|Persiste una lectura|
+|DeleteOldReadings|	void	|public	|Elimina lecturas antiguas|
+
 ### 4.2.3.2. Interface Layer. 
 ### 4.2.3.3. Application Layer. 
 ### 4.2.3.4. Infrastructure Layer. 
