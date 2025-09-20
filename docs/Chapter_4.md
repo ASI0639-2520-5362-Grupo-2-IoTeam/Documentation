@@ -935,6 +935,167 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 |GetDetails	|/details/{externalPlantId}|	Obtiene detalles desde API externa	|GetExternalPlantDetailsQuery|
 
 ### 4.2.2.3. Application Layer. 
+
+La capa de aplicación del Bounded Context Plant Management coordina la interacción entre la capa de interfaz y la capa de dominio. Su responsabilidad principal es orquestar comandos, consultas y eventos, asegurando la correcta ejecución de flujos como la creación de perfiles de plantas, actualización de estados, configuración de condiciones ideales, archivado y eliminación.
+
+No implementa reglas de negocio directamente, sino que delega al dominio, manteniendo una separación clara de responsabilidades y asegurando la integridad transaccional del sistema.
+
+**Command Handlers**
+**CreatePlantProfileCommandHandler**
+
+|Propiedad|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|CreatePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Crear un nuevo perfil de planta en el sistema|
+|Comando	|CreatePlantProfileCommand|
+
+**UpdatePlantProfileCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UpdatePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Actualizar los datos generales del perfil de planta|
+|Comando	|UpdatePlantProfileCommand|
+
+**ArchivePlantProfileCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ArchivePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Archivar un perfil de planta activo|
+|Comando	|ArchivePlantProfileCommand|
+
+**DeletePlantProfileCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DeletePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Eliminar un perfil de planta (definitivamente o tras periodo de archivo)|
+|Comando	|DeletePlantProfileCommand|
+
+**UpdatePlantStatusCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UpdatePlantStatusCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Actualizar el estado actual de una planta (ej. salud, humedad, crecimiento)|
+|Comando	|UpdatePlantStatusCommand|
+
+**ConfigurePlantConditionsCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ConfigurePlantConditionsCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Configurar las condiciones ideales de una planta (riego, luz, temperatura, nutrientes)|
+|Comando	|ConfigurePlantConditionsCommand|
+
+**Query Handlers**
+**GetPlantProfileByIdQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantProfileByIdQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener datos de un perfil de planta por Id|
+|Query	|GetPlantProfileByIdQuery|
+
+**GetPlantStatusQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantStatusQueryHandler|
+|Categoría	|Query Handler|
+|Propósito|	Obtener el estado actual de una planta|
+|Query	|GetPlantStatusQuery|
+
+**GetPlantHistoryQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	GetPlantHistoryQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Consultar el historial de cambios de estado de una planta|
+|Query|	GetPlantHistoryQuery|
+
+**GetPlantConditionsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantConditionsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener las condiciones ideales configuradas de una planta|
+|Query	|GetPlantConditionsQuery|
+
+**SearchExternalPlantQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SearchExternalPlantQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Buscar información de una planta en la API externa|
+|Query	|SearchExternalPlantQuery|
+
+**GetExternalPlantDetailsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetExternalPlantDetailsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener detalles de una planta desde API externa|
+|Query	|GetExternalPlantDetailsQuery|
+
+**Event Handlers**
+**PlantProfileCreatedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileCreatedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras la creación de un perfil de planta (ej. notificar al usuario, inicializar condiciones)|
+|Evento	|PlantProfileCreatedEvent|
+
+**PlantStatusUpdatedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusUpdatedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras actualización de estado (ej. registrar historial, disparar alertas)|
+|Evento	|PlantStatusUpdatedEvent|
+
+**PlantConditionsConfiguredEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionsConfiguredEventHandler|
+|Categoría|	Event Handler|
+|Propósito	|Gestionar acciones tras la configuración de condiciones ideales (ej. vincular con sensores IoT)|
+|Evento	|PlantConditionsConfiguredEvent|
+
+**PlantProfileArchivedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	PlantProfileArchivedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Ejecutar acciones tras archivar un perfil (ej. programar eliminación en 30 días)|
+|Evento	|PlantProfileArchivedEvent|
+
+**PlantProfileDeletedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileDeletedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras la eliminación de un perfil (ej. limpiar registros relacionados)|
+|Evento	|PlantProfileDeletedEvent|
+
 ### 4.2.2.4. Infrastructure Layer. 
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
