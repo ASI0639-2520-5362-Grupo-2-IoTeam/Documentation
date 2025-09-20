@@ -507,6 +507,169 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 |RevokeAll	|/revokeAll/{userId}	|Revoca todas las sesiones del usuario	RevokeAllSessionsCommand|
 
 ### 4.2.1.3. Application Layer. 
+
+La capa de aplicación del Bounded Context Auth & Identity coordina la interacción entre la capa de interfaz y la capa de dominio. Su responsabilidad principal es orquestar comandos, consultas y eventos, asegurando la correcta ejecución de flujos como registro, autenticación, verificación, gestión de contraseñas, sesiones y cuentas de usuario.
+No implementa reglas de negocio directamente, sino que delega al dominio, manteniendo así una separación clara de responsabilidades y asegurando la integridad transaccional del sistema.
+
+**Command Handlers**
+
+**UserRegisterCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserRegisterCommandHandler|
+|Categoría|	Command Handler|
+|Propósito	|Registrar un usuario nuevo en el sistema|
+|Comando	|RegisterUserCommand|
+
+**UserVerifyEmailCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserVerifyEmailCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Validar código de verificación de email|
+|Comando	|VerifyEmailCommand|
+
+**UserLoginCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserLoginCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Iniciar sesión de un usuario|
+|Comando	|LoginUserCommand|
+
+**UserLogoutCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserLogoutCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Cerrar sesión de un usuario|
+|Comando	|LogoutUserCommand|
+
+**PasswordResetRequestCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PasswordResetRequestCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Iniciar proceso de recuperación de contraseña|
+|Comando	|RequestPasswordResetCommand|
+
+**PasswordResetCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PasswordResetCommandHandler|
+|Categoría|Command Handler|
+|Propósito	|Restablecer contraseña de usuario|
+|Comando	|ResetPasswordCommand|
+
+**UserProfileUpdateCommandHandler**
+
+|Propiedad|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+| Nombre	|UserProfileUpdateCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Actualizar datos de perfil de usuario|
+|Comando	|UpdateUserProfileCommand|
+
+**UserDeactivateCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserDeactivateCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Desactivar cuenta de usuario|
+|Comando	|DeactivateUserCommand|
+
+**UserBlockCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserBlockCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Bloquear cuenta tras intentos fallidos de inicio de sesión|
+|Comando	|BlockUserCommand|
+
+**Query Handlers**
+
+**GetUserByIdQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetUserByIdQueryHandler|
+|Categoría	|Query Handler|
+|Propósito|Obtener datos de un usuario por Id|
+|Query	|GetUserByIdQuery|
+
+**GetActiveSessionsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetActiveSessionsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener sesiones activas de un usuario|
+|Query	|GetActiveSessionsQuery|
+
+**Event Handlers**
+
+**RegisteredUserEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	RegisteredUserEventHandler|
+|Categoría|	Event Handler|
+|Propósito|Gestionar evento tras registro exitoso (ej. enviar verificación email)|
+|Evento	|UserRegisteredEvent|
+
+**UserVerifiedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserVerifiedEventHandler|
+|Categoría	|Event Handler|
+|Propósito|	Gestionar acciones tras verificación de email exitosa|
+|Evento	|UserVerifiedEvent|
+
+**UserLoggedInEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserLoggedInEventHandler|
+|Categoría	|Event Handler|
+|Propósito|	Ejecutar acciones tras inicio de sesión exitoso (ej. auditoría)|
+|Evento	|UserLoggedInEvent|
+
+**UserLoggedOutEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserLoggedOutEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Ejecutar acciones tras cierre de sesión (ej. limpiar tokens)|
+|Evento|	UserLoggedOutEvent|
+
+**PasswordResetRequestedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PasswordResetRequestedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar envío de email con código de recuperación|
+|Evento	|PasswordResetRequestedEvent|
+
+**PasswordResetCompletedEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PasswordResetCompletedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras restablecimiento exitoso de contraseña|
+|Evento|	PasswordResetCompletedEvent|
+
 ### 4.2.1.4. Infrastructure Layer. 
 ### 4.2.1.5. Bounded Context Software Architecture ### Component Level Diagrams. 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams. 
