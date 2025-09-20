@@ -1203,14 +1203,185 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.4. Bounded Context: Data Telemetry
-### 4.2.4.1. Domain Layer. 
-### 4.2.4.2. Interface Layer. 
-### 4.2.4.3. Application Layer. 
-### 4.2.4.4. Infrastructure Layer. 
+
+El Bounded Context de Data Telemetry se encarga de la ingestión, almacenamiento y consulta de las lecturas enviadas por los dispositivos IoT. Centraliza la captura de datos en tiempo real (humedad, luz, temperatura, etc.), garantizando consistencia, persistencia y disponibilidad para otros procesos como análisis, reportes y notificaciones. 
+
+### 4.2.4.1. Domain Layer
+
+En la capa de dominio de Data Telemetry se definen las entidades, objetos de valor y repositorios encargados de modelar el ciclo de vida de los registros de telemetría.
+
+**TelemetryRecord**
+
+| Propiedad     | Valor |
+|---------------|----------------------------------------------------------------------------------|
+| **Nombre**    | TelemetryRecord |
+| **Categoría** | Aggregate Root |
+| **Propósito** | Representar una lectura individual enviada desde un dispositivo IoT asociado a una planta. |
+
+**Atributos de TelemetryRecord**
+
+| Nombre     | Tipo de dato | Visibilidad | Descripción |
+|------------|--------------|-------------|-------------|
+| recordId   | Long         | Private     | Identificador único del registro |
+| deviceId   | Long         | Private     | Identificador del dispositivo que generó la lectura |
+| plantId    | Long         | Private     | Planta asociada a la lectura |
+| timestamp  | DateTime     | Private     | Fecha y hora de la lectura |
+| dataType   | String       | Private     | Tipo de dato leído (humedad, luz, temperatura, etc.) |
+| value      | Double       | Private     | Valor medido por el sensor |
+
+**Métodos de TelemetryRecord**
+
+| Nombre        | Tipo de retorno | Visibilidad | Descripción |
+|---------------|-----------------|-------------|-------------|
+| createRecord  | void            | Public      | Crea un nuevo registro de telemetría |
+| markUpdated   | void            | Private     | Marca el registro como actualizado |
+
+---
+
+**SensorData**
+
+| Propiedad  | Valor |
+|------------|----------------------------------------------------------------------------|
+| **Nombre** | SensorData |
+| **Categoría** | Value Object |
+| **Propósito** | Representar el valor leído por un sensor con su tipo y unidad de medida. |
+
+**Atributos de SensorData**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+|--------|--------------|-------------|-------------|
+| type   | String       | Public      | Tipo de sensor (ej. humedad, luz) |
+| value  | Double       | Public      | Valor leído |
+| unit   | String       | Public      | Unidad de medida del valor (% humedad, °C, lux) |
+
+---
+
+**DeviceStatus**
+
+| Propiedad  | Valor |
+|------------|----------------------------------------------------------------------------|
+| **Nombre** | DeviceStatus |
+| **Categoría** | Entity |
+| **Propósito** | Representar el estado de un dispositivo IoT en el sistema. |
+
+**Atributos de DeviceStatus**
+
+| Nombre   | Tipo de dato | Visibilidad | Descripción |
+|----------|--------------|-------------|-------------|
+| deviceId | Long         | Private     | Identificador único del dispositivo |
+| status   | String       | Private     | Estado actual del dispositivo (ONLINE, OFFLINE) |
+| lastSeen | DateTime     | Private     | Última vez que el dispositivo envió datos |
+
+---
+
+**Repositorios**
+
+**ITelemetryRepository**
+
+| Propiedad   | Valor |
+|-------------|---------------------------------------------------------------|
+| **Nombre**  | ITelemetryRepository |
+| **Categoría** | Repository |
+| **Propósito** | Persistir y consultar registros de telemetría |
+
+**Métodos de ITelemetryRepository**
+
+| Nombre                   | Tipo de retorno   | Visibilidad | Descripción |
+|---------------------------|------------------|-------------|-------------|
+| Save(record)              | TelemetryRecord  | Public      | Persiste un registro de telemetría |
+| FindByPlantId(plantId)    | List<TelemetryRecord> | Public | Devuelve todas las lecturas asociadas a una planta |
+| FindLatestByDeviceId(id)  | TelemetryRecord? | Public      | Devuelve la última lectura registrada de un dispositivo |
+
+---
+
+**IDeviceStatusRepository**
+
+| Propiedad   | Valor |
+|-------------|---------------------------------------------------------------|
+| **Nombre**  | IDeviceStatusRepository |
+| **Categoría** | Repository |
+| **Propósito** | Gestionar estados de dispositivos IoT |
+
+**Métodos de IDeviceStatusRepository**
+
+| Nombre                   | Tipo de retorno  | Visibilidad | Descripción |
+|---------------------------|-----------------|-------------|-------------|
+| Save(status)              | DeviceStatus    | Public      | Persiste el estado de un dispositivo |
+| FindByDeviceId(id)        | DeviceStatus?   | Public      | Devuelve el estado de un dispositivo específico |
+
+---
+
+### 4.2.4.2. Interface Layer
+
+La capa de interfaz expone los controladores REST que permiten a las aplicaciones cliente enviar y consultar telemetría.
+
+**TelemetryController**
+
+| Propiedad   | Valor |
+|-------------|---------------------------------------------------------------|
+| **Nombre**  | TelemetryController |
+| **Categoría** | Controller |
+| **Propósito** | Exponer endpoints REST para registrar y consultar lecturas de telemetría |
+| **Ruta**     | /api/telemetry |
+
+**Métodos de TelemetryController**
+
+| Nombre              | Ruta                           | Acción | Handle |
+|---------------------|--------------------------------|--------|--------|
+| SubmitTelemetry     | POST /submit                   | Registrar una nueva lectura | SubmitTelemetryCommand |
+| GetByPlant          | GET /plant/{plantId}           | Consultar lecturas históricas de una planta | GetTelemetryByPlantQuery |
+| GetLatestByDevice   | GET /device/{deviceId}/latest  | Obtener la última lectura de un dispositivo | GetLatestTelemetryQuery |
+
+---
+
+### 4.2.4.3. Application Layer
+
+La capa de aplicación coordina la ejecución de comandos y consultas de la telemetría, delegando al dominio y asegurando transacciones correctas.
+
+**Command Handlers**
+
+| Nombre                          | Categoría       | Propósito |
+|---------------------------------|-----------------|-----------|
+| SubmitTelemetryCommandHandler   | Command Handler | Procesar el registro de una nueva lectura enviada desde un dispositivo |
+
+**Query Handlers**
+
+| Nombre                          | Categoría     | Propósito |
+|---------------------------------|---------------|-----------|
+| GetTelemetryByPlantQueryHandler | Query Handler | Consultar lecturas históricas de una planta |
+| GetLatestTelemetryQueryHandler  | Query Handler | Obtener la última lectura registrada de un dispositivo |
+
+---
+
+### 4.2.4.4. Infrastructure Layer
+
+En la capa de infraestructura se implementan los repositorios definidos en el dominio, encargados de la persistencia en la base de datos relacional.
+
+**TelemetryRepository**
+
+| Propiedad   | Valor |
+|-------------|---------------------------------------------------------------|
+| **Nombre**  | TelemetryRepository |
+| **Categoría** | Repository |
+| **Propósito** | Implementar ITelemetryRepository con acceso a la base de datos |
+| **Interfaz**  | ITelemetryRepository |
+
+**DeviceStatusRepository**
+
+| Propiedad   | Valor |
+|-------------|---------------------------------------------------------------|
+| **Nombre**  | DeviceStatusRepository |
+| **Categoría** | Repository |
+| **Propósito** | Implementar IDeviceStatusRepository con acceso a la base de datos |
+| **Interfaz**  | IDeviceStatusRepository |
+
 ### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams. 
+[![Data-Telemetry-Component-Diagram.png](https://i.postimg.cc/qM0Jt5S7/Data-Telemetry-Component-Diagram.png)](https://postimg.cc/qgbVSjkf)
 ### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams. 
+[![Data-Telemetry-Class-Diagram.png](https://i.postimg.cc/7YYvr8jS/image.png)](https://postimg.cc/gr5t35z0)
 #### 4.2.4.6.2. Bounded Context Database Design Diagram.
+[![Data-Telemetry-DB-Diagram.png](https://i.postimg.cc/TPbFJRWv/image.png)](https://postimg.cc/Z9TwTzcw)
 
 ## 4.2.5. Bounded Context: Notification & Rules Engine
 ### 4.2.5.1. Domain Layer. 
