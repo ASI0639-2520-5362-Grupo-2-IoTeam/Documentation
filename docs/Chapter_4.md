@@ -254,15 +254,31 @@ Aquí se insertará la imagen del diagrama  exportado a formato gráfico:
 [![Untitled-diagram-Mermaid-Chart-2025-09-18-233901.png](https://i.postimg.cc/VsBHNnbf/Untitled-diagram-Mermaid-Chart-2025-09-18-233901.png)](https://postimg.cc/grjKSwDQ)
 
 ### 4.1.3. Software Architecture.
-
+Los diagramas de arquitectura de software nos ayudan a plantear el sistema de nuestro software, basándonos en el enfoque de desarrollo de Domain Driven Design.
 #### 4.1.3.1. Software Architecture System Landscape Diagram.
+
+Este diagrama representa todos los actores y sistemas del ecosistema PlantCare en un solo nivel: usuarios, PlantCare, servicios externos (Google OAuth2, Stripe), y el dispositivo IoT.
+
+![LandscapeDiagram.png](https://i.ibb.co/5WfLgJmb/C4-landscape.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
+Este diagrama muestra el sistema PlantCare en su entorno, destacando las interacciones con los distintos usuarios (profesionales ocupados, aficionados y desarrolladores), los servicios externos (Google OAuth2 y Stripe) y el dispositivo IoT.
+
+![ContextDiagram.png](https://i.ibb.co/HfMsWQBy/C4-context.png)
+
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
+
+Detalla la arquitectura interna de PlantCare en términos de contenedores: aplicación web, aplicación móvil, backend, bases de datos (web y móvil) y la Edge App para el dispositivo IoT. También muestra cómo se conectan entre sí y con sistemas externos.
+
+![ContainersDiagram.png](https://i.ibb.co/0yyv9qmT/C4-containerrs.png)
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
+Describe cómo PlantCare se despliega en producción: servidores en la nube (Web Server, App Server, Database Server), dispositivos móviles de los usuarios y el dispositivo IoT físico. Cada contenedor está ubicado en el nodo correspondiente.
+
+![DeploymentDiagram.png](https://i.ibb.co/ycVyb5k0/C4-deployment.png)
+## 4.2. Tactical-Level Domain-Driven Design
 ## 4.2. Tactical-Level Domain-Driven Design
 En esta sección, el equipo aborda el diseño táctico de la solución siguiendo los principios de Domain‑Driven Design (DDD), traduciendo los Bounded Contexts previamente definidos en patrones y estructuras de código concretos. Cada subcapítulo se centra en uno de los contextos, describiendo sus agregados, repositorios, servicios de dominio y fábricas, así como las variantes y contratos que rigen su comportamiento interno. De este modo, se conecta la visión estratégica del dominio con decisiones de implementación precisas, garantizando que el software refleje fielmente las reglas de negocio y mantenga la coherencia del lenguaje ubicuo.
 
