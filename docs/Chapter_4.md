@@ -187,6 +187,8 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
 
  <img src="https://i.postimg.cc/Hk7f30m1/Event-Storming-plantcare-20.jpg" alt="Event Storming Plantcare" width="480"/>
 
+ <img src="https://i.postimg.cc/Pr8cZ98Q/Event-Storming-plantcare-21.jpg" alt="Event Storming Plantcare" width="480"/>
+
 #### 4.1.2. Context Mapping.
 
 En esta sección se explica y evidencia el proceso de elaboración de un conjunto de *context maps*, es decir, visualizaciones de las relaciones estructurales entre los **bounded contexts** identificados en el dominio. El equipo realizó una revisión de la información recolectada durante la fase de *EventStorming* y la utilizó para producir los diseños candidatos.  
@@ -724,9 +726,467 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 ## 4.2.2. Bounded Context: Plant Management
 ### 4.2.2.1. Domain Layer. 
+
+En la capa de dominio de PlantProfile se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de los perfiles de plantas. Aquí residen las reglas de negocio que garantizan la consistencia, trazabilidad y control del estado de cada planta en el sistema.
+
+**PlantProfile**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfile|
+|Categoría	|Aggregate Root|
+|Propósito	|Representar el perfil de una planta registrada en el sistema, incluyendo su tipo, condiciones ideales y estado actual.|
+
+**Atributos de PlantProfile**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|---------------|---------------|---------------|---------------|
+|plantProfileId	|PlantProfileId	|Privada	|Identificador único del perfil|
+|plantType	|PlantType	|Privada	|Tipo de planta (ej. cactus, orquídea)|
+|conditions	|PlantConditions	|Privada	|Condiciones ideales configuradas|
+|currentState	|PlantState	|Privada	|Estado actual de la planta|
+|status	|ProfileStatus	|Privada	|Estado del perfil (activo, archivado, eliminado)|
+|createdAt	|DateTime	|Privada	|Fecha de creación|
+|archivedAt	|DateTime?	|Privada	|Fecha de archivado (si aplica)|
+
+**Métodos de PlantProfile**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|ConfigureConditions	|void	|public	|Configura condiciones ideales de la planta|
+|UpdateState	|void	|public	|Actualiza el estado de la planta|
+|Archive	|void	|public	|Archiva el perfil de la planta|
+|Delete	|void	|public	|Elimina definitivamente el perfil|
+|Restore	|void	|public	|Restaura un perfil archivado|
+
+**Value Objects**
+
+**PlantProfileId**
+
+| Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileId|
+|Categoría |Value Object|
+|Propósito |Identificador único del perfil de planta|
+
+**Atributos de PlantProfileId**
+
+|Nombre	|Tipo de dato	|Visibilidad	|Descripción|
+|----------|--------------------|-------------|------------------------------------------|
+|value	|Guid / Long	|private	|Identificador único numérico o GUID|
+
+**PlantType**
+
+| Propiedad	| Valor|
+|-------------|---------------------------------------------------------------------------------------|
+|Nombre| PlantType|
+|Categoría |Value Object|
+|Propósito |Representar el tipo de planta seleccionada (ej. cactus, orquídea).|
+
+**PlantConditions**
+
+| Propiedad | Valor|
+|--------------|---------------------------------------------------------------------------------------|
+|Nombre |PlantConditions|
+|Categoría |Value Object|
+|Propósito| Conjunto de condiciones ideales configuradas para el crecimiento de la planta.|
+
+Atributos: temperatura, humedad, luz, riego.
+
+**PlantState**
+
+| Propiedad	| Valor|
+|--------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantState|
+|Categoría| Value Object|
+|Propósito|Estado actual de la planta (ej. saludable, en riesgo, muerta).|
+
+**ProfileStatus**
+
+| Propiedad	 | Valor|
+|------------|---------------------------------------------------------------------------------------|
+| Nombre	    |ProfileStatus|
+|Categoría |Value Object|
+|Propósito| Representar el estado del perfil (activo, archivado, eliminado).|
+
+**Entidades auxiliares**
+
+**PlantHistory**
+
+|Propiedad|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantHistory|
+|Categoría| Entity|
+|Propósito |Registrar cambios históricos de estado o condiciones en una planta.|
+
+Atributos:
+
+historyId
+
+plantProfileId
+
+eventType (estado actualizado, condiciones cambiadas, archivado, eliminado)
+
+occurredAt
+
+**Domain Services**
+**PlantLifecycleManager**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantLifecycleManager|
+|Categoría|	Domain Service|
+|Propósito	|Gestionar reglas de negocio sobre el ciclo de vida de una planta (ej. eliminación tras 30 días de archivado).|
+
+**Métodos de PlantLifecycleManager**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|CheckArchiveExpiration	|bool	|public|	Verifica si una planta archivada debe eliminarse|
+|ApplyStateRules	|void	|public	|Aplica reglas de negocio según estado de la planta|
+
+**Repositorios
+IPlantProfileRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|IPlantProfileRepository|
+|Categoría	|Repository|
+|Propósito	|Persistencia de perfiles de planta|
+
+**Métodos de IPlantProfileRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetByIdAsync	|PlantProfile?|	public|	Obtiene perfil por Id|
+|SaveAsync	|PlantProfile	|public	|Persiste perfil|
+|DeleteAsync	|bool	|public|	Elimina perfil|
+|ArchiveAsync|	bool	|public	|Archiva perfil|
+
+**IPlantHistoryRepository**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|IPlantHistoryRepository|
+|Categoría	|Repository|
+|Propósito	|Gestionar registros históricos de perfiles de planta|
+
+**Métodos de IPlantHistoryRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|LogEvent	|void	|public|	Registra un evento en el historial|
+|GetHistory	|List<PlantHistory>|	public|	Obtiene historial de un perfil de planta|
+
 ### 4.2.2.2. Interface Layer. 
+
+En la capa de interfaz del Bounded Context Plant Management se definen los controladores REST que actúan como punto de entrada para solicitudes externas. Estos endpoints permiten a aplicaciones cliente (web, móviles, integraciones con sensores o APIs externas) interactuar con las funciones de creación de perfiles de planta, gestión de estado, configuración de condiciones ideales, archivado y eliminación.
+
+La interfaz está organizada en controladores especializados, cada uno con rutas y acciones bien definidas, garantizando simplicidad, seguridad y separación de responsabilidades.
+
+**PlantProfileController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileController|
+|Categoría	|Controller|
+|Propósito	|Exponer endpoints para la creación, consulta, actualización, archivado y eliminación de perfiles de plantas.|
+|Ruta	|/api/plants|
+
+**Métodos de PlantProfileController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Create	|/	|Crea un nuevo perfil de planta	|CreatePlantProfileCommand|
+|GetById	|/{plantId}	|Obtiene los datos de un perfil de planta	|GetPlantProfileByIdQuery|
+|Update	|/{plantId}	|Actualiza datos generales de la planta	|UpdatePlantProfileCommand|
+|Archive	|/{plantId}/archive	|Archiva el perfil de una planta	|ArchivePlantProfileCommand|
+|Delete	|/{plantId}	|Elimina definitivamente un perfil de planta	|DeletePlantProfileCommand|
+
+**PlantStatusController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusController|
+|Categoría	|Controller|
+|Propósito	|Gestionar el estado de las plantas (ej. salud, crecimiento, últimas mediciones).|
+|Ruta	|/api/plants/{plantId}/status|
+
+**Métodos de PlantStatusController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|-----------------|---------------|-----------------------------------------------------|
+|UpdateStatus	|/update	|Actualiza el estado actual de la planta	|UpdatePlantStatusCommand|
+|GetStatus|	/	|Obtiene el estado actual de la planta	|GetPlantStatusQuery|
+|GetHistory|	/history	|Devuelve el historial de cambios de estado	|GetPlantHistoryQuery|
+
+**PlantConditionsController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionsController|
+|Categoría	|Controller|
+|Propósito	|Configurar y consultar las condiciones ideales de una planta (riego, luz, temperatura).|
+|Ruta	|/api/plants/{plantId}/conditions|
+
+**Métodos de PlantConditionsController**
+
+|Nombre|	Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Configure	|/	|Define condiciones ideales de la planta	|ConfigurePlantConditionsCommand|
+|GetConditions|	/	|Consulta condiciones configuradas|	GetPlantConditionsQuery|
+
+**ExternalPlantApiController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	ExternalPlantApiController|
+|Categoría	|Controller|
+|Propósito	|Integrarse con API externa de plantas para obtener información de referencia (tipos de planta, cuidados, recomendaciones).|
+|Ruta	|/api/external/plants|
+
+**Métodos de ExternalPlantApiController**
+
+|Nombre	|Ruta	|Acción|	Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Search	|/search?name={plantName}	|Busca información de una planta en API externa|	SearchExternalPlantQuery|
+|GetDetails	|/details/{externalPlantId}|	Obtiene detalles desde API externa	|GetExternalPlantDetailsQuery|
+
 ### 4.2.2.3. Application Layer. 
+
+La capa de aplicación del Bounded Context Plant Management coordina la interacción entre la capa de interfaz y la capa de dominio. Su responsabilidad principal es orquestar comandos, consultas y eventos, asegurando la correcta ejecución de flujos como la creación de perfiles de plantas, actualización de estados, configuración de condiciones ideales, archivado y eliminación.
+
+No implementa reglas de negocio directamente, sino que delega al dominio, manteniendo una separación clara de responsabilidades y asegurando la integridad transaccional del sistema.
+
+**Command Handlers**
+**CreatePlantProfileCommandHandler**
+
+|Propiedad|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|CreatePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Crear un nuevo perfil de planta en el sistema|
+|Comando	|CreatePlantProfileCommand|
+
+**UpdatePlantProfileCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UpdatePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Actualizar los datos generales del perfil de planta|
+|Comando	|UpdatePlantProfileCommand|
+
+**ArchivePlantProfileCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ArchivePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Archivar un perfil de planta activo|
+|Comando	|ArchivePlantProfileCommand|
+
+**DeletePlantProfileCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DeletePlantProfileCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Eliminar un perfil de planta (definitivamente o tras periodo de archivo)|
+|Comando	|DeletePlantProfileCommand|
+
+**UpdatePlantStatusCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UpdatePlantStatusCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Actualizar el estado actual de una planta (ej. salud, humedad, crecimiento)|
+|Comando	|UpdatePlantStatusCommand|
+
+**ConfigurePlantConditionsCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ConfigurePlantConditionsCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Configurar las condiciones ideales de una planta (riego, luz, temperatura, nutrientes)|
+|Comando	|ConfigurePlantConditionsCommand|
+
+**Query Handlers**
+**GetPlantProfileByIdQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantProfileByIdQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener datos de un perfil de planta por Id|
+|Query	|GetPlantProfileByIdQuery|
+
+**GetPlantStatusQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantStatusQueryHandler|
+|Categoría	|Query Handler|
+|Propósito|	Obtener el estado actual de una planta|
+|Query	|GetPlantStatusQuery|
+
+**GetPlantHistoryQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	GetPlantHistoryQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Consultar el historial de cambios de estado de una planta|
+|Query|	GetPlantHistoryQuery|
+
+**GetPlantConditionsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetPlantConditionsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener las condiciones ideales configuradas de una planta|
+|Query	|GetPlantConditionsQuery|
+
+**SearchExternalPlantQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SearchExternalPlantQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Buscar información de una planta en la API externa|
+|Query	|SearchExternalPlantQuery|
+
+**GetExternalPlantDetailsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetExternalPlantDetailsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener detalles de una planta desde API externa|
+|Query	|GetExternalPlantDetailsQuery|
+
+**Event Handlers**
+**PlantProfileCreatedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileCreatedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras la creación de un perfil de planta (ej. notificar al usuario, inicializar condiciones)|
+|Evento	|PlantProfileCreatedEvent|
+
+**PlantStatusUpdatedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusUpdatedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras actualización de estado (ej. registrar historial, disparar alertas)|
+|Evento	|PlantStatusUpdatedEvent|
+
+**PlantConditionsConfiguredEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionsConfiguredEventHandler|
+|Categoría|	Event Handler|
+|Propósito	|Gestionar acciones tras la configuración de condiciones ideales (ej. vincular con sensores IoT)|
+|Evento	|PlantConditionsConfiguredEvent|
+
+**PlantProfileArchivedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	PlantProfileArchivedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Ejecutar acciones tras archivar un perfil (ej. programar eliminación en 30 días)|
+|Evento	|PlantProfileArchivedEvent|
+
+**PlantProfileDeletedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileDeletedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras la eliminación de un perfil (ej. limpiar registros relacionados)|
+|Evento	|PlantProfileDeletedEvent|
+
 ### 4.2.2.4. Infrastructure Layer. 
+
+La capa de infraestructura del Bounded Context Plant Management actúa como puente entre la lógica de negocio y los mecanismos técnicos de persistencia, integración con API externas y comunicación con servicios de sensores o monitoreo ambiental.
+
+Aquí se implementan las dependencias necesarias para la gestión de perfiles de plantas, condiciones configuradas, estados e historial, garantizando la interacción confiable con bases de datos y proveedores externos de información botánica.
+
+Esta capa concreta las abstracciones definidas en el dominio a través de repositorios, contextos de base de datos y servicios técnicos. Su diseño asegura un desacoplamiento respecto a la lógica central, permitiendo reemplazar o evolucionar tecnologías sin alterar las reglas de negocio. Además, aporta eficiencia, escalabilidad y robustez en la gestión del ciclo de vida de las plantas dentro del sistema.
+
+**Repositorios**
+**PlantProfileRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	PlantProfileRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar entidades de perfiles de plantas|
+|Interfaz	|IPlantProfileRepository|
+
+**PlantStatusRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar estados actuales de las plantas|
+|Interfaz	|IPlantStatusRepository|
+
+**PlantHistoryRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantHistoryRepository|
+|Categoría	|Repositorio|
+|Propósito	|Almacenar y recuperar el historial de cambios de estado de las plantas|
+|Interfaz	|IPlantHistoryRepository|
+
+**PlantConditionRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar condiciones ideales configuradas de plantas|
+|Interfaz	|IPlantConditionRepository|
+
+**ORM Context**
+**PlantDbContext**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantDbContext|
+|Categoría	|ORM Context|
+|Propósito	|Punto central de acceso a la base de datos para perfiles, estados, condiciones e historial de plantas|
+
+**Servicios Técnicos**
+**ExternalPlantApiService**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ExternalPlantApiService|
+|Categoría	|Servicio Técnico|
+|Propósito|	Integración con API externa de información botánica (búsqueda y detalles de plantas)|
+|Interfaz	|IExternalPlantApiService|
+
+**SensorIntegrationService**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorIntegrationService|
+|Categoría	|Servicio Técnico|
+|Propósito	|Conectar el sistema con sensores IoT para recolectar datos de humedad, luz, temperatura y crecimiento|
+|Interfaz	|ISensorIntegrationService|
+
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
