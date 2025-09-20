@@ -1196,9 +1196,13 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 |Interfaz	|ISensorIntegrationService|
 
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
+
+[![structurizr-106438-Container-001-1.png](https://i.postimg.cc/t48z3hzT/structurizr-106438-Container-001-1.png)](https://postimg.cc/XrcF3BmS)
+
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
-#### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+
 
 ## 4.2.3. Bounded Context: Device Management IoT
 ### 4.2.3.1. Domain Layer. 
