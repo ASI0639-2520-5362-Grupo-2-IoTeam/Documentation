@@ -1380,6 +1380,87 @@ En la capa de dominio del Bounded Context Device Management IoT se definen las e
 |DeleteOldReadings|	void	|public	|Elimina lecturas antiguas|
 
 ### 4.2.3.2. Interface Layer. 
+
+En la capa de interfaz del Bounded Context Device Management IoT se definen los controladores REST que actúan como punto de entrada para solicitudes externas. Estos endpoints permiten a aplicaciones cliente (web, móviles, integraciones de terceros) interactuar con las funciones de registro, emparejamiento, monitoreo, diagnóstico y gestión de dispositivos y sensores IoT.
+
+La interfaz está organizada en controladores especializados, cada uno con rutas y acciones bien definidas, garantizando simplicidad, seguridad y separación de responsabilidades.
+
+**DeviceController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceController|
+|Categoría	|Controller|
+|Propósito	|Exponer endpoints para la gestión de dispositivos IoT|
+|Ruta	|/api/devices|
+
+**Métodos de DeviceController**
+
+|Nombre|	Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetById	|/{deviceId}	|Obtiene los datos de un dispositivo	|GetDeviceByIdQuery|
+|Register	|/register	|Registra un nuevo dispositivo en el sistema	|RegisterDeviceCommand|
+|Pair	|/{deviceId}/pair	|Empareja el dispositivo con una cuenta de usuario	|PairDeviceCommand|
+|Unpair	|/{deviceId}/unpair	|Desempareja el dispositivo de la cuenta	|UnpairDeviceCommand|
+|Activate	|/{deviceId}/activate	|Activa un dispositivo	|ActivateDeviceCommand|
+|Deactivate|	/{deviceId}/deactivate	|Desactiva un dispositivo	|DeactivateDeviceCommand|
+|UpdateFirmware	|/{deviceId}/firmware|	Aplica actualización de firmware	|UpdateFirmwareCommand|
+
+**SensorController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorController|
+|Categoría	|Controller|
+|Propósito	|Gestionar sensores asociados a un dispositivo|
+|Ruta	|/api/sensors|
+
+**Métodos de SensorController**
+
+|Nombre	|Ruta|	Acción|	Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetById	|/{sensorId}	|Obtiene información de un sensor|	GetSensorByIdQuery|
+|Add	|/device/{deviceId}/add	|Agrega un sensor a un dispositivo|	AddSensorCommand|
+|Remove	|/{sensorId}/remove	|Elimina un sensor de un dispositivo	|RemoveSensorCommand|
+|Calibrate	|/{sensorId}/calibrate	|Calibra un sensor	|CalibrateSensorCommand|
+|GetAllByDevice	|/device/{deviceId}	|Lista sensores de un dispositivo|	GetSensorsByDeviceQuery|
+
+**SensorReadingController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorReadingController|
+|Categoría|	Controller|
+|Propósito|	Gestionar lecturas de sensores IoT en tiempo real|
+|Ruta	|/api/readings|
+
+**Métodos de SensorReadingController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetLatest|	/sensor/{sensorId}/latest	|Obtiene la última lectura de un sensor	GetLatestReadingQuery|
+|GetHistory	|/sensor/{sensorId}/history	|Obtiene lecturas históricas de un sensor	GetSensorReadingsQuery|
+|Submit|	/sensor/{sensorId}/submit	|Registra una nueva lectura|	SubmitSensorReadingCommand|
+|DeleteOld	|/sensor/{sensorId}/cleanup	|Elimina lecturas antiguas	|CleanupSensorReadingsCommand|
+
+**DiagnosticController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DiagnosticController|
+|Categoría|	Controller|
+|Propósito	|Gestionar sesiones de diagnóstico y monitoreo de dispositivos|
+|Ruta	|/api/diagnostics|
+
+**Métodos de DiagnosticController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Open	|/device/{deviceId}/open	|Abre una sesión de diagnóstico	|OpenDiagnosticSessionCommand|
+|Close	|/session/{sessionId}/close	|Cierra una sesión de diagnóstico	|CloseDiagnosticSessionCommand|
+|GetStatus	|/device/{deviceId}/status	|Consulta el estado de salud de un dispositivo	GetDeviceStatusQuery|
+|RunTest	|/device/{deviceId}/test	|Ejecuta un test de diagnóstico	RunDeviceTestCommand|
+
 ### 4.2.3.3. Application Layer. 
 ### 4.2.3.4. Infrastructure Layer. 
 ### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
