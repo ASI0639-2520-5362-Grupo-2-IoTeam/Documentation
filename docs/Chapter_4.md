@@ -1780,9 +1780,12 @@ _Tabla de métodos de Report API_
  
 
 ### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams. 
+[![Analysis-Reporting-Component-Diagram.png](https://i.postimg.cc/hj12jvNM/Analysis-Reporting-Component-Diagram.png)](https://postimg.cc/MMX7366j)
 ### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
+[![Analysis-Reporting-Class-Diagram.png](https://i.postimg.cc/s2Fm45rw/image.png)](https://postimg.cc/rDJ580zr)
 #### 4.2.6.6.2. Bounded Context Database Design Diagram.
+[![Analysis-Reporting-Class-DB.png](https://i.postimg.cc/zBvyLPcM/image.png)](https://postimg.cc/JDwrvKmc)
 
 ## 4.2.7. Bounded Context: Community/Social
 ### 4.2.7.1. Domain Layer. 
