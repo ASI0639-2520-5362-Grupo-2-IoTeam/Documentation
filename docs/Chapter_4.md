@@ -285,15 +285,15 @@ En la capa de dominio de Auth & Identity se definen las entidades, objetos de va
 
 **Atributos de UserAccount**
 
-| Nombre   | Tipo de dato       | Visibilidad | Descripción                              |
-|----------|--------------------|-------------|------------------------------------------|
-| userId   | UserId             | Privada     | Identificador único de la cuenta         |
-| FullName | FullName           | Privada     | Nombre completo del usuario              |
-| Email    | Email              | Privada     | Dirección de correo electrónico          |
-| Password | passwordHash       | Privada     | Hash de la contraseña                    |
-| Status   | | AccountStatus      | Privada     | Estado de la cuenta (activa, Desactiva) |
-| CreatedAt | DateTime           | Privada     | Fecha de creación de la cuenta           |
-| UpdatedAt | DateTime           | Privada     | Fecha de la última actualización         |
+| Nombre   | Tipo de dato      | Visibilidad | Descripción                              |
+|----------|-------------------|-------------|------------------------------------------|
+| userId   | UserId            | Privada     | Identificador único de la cuenta         |
+| FullName | FullName          | Privada     | Nombre completo del usuario              |
+| Email    | Email             | Privada     | Dirección de correo electrónico          |
+| Password | passwordHash      | Privada     | Hash de la contraseña                    |
+| Status   | AccountStatus      | Privada     | Estado de la cuenta (activa, Desactiva) |
+| CreatedAt | DateTime          | Privada     | Fecha de creación de la cuenta           |
+| UpdatedAt | DateTime          | Privada     | Fecha de la última actualización         |
 
 **Metodos de User Account**
 
