@@ -28,16 +28,16 @@ Producto: PlantCare
 
 | **Nombre**                           | **Código** |
 | ------------------------------------ | ---------- |
-| Casaverde De La Cruz, Ernesto David  | U20221B657 |
-| Cantoral Sedamano, Alexander Alberto | U20181B152 |
+| Casaverde De La Cruz, Ernesto David  | u20221B657 |
+| Cantoral Sedamano, Alexander Alberto | u20181B152 |
 | Chirinos Zúñiga, Rodrigo Manuel      | u202217804 |
-| Francisco Juan Hurtado Palomino      | u202117498 |
-| Fabian Alonso Reyes Trujillano       | u202218233 |
-| Renzo Cesar Silva Morales            | u20221c362 |
-| Alessandro Netto Zevallos Linares    | u202216035 |
+| Hurtado Palomino, Francisco Juan     | u202117498 |
+| Reyes Trujillano, Fabian Alonso      | u202218233 |
+| Silva Morales, Renzo Cesar           | u20221c362 |
+| Zevallos Linares, Alessandro Netto   | u202216035 |
 
 <div align="center">
-Ciclo 2025-01
+Ciclo 2025-20
 
 </div>
 
@@ -45,7 +45,7 @@ Ciclo 2025-01
 
 | **Versión** | **Fecha**  | **Autor/es**                                                                                                                                                                                                                                                           | **Descripción y Modificación** |
 | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| 1.0         | 19/05/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>-Renzo Cesar Silva Morales <br>-Alessandro Netto Zevallos Linares | Desarrollo del capítulo I,II, III y IV |
+| 1.0         | 19/05/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | Desarrollo del capítulo I,II, III y IV |
 
 ## Project Report Collaboration Insights
 
@@ -144,7 +144,7 @@ develop
 
 | **Criterio Específico** | **Acciones Realizadas** | **Conclusiones** | 
 | ----------------------- | ----------------------- | ---------------- |
-|Trabaja en equipo para proporcionar liderazgo en forma conjunta| **Alexander Alberto Cantoral Sedamano:** <br> TB1: Lideré al equipo en el desarrollo de todo el proyecto y designé tareas que eran favorables en base a sus aptitudes. <br><br> **Ernesto Casaverde De La Cruz:** <br> TB1: Proveí liderazgo técnico durante las sesiones de modelado (EventStorming y DDD), facilitando la discusión para alinear la visión técnica del equipo y asegurar que todos los miembros contribuyeran según su expertise. Mi liderazgo se centró en guiar la traducción de los conceptos de negocio en un modelo técnico coherente.| |
-|Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.| **Alexander Alberto Cantoral Sedamano:** <br> TB1: En la reuniones tanto presencial como virtual creé un entorno donde se partició en el desarollo de este presentable y en este mismo se planificaron todas las responsabilidades a hacer.<br><br> **Ernesto Casaverde De La Cruz:** <br>   TB1: Para las fases de diseño, establecí metas claras (e.g., "definir los Bounded Contexts para la próxima reunión") y planifiqué las tareas de modelado (Big Picture, Design-Level EventStorming). Creé un entorno inclusivo donde cada miembro podía proponer eventos, agregar tarjetas y desafiar el modelo, lo que resultó en el cumplimiento del objetivo de tener un diseño de software alineado con el dominio. | |
+|Trabaja en equipo para proporcionar liderazgo en forma conjunta| **Alexander Alberto Cantoral Sedamano:** <br> TB1: Lideré al equipo en el desarrollo de todo el proyecto y designé tareas que eran favorables en base a sus aptitudes. <br><br> **Ernesto Casaverde De La Cruz:** <br> TB1: Proveí liderazgo técnico durante las sesiones de modelado (EventStorming y DDD), facilitando la discusión para alinear la visión técnica del equipo y asegurar que todos los miembros contribuyeran según su expertise. Mi liderazgo se centró en guiar la traducción de los conceptos de negocio en un modelo técnico coherente. <br><br> **Renzo Cesar Silva Morales:** <br> TB1: Lideré al equipo en sesiones clave como Needfinding, donde identificamos las necesidades de los usuarios, Ubiquitous Language, estableciendo un lenguaje común para garantizar una mejor comprensión, e Impact Mapping, donde definimos los Business Goals, Impact y Deliverables.| |
+|Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.| **Alexander Alberto Cantoral Sedamano:** <br> TB1: En la reuniones tanto presencial como virtual creé un entorno donde se partició en el desarollo de este presentable y en este mismo se planificaron todas las responsabilidades a hacer.<br><br> **Ernesto Casaverde De La Cruz:** <br>   TB1: Para las fases de diseño, establecí metas claras (e.g., "definir los Bounded Contexts para la próxima reunión") y planifiqué las tareas de modelado (Big Picture, Design-Level EventStorming). Creé un entorno inclusivo donde cada miembro podía proponer eventos, agregar tarjetas y desafiar el modelo, lo que resultó en el cumplimiento del objetivo de tener un diseño de software alineado con el dominio. <br><br> **Renzo Cesar Silva Morales:** <br>   TB1: Creé un entorno de colaboración inclusivo y justo, donde cada miembro del equipo pudiera aportar y ser escuchado. Planifiqué las tareas de manera equitativa, asegurando que todos tuviéramos claro nuestro rol y los objetivos a alcanzar, lo que permitió cumplir con las metas del proyecto de manera efectiva.| |
 
 ---
