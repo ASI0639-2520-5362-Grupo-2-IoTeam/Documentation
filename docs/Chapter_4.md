@@ -703,8 +703,8 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 ### 4.2.1.5. Bounded Context Software Architecture ### Component Level Diagrams. 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.1.6.1. Bounded Context Domain Layer Class ### Diagrams. 
-### 4.2.1.6.2. Bounded Context Database Design Diagram.
+#### 4.2.1.6.1. Bounded Context Domain Layer Class ### Diagrams. 
+#### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.2. Bounded Context: Plant Management
 ### 4.2.2.1. Domain Layer. 
@@ -938,8 +938,8 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 ### 4.2.2.4. Infrastructure Layer. 
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.2.6.2. Bounded Context Database Design Diagram.
+#### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.2.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.3. Bounded Context: Device Management IoT
 ### 4.2.3.1. Domain Layer. 
@@ -948,8 +948,8 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 ### 4.2.3.4. Infrastructure Layer. 
 ### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.3.6.2. Bounded Context Database Design Diagram.
+#### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.4. Bounded Context: Data Telemetry
 ### 4.2.4.1. Domain Layer. 
@@ -958,8 +958,8 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 ### 4.2.4.4. Infrastructure Layer. 
 ### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.4.6.2. Bounded Context Database Design Diagram.
+#### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.5. Bounded Context: Notification & Rules Engine
 ### 4.2.5.1. Domain Layer. 
@@ -968,8 +968,8 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 ### 4.2.5.4. Infrastructure Layer. 
 ### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.5.6.2. Bounded Context Database Design Diagram.
+#### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.5.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.6. Bounded Context: Analysis&Report
 ### 4.2.6.1. Domain Layer. 
@@ -978,8 +978,8 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 ### 4.2.6.4. Infrastructure Layer. 
 ### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.6.6.2. Bounded Context Database Design Diagram.
+#### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.6.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.7. Bounded Context: Community/Social
 ### 4.2.7.1. Domain Layer. 
@@ -1277,25 +1277,294 @@ _Tabla de métodos de comment_
 
 | Propiedad     | Valor                                                                                                                                                                                                               |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre**    | `CommentsRepository`                                                                                                                                                                                                |
-| **Categoría** | Repository                                                                                                                                                                                                          |
-| **Propósito** | Guardar y consultar comentarios.                                                                                                                  |
+| **Nombre**    | `CommentsRepository`             |
+| **Categoría** | Repository                           |
+| **Propósito** | Guardar y consultar comentarios.   |
 | **Interfaz**  | `ICommentRepository` (`save(Comment)`, `findById(id)`, `listByPost(postId)`, `delete(commentId)`) |
 
 
 ### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.7.6.2. Bounded Context Database Design Diagram.
+#### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.7.6.2. Bounded Context Database Design Diagram.
  
 ## 4.2.8. Bounded Context: Billing and Subscription
 ### 4.2.8.1. Domain Layer. 
-#### Valor
 
-_Tabla de_
-_Tabla de atributos de_
-_Tabla de métodos de_
+#### Subscription
+
+_Tabla de Subscription_
+
+| Propiedad     | Valor                                                                                                                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | Subscription      |
+| **Categoría** | Aggregate Root       |
+| **Propósito** | Representar la suscripción del cliente. |
+
+
+_Tabla de atributos de Subscription_
+
+| Nombre          | Tipo de dato              | Visibilidad | Descripción                                             |
+| --------------- | ------------------------- | ----------- | ------------------------------------------------------- |
+| id              | UUID                      | public      | Identificador único del agregado Subscription.          |
+| customerId      | UUID                      | public      | Referencia al cliente/owner de la suscripción.          |
+| planId          | UUID                      | public      | Identificador del plan suscrito.                        |
+| status          | SubscriptionStatus (enum) | public      | Estado: PENDING, ACTIVE, SUSPENDED, CANCELLED, EXPIRED. |
+| startDate       | DateTime                  | public      | Fecha de inicio de la suscripción.                      |
+| endDate         | DateTime \| null          | public      | Fecha de fin (si aplica, p.ej. cancelación con fin).    |
+| nextBillingDate | DateTime                  | public      | Próxima fecha prevista de facturación.                  |
+| trialEndDate    | DateTime \| null          | public      | Fin del periodo de prueba si aplica.                    |
+
+
+_Tabla de métodos de Subscription_
+
+| Nombre                                                                                  | Tipo de retorno | Visibilidad | Descripción                                                                   |
+| --------------------------------------------------------------------------------------- | --------------- | ----------- | ----------------------------------------------------------------------------- |
+| activate()                                                                              | void            | public      | Activa la suscripción (aplica validaciones).                                  |
+| cancel(effectiveDate: DateTime)                                                 | void            | public      | Cancela la suscripción; puede ser inmediata o al final del periodo.           |
+| changePlan(newPlanId: UUID, changeDate: DateTime)                                       | void   | public      | Cambia de plan.   |
+| isActive()                                                                              | boolean         | public      | Indica si el estado es ACTIVE.                                                |
+| suspend(reason: string)                                                                 | void            | public      | Suspende temporalmente la suscripción.                                        |
+
+
+#### CustomerBillingAccount
+
+| Propiedad     | Valor                                                                                                                 |
+| ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | CustomerBillingAccount                                                                                                |
+| **Categoría** | Entity                                                                |
+| **Propósito** | Mantener la información de facturación del cliente |
+
+_Tabla de atributos de CustomerBillingAccount_
+
+| Nombre                 | Tipo de dato           | Visibilidad | Descripción                               |
+| ---------------------- | ---------------------- | ----------- | ----------------------------------------- |
+| id                     | UUID                   | public      | Identificador del account de facturación. |
+| customerId             | UUID                   | public      | Referencia al cliente en el sistema.      |
+| balance                | float                  | public      | Saldo actual.             |
+| createdAt              | DateTime               | public      | Fecha de creación.                        |
+| updatedAt              | DateTime               | public      | Fecha de actualización.                   |
+
+
+_Tabla de métodos de CustomerBillingAccount_
+
+| Nombre                                              | Tipo de retorno | Visibilidad | Descripción                                                   |
+| --------------------------------------------------- | --------------- | ----------- | ------------------------------------------------------------- |
+| getBalance()                                        | Money           | public      | Retorna el balance actual.                                    |
+
+
+
+#### BillingPeriod
+
+_Tabla de BillingPeriod_
+
+| Propiedad     | Valor                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| **Nombre**    | BillingPeriod                                                                                         |
+| **Categoría** | Value Object                                                                                          |
+| **Propósito** | Definir intervalos de facturación (desde-hasta), vencimientos. |
+
+
+_Tabla de atributos de BillingPeriod_
+
+| Nombre    | Tipo de dato        | Visibilidad | Descripción               |
+| --------- | ------------------- | ----------- | ------------------------- |
+| start     | DateTime            | public      | Fecha inicio del periodo. |
+| end       | DateTime            | public      | Fecha fin del periodo.    |
+| frequency | BillingCycle (enum) | public      | Frecuencia asociada.      |
+
+
+_Tabla de métodos de BillingPeriod_
+
+| Nombre                                                     | Tipo de retorno | Visibilidad | Descripción                                  |
+| ---------------------------------------------------------- | --------------- | ----------- | -------------------------------------------- |
+| contains(date: DateTime)                                   | boolean         | public      | Indica si la fecha está dentro del periodo.  |
+| overlapsWith(other: BillingPeriod)                         | boolean         | public      | Indica si hay solapamiento con otro periodo. |
+| days()                                                     | int             | public      | Número de días en el periodo.      |
+
+
+#### Plan
+
+_Tabla de plan_
+
+| Propiedad     | Valor                                                                                                                                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | Plan                                                                                                                                  |
+| **Categoría** | Entity / Value Object ligero                                                                                                          |
+| **Propósito** | Definir características del producto suscribible. |
+
+
+_Tabla de atributos de plan_
+
+| Nombre          | Tipo de dato        | Visibilidad | Descripción                            |
+| --------------- | ------------------- | ----------- | -------------------------------------- |
+| id              | UUID                | public      | Identificador del plan.                |
+| name            | string              | public      | Nombre comercial del plan.             |
+| description     | string              | public      | Descripción corta.                     |
+| price           | float               | public      | Precio base por periodo.               |
+| features        | List<string>        | public      | Beneficios o límites incluidos.        |
+| isActive        | boolean             | public      | Indica si el plan está disponible.     |
+
+
+_Tabla de métodos de plan_
+
+| Nombre                                          | Tipo de retorno | Visibilidad | Descripción                       |
+| ----------------------------------------------- | --------------- | ----------- | --------------------------------- |
+| activate()                                      | void            | public      | Activa el plan para contratación. |
+| deactivate()                                    | void            | public      | Desactiva el plan.                |
+
+
 ### 4.2.8.2. Interface Layer.
+
+#### Subscriptions
+
+_Tabla de Subscriptions_
+
+| Propiedad     | Valor                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | Subscriptions                                                 |
+| **Categoría** | Interface / Controller                                    |
+| **Propósito** | Exponer endpoints para gestionar ciclo de vida de suscripciones del usuario (crear, cambiar plan, cancelar, activar, suspender, consultar). |
+| **Ruta**      | `/api/v1/subscriptions`               |
+
+
+_Tabla de métodos de Subscriptions_
+
+| Nombre                           | Ruta                                                     | Acción                                                           | Handle                               |
+| -------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------ |
+| Crear suscripción                | `POST /api/v1/subscriptions`                             | Registrar nueva suscripción para un cliente y plan seleccionado  | `CreateSubscriptionCommandHandler`   |
+| Obtener suscripción              | `GET /api/v1/subscriptions/{subscriptionId}`             | Obtener detalle de una suscripción                               | `GetSubscriptionQueryHandler`        |
+| Listar suscripciones por cliente | `GET /api/v1/customers/{customerId}/subscriptions`       | Listar todas las suscripciones de un cliente                     | `ListSubscriptionsQueryHandler`      |
+| Cambiar plan                     | `PUT /api/v1/subscriptions/{subscriptionId}/change-plan` | Cambiar de plan                    | `ChangePlanCommandHandler`           |
+| Cancelar suscripción             | `PUT /api/v1/subscriptions/{subscriptionId}/cancel`      | Solicitar cancelación | `CancelSubscriptionCommandHandler`   |
+| Activar suscripción              | `POST /api/v1/subscriptions/{subscriptionId}/activate`   | Activación                                | `ActivateSubscriptionCommandHandler` |
+| Suspender suscripción            | `POST /api/v1/subscriptions/{subscriptionId}/suspend`    | Suspender temporalmente la suscripción                           | `SuspendSubscriptionCommandHandler`  |
+| Consultar estado (simple)        | `GET /api/v1/subscriptions/{subscriptionId}/status`      | Obtener booleano isActive / status                               | `GetSubscriptionStatusQueryHandler`  |
+
+#### CustomerBillingAccount
+
+_Tabla de CustomerBillingAccount_
+
+| Propiedad     | Valor                                                                                                                               |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | CustomerBillingAccount               |
+| **Categoría** | Interface / Controller                         |
+| **Propósito** | Exponer operaciones para consultar y mantener la cuenta de facturación del cliente |
+| **Ruta**      | `/api/v1/customers/{customerId}/billing-account`                             |
+
+
+_Tabla de métodos de CustomerBillingAccount_
+
+| Nombre                          | Ruta                                                                                            | Acción                                                                          | Handle                                       |
+| ------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------- |
+| Obtener account                 | `GET /api/v1/customers/{customerId}/billing-account`                                            | Recuperar datos de facturación del cliente | `GetCustomerBillingAccountQueryHandler`      |
+| Obtener balance                 | `GET /api/v1/customers/{customerId}/billing-account/balance`                                    | Retornar balance actual                                            | `GetCustomerBalanceQueryHandler`             |
+
+#### Plans
+
+_Tabla de Plans_
+
+| Propiedad     | Valor                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| **Nombre**    | Plans                                                                                    |
+| **Categoría** | Interface / Controller                                                                    |
+| **Propósito** | Exponer endpoints para consultar y administrar planes disponibles (CRUD básico + activar/desactivar). |
+| **Ruta**      | `/api/v1/plans`                                                                                       |
+
+
+_Tabla de métodos de Plans_
+| Nombre          | Ruta                                     | Acción                                        | Handle                         |
+| --------------- | ---------------------------------------- | --------------------------------------------- | ------------------------------ |
+| Listar planes   | `GET /api/v1/plans`                      | Retornar lista de planes activos y filtrables | `ListPlansQueryHandler`        |
+| Obtener plan    | `GET /api/v1/plans/{planId}`             | Retornar detalle del plan por id              | `GetPlanQueryHandler`          |
+| Crear plan      | `POST /api/v1/plans`                     | Crear nuevo plan (admin)                      | `CreatePlanCommandHandler`     |
+| Actualizar plan | `PUT /api/v1/plans/{planId}`             | Modificar atributos del plan (admin)          | `UpdatePlanCommandHandler`     |
+| Activar plan    | `POST /api/v1/plans/{planId}/activate`   | Marcar plan como disponible                   | `ActivatePlanCommandHandler`   |
+| Desactivar plan | `POST /api/v1/plans/{planId}/deactivate` | Quitar plan de contratación                   | `DeactivatePlanCommandHandler` |
+
+
+### 4.2.8.3. Application Layer. 
+
+#### PlanApplicationService
+| Propiedad     | Valor                                                                                                                      |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | PlanApplicationService                 |
+| **Categoría** | Application Service / Query & Command Handlers                     |
+| **Propósito** | Coordinar casos de uso relacionados con planes: creación, actualización, activación/desactivación y consultas.             |
+| **Comando**   | `CreatePlanCommand`, `UpdatePlanCommand`, `ActivatePlanCommand`, `DeactivatePlanCommand`, `ListPlansQuery`, `GetPlanQuery` |
+
+#### CustomerBillingAccountApplicationService
+| Propiedad     | Valor                                                                                                                                                                                         |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | CustomerBillingAccountApplicationService      |
+| **Categoría** | Application Service  |
+| **Propósito** | Orquestar casos de uso: consulta de cuenta, consulta de balance.                                                                           |
+| **Comando**   | `GetCustomerBillingAccountQuery`, `GetCustomerBalanceQuery` |
+
+
+#### SubscriptionApplicationService
+| Propiedad     | Valor                                                                                                                                                                                        |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | SubscriptionApplicationService                     |
+| **Categoría** | Application Service / Command & Query Handlers              |
+| **Propósito** | Coordinar flujo de operaciones sobre suscripciones: creación, cambio de plan (prorrateo), cancelación, activación, suspensión y consultas.                                                   |
+| **Comando**   | `CreateSubscriptionCommand`, `ChangePlanCommand`, `CancelSubscriptionCommand`, `ActivateSubscriptionCommand`, `SuspendSubscriptionCommand`, `GetSubscriptionQuery`, `ListSubscriptionsQuery` |
+
+
+#### SubscriptionEventHandlers
+| Propiedad     | Valor                                                                                                                                                                           |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | SubscriptionEventHandlers        |
+| **Categoría** | Event Handlers  |
+| **Propósito** | Ejecutar acciones reactivas tras eventos de dominio relevantes (ej.: `SubscriptionCancelled` -> notificar al usuario, `SubscriptionActivated` -> iniciar ciclo de facturación). |
+| **Comando**   | `HandleSubscriptionCancelledEvent`, `HandleSubscriptionActivatedEvent`                                                                                                          |
+
+
+### 4.2.8.4. Infrastructure Layer. 
+
+#### SubscriptionRepositoryImpl
+| Propiedad     | Valor                                                                                                                                                                |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | SubscriptionRepositoryImpl    |
+| **Categoría** | Repository Implementation                |
+| **Propósito** | Implementar `SubscriptionRepository` persistiendo agregados Subscription; operaciones: save, findById, findByCustomer |
+| **Interfaz**  | `SubscriptionRepository` (Domain interface: save, findById, findActiveByCustomer)                                                                 |
+
+
+#### CustomerBillingAccountRepositoryImpl
+
+| Propiedad     | Valor                                                                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | CustomerBillingAccountRepositoryImpl   |
+| **Categoría** | Repository Implementation          |
+| **Propósito** | Implementación concreta para persistir/consultar CustomerBillingAccount.|
+| **Interfaz**  | `CustomerBillingAccountRepository` (findByCustomerId, updateBalance)           |
+
+
+#### PlanRepositoryImpl
+| Propiedad     | Valor                                                                                                                                        |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | PlanRepositoryImpl                 |
+| **Categoría** | Repository Implementation                                    |
+| **Propósito** | Implementar `PlanRepository` persistiendo Plan en la BD  y exponiendo búsquedas por id, activo, filtros y páginas. |
+| **Interfaz**  | `PlanRepository` (Domain interface: save, findById, findActive, list)       |
+
+
+### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams. 
+### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
+#### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.8.6.2. Bounded Context Database Design Diagram.
+ 
+## 4.2.9. Bounded Context: Platform
+### 4.2.9.1. Domain Layer. 
+#### Subscription
+
+_Tabla de Subscription_
+
+_Tabla de atributos de Subscription_
+
+_Tabla de métodos de Subscription_
+### 4.2.9.2. Interface Layer. 
 
 #### 
 
@@ -1305,23 +1574,13 @@ _Tabla de _
 
 _Tabla de métodos de _
 
-### 4.2.8.3. Application Layer. 
+### 4.2.9.3. Application Layer. 
 
 #### 
 
-### 4.2.8.4. Infrastructure Layer. 
-### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams. 
-### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.8.6.2. Bounded Context Database Design Diagram.
- 
-## 4.2.9. Bounded Context: Platform
-### 4.2.9.1. Domain Layer. 
-### 4.2.9.2. Interface Layer. 
-### 4.2.9.3. Application Layer. 
 ### 4.2.9.4. Infrastructure Layer. 
 ### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams. 
-### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams. 
-### 4.2.9.6.2. Bounded Context Database Design Diagram.
+#### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams. 
+#### 4.2.9.6.2. Bounded Context Database Design Diagram.
 
