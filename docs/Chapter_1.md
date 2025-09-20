@@ -219,4 +219,3 @@ Para asegurar el éxito de PlantCare, hemos identificado dos segmentos clave que
 - **Segmento 1 – Personas ocupadas (departamentos/oficinas):** profesionales con jornada completa, viven en departamentos, suelen tener 1–5 plantas decorativas. Buscan soluciones que requieran poco mantenimiento y ofrezcan tranquilidad.
 
 - **Segmento 2 – Aficionados:** personas con más plantas (5–20), desean optimizar salud de sus colecciones, les interesa las recomendaciones para diferentes especies.
-
