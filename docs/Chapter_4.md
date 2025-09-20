@@ -429,6 +429,83 @@ En la capa de dominio de Auth & Identity se definen las entidades, objetos de va
 |RevokeAllForUser	|void	|public	|Revoca todas las sesiones activas de un usuario|
 
 ### 4.2.1.2. Interface Layer. 
+
+En la capa de interfaz del Bounded Context de Auth & Identity se definen los controladores REST que actúan como punto de entrada para solicitudes externas. Estos endpoints permiten a aplicaciones cliente (web, móviles, integraciones de terceros) interactuar con las funciones de registro, autenticación, recuperación de credenciales y gestión de perfil de usuario.
+La interfaz está organizada en controladores especializados, cada uno con rutas y acciones bien definidas, garantizando simplicidad, seguridad y separación de responsabilidades.
+
+**UserAccountController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|UserAccountController|
+|Categoría	|Controller|
+|Propósito	|Exponer endpoints para la gestión de cuentas de usuario|
+|Ruta	|/api/users|
+
+**Métodos de UserAccountController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetById	|/{userId}	|Obtiene los datos de un usuario	|GetUserByIdQuery|
+|UpdateProfile	|/{userId}/profile	|Actualiza nombre y email	|UpdateUserProfileCommand|
+|ChangePassword	|/{userId}/password	|Cambia contraseña	|ChangeUserPasswordCommand|
+|Deactivate	|/{userId}/deactivate	|Desactiva cuenta de usuario	|DeactivateUserCommand|
+|Activate	|/{userId}/activate	|Reactiva cuenta suspendida	|ActivateUserCommand|
+|Block	|/{userId}/block	|Bloquea cuenta tras intentos fallidos	|BlockUserCommand|
+
+**AuthController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|AuthController|
+|Categoría	|Controller|
+|ropósito	|Gestiona registro, autenticación y sesiones de usuario|
+|Ruta	|/api/auth|
+
+**Métodos de AuthController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Register	|/register|Registra un nuevo usuario	|RegisterUserCommand|
+|Verify	|/verify	|Valida código de verificación email	|VerifyEmailCommand|
+|Login	|/login	|Inicia sesión, devuelve token	|LoginUserCommand|
+|Logout	|/logout	|Revoca sesión activa	|RevokeSessionCommand|
+|Refresh	|/refresh	|Renueva token de acceso	|RefreshTokenCommand|
+
+**PasswordRecoveryController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	PasswordRecoveryController|
+|Categoría	|Controller|
+|Propósito	|Manejar procesos de recuperación de credenciales|
+|Ruta	|/api/password|
+
+**Métodos de PasswordRecoveryController**
+
+|Nombre|	Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Request	|/forgot	|Solicita recuperación, envía código/email	|RequestPasswordResetCommand|
+|VerifyCode	|/verify	|Valida el código de recuperación	|VerifyResetCodeCommand|
+|Reset	|/reset	|Restablece contraseña	ResetPasswordCommand|
+
+**SessionController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SessionController|
+|Categoría|Controller|
+|Propósito	|Gestionar sesiones activas de usuario|
+|Ruta	|/api/sessions|
+
+**Métodos de SessionController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|GetActive	|/active/{userId}	|Obtiene sesiones activas de un usuario	GetActiveSessionsQuery|
+|Revoke	|/revoke/{sessionId}	|Revoca una sesión específica	RevokeSessionCommand|
+|RevokeAll	|/revokeAll/{userId}	|Revoca todas las sesiones del usuario	RevokeAllSessionsCommand|
+
 ### 4.2.1.3. Application Layer. 
 ### 4.2.1.4. Infrastructure Layer. 
 ### 4.2.1.5. Bounded Context Software Architecture ### Component Level Diagrams. 
