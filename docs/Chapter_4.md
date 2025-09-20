@@ -487,7 +487,7 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 |-----------------------|------------------|---------------|-----------------------------------------------------|
 |Request	|/forgot	|Solicita recuperación, envía código/email	|RequestPasswordResetCommand|
 |VerifyCode	|/verify	|Valida el código de recuperación	|VerifyResetCodeCommand|
-|Reset	|/reset	|Restablece contraseña	ResetPasswordCommand|
+|Reset	|/reset	|Restablece contraseña	|ResetPasswordCommand|
 
 **SessionController**
 
@@ -671,6 +671,36 @@ No implementa reglas de negocio directamente, sino que delega al dominio, manten
 |Evento|	PasswordResetCompletedEvent|
 
 ### 4.2.1.4. Infrastructure Layer. 
+La capa de infraestructura del Bounded Context de Auth & Identity actúa como puente entre la lógica de negocio y los mecanismos técnicos de persistencia, seguridad y comunicación externa. Aquí se implementan las dependencias necesarias para la gestión de usuarios, autenticación y sesiones, garantizando la interacción confiable con bases de datos, proveedores de tokens y almacenamiento de credenciales.
+
+Esta capa concreta las abstracciones definidas en el dominio a través de repositorios, contextos de base de datos y servicios técnicos. Su diseño asegura un desacoplamiento respecto a la lógica central, permitiendo reemplazar o evolucionar tecnologías sin alterar las reglas de negocio. Además, aporta eficiencia, escalabilidad y robustez en la gestión de identidades y accesos, alineándose con los objetivos funcionales y no funcionales del sistema.
+
+**UserRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|UserRepository|
+|Categoría	|Repositorio|
+|Propósito|	Persistir y consultar entidades de usuario|
+|Interfaz	|IUserRepository|
+
+**SessionRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SessionRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar entidades de sesión|
+|Interfaz	|ISessionRepository|
+
+**AuthDbContext**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	AuthDbContext|
+|Categoría	|ORM Context|
+|Propósito	|Punto central de acceso a la base de datos para usuarios y sesiones|
+
 ### 4.2.1.5. Bounded Context Software Architecture ### Component Level Diagrams. 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams. 
 ### 4.2.1.6.1. Bounded Context Domain Layer Class ### Diagrams. 
