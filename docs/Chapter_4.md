@@ -1393,11 +1393,190 @@ En la capa de infraestructura se implementan los repositorios definidos en el do
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
 #### 4.2.5.6.2. Bounded Context Database Design Diagram.
 
-## 4.2.6. Bounded Context: Analysis&Report
-### 4.2.6.1. Domain Layer. 
-### 4.2.6.2. Interface Layer. 
-### 4.2.6.3. Application Layer. 
-### 4.2.6.4. Infrastructure Layer. 
+## 4.2.6. Bounded Context: Analysis & Reporting  
+
+### 4.2.6.1. Domain Layer  
+
+#### Report  
+
+_Tabla de Report_  
+
+| Propiedad     | Valor                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Nombre**    | Report                                                                                      |
+| **Categoría** | Aggregate Root                                                                              |
+| **Propósito** | Representa un reporte generado a partir de la telemetría de los dispositivos IoT.           |
+
+_Tabla de atributos de Report_  
+
+| Nombre       | Tipo de dato      | Visibilidad | Descripción                                    |
+|--------------|------------------|-------------|------------------------------------------------|
+| id           | UUID             | Private     | Identificador único del reporte.               |
+| user_id      | UUID             | Private     | FK al usuario dueño del reporte.               |
+| device_id    | UUID (nullable)  | Private     | FK al dispositivo si es un reporte específico. |
+| type         | VARCHAR(50)      | Public      | Tipo: `summary`, `trend`, `custom`.            |
+| title        | VARCHAR(150)     | Public      | Título descriptivo del reporte.                |
+| description  | TEXT             | Public      | Descripción opcional del reporte.              |
+| status       | VARCHAR(20)      | Public      | Estado: `generated`, `pending`, `failed`.      |
+| created_at   | TIMESTAMP        | Private     | Fecha de creación.                             |
+| generated_at | TIMESTAMP NULL   | Private     | Fecha en que se generó el reporte.             |
+
+_Tabla de métodos de Report_  
+
+| Nombre            | Tipo de retorno | Visibilidad | Descripción                                   |
+|-------------------|-----------------|-------------|-----------------------------------------------|
+| generate()        | Report          | Public      | Inicia el proceso de generación.              |
+| markAsFailed()    | void            | Private     | Marca el reporte como fallido.                |
+| updateTitle(title)| void            | Public      | Cambia título o descripción del reporte.      |
+
+---
+
+#### ReportDataSet  
+
+_Tabla de ReportDataSet_  
+
+| Propiedad     | Valor                                                                 |
+|---------------|-----------------------------------------------------------------------|
+| **Nombre**    | ReportDataSet                                                         |
+| **Categoría** | Entity                                                                |
+| **Propósito** | Representa un conjunto de métricas asociadas a un reporte específico. |
+
+_Tabla de atributos de ReportDataSet_  
+
+| Nombre       | Tipo de dato   | Visibilidad | Descripción                                       |
+|--------------|---------------|-------------|---------------------------------------------------|
+| id           | UUID          | Private     | Identificador del dataset.                        |
+| report_id    | UUID          | Private     | FK a `Report`.                                    |
+| metric_type  | VARCHAR(50)   | Public      | Tipo de métrica (`temperature`, `humidity`).      |
+| aggregated   | JSON/Object   | Public      | Datos agregados (promedio, min, max, std dev).    |
+| generated_at | TIMESTAMP     | Private     | Fecha de generación del dataset.                  |
+
+_Tabla de métodos de ReportDataSet_  
+
+| Nombre            | Tipo de retorno | Visibilidad | Descripción                                         |
+|-------------------|-----------------|-------------|-----------------------------------------------------|
+| calculateStats()  | void            | Public      | Aplica funciones de agregación sobre los registros. |
+| attachToReport()  | void            | Private     | Vincula dataset con un reporte.                     |
+
+---
+
+#### Visualization  
+
+_Tabla de Visualization_  
+
+| Propiedad     | Valor                                                                  |
+|---------------|------------------------------------------------------------------------|
+| **Nombre**    | Visualization                                                          |
+| **Categoría** | Entity                                                                 |
+| **Propósito** | Representa una vista gráfica generada a partir de un dataset.          |
+
+_Tabla de atributos de Visualization_  
+
+| Nombre      | Tipo de dato   | Visibilidad | Descripción                                         |
+|-------------|---------------|-------------|-----------------------------------------------------|
+| id          | UUID          | Private     | Identificador único de la visualización.            |
+| dataset_id  | UUID          | Private     | FK a `ReportDataSet`.                               |
+| chart_type  | VARCHAR(30)   | Public      | Tipo: `line`, `bar`, `pie`, `heatmap`.              |
+| config      | JSON          | Public      | Configuración del gráfico (colores, ejes, filtros). |
+| created_at  | TIMESTAMP     | Private     | Fecha de creación.                                  |
+
+_Tabla de métodos de Visualization_  
+
+| Nombre               | Tipo de retorno | Visibilidad | Descripción                                    |
+|----------------------|-----------------|-------------|------------------------------------------------|
+| render()             | JSON            | Public      | Devuelve configuración lista para frontend.    |
+| updateConfig(config) | void            | Public      | Modifica parámetros de visualización.          |
+
+---
+
+### 4.2.6.2. Interface Layer  
+
+#### Report API  
+
+_Tabla de Report API_  
+
+| Propiedad     | Valor                                                                         |
+|---------------|-------------------------------------------------------------------------------|
+| **Nombre**    | ReportController                                                              |
+| **Categoría** | API / Resource                                                                |
+| **Propósito** | Exponer endpoints para creación, consulta y descarga de reportes.             |
+| **Ruta**      | `/api/reports`                                                                |
+
+_Tabla de métodos de Report API_  
+
+| Nombre        | Ruta                             | Acción                                  | Handle                          |
+|---------------|----------------------------------|-----------------------------------------|---------------------------------|
+| createReport  | POST /api/reports                | Crear un nuevo reporte                   | CreateReportCommandHandler      |
+| getReport     | GET /api/reports/{id}            | Obtener detalles de un reporte           | GetReportQueryHandler           |
+| listReports   | GET /api/reports                 | Listar reportes de un usuario            | ListReportsQueryHandler         |
+| downloadReport| GET /api/reports/{id}/download   | Descargar reporte generado (PDF/CSV)     | DownloadReportQueryHandler      |
+
+---
+
+### 4.2.6.3. Application Layer  
+
+#### Command Handlers  
+
+| Nombre                       | Categoría       | Propósito                                     | Comando                 |
+|------------------------------|-----------------|-----------------------------------------------|-------------------------|
+| CreateReportCommandHandler   | Command Handler | Crear y persistir un nuevo reporte            | CreateReportCommand     |
+| GenerateReportCommandHandler | Command Handler | Orquestar la creación de datasets y gráficos  | GenerateReportCommand   |
+
+#### Query Handlers  
+
+| Nombre                       | Categoría     | Propósito                                   | Query                  |
+|------------------------------|---------------|---------------------------------------------|------------------------|
+| GetReportQueryHandler        | Query Handler | Obtener datos detallados de un reporte      | GetReportQuery         |
+| ListReportsQueryHandler      | Query Handler | Listar reportes asociados a un usuario      | ListReportsQuery       |
+| DownloadReportQueryHandler   | Query Handler | Exportar y retornar reporte en un formato   | DownloadReportQuery    |
+
+#### Event Handlers  
+
+| Nombre                   | Categoría     | Propósito                                   | Evento                 |
+|--------------------------|---------------|---------------------------------------------|------------------------|
+| ReportGeneratedHandler   | Event Handler | Notificar al usuario/reporting system        | ReportGeneratedEvent   |
+| ReportFailedHandler      | Event Handler | Manejar fallos en generación de reportes    | ReportFailedEvent      |
+
+---
+
+### 4.2.6.4. Infrastructure Layer  
+
+#### ReportRepository  
+
+| Propiedad     | Valor                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Nombre**    | ReportRepository                                                                            |
+| **Categoría** | Repository                                                                                  |
+| **Propósito** | Persistir y consultar reportes en base de datos.                                            |
+| **Interfaz**  | IReportRepository (`save(report)`, `findById(id)`, `listByUser(userId)`)                     |
+
+#### DataSetRepository  
+
+| Propiedad     | Valor                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Nombre**    | DataSetRepository                                                                           |
+| **Categoría** | Repository                                                                                  |
+| **Propósito** | Almacenar y recuperar datasets asociados a reportes.                                        |
+| **Interfaz**  | IDataSetRepository (`save(dataset)`, `findByReport(reportId)`)                              |
+
+#### VisualizationRepository  
+
+| Propiedad     | Valor                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Nombre**    | VisualizationRepository                                                                     |
+| **Categoría** | Repository                                                                                  |
+| **Propósito** | Guardar y consultar configuraciones de visualizaciones.                                     |
+| **Interfaz**  | IVisualizationRepository (`save(viz)`, `findByDataset(datasetId)`)                          |
+
+#### ReportingDbContext  
+
+| Propiedad     | Valor                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------|
+| **Nombre**    | ReportingDbContext                                                                          |
+| **Categoría** | ORM Context                                                                                 |
+| **Propósito** | Proveer acceso a tablas de reportes, datasets y visualizaciones.                            |
+ 
+
 ### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
