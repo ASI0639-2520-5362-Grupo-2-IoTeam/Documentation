@@ -64,49 +64,37 @@ develop
 ## Contenido
 
 1. [Capítulo I: Introducción](docs/Chapter_1.md#capítulo-i-presentación)
-    1.1. [Startup Profile](docs/Chapter_1.md#11-startup-profile)
-
-    1.1.1. [Descripción de la Startup](docs/chapter-1.md#111-descripción-de-la-startup)
-
-    1.1.2. [Perfiles de integrantes del equipo](docs/Chapter_1.md#112-perfiles-de-integrantes-del-equipo)
-
-    1.2. [Solution Profile](docs/Chapter_1.md#12-solution-profile)
-
-    1.2.1. [Antecedentes y problemática](docs/Chapter_1.md#121-antecedentes-y-problemática)
-
-    1.2.2. [Lean UX Process](docs/Chapter_1.md#122-lean-ux-process)
-
-    1.2.2.1. [Lean UX Problem Statements](docs/Chapter_1.md#1221-lean-ux-problem-statements)
-     
-    1.2.2.2. [Lean UX Assumptions](docs/Chapter_1.md#1222-lean-ux-assumptions)   
-
-    1.2.2.3. [Lean UX Hypothesis Statements](docs/Chapter_1.md#1223-lean-ux-hypothesis-statements)
-
-    1.2.2.4. [Lean UX Canvas](docs/Chapter_1.md#1224-lean-ux-canvas)
-
-    1.3. [Segmentos Objetivo](docs/Chapter_1.md#13-segmentos-objetivos)
-
-2. Capítulo II: Requirements Elicitation & Analysis
-   - 2.1. Competidores
-     - 2.1.1. Análisis competitivo
-     - 2.1.2. Estrategias y tácticas frente a competidores
-   - 2.2. Entrevistas
-     - 2.2.1. Diseño de entrevistas
-     - 2.2.2. Registro de entrevistas
-     - 2.2.3. Análisis de entrevistas
-   - 2.3. Needfinding
-     - 2.3.1. User Personas
-     - 2.3.2. User Task Matrix
-     - 2.3.3. User Journey Mapping
-     - 2.3.4. Empathy Mapping
-     - 2.3.5. As-is Scenario Mapping
-   - 2.4. Big Picture EventStorming
-   - 2.5. Ubiquitous Language
-3. Capítulo III: Requirements Specification
-   - 3.1. User Stories.
-   - 3.2. Impact Mapping.
-   - 3.3. Product Backlog.
-4. Capítulo IV: Solution Software Design
+   - [1.1. Startup Profile](docs/Chapter_1.md#11-startup-profile)
+     - [1.1.1.Descripción de la Startup](docs/Chapter_1.md#111-descripción-de-la-startup)
+     - [1.1.2. Perfiles de integrantes del equipo](docs/Chapter_1.md#112-perfiles-de-integrantes-del-equipo)
+   - [1.2. Solution Profile](docs/Chapter_1.md#12-solution-profile)
+     - [1.2.1. Antecedentes y problemática](docs/Chapter_1.md#121-antecedentes-y-problemática)
+     - [1.2.2. Lean UX Process](docs/Chapter_1.md#122-lean-ux-process)
+       - [1.2.2.1. Lean UX Problem Statements](docs/Chapter_1.md#1221-lean-ux-problem-statements)
+       - [1.2.2.2. Lean UX Assumptions](docs/Chapter_1.md#1222-lean-ux-assumptions)   
+       - [1.2.2.3. Lean UX Hypothesis Statements](docs/Chapter_1.md#1223-lean-ux-hypothesis-statements)
+       - [1.2.2.4. Lean UX Canvas](docs/Chapter_1.md#1223-lean-ux-hypothesis-statements)
+   - [1.3. Segmentos Objetivos](docs/Chapter_1.md#13-segmentos-objetivos)
+3. [Capítulo II: Requirements Elicitation & Analysis](docs/Chapter_2.md#capítulo-ii-requirements-elicitation--analysis)
+   - [2.1. Competidores](docs/Chapter_2.md#21-competidores)
+     - [2.1.1. Análisis competitivo](docs/Chapter_2.md#211-análisis-competitivo)
+     - [2.1.2. Estrategias y tácticas frente a competidores](docs/Chapter_2.md#212-estrategias-y-tácticas-frente-a-competidores)
+   - [2.2. Entrevistas](docs/Chapter_2.md#22-entrevistas)
+     - [2.2.1. Diseño de entrevistas](docs/Chapter_2.md#221-diseño-de-entrevistas)
+     - [2.2.2. Registro de entrevistas](docs/Chapter_2.md#222-registro-de-entrevistas)
+     - [2.2.3. Análisis de entrevistas](docs/Chapter_2.md#223-análisis-de-entrevistas)
+   - [2.3. Needfinding](docs/Chapter_2.md#23-needfinding)
+     - [2.3.1. User Personas](docs/Chapter_2.md#231-user-personas)
+     - [2.3.2. User Task Matrix](docs/Chapter_2.md#232-user-task-matrix)
+     - [2.3.3. User Journey Mapping](docs/Chapter_2.md#233-user-journey-mapping)
+     - [2.3.4. Empathy Mapping](docs/Chapter_2.md#234-empathy-mapping)
+   - 2.4. [Big Picture EventStorming](docs/Chapter_2.md#24-big-picture-eventstorming)
+   - 2.5. [Ubiquitous Language](docs/Chapter_2.md#25-ubiquitous-language)
+4. [Capítulo III: Requirements Specification](Chapter_3.md#capítulo-iii-requirements-specification)
+   - 3.1. [User Stories](docs/Chapter_3.md#31-user-stories)
+   - 3.2. [Impact Mapping](docs/Chapter_3.md#32-impact-mapping)
+   - 3.3. [Product Backlog](docs/Chapter_3.md#33-product-backlog)
+5. Capítulo IV: Solution Software Design
    - 4.1. Strategic-Level Domain-Driven Design
      - 4.1.1. Design-Level EventStorming
        - 4.1.1.1. Candidate Context Discovery
