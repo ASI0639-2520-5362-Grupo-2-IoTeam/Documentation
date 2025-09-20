@@ -78,7 +78,26 @@
 |TS-014|Configuración y Envío de Datos|Implementar endpoints para configurar parámetros del dispositivo (ej. frecuencia de envío) y recibir los datos transmitidos.|**Escenario 01: Configuración**<br>- Dado un usuario autenticado.<br>- Cuando envía un PATCH con configuración (intervalo, sensores activos).<br>- Entonces se guarda la configuración y el dispositivo la aplica.<br>**Escenario 02: Recepción de datos**<br>- Dado un dispositivo vinculado.<br>- Cuando envía datos a /api/dispositivos/{id}/datos.<br>- Entonces se registran y quedan asociados al usuario.|EPIC-007|
 |TS-015|Gestión de Planes de Suscripción|Implementar endpoints para crear, listar y asignar planes de suscripción a usuarios (gratuito, premium).|**Escenario 01: Listar planes**<br>- Dado un usuario autenticado.<br>- Cuando hace GET /api/planes.<br>- Entonces recibe la lista de planes disponibles.<br>**Escenario 02: Asignar plan**<br>- Dado un usuario autenticado.<br>- Cuando selecciona un plan y envía POST /api/usuarios/{id}/suscripción.<br>- Entonces su cuenta se actualiza con el plan elegido.|EPIC-008|
 |TS-016|Pagos y Renovaciones|Integrar pasarela de pago (ej. Stripe) para procesar pagos y gestionar renovaciones automáticas de suscripciones.|**Escenario 01: Pago exitoso**<br>- Dado un usuario autenticado.<br>- Cuando completa el flujo de pago.<br>- Entonces el sistema confirma la transacción y actualiza el estado de su plan.<br>**Escenario 02: Renovación automática**<br>- Dado un usuario con plan activo.<br>- Cuando llega la fecha de vencimiento.<br>- Entonces el sistema intenta renovar automáticamente y notifica por email si fue exitoso o fallido.|EPIC-008|
+
 ## 3.2. Impact Mapping.
+
+### Segmento 1: Personas ocupadas (departamentos/oficinas)
+
+Para el segmento de este usuario se elaboró un Impact Mapping con el objetivo de aumentar la participación activa en la plataforma y reducir la incertidumbre sobre el cuidado de las plantas. Esta herramienta nos permitió identificar los comportamientos clave que se desean promover en los usuarios, como consultar el estado de la humedad y configurar recordatorios automáticos de riego. A partir de ello, se definieron deliverables y user stories que guían el desarrollo de funcionalidades útiles y alineadas con las necesidades reales de los jóvenes universitarios que buscan mantener sus plantas sanas pese a su rutina ocupada.
+
+**Enlace para visualizar el Impact Map en UXPressia:**
+[https://uxpressia.com/w/KPfTT/i/OYO5E](https://uxpressia.com/w/KPfTT/i/OYO5E)
+
+[![Paolo-Loayza-4.png](https://i.postimg.cc/yYZ1fn4M/Paolo-Loayza-4.png)](https://postimg.cc/qzpHqs7w)
+
+### Segmento 2: Aficionados que cuidan varias macetas en casa
+
+Para el segmento del usuario aficionado se elaboró un Impact Mapping con el objetivo de incrementar el control sobre el cuidado de múltiples plantas y reducir la pérdida de macetas por riego inadecuado. Esta herramienta permitió identificar los comportamientos clave que se desean promover en los usuarios, como registrar cada planta en la plataforma y consultar el historial de riego y humedad. A partir de ello, se definieron deliverables y user stories que guían el desarrollo de funcionalidades prácticas y alineadas con las necesidades reales de personas que ven en el cuidado de plantas un pasatiempo y una fuente de satisfacción personal.
+
+**Enlace para visualizar el Impact Map en UXPressia:**
+[https://uxpressia.com/w/KPfTT/i/ZTr9f](https://uxpressia.com/w/KPfTT/i/ZTr9f)
+
+[![Luz-Ramos-4.png](https://i.postimg.cc/TPXJykff/Luz-Ramos-4.png)](https://postimg.cc/WdXkCwdH)
 
 ## 3.3. Product Backlog.
 |Orden|User Story Id|Título|Descripción|Story Points (1/2/3/5/8)|
