@@ -156,10 +156,7 @@ develop
 
 | **Criterio Específico** | **Acciones Realizadas** | **Conclusiones** | 
 | ----------------------- | ----------------------- | ---------------- |
-| ----------------------- | Ernesto Casaverde TB1: -Strategic-Level Domain-Driven -Design Design-Level EventStorming -Candidate Context Discovery -Domain Message Flows Modeling -Bounded Context Canvases - Context Mapping  | ---------------- |
-
-|
-|Trabaja en equipo para proporcionar liderazgo en forma conjunta| | |
-|Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.| | |
+|Trabaja en equipo para proporcionar liderazgo en forma conjunta| **Alexander Alberto Cantoral Sedamano:** <br> TB1: Lideré al equipo en el desarrollo de todo el proyecto y designé tareas que eran favorables en base a sus aptitudes. | |
+|Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.| **Alexander Alberto Cantoral Sedamano:** <br> TB1: En la reuniones tanto presencial como virtual creé un entorno donde se partició en el desarollo de este presentable y en este mismo se planificaron todas las responsabilidades a hacer. | |
 
 ---
