@@ -861,6 +861,9 @@ IPlantProfileRepository**
 |GetHistory	|List<PlantHistory>|	public|	Obtiene historial de un perfil de planta|
 
 ### 4.2.2.2. Interface Layer. 
+
+
+
 ### 4.2.2.3. Application Layer. 
 ### 4.2.2.4. Infrastructure Layer. 
 ### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams. 
