@@ -1694,6 +1694,46 @@ No implementa reglas de negocio directamente, sino que delega al dominio, manten
 |Propósito	|Gestionar acciones tras cierre de sesión de diagnóstico|
 |Evento|	DiagnosticSessionClosedEvent|
 ### 4.2.3.4. Infrastructure Layer. 
+
+La capa de infraestructura del Bounded Context de Device Management IoT actúa como puente entre la lógica de negocio y los mecanismos técnicos de persistencia, comunicación y gestión de datos en tiempo real. Aquí se implementan las dependencias necesarias para la administración de dispositivos, almacenamiento de telemetría y control de la conectividad IoT, garantizando la interacción confiable con bases de datos, brokers de mensajería y servicios externos de red.
+
+Esta capa concreta las abstracciones definidas en el dominio a través de repositorios, contextos de base de datos y servicios técnicos. Su diseño asegura un desacoplamiento respecto a la lógica central, permitiendo reemplazar o evolucionar tecnologías (por ejemplo, protocolos IoT como MQTT, CoAP o HTTP) sin alterar las reglas de negocio. Además, aporta escalabilidad, resiliencia y eficiencia en la gestión de dispositivos y datos de IoT, alineándose con los objetivos funcionales y no funcionales del sistema.
+
+**DeviceRepository**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar entidades de dispositivo IoT|
+|Interfaz	|IDeviceRepository|
+
+**TelemetryRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|TelemetryRepository|
+|Categoría	|Repositorio|
+|Propósito	|Persistir y consultar datos de telemetría enviados por dispositivos|
+|Interfaz	|ITelemetryRepository|
+
+**ConnectivityRepository**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|ConnectivityRepository|
+|Categoría	|Repositorio|
+|Propósito	|Gestionar estados de conexión de dispositivos (online, offline, heartbeat)|
+|Interfaz	|IConnectivityRepository|
+
+**DeviceDbContext**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceDbContext|
+|Categoría	|ORM Context|
+|Propósito	|Punto central de acceso a la base de datos para dispositivos, telemetría y conectividad|
+
 ### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
