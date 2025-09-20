@@ -502,9 +502,9 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 
 |Nombre	|Ruta	|Acción	|Handle|
 |-----------------------|------------------|---------------|-----------------------------------------------------|
-|GetActive	|/active/{userId}	|Obtiene sesiones activas de un usuario	GetActiveSessionsQuery|
-|Revoke	|/revoke/{sessionId}	|Revoca una sesión específica	RevokeSessionCommand|
-|RevokeAll	|/revokeAll/{userId}	|Revoca todas las sesiones del usuario	RevokeAllSessionsCommand|
+|GetActive	|/active/{userId}	|Obtiene sesiones activas de un usuario	|GetActiveSessionsQuery|
+|Revoke	|/revoke/{sessionId}	|Revoca una sesión específica	|RevokeSessionCommand|
+|RevokeAll	|/revokeAll/{userId}	|Revoca todas las sesiones del usuario	|RevokeAllSessionsCommand|
 
 ### 4.2.1.3. Application Layer. 
 
