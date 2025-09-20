@@ -1754,8 +1754,11 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 [![structurizr-106438-Container-001-2.png](https://i.postimg.cc/1Xpzd1k2/structurizr-106438-Container-001-2.png)](https://postimg.cc/gL2dwQkH)
 
-### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
+### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams.
 #### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams. 
+
+[![VLJDRjiy4-Bph-AGXVll-WBx-A9-N8-Gt-Y9ar-X8460-E6-ZF6sc-ZR46-H0hbo-OBHzzqh-Kqf0bm-Zd4ukp-FZc-QMkl4-CZjj-QPqoi-KUse-RZIz4-PRg.png](https://i.postimg.cc/QdF2NJtx/VLJDRjiy4-Bph-AGXVll-WBx-A9-N8-Gt-Y9ar-X8460-E6-ZF6sc-ZR46-H0hbo-OBHzzqh-Kqf0bm-Zd4ukp-FZc-QMkl4-CZjj-QPqoi-KUse-RZIz4-PRg.png)](https://postimg.cc/9Dj8JTZv)
+
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
 ## 4.2.4. Bounded Context: Data Telemetry
