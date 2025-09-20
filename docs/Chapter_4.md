@@ -2635,10 +2635,18 @@ _Tabla de métodos de comment_
 
 
 ### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams. 
+
+[![Community-Social-Component.png](https://i.postimg.cc/3RRVVNj3/Community-Social-Component.png)](https://postimg.cc/3ystDKbq)
+
 ### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams. 
+
+[![Community-Social-Class-Diagrams.png](https://i.postimg.cc/CLTYBCHD/Community-Social-Class-Diagrams.png)](https://postimg.cc/NL4ZZHnf)
+
 #### 4.2.7.6.2. Bounded Context Database Design Diagram.
- 
+
+[![Community-Social-Design-Diagram.png](https://i.postimg.cc/0yVLf7mV/Community-Social-Design-Diagram.png)](https://postimg.cc/DSbjfJxG)
+
 ## 4.2.8. Bounded Context: Billing and Subscription
 ### 4.2.8.1. Domain Layer. 
 
@@ -2722,7 +2730,6 @@ _Tabla de atributos de BillingPeriod_
 | --------- | ------------------- | ----------- | ------------------------- |
 | start     | DateTime            | public      | Fecha inicio del periodo. |
 | end       | DateTime            | public      | Fecha fin del periodo.    |
-| frequency | BillingCycle (enum) | public      | Frecuencia asociada.      |
 
 
 _Tabla de métodos de BillingPeriod_
@@ -2905,33 +2912,3 @@ _Tabla de métodos de Plans_
 ### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.8.6.1. Bounded Context Domain Layer Class Diagrams. 
 #### 4.2.8.6.2. Bounded Context Database Design Diagram.
- 
-## 4.2.9. Bounded Context: Platform
-### 4.2.9.1. Domain Layer. 
-#### Subscription
-
-_Tabla de Subscription_
-
-_Tabla de atributos de Subscription_
-
-_Tabla de métodos de Subscription_
-### 4.2.9.2. Interface Layer. 
-
-#### 
-
-_Tabla de _
-
-
-
-_Tabla de métodos de _
-
-### 4.2.9.3. Application Layer. 
-
-#### 
-
-### 4.2.9.4. Infrastructure Layer. 
-### 4.2.9.5. Bounded Context Software Architecture Component Level Diagrams. 
-### 4.2.9.6. Bounded Context Software Architecture Code Level Diagrams. 
-#### 4.2.9.6.1. Bounded Context Domain Layer Class Diagrams. 
-#### 4.2.9.6.2. Bounded Context Database Design Diagram.
-
