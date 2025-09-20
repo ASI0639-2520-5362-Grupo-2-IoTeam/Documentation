@@ -1761,6 +1761,8 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
+[![12-2025-09-20-03-59.png](https://i.postimg.cc/2yjts4MY/12-2025-09-20-03-59.png)](https://postimg.cc/tZfDPV9v)
+
 ## 4.2.4. Bounded Context: Data Telemetry
 
 El Bounded Context de Data Telemetry se encarga de la ingestión, almacenamiento y consulta de las lecturas enviadas por los dispositivos IoT. Centraliza la captura de datos en tiempo real (humedad, luz, temperatura, etc.), garantizando consistencia, persistencia y disponibilidad para otros procesos como análisis, reportes y notificaciones. 
