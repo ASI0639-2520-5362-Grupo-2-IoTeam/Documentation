@@ -758,9 +758,306 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 ## 4.2.7. Bounded Context: Community/Social
 ### 4.2.7.1. Domain Layer. 
-### 4.2.7.2. Interface Layer. 
+
+#### Communities
+_Tabla de communities_
+
+| Propiedad     | Valor                                                                                                            |
+|---------------|------------------------------------------------------------------------------------------------------------------|
+| **Nombre**    | communities                                                                                                             |
+| **Categoría** | Aggregate Root                                                                                                   |
+| **Propósito** | Almacenar la configuración y metadatos de cada comunidad (nombre, descripción, visibilidad). |
+
+
+_Tabla de atributos de communities_
+
+| Nombre       | Tipo de dato | Visibilidad | Descripción                                          |
+| ------------ | -----------: | ----------- | ---------------------------------------------------- |
+| id           |         UUID | Private    | Identificador único de la comunidad.                 |
+| name         | VARCHAR(150) | Public      | Nombre visible de la comunidad.                      |
+| description  |         TEXT | Public      | Descripción corta de la comunidad.                   |
+| is_public   |      BOOLEAN | Public      | Indica si la comunidad es pública o privada.         |                           |
+| created_at  |    TIMESTAMP | Private    | Fecha de creación.                                   |
+| updated_at  |    TIMESTAMP | Private    | Fecha de última actualización.                       |
+
+
+_Tabla de métodos de communities_
+
+| Nombre                                               | Tipo de retorno | Visibilidad | Descripción                                                  |
+| ---------------------------------------------------- | --------------: | ----------- | ------------------------------------------------------------ |
+| createCommunity(name, slug, description, is\_public) |       Community | Public      | Crea una nueva comunidad y asigna configuración por defecto. |
+| archiveCommunity()                                   |         boolean | Private    | Marca la comunidad como inactiva/archivada.                  |
+
+
+#### Community_posts
+
+_Tabla de community_posts_
+
+| Propiedad     | Valor                                                                                                             |
+| ------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | community_posts                                                                                                 |
+| **Categoría** | Aggregate                                                                                 |
+| **Propósito** | Representar las publicaciones del feed con contenido, media, estado. |
+
+_Tabla de atributos de community_posts_
+
+| Nombre        |       Tipo de dato | Visibilidad | Descripción                                        |
+| ------------- | -----------------: | ----------- | -------------------------------------------------- |
+| id            |               UUID | Private    | ID único del post.                                 |
+| community_id |               UUID | Private    | FK a `communities`.                                |
+| author_id    |               UUID | Public      | FK a `community_members` (autor).                  |
+| title         |       VARCHAR(250) | Public      | Título de la publicación.                          |
+| body          |               TEXT | Public      | Contenido principal (texto).                       |
+| status        |        `Status` (enum) | Public      | Estado: `draft`, `published`, `hidden`, `deleted`. |
+| visibility    |        VARCHAR(20) | Public      | Público, privado, solo miembros.                   |
+| created\_at   |          TIMESTAMP | Private    | Fecha de creación.                                 |
+| updated\_at   |          TIMESTAMP | Private    | Fecha de actualización.                            |
+| deleted\_at   | TIMESTAMP NULLABLE | Private    | Fecha de eliminación.                |
+
+
+_Tabla de métodos de community_posts_
+
+| Nombre                                               | Tipo de retorno | Visibilidad | Descripción                                          |
+| ---------------------------------------------------- | --------------: | ----------- | ---------------------------------------------------- |
+| createPost(authorId, title, body, visibility) |            Post | Public      | Valida y crea el post; emite `PostCreated`.          |
+| editPost(postId, changes)                            |            Post | Public      | Aplica cambios y actualiza `updated_at`.             |
+| publish()                                            |         boolean | Public      | Cambia estado a `published` y emite evento.          |
+| hide()                                         |         boolean | Private    | Oculta el post.                         |
+| delete()                                    |         boolean | Public      | Elimina definitivamente. |     
+
+
+#### Community_members
+
+_Tabla de community_members_
+
+|     Propiedad | Valor                                                                                                                                |
+| ------------: | ------------------------------------------------------------------------------------------------------------------------------------ |
+|    **Nombre** | **CommunityMember**                                                                                  |
+| **Categoría** | Entity     |
+| **Propósito** | Perfil público en la comunidad. Relaciona usuarios con posts y acciones. |
+
+
+_Tabla de atributos de community_members_
+
+| Nombre            | Tipo de dato | Visibilidad | Descripción                                |
+| ----------------- | -----------: | ----------- | ------------------------------------------ |
+| id                |         UUID | Private    | ID del miembro (user profile).             |
+| user_id          |         UUID | Private    | FK al sistema de usuarios.     |
+| role              |  VARCHAR(50) | Private    | Rol: `member`, `admin`.       |
+| joined_at        |    TIMESTAMP | Private    | Fecha de ingreso.                          |
+| bio               |         TEXT | Public      | Biografía pública.                         |
+
+
+_Tabla de métodos de community_members_
+
+| Nombre                          | Tipo de retorno | Visibilidad | Descripción                          |
+| ------------------------------- | --------------: | ----------- | ------------------------------------ |
+| getProfile(memberId)            | CommunityMember | Public      | Recupera perfil público.             |
+| updateProfile(changes)          | CommunityMember | Public      | Actualiza campos permitidos.         |
+
+
+
+
+#### Comment
+
+_Tabla de comment_
+
+|     Propiedad | Valor                                                                                                          |
+| ------------: | -------------------------------------------------------------------------------------------------------------- |
+|    **Nombre** | **Comment**                                                                                                    |
+| **Categoría** | Entity                                                                                                         |
+| **Propósito** | Comentarios asociados a un post; edición y eliminación; registra autor y timestamps. |
+
+
+_Tabla de atributos de comment_
+
+| Nombre              |  Tipo de dato | Visibilidad | Descripción                     |
+| ------------------- | ------------: | ----------- | ------------------------------- |
+| id                  |          UUID | Private    | ID del comentario.              |
+| post_id            |          UUID | Private    | FK a `community_posts`.         |
+| author_id          |          UUID | Public      | FK a `community_members`.       |
+| body                |          TEXT | Public      | Texto del comentario.           |
+| status              |   VARCHAR(20) | Public      | `visible`, `hidden`, `deleted`. |
+| created_at         |     TIMESTAMP | Private    | Fecha de creación.              |
+| updated_at         |     TIMESTAMP | Private    | Fecha de edición.               |
+
+
+_Tabla de métodos de comment_
+
+| Nombre                                            | Tipo de retorno | Visibilidad     | Descripción                                      |
+| ------------------------------------------------- | --------------: | --------------- | ------------------------------------------------ |
+| addComment(postId, authorId, body) |         Comment | Public          | Crea un comentario. |
+| editComment(commentId, newBody)                   |         Comment | Public          | Edita el comentario (control de autor).          |
+| deleteComment(commentId)                          |         boolean | Public | Elimina o marca como eliminado.                  |
+
+
+### 4.2.7.2. Interface Layer.
+
+#### Communities
+_Tabla de communities_
+| Propiedad     | Valor                                                                             |
+| ------------- | --------------------------------------------------------------------------------- |
+| **Nombre**    | `communities`                                                                     |
+| **Categoría** | API / Resource                                                                    |
+| **Propósito** | Exponer endpoints para crear, obtener, listar, actualizar y archivar comunidades. |
+| **Ruta**      | `/api/communities`                                                                |
+
+_Tabla de métodos de communities_
+
+| Nombre           | Ruta                                          |                                   Acción | Handle                                                               |
+| ---------------- | --------------------------------------------- | ---------------------------------------: | -------------------------------------------------------------------- |
+| listCommunities  | `GET /api/communities`                        |    Obtener lista paginada de comunidades | `CommunitiesController.list()` → `ListCommunitiesQueryHandler`       |
+| getCommunity     | `GET /api/communities/{communityId}`          | Obtener detalle público de una comunidad | `CommunitiesController.get()` → `GetCommunityQueryHandler`           |
+| createCommunity  | `POST /api/communities`                       |                          Crear comunidad | `CommunitiesController.create()` → `CreateCommunityCommandHandler`   |
+| updateCommunity  | `PUT /api/communities/{communityId}`          |           Actualizar datos/configuración | `CommunitiesController.update()` → `UpdateCommunityCommandHandler`   |
+| archiveCommunity | `POST /api/communities/{communityId}/archive` |          Archivar / desactivar comunidad | `CommunitiesController.archive()` → `ArchiveCommunityCommandHandler` |
+
+
+#### Community_posts
+
+_Tabla de community_posts_
+| Propiedad     | Valor                                                                    |
+| ------------- | ------------------------------------------------------------------------ |
+| **Nombre**    | `community_posts`                                                        |
+| **Categoría** | API / Resource (Posts)                                                   |
+| **Propósito** | Endpoints para CRUD de posts.            |
+| **Ruta**      | `/api/communities/{communityId}/posts` |
+
+_Tabla de métodos de community_posts_
+| Nombre           | Ruta                                        |                                  Acción | Handle                                                       |
+| ---------------- | ------------------------------------------- | --------------------------------------: | ------------------------------------------------------------ |
+| listPosts (feed) | `GET /api/communities/{communityId}/posts`  |   Listar posts (paginado, filter, sort) | `PostsController.list()` → `ListFeedQueryHandler`            |
+| getPost          | `GET /api/posts/{postId}`                   |                     Obtener post por id | `PostsController.get()` → `GetPostQueryHandler`              |
+| createPost       | `POST /api/communities/{communityId}/posts` |            Crear post | `PostsController.create()` → `CreatePostCommandHandler`      |
+| editPost         | `PUT /api/posts/{postId}`                   |                             Editar post | `PostsController.edit()` → `EditPostCommandHandler`          |
+| publishPost      | `POST /api/posts/{postId}/publish`          |           Publicar post (cambia status) | `PostsController.publish()` → `PublishPostCommandHandler`    |
+| hidePost         | `POST /api/posts/{postId}/hide`             |               Ocultar post (moderación) | `ModerationController.hidePost()` → `HidePostCommandHandler` |
+| deletePost       | `DELETE /api/posts/{postId}`                |     Borrar post | `PostsController.delete()` → `DeletePostCommandHandler`      |
+
+#### Community_members
+
+_Tabla de community_members_
+
+| Propiedad     | Valor                                                                          |
+| ------------- | ------------------------------------------------------------------------------ |
+| **Nombre**    | `community_members`                                                            |
+| **Categoría** | API / Resource (Members)                                                       |
+| **Propósito** | Endpoints para consultar y actualizar perfiles públicos, roles y preferencias. |
+| **Ruta**      | `/api/communities/{communityId}/members`  y `/api/members`                     |
+
+
+_Tabla de métodos de community_members_
+
+| Nombre         | Ruta                                                             |                                 Acción | Handle                                                       |
+| -------------- | ---------------------------------------------------------------- | -------------------------------------: | ------------------------------------------------------------ |
+| listMembers    | `GET /api/communities/{communityId}/members`                     |       Listar miembros de una comunidad | `MembersController.list()` → `ListMembersQueryHandler`       |
+| getProfile     | `GET /api/members/{memberId}`                                    |                 Obtener perfil público | `MembersController.get()` → `GetMemberProfileQueryHandler`   |
+| updateProfile  | `PUT /api/members/{memberId}`                                    | Actualizar perfil | `MembersController.update()` → `UpdateProfileCommandHandler` |
+| promoteMember  | `POST /api/communities/{communityId}/members/{memberId}/promote` |          Cambiar rol (admin/member) | `AdminController.promote()` → `ChangeRoleCommandHandler`     |
+| leaveCommunity | `POST /api/communities/{communityId}/members/{memberId}/leave`   |                    Abandonar comunidad | `MembersController.leave()` → `LeaveCommunityCommandHandler` |
+
+
+#### Comment
+
+_Tabla de comment_
+
+| Propiedad     | Valor                                                         |
+| ------------- | ------------------------------------------------------------- |
+| **Nombre**    | `comments`                                                    |
+| **Categoría** | API / Resource (Comments)                                     |
+| **Propósito** | Crear, editar, eliminar y listar comentarios de posts.        |
+| **Ruta**      | `/api/posts/{postId}/comments`  y `/api/comments/{commentId}` |
+
+
+_Tabla de métodos de comment_
+
+| Nombre        | Ruta                                    |                               Acción | Handle                                                                 |
+| ------------- | --------------------------------------- | -----------------------------------: | ---------------------------------------------------------------------- |
+| listComments  | `GET /api/posts/{postId}/comments`      |        Listar comentarios de un post | `CommentsController.list()` → `ListCommentsQueryHandler`               |
+| addComment    | `POST /api/posts/{postId}/comments`     |                    Añadir comentario | `CommentsController.add()` → `AddCommentCommandHandler`                |
+| editComment   | `PUT /api/comments/{commentId}`         | Editar comentario | `CommentsController.edit()` → `EditCommentCommandHandler`              |
+| deleteComment | `DELETE /api/comments/{commentId}`      |    Eliminar comentario | `CommentsController.delete()` → `DeleteCommentCommandHandler`          |
+
+
 ### 4.2.7.3. Application Layer. 
+
+#### Communities
+
+| Propiedad     | Valor                                                                                                                                                                                                                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `communities`                                                                                                                                                                                                                                                                                                  |
+| **Categoría** | Application / Command & Query Handlers                                                          |
+| **Propósito** | Orquestar creación, actualización, listado y archivado de comunidades                                                                                                           |
+| **Comando**   | `CreateCommunityCommand` → `CreateCommunityCommandHandler`  <br>`UpdateCommunityCommand` → `UpdateCommunityCommandHandler`  <br>`ArchiveCommunityCommand` → `ArchiveCommunityCommandHandler`  <br>`ListCommunitiesQuery` → `ListCommunitiesQueryHandler`  <br>`GetCommunityQuery` → `GetCommunityQueryHandler` |
+
+#### Community_posts
+
+| Propiedad     | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `community_posts`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Categoría** | Application / Command, Query, Event Handlers                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Propósito** | Coordinar creación/edición/publicación/ocultamiento/eliminación de posts(`PostCreated`).                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Comando**   | `CreatePostCommand` → `CreatePostCommandHandler`  <br>`EditPostCommand` → `EditPostCommandHandler`  <br>`PublishPostCommand` → `PublishPostCommandHandler`  <br>`DeletePostCommand` → `DeletePostCommandHandler`  <br>`HidePostCommand` → `HidePostCommandHandler`  <br>`ListFeedQuery` → `ListFeedQueryHandler`  <br>`GetPostQuery` → `GetPostQueryHandler`  <br>**Eventos**: `PostCreatedEvent` → `PostCreatedEventHandler` |
+
+#### Community_members
+| Propiedad     | Valor                                                                                                                                                                                                                          |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Nombre**    | `community_members`                                                                                                                                                                                                            |
+| **Categoría** | Application / Command & Query Handlers                                                                                                                                                                                         |
+| **Propósito** | Orquestar lectura y actualización de perfiles, cambios de rol   |
+| **Comando**   | `GetMemberProfileQuery` → `GetMemberProfileQueryHandler`  <br>`UpdateProfileCommand` → `UpdateProfileCommandHandler`  <br>`ChangeRoleCommand` → `ChangeRoleCommandHandler`  <br>`ListMembersQuery` → `ListMembersQueryHandler` |
+
+#### Comment
+| Propiedad     | Valor                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `comment`                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Categoría** | Application / Command & Query Handlers                        |
+| **Propósito** | Coordinar creación, edición, eliminación.                                |
+| **Comando**   | `AddCommentCommand` → `AddCommentCommandHandler`  <br>`EditCommentCommand` → `EditCommentCommandHandler`  <br>`DeleteCommentCommand` → `DeleteCommentCommandHandler`  <br>`ReportCommentCommand` → `ReportCommentCommandHandler`  <br>`ListCommentsQuery` → `ListCommentsQueryHandler` |
+
+
 ### 4.2.7.4. Infrastructure Layer. 
+
+#### CommunitiesRepository
+
+| Propiedad     | Valor                                                                                                                                                                                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `CommunitiesRepository` / Implementaciones                                                                                                                                                                                             |
+| **Categoría** | Repository Interface + Implementations                                                                                                                                                                                                 |
+| **Propósito** | Persistencia y consultas optimizadas para `communities` (CRUD, búsquedas)                                                                                                                          |
+| **Interfaz**  | `ICommunityRepository` (métodos: `save(Community)`, `findById(id)`, `list(filter`, `archive(id)`) |
+
+
+#### PostsRepository
+
+| Propiedad     | Valor                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `PostsRepository` / Media & Event Adapters                                                                                                                                                                                                                                                                                                                                                                        |
+| **Categoría** | Repository + Storage + Message Bus                                                                                                                                                                                                                                                                                                                                                                                |
+| **Propósito** | Guardar posts, actualizar estados.                                                                  |
+| **Interfaz**  | `IPostRepository` (`save(Post)`, `findById(id)`, `listByCommunity(communityId, filters)`, `updateStatus(postId, status)`, `delete(postId)`) |
+
+
+#### MembersRepository
+
+| Propiedad     | Valor                                                                                                                                                                                                                                                                         |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `MembersRepository` |
+| **Categoría** | Repository                                          |
+| **Propósito** | Persistir perfiles públicos, roles y preferencias; integrar con sistema de usuarios central (auth).  |
+| **Interfaz**  | `IMemberRepository` (`findByUserId(userId)`, `findById(id)`, `save(member)`, `listByCommunity(communityId)`)|
+
+
+#### CommentsRepository
+
+| Propiedad     | Valor                                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre**    | `CommentsRepository`                                                                                                                                                                                                |
+| **Categoría** | Repository                                                                                                                                                                                                          |
+| **Propósito** | Guardar y consultar comentarios.                                                                                                                  |
+| **Interfaz**  | `ICommentRepository` (`save(Comment)`, `findById(id)`, `listByPost(postId)`, `delete(commentId)`) |
+
+
 ### 4.2.7.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.7.6. Bounded Context Software Architecture Code Level Diagrams. 
 ### 4.2.7.6.1. Bounded Context Domain Layer Class Diagrams. 
@@ -768,8 +1065,25 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
  
 ## 4.2.8. Bounded Context: Billing and Subscription
 ### 4.2.8.1. Domain Layer. 
-### 4.2.8.2. Interface Layer. 
+#### Valor
+
+_Tabla de_
+_Tabla de atributos de_
+_Tabla de métodos de_
+### 4.2.8.2. Interface Layer.
+
+#### 
+
+_Tabla de _
+
+
+
+_Tabla de métodos de _
+
 ### 4.2.8.3. Application Layer. 
+
+#### 
+
 ### 4.2.8.4. Infrastructure Layer. 
 ### 4.2.8.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.8.6. Bounded Context Software Architecture Code Level Diagrams. 
