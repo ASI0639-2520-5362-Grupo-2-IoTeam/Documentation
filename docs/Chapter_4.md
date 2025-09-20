@@ -1202,6 +1202,8 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams. 
 
+[![ZL9-TQl-Cm47pt-AVRj-Ixu-FNo3mb-RJn-Yw65af03-RAMDMT2-Fa-TQ1408z-H6-I8-Gc-FKb-TMw-XEqq-Byf1q-DCzu-PBQDWa-Cw-QGb-WCGSNO1-BG8.png](https://i.postimg.cc/FsRbwPWz/ZL9-TQl-Cm47pt-AVRj-Ixu-FNo3mb-RJn-Yw65af03-RAMDMT2-Fa-TQ1408z-H6-I8-Gc-FKb-TMw-XEqq-Byf1q-DCzu-PBQDWa-Cw-QGb-WCGSNO1-BG8.png)](https://postimg.cc/Btr1KCGf)
+
 
 
 ## 4.2.3. Bounded Context: Device Management IoT
