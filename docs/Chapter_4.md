@@ -1588,9 +1588,12 @@ _Tabla de métodos de Notification API_
 | **Propósito** | Proveer acceso a tablas de reglas, notificaciones y configuraciones de canal.             |
 
 ### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams. 
+[![Notification-Rules-Engine-Component-Diagram.png](https://i.postimg.cc/C5Jbyf9T/Notification-Rules-Engine-Component-Diagram.png)](https://postimg.cc/304kmWKn)
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
+[![Notification-Rules-Engine-Class-Diagram.png](https://i.postimg.cc/hGJs9M6J/image.png)](https://postimg.cc/06s7vG8x)
 #### 4.2.5.6.2. Bounded Context Database Design Diagram.
+[![Notification-Rules-Engine-Class-Diagram.png](https://i.postimg.cc/d39pz4qs/image.png)](https://postimg.cc/0KbVSGMF)
 
 ## 4.2.6. Bounded Context: Analysis & Reporting  
 
