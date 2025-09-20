@@ -1476,178 +1476,186 @@ El Bounded Context de Data Telemetry se encarga de la ingestión, almacenamiento
 
 En la capa de dominio de Data Telemetry se definen las entidades, objetos de valor y repositorios encargados de modelar el ciclo de vida de los registros de telemetría.
 
-**TelemetryRecord**
+#### TelemetryRecord
 
-| Propiedad     | Valor |
-|---------------|----------------------------------------------------------------------------------|
-| **Nombre**    | TelemetryRecord |
-| **Categoría** | Aggregate Root |
-| **Propósito** | Representar una lectura individual enviada desde un dispositivo IoT asociado a una planta. |
+_Tabla de TelemetryRecord_
 
-**Atributos de TelemetryRecord**
+| Propiedad   | Valor                                                                                           |
+|-------------|-------------------------------------------------------------------------------------------------|
+| **Nombre**  | TelemetryRecord                                                                                 |
+| **Categoría** | Aggregate Root                                                                                |
+| **Propósito** | Representa una lectura de telemetría enviada por un dispositivo IoT (humedad, temperatura, etc.) |
 
-| Nombre     | Tipo de dato | Visibilidad | Descripción |
-|------------|--------------|-------------|-------------|
-| recordId   | Long         | Private     | Identificador único del registro |
-| deviceId   | Long         | Private     | Identificador del dispositivo que generó la lectura |
-| plantId    | Long         | Private     | Planta asociada a la lectura |
-| timestamp  | DateTime     | Private     | Fecha y hora de la lectura |
-| dataType   | String       | Private     | Tipo de dato leído (humedad, luz, temperatura, etc.) |
-| value      | Double       | Private     | Valor medido por el sensor |
+_Tabla de atributos de TelemetryRecord_
 
-**Métodos de TelemetryRecord**
+| Nombre        | Tipo de dato | Visibilidad | Descripción                                              |
+|---------------|-------------|-------------|----------------------------------------------------------|
+| id            | UUID        | Private     | Identificador único del registro de telemetría.          |
+| device_id     | UUID        | Private     | FK al dispositivo que envió el dato.                     |
+| metric_type   | VARCHAR(50) | Public      | Tipo de métrica (`humidity`, `temperature`, `light`).    |
+| metric_value  | FLOAT       | Public      | Valor medido.                                            |
+| recorded_at   | TIMESTAMP   | Private     | Momento exacto de la medición.                           |
+| received_at   | TIMESTAMP   | Private     | Fecha de recepción en el sistema.                        |
 
-| Nombre        | Tipo de retorno | Visibilidad | Descripción |
-|---------------|-----------------|-------------|-------------|
-| createRecord  | void            | Public      | Crea un nuevo registro de telemetría |
-| markUpdated   | void            | Private     | Marca el registro como actualizado |
+_Tabla de métodos de TelemetryRecord_
 
----
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                                        |
+|-----------------|-----------------|-------------|----------------------------------------------------|
+| validate()      | boolean         | Private     | Verifica que el valor esté dentro de un rango válido|
+| enrich()        | void            | Private     | Añade metadatos adicionales (ej. localización).    |
 
-**SensorData**
 
-| Propiedad  | Valor |
-|------------|----------------------------------------------------------------------------|
-| **Nombre** | SensorData |
-| **Categoría** | Value Object |
-| **Propósito** | Representar el valor leído por un sensor con su tipo y unidad de medida. |
+#### TelemetryBatch
 
-**Atributos de SensorData**
+_Tabla de TelemetryBatch_
 
-| Nombre | Tipo de dato | Visibilidad | Descripción |
-|--------|--------------|-------------|-------------|
-| type   | String       | Public      | Tipo de sensor (ej. humedad, luz) |
-| value  | Double       | Public      | Valor leído |
-| unit   | String       | Public      | Unidad de medida del valor (% humedad, °C, lux) |
+| Propiedad   | Valor                                                                                   |
+|-------------|-----------------------------------------------------------------------------------------|
+| **Nombre**  | TelemetryBatch                                                                          |
+| **Categoría** | Entity                                                                                |
+| **Propósito** | Representa un conjunto de registros procesados de forma conjunta para optimización.  |
 
----
+_Tabla de atributos de TelemetryBatch_
 
-**DeviceStatus**
+| Nombre        | Tipo de dato | Visibilidad | Descripción                                          |
+|---------------|-------------|-------------|------------------------------------------------------|
+| id            | UUID        | Private     | Identificador del batch.                             |
+| device_id     | UUID        | Private     | FK al dispositivo origen de los registros.           |
+| record_count  | INT         | Public      | Número de registros incluidos.                       |
+| created_at    | TIMESTAMP   | Private     | Fecha en que se creó el batch.                       |
 
-| Propiedad  | Valor |
-|------------|----------------------------------------------------------------------------|
-| **Nombre** | DeviceStatus |
-| **Categoría** | Entity |
-| **Propósito** | Representar el estado de un dispositivo IoT en el sistema. |
+_Tabla de métodos de TelemetryBatch_
 
-**Atributos de DeviceStatus**
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                              |
+|-----------------|-----------------|-------------|------------------------------------------|
+| aggregate()     | void            | Public      | Agrupa registros y genera un resumen.     |
+| attachRecord()  | void            | Private     | Vincula un registro de telemetría al lote.|
 
-| Nombre   | Tipo de dato | Visibilidad | Descripción |
-|----------|--------------|-------------|-------------|
-| deviceId | Long         | Private     | Identificador único del dispositivo |
-| status   | String       | Private     | Estado actual del dispositivo (ONLINE, OFFLINE) |
-| lastSeen | DateTime     | Private     | Última vez que el dispositivo envió datos |
 
----
+#### TelemetryAlert
 
-**Repositorios**
+_Tabla de TelemetryAlert_
 
-**ITelemetryRepository**
+| Propiedad   | Valor                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------|
+| **Nombre**  | TelemetryAlert                                                                              |
+| **Categoría** | Entity                                                                                    |
+| **Propósito** | Representa una alerta generada cuando los valores de telemetría superan un umbral definido.|
 
-| Propiedad   | Valor |
-|-------------|---------------------------------------------------------------|
-| **Nombre**  | ITelemetryRepository |
-| **Categoría** | Repository |
-| **Propósito** | Persistir y consultar registros de telemetría |
+_Tabla de atributos de TelemetryAlert_
 
-**Métodos de ITelemetryRepository**
+| Nombre        | Tipo de dato | Visibilidad | Descripción                                      |
+|---------------|-------------|-------------|--------------------------------------------------|
+| id            | UUID        | Private     | Identificador único de la alerta.                |
+| device_id     | UUID        | Private     | FK al dispositivo relacionado.                   |
+| metric_type   | VARCHAR(50) | Public      | Tipo de métrica que generó la alerta.            |
+| threshold     | FLOAT       | Public      | Valor límite configurado.                        |
+| actual_value  | FLOAT       | Public      | Valor recibido que disparó la alerta.            |
+| created_at    | TIMESTAMP   | Private     | Fecha en que se generó la alerta.                |
 
-| Nombre                   | Tipo de retorno   | Visibilidad | Descripción |
-|---------------------------|------------------|-------------|-------------|
-| Save(record)              | TelemetryRecord  | Public      | Persiste un registro de telemetría |
-| FindByPlantId(plantId)    | List<TelemetryRecord> | Public | Devuelve todas las lecturas asociadas a una planta |
-| FindLatestByDeviceId(id)  | TelemetryRecord? | Public      | Devuelve la última lectura registrada de un dispositivo |
+_Tabla de métodos de TelemetryAlert_
 
----
+| Nombre          | Tipo de retorno | Visibilidad | Descripción                                     |
+|-----------------|-----------------|-------------|-------------------------------------------------|
+| trigger()       | void            | Public      | Activa la alerta y genera evento de notificación|
+| resolve()       | void            | Public      | Marca la alerta como resuelta.                  |
 
-**IDeviceStatusRepository**
-
-| Propiedad   | Valor |
-|-------------|---------------------------------------------------------------|
-| **Nombre**  | IDeviceStatusRepository |
-| **Categoría** | Repository |
-| **Propósito** | Gestionar estados de dispositivos IoT |
-
-**Métodos de IDeviceStatusRepository**
-
-| Nombre                   | Tipo de retorno  | Visibilidad | Descripción |
-|---------------------------|-----------------|-------------|-------------|
-| Save(status)              | DeviceStatus    | Public      | Persiste el estado de un dispositivo |
-| FindByDeviceId(id)        | DeviceStatus?   | Public      | Devuelve el estado de un dispositivo específico |
 
 ---
 
 ### 4.2.4.2. Interface Layer
 
-La capa de interfaz expone los controladores REST que permiten a las aplicaciones cliente enviar y consultar telemetría.
+#### Telemetry API
 
-**TelemetryController**
+_Tabla de Telemetry API_
 
-| Propiedad   | Valor |
-|-------------|---------------------------------------------------------------|
-| **Nombre**  | TelemetryController |
-| **Categoría** | Controller |
-| **Propósito** | Exponer endpoints REST para registrar y consultar lecturas de telemetría |
-| **Ruta**     | /api/telemetry |
+| Propiedad   | Valor                                                      |
+|-------------|------------------------------------------------------------|
+| **Nombre**  | TelemetryController                                        |
+| **Categoría** | API / Resource                                           |
+| **Propósito** | Exponer endpoints para recibir, listar y consultar telemetría |
+| **Ruta**    | `/api/telemetry`                                          |
 
-**Métodos de TelemetryController**
+_Tabla de métodos de Telemetry API_
 
-| Nombre              | Ruta                           | Acción | Handle |
-|---------------------|--------------------------------|--------|--------|
-| SubmitTelemetry     | POST /submit                   | Registrar una nueva lectura | SubmitTelemetryCommand |
-| GetByPlant          | GET /plant/{plantId}           | Consultar lecturas históricas de una planta | GetTelemetryByPlantQuery |
-| GetLatestByDevice   | GET /device/{deviceId}/latest  | Obtener la última lectura de un dispositivo | GetLatestTelemetryQuery |
+| Nombre           | Ruta                       | Acción                                | Handle                                |
+|------------------|----------------------------|--------------------------------------|---------------------------------------|
+| ingestTelemetry  | POST /api/telemetry        | Registrar nuevo dato                  | IngestTelemetryCommandHandler          |
+| listTelemetry    | GET /api/telemetry         | Listar registros de telemetría        | ListTelemetryQueryHandler              |
+| getTelemetryById | GET /api/telemetry/{id}    | Obtener detalle de un registro        | GetTelemetryQueryHandler               |
+
 
 ---
 
 ### 4.2.4.3. Application Layer
 
-La capa de aplicación coordina la ejecución de comandos y consultas de la telemetría, delegando al dominio y asegurando transacciones correctas.
+#### Command Handlers
 
-**Command Handlers**
+| Nombre                       | Categoría        | Propósito                                   | Comando                       |
+|------------------------------|------------------|---------------------------------------------|-------------------------------|
+| IngestTelemetryCommandHandler| Command Handler  | Procesar y persistir un nuevo registro       | IngestTelemetryCommand        |
 
-| Nombre                          | Categoría       | Propósito |
-|---------------------------------|-----------------|-----------|
-| SubmitTelemetryCommandHandler   | Command Handler | Procesar el registro de una nueva lectura enviada desde un dispositivo |
+#### Query Handlers
 
-**Query Handlers**
+| Nombre                       | Categoría        | Propósito                                   | Query                         |
+|------------------------------|------------------|---------------------------------------------|-------------------------------|
+| ListTelemetryQueryHandler    | Query Handler    | Listar registros por dispositivo/usuario     | ListTelemetryQuery            |
+| GetTelemetryQueryHandler     | Query Handler    | Obtener registro individual de telemetría    | GetTelemetryQuery             |
 
-| Nombre                          | Categoría     | Propósito |
-|---------------------------------|---------------|-----------|
-| GetTelemetryByPlantQueryHandler | Query Handler | Consultar lecturas históricas de una planta |
-| GetLatestTelemetryQueryHandler  | Query Handler | Obtener la última lectura registrada de un dispositivo |
+#### Event Handlers
+
+| Nombre                       | Categoría        | Propósito                                   | Evento                        |
+|------------------------------|------------------|---------------------------------------------|-------------------------------|
+| TelemetryIngestedEventHandler| Event Handler    | Notificar que un nuevo dato fue recibido     | TelemetryIngestedEvent        |
+| TelemetryAlertRaisedHandler  | Event Handler    | Procesar cuando se dispara una alerta        | TelemetryAlertRaisedEvent     |
+
 
 ---
 
 ### 4.2.4.4. Infrastructure Layer
 
-En la capa de infraestructura se implementan los repositorios definidos en el dominio, encargados de la persistencia en la base de datos relacional.
+#### TelemetryRepository
 
-**TelemetryRepository**
+| Propiedad   | Valor                                                                 |
+|-------------|-----------------------------------------------------------------------|
+| **Nombre**  | TelemetryRepository                                                   |
+| **Categoría** | Repository                                                          |
+| **Propósito** | Persistir y consultar registros de telemetría.                      |
+| **Interfaz**  | ITelemetryRepository (`save(record)`, `findById(id)`, `listByDevice(deviceId)`) |
 
-| Propiedad   | Valor |
-|-------------|---------------------------------------------------------------|
-| **Nombre**  | TelemetryRepository |
-| **Categoría** | Repository |
-| **Propósito** | Implementar ITelemetryRepository con acceso a la base de datos |
-| **Interfaz**  | ITelemetryRepository |
+#### TelemetryBatchRepository
 
-**DeviceStatusRepository**
+| Propiedad   | Valor                                                                 |
+|-------------|-----------------------------------------------------------------------|
+| **Nombre**  | TelemetryBatchRepository                                              |
+| **Categoría** | Repository                                                          |
+| **Propósito** | Guardar y consultar lotes de telemetría.                            |
+| **Interfaz**  | ITelemetryBatchRepository (`save(batch)`, `findByDevice(deviceId)`) |
 
-| Propiedad   | Valor |
-|-------------|---------------------------------------------------------------|
-| **Nombre**  | DeviceStatusRepository |
-| **Categoría** | Repository |
-| **Propósito** | Implementar IDeviceStatusRepository con acceso a la base de datos |
-| **Interfaz**  | IDeviceStatusRepository |
+#### TelemetryAlertRepository
+
+| Propiedad   | Valor                                                                 |
+|-------------|-----------------------------------------------------------------------|
+| **Nombre**  | TelemetryAlertRepository                                              |
+| **Categoría** | Repository                                                          |
+| **Propósito** | Almacenar y recuperar alertas generadas por telemetría.             |
+| **Interfaz**  | ITelemetryAlertRepository (`save(alert)`, `findByDevice(deviceId)`) |
+
+#### TelemetryDbContext
+
+| Propiedad   | Valor                                                                 |
+|-------------|-----------------------------------------------------------------------|
+| **Nombre**  | TelemetryDbContext                                                    |
+| **Categoría** | ORM Context                                                         |
+| **Propósito** | Punto de acceso central a tablas de registros, lotes y alertas.     |
 
 ### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams. 
 [![Data-Telemetry-Component-Diagram.png](https://i.postimg.cc/qM0Jt5S7/Data-Telemetry-Component-Diagram.png)](https://postimg.cc/qgbVSjkf)
 ### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams. 
-[![Data-Telemetry-Class-Diagram.png](https://i.postimg.cc/7YYvr8jS/image.png)](https://postimg.cc/gr5t35z0)
+[![Data-Telemetry-Class-Diagram.png](https://i.postimg.cc/d1nrTy6H/image.png)](https://postimg.cc/mzztvh0C)
 #### 4.2.4.6.2. Bounded Context Database Design Diagram.
-[![Data-Telemetry-DB-Diagram.png](https://i.postimg.cc/TPbFJRWv/image.png)](https://postimg.cc/Z9TwTzcw)
+[![Data-Telemetry-DB-Diagram.png](https://i.postimg.cc/2SqGR2Gz/image.png)](https://postimg.cc/pmHzKQ37)
 
 ## 4.2.5. Bounded Context: Notification & Rules Engine  
 
@@ -1854,9 +1862,12 @@ _Tabla de métodos de Notification API_
 | **Propósito** | Proveer acceso a tablas de reglas, notificaciones y configuraciones de canal.             |
 
 ### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams. 
+[![Notification-Rules-Engine-Component-Diagram.png](https://i.postimg.cc/C5Jbyf9T/Notification-Rules-Engine-Component-Diagram.png)](https://postimg.cc/304kmWKn)
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
+[![Notification-Rules-Engine-Class-Diagram.png](https://i.postimg.cc/hGJs9M6J/image.png)](https://postimg.cc/06s7vG8x)
 #### 4.2.5.6.2. Bounded Context Database Design Diagram.
+[![Notification-Rules-Engine-Class-Diagram.png](https://i.postimg.cc/d39pz4qs/image.png)](https://postimg.cc/0KbVSGMF)
 
 ## 4.2.6. Bounded Context: Analysis & Reporting  
 
@@ -2043,9 +2054,12 @@ _Tabla de métodos de Report API_
  
 
 ### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams. 
+[![Analysis-Reporting-Component-Diagram.png](https://i.postimg.cc/hj12jvNM/Analysis-Reporting-Component-Diagram.png)](https://postimg.cc/MMX7366j)
 ### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams. 
+[![Analysis-Reporting-Class-Diagram.png](https://i.postimg.cc/s2Fm45rw/image.png)](https://postimg.cc/rDJ580zr)
 #### 4.2.6.6.2. Bounded Context Database Design Diagram.
+[![Analysis-Reporting-Class-DB.png](https://i.postimg.cc/zBvyLPcM/image.png)](https://postimg.cc/JDwrvKmc)
 
 ## 4.2.7. Bounded Context: Community/Social
 ### 4.2.7.1. Domain Layer. 
