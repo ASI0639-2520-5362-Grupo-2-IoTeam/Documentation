@@ -1462,6 +1462,237 @@ La interfaz está organizada en controladores especializados, cada uno con rutas
 |RunTest	|/device/{deviceId}/test	|Ejecuta un test de diagnóstico	RunDeviceTestCommand|
 
 ### 4.2.3.3. Application Layer. 
+La capa de aplicación del Bounded Context Device Management IoT coordina la interacción entre la capa de interfaz y la capa de dominio. Su responsabilidad principal es orquestar comandos, consultas y eventos, asegurando la correcta ejecución de flujos como emparejamiento de dispositivos, activación de sensores, recolección de lecturas, diagnóstico y gestión de firmware.
+
+No implementa reglas de negocio directamente, sino que delega al dominio, manteniendo así una separación clara de responsabilidades y garantizando la integridad transaccional del sistema.
+
+**Command Handlers**
+**DeviceRegisterCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceRegisterCommandHandler|
+|Categoría|	Command Handler|
+|Propósito	|Registrar un nuevo dispositivo en el sistema|
+|Comando	|RegisterDeviceCommand|
+
+**DevicePairCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DevicePairCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Emparejar un dispositivo con una cuenta de usuario|
+|Comando|	PairDeviceCommand|
+
+**DeviceUnpairCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DeviceUnpairCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Desemparejar un dispositivo de la cuenta|
+|Comando	|UnpairDeviceCommand|
+
+**DeviceActivateCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceActivateCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Activar un dispositivo IoT|
+|Comando	|ActivateDeviceCommand|
+
+**DeviceDeactivateCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceDeactivateCommandHandler|
+|Categoría	|Command Handler|
+|Propósito|	Desactivar un dispositivo IoT|
+|Comando	|DeactivateDeviceCommand|
+
+**UpdateFirmwareCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	UpdateFirmwareCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Aplicar actualización de firmware a un dispositivo|
+|Comando	|UpdateFirmwareCommand|
+
+**AddSensorCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|AddSensorCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Agregar un sensor a un dispositivo|
+|Comando	|AddSensorCommand|
+
+**RemoveSensorCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|RemoveSensorCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Eliminar un sensor de un dispositivo|
+|Comando	|RemoveSensorCommand|
+
+**CalibrateSensorCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|CalibrateSensorCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Calibrar un sensor asociado a un dispositivo|
+|Comando|CalibrateSensorCommand|
+
+**SubmitSensorReadingCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SubmitSensorReadingCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Registrar una nueva lectura de sensor|
+|Comando	|SubmitSensorReadingCommand|
+
+**OpenDiagnosticSessionCommandHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|OpenDiagnosticSessionCommandHandler|
+|Categoría	|Command Handler|
+|Propósito	|Abrir una sesión de diagnóstico en un dispositivo|
+|Comando	|OpenDiagnosticSessionCommand|
+
+**CloseDiagnosticSessionCommandHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	CloseDiagnosticSessionCommandHandler|
+|Categoría|	Command Handler|
+|Propósito	|Cerrar una sesión de diagnóstico|
+|Comando	|CloseDiagnosticSessionCommand|
+
+**Query Handlers**
+**GetDeviceByIdQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetDeviceByIdQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener datos de un dispositivo por Id|
+|Query	|GetDeviceByIdQuery|
+
+**GetSensorsByDeviceQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetSensorsByDeviceQueryHandler|
+|Categoría|	Query Handler|
+|Propósito	|Obtener sensores asociados a un dispositivo|
+|Query	|GetSensorsByDeviceQuery|
+
+**GetLatestReadingQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetLatestReadingQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener la última lectura registrada de un sensor|
+|Query	|GetLatestReadingQuery|
+
+**GetSensorReadingsQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|GetSensorReadingsQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Consultar el historial de lecturas de un sensor|
+|Query	|GetSensorReadingsQuery|
+
+**GetDeviceStatusQueryHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	GetDeviceStatusQueryHandler|
+|Categoría	|Query Handler|
+|Propósito	|Obtener estado de salud y diagnóstico de un dispositivo|
+|Query	|GetDeviceStatusQuery|
+
+**Event Handlers**
+**DeviceRegisteredEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceRegisteredEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras el registro de un nuevo dispositivo (ej. inicializar sensores)|
+|Evento	|DeviceRegisteredEvent|
+
+**DevicePairedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DevicePairedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Ejecutar acciones tras emparejar un dispositivo (ej. activar monitoreo)|
+|Evento|	DevicePairedEvent|
+
+**DeviceUnpairedEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DeviceUnpairedEventHandler|
+|Categoría|	Event Handler|
+|Propósito	|Ejecutar acciones tras desemparejar un dispositivo (ej. detener diagnósticos)|
+|Evento|	DeviceUnpairedEvent|
+
+**FirmwareUpdatedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|FirmwareUpdatedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras actualización exitosa de firmware|
+|Evento	|FirmwareUpdatedEvent|
+
+**SensorCalibratedEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|SensorCalibratedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Ejecutar acciones tras calibración de un sensor|
+|Evento|	SensorCalibratedEvent|
+
+**SensorReadingSubmittedEventHandler**
+
+|Propiedad|	Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	SensorReadingSubmittedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras nueva lectura recibida (ej. sincronizar con la nube)|
+|Evento	|SensorReadingSubmittedEvent|
+
+**DiagnosticSessionOpenedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	DiagnosticSessionOpenedEventHandler|
+|Categoría	|Event Handler|
+|Propósito|	Gestionar acciones tras apertura de sesión de diagnóstico|
+|Evento	|DiagnosticSessionOpenedEvent|
+
+**DiagnosticSessionClosedEventHandler**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|DiagnosticSessionClosedEventHandler|
+|Categoría	|Event Handler|
+|Propósito	|Gestionar acciones tras cierre de sesión de diagnóstico|
+|Evento|	DiagnosticSessionClosedEvent|
 ### 4.2.3.4. Infrastructure Layer. 
 ### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams. 
