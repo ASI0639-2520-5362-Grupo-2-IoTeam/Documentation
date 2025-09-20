@@ -272,6 +272,162 @@ Para cada Bounded Context, se propone una arquitectura modular basada en capas t
 En la capa de dominio de Auth & Identity se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de la autenticación e identidad de los usuarios. Aquí residen las reglas de negocio que garantizan la seguridad, consistencia y control de acceso de todo el sistema.
 
 ### 4.2.1.1. Domain Layer. 
+
+En la capa de dominio de Auth & Identity se definen las entidades, objetos de valor, agregados, servicios de dominio y repositorios encargados de gestionar el ciclo de vida de la autenticación e identidad de los usuarios. Aquí residen las reglas de negocio que garantizan la seguridad, consistencia y control de acceso de todo el sistema.
+
+**User Account**
+
+| Propiedad     | Valor                                                                                 |
+|---------------|---------------------------------------------------------------------------------------|
+| **Nombre**    | UserAccount                                                                           |
+| **Categoría** | Aggregate Root                                                                        |
+| **Propósito** | Representar la cuenta de usuario registrada en el sistema, incluyendo credenciales,   |
+
+**Atributos de UserAccount**
+
+| Nombre   | Tipo de dato       | Visibilidad | Descripción                              |
+|----------|--------------------|-------------|------------------------------------------|
+| userId   | UserId             | Privada     | Identificador único de la cuenta         |
+| FullName | FullName           | Privada     | Nombre completo del usuario              |
+| Email    | Email              | Privada     | Dirección de correo electrónico          |
+| Password | passwordHash       | Privada     | Hash de la contraseña                    |
+| Status   | | AccountStatus      | Privada     | Estado de la cuenta (activa, Desactiva) |
+| CreatedAt | DateTime           | Privada     | Fecha de creación de la cuenta           |
+| UpdatedAt | DateTime           | Privada     | Fecha de la última actualización         |
+
+**Metodos de User Account**
+
+| Nombre                | 	Tipo de retorno | 	Visibilidad	 | Descripción                                         |
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+| VerifyEmail	          | void	            | public	       | Marca la cuenta como verificada tras código exitoso |
+| ChangePassword        | 	void            | 	public       | 	Permite actualizar la contraseña                   |
+| RequestPasswordReset	 | PasswordReset	   | public	       | Solicita un proceso de recuperación de contraseña   |
+| UpdateProfile	        | void	            | public	       | Modifica nombre completo o email                    |
+| Deactivate	           | void	            | public	| Desactiva la cuenta del usuario                     |
+| Block	                | void             | public	| Bloquea la cuenta tras intentos fallidos            | 
+| Activate	             | void	            | public	| Reactiva la cuenta si está suspendida               |
+
+**UserId**
+
+| Propiedad	| Valor |
+|---------------|---------------------------------------------------------------------------------------|
+| Nombre	| UserId |
+| Categoría	| Value Object |
+| Propósito	| Identificador único de usuario |
+
+**Atributos de UserId**
+
+| Nombre	| Tipo de dato	| Visibilidad	| Descripción |
+|----------|--------------------|-------------|------------------------------------------|
+| Value | Guid / Long	| private	| Identificador único numérico o GUID |
+
+**EmailVerification**
+
+| Propiedad	| Valor |
+|---------------|---------------------------------------------------------------------------------------|
+| Nombre	| EmailVerification | 
+| Categoría	| Entity |
+| Propósito	| Representar un proceso de verificación de correo electrónico. | 
+
+**Atributos de EmailVerification**
+
+| Nombre	| Tipo de dato	| Visibilidad	| Descripción |
+|----------|--------------------|-------------|------------------------------------------|
+| Code	| string	| private	| Código generado para verificación |
+| UserId	| UserId	| private	| Usuario asociado | 
+| ExpiresAt	| DateTime	| private	| Fecha de expiración del código |
+| Verified	| bool	| private	| Indica si ya fue verificado |
+
+**PasswordReset**
+
+| Propiedad | Valor |
+|---------------|---------------------------------------------------------------------------------------|
+| Nombre |	PasswordReset |
+| Categoría |	Entity |
+| Propósito |	Representar un proceso de recuperación de contraseña solicitado por el usuario |.
+
+**Atributos de PasswordReset**
+
+| Nombre	                                | Tipo de dato	| Visibilidad	| Descripción |
+|----------------------------------------|--------------------|-------------|------------------------------------------|
+| Token	                                 | string	| private	| Código de recuperación |
+| UserId	| UserId	| private	| Usuario asociado | 
+| ExpiresAt	| DateTime	| private	| Fecha de expiración |
+| Used	| bool	| private	| Marca si el token ya fue consumido |
+
+**Session**
+
+| Propiedad	| Valor |
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	| Session |
+| Categoría	| Entity |
+| Propósito	| Representar una sesión de usuario iniciada y autenticada. |
+
+**Atributos de Session**
+
+| Nombre	| Tipo de dato	| Visibilidad	 | Descripción                                  |
+|----------|--------------------|--------------|----------------------------------------------|
+| SessionId	| string	| private	     | Identificador de la sesión                   |
+|UserId	| UserId	| private	| Usuario asociado                             |
+| CreatedAt	| DateTime	| private	| Inicio de la sesión                          |
+| ExpiresAt	| DateTime	| private	| Fecha de expiración                          |
+| Revoked	| bool	| private	| Marca si la sesión fue cerrada o invalidada  |
+
+
+**Domain Services**
+
+**Authenticator**
+
+| Propiedad	| Valor |
+|---------------|---------------------------------------------------------------------------------------|
+| Nombre	| Authenticator |
+| Categoría	| Domain Service |
+| Propósito	| Validar credenciales de usuario y emitir sesiones seguras. |
+
+**Métodos de Authenticator**
+
+| Nombre	| Tipo de retorno	| Visibilidad	| Descripción |
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+| Authenticate	| Session	| public	| Autentica usuario y crea sesión |
+| ValidateToken	| bool	| public	| Valida un token de sesión |
+| RevokeSession	| void	| public	| Revoca sesión activa |
+
+**Repositorios**
+
+**IUserAccountRepository**
+
+| Propiedad	| Valor                  |
+|---------------|------------------------|
+| Nombre	| IUserAccountRepository |
+| Categoría	| Repository|
+| Propósito	| Persistencia de cuentas de usuario|
+
+**Métodos de IUserAccountRepository**
+
+| Nombre	           | Tipo de retorno	 | Visibilidad	| Descripción|
+|-------------------|------------------|---------------|-----------------------------------------------------|
+| GetByIdAsync	     | UserAccount?	    | public	| Obtiene cuenta por Id|
+| FindByEmailAsync	 | UserAccount?	| public	| Busca cuenta por correo|
+| SaveAsync	        | UserAccount	| public	| Persiste cuenta|
+| DeleteAsync	      | bool	| public	| Elimina lógicamente la cuenta|
+
+**ISessionRepository**
+
+| Propiedad	| Valor|
+|---------------|------------------------|
+| Nombre	| ISessionRepository| 
+|Categoría	|Repository|
+|Propósito	|Gestionar sesiones de usuario|
+
+**Métodos de ISessionRepository**
+
+|Nombre	|Tipo de retorno	|Visibilidad	|Descripción|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|FindBySessionId	|Session?	|public	|Busca sesión por Id|
+|Store	|void	|public|	Persiste nueva sesión|
+|Revoke	|void	|public	|Revoca sesión|
+|RevokeAllForUser	|void	|public	|Revoca todas las sesiones activas de un usuario|
+
 ### 4.2.1.2. Interface Layer. 
 ### 4.2.1.3. Application Layer. 
 ### 4.2.1.4. Infrastructure Layer. 
