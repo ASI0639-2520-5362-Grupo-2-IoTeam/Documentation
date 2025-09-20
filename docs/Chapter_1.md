@@ -212,10 +212,11 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     </tr>
 </table>
 
-## 1.3. Segmentos objetivo
+## 1.3. Segmentos objetivos
 
 Para asegurar el éxito de PlantCare, hemos identificado dos segmentos clave que serán el foco principal de nuestras estrategias de desarrollo y marketing. Estos segmentos representan a nuestros usuarios ideales y nos permitirán adaptar nuestras funcionalidades y servicios a sus necesidades específicas, maximizando así el impacto de la plataforma.
 
 - **Segmento 1 – Personas ocupadas (departamentos/oficinas):** profesionales con jornada completa, viven en departamentos, suelen tener 1–5 plantas decorativas. Buscan soluciones que requieran poco mantenimiento y ofrezcan tranquilidad.
 
 - **Segmento 2 – Aficionados:** personas con más plantas (5–20), desean optimizar salud de sus colecciones, les interesa las recomendaciones para diferentes especies.
+
