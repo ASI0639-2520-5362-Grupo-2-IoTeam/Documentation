@@ -1383,11 +1383,210 @@ En la capa de infraestructura se implementan los repositorios definidos en el do
 #### 4.2.4.6.2. Bounded Context Database Design Diagram.
 [![Data-Telemetry-DB-Diagram.png](https://i.postimg.cc/TPbFJRWv/image.png)](https://postimg.cc/Z9TwTzcw)
 
-## 4.2.5. Bounded Context: Notification & Rules Engine
-### 4.2.5.1. Domain Layer. 
-### 4.2.5.2. Interface Layer. 
-### 4.2.5.3. Application Layer. 
-### 4.2.5.4. Infrastructure Layer. 
+## 4.2.5. Bounded Context: Notification & Rules Engine  
+
+### 4.2.5.1. Domain Layer  
+
+#### Rule  
+
+_Tabla de Rule_  
+
+| Propiedad     | Valor                                                                                      |
+|---------------|--------------------------------------------------------------------------------------------|
+| **Nombre**    | Rule                                                                                       |
+| **Categoría** | Aggregate Root                                                                             |
+| **Propósito** | Representa una regla definida por el usuario para monitorear condiciones en la telemetría. |
+
+_Tabla de atributos de Rule_  
+
+| Nombre         | Tipo de dato    | Visibilidad | Descripción                                                       |
+|----------------|----------------|-------------|-------------------------------------------------------------------|
+| id             | UUID           | Private     | Identificador único de la regla.                                  |
+| user_id        | UUID           | Private     | FK al usuario que creó la regla.                                  |
+| device_id      | UUID           | Private     | FK al dispositivo sobre el cual aplica la regla.                  |
+| metric         | VARCHAR(50)    | Public      | Métrica objetivo (`temperature`, `humidity`, etc.).               |
+| condition      | VARCHAR(20)    | Public      | Condición: `>`, `<`, `=`, `>=`, `<=`.                             |
+| threshold      | DECIMAL(10,2)  | Public      | Valor de umbral configurado.                                      |
+| status         | VARCHAR(20)    | Public      | Estado: `active`, `inactive`.                                     |
+| created_at     | TIMESTAMP      | Private     | Fecha de creación de la regla.                                    |
+| updated_at     | TIMESTAMP      | Private     | Última fecha de modificación.                                     |
+
+_Tabla de métodos de Rule_  
+
+| Nombre               | Tipo de retorno | Visibilidad | Descripción                                             |
+|----------------------|-----------------|-------------|---------------------------------------------------------|
+| evaluate(value)      | boolean         | Public      | Evalúa si un valor de métrica cumple la condición.      |
+| activate()           | void            | Public      | Activa la regla.                                        |
+| deactivate()         | void            | Public      | Desactiva la regla.                                     |
+| updateThreshold(val) | void            | Public      | Cambia el umbral de la regla.                          |
+
+---
+
+#### Notification  
+
+_Tabla de Notification_  
+
+| Propiedad     | Valor                                                                       |
+|---------------|-----------------------------------------------------------------------------|
+| **Nombre**    | Notification                                                                |
+| **Categoría** | Entity                                                                      |
+| **Propósito** | Representa una notificación enviada al usuario cuando se cumple una regla.  |
+
+_Tabla de atributos de Notification_  
+
+| Nombre       | Tipo de dato    | Visibilidad | Descripción                                         |
+|--------------|----------------|-------------|-----------------------------------------------------|
+| id           | UUID           | Private     | Identificador único de la notificación.             |
+| rule_id      | UUID           | Private     | FK a `Rule` que disparó la notificación.            |
+| user_id      | UUID           | Private     | FK al usuario destinatario.                         |
+| channel      | VARCHAR(30)    | Public      | Canal: `email`, `sms`, `push`.                      |
+| message      | TEXT           | Public      | Contenido del mensaje enviado.                      |
+| status       | VARCHAR(20)    | Public      | Estado: `sent`, `pending`, `failed`.                |
+| sent_at      | TIMESTAMP NULL | Private     | Fecha de envío si fue exitoso.                      |
+| created_at   | TIMESTAMP      | Private     | Fecha de creación de la notificación.               |
+
+_Tabla de métodos de Notification_  
+
+| Nombre             | Tipo de retorno | Visibilidad | Descripción                                     |
+|--------------------|-----------------|-------------|-------------------------------------------------|
+| send()             | boolean         | Public      | Envía la notificación por el canal configurado. |
+| markAsSent()       | void            | Private     | Cambia el estado a `sent`.                      |
+| markAsFailed()     | void            | Private     | Cambia el estado a `failed`.                    |
+
+---
+
+#### ChannelConfig  
+
+_Tabla de ChannelConfig_  
+
+| Propiedad     | Valor                                                                 |
+|---------------|-----------------------------------------------------------------------|
+| **Nombre**    | ChannelConfig                                                         |
+| **Categoría** | Value Object                                                          |
+| **Propósito** | Define las configuraciones específicas de cada canal de notificación. |
+
+_Tabla de atributos de ChannelConfig_  
+
+| Nombre       | Tipo de dato   | Visibilidad | Descripción                                 |
+|--------------|---------------|-------------|---------------------------------------------|
+| type         | VARCHAR(30)   | Public      | Tipo de canal (`email`, `sms`, `push`).     |
+| config       | JSON          | Private     | Configuración (API keys, templates, etc.).  |
+
+---
+
+### 4.2.5.2. Interface Layer  
+
+#### Rule API  
+
+_Tabla de Rule API_  
+
+| Propiedad     | Valor                                                                         |
+|---------------|-------------------------------------------------------------------------------|
+| **Nombre**    | RuleController                                                                |
+| **Categoría** | API / Resource                                                                |
+| **Propósito** | Exponer endpoints para CRUD de reglas de notificación.                        |
+| **Ruta**      | `/api/rules`                                                                  |
+
+_Tabla de métodos de Rule API_  
+
+| Nombre          | Ruta                        | Acción                           | Handle                        |
+|-----------------|-----------------------------|----------------------------------|-------------------------------|
+| createRule      | POST /api/rules             | Crear una nueva regla            | CreateRuleCommandHandler      |
+| getRule         | GET /api/rules/{id}         | Obtener detalles de una regla    | GetRuleQueryHandler           |
+| listRules       | GET /api/rules              | Listar reglas de un usuario      | ListRulesQueryHandler         |
+| updateRule      | PUT /api/rules/{id}         | Modificar configuración de regla | UpdateRuleCommandHandler      |
+| deactivateRule  | POST /api/rules/{id}/deactivate | Desactivar regla              | DeactivateRuleCommandHandler  |
+
+---
+
+#### Notification API  
+
+_Tabla de Notification API_  
+
+| Propiedad     | Valor                                                                             |
+|---------------|-----------------------------------------------------------------------------------|
+| **Nombre**    | NotificationController                                                            |
+| **Categoría** | API / Resource                                                                    |
+| **Propósito** | Exponer endpoints para consultar y reenviar notificaciones.                       |
+| **Ruta**      | `/api/notifications`                                                              |
+
+_Tabla de métodos de Notification API_  
+
+| Nombre           | Ruta                               | Acción                                 | Handle                             |
+|------------------|------------------------------------|----------------------------------------|------------------------------------|
+| listNotifications| GET /api/notifications             | Listar notificaciones de un usuario    | ListNotificationsQueryHandler      |
+| getNotification  | GET /api/notifications/{id}        | Obtener detalle de una notificación    | GetNotificationQueryHandler        |
+| resendNotification | POST /api/notifications/{id}/resend | Reenviar notificación                | ResendNotificationCommandHandler   |
+
+---
+
+### 4.2.5.3. Application Layer  
+
+#### Command Handlers  
+
+| Nombre                        | Categoría       | Propósito                                | Comando                   |
+|-------------------------------|-----------------|------------------------------------------|---------------------------|
+| CreateRuleCommandHandler      | Command Handler | Crear y persistir una nueva regla        | CreateRuleCommand         |
+| UpdateRuleCommandHandler      | Command Handler | Actualizar una regla existente           | UpdateRuleCommand         |
+| DeactivateRuleCommandHandler  | Command Handler | Desactivar una regla                     | DeactivateRuleCommand     |
+| ResendNotificationCommandHandler | Command Handler | Reenviar una notificación fallida     | ResendNotificationCommand |
+
+#### Query Handlers  
+
+| Nombre                        | Categoría     | Propósito                                | Query                      |
+|-------------------------------|---------------|------------------------------------------|----------------------------|
+| GetRuleQueryHandler           | Query Handler | Obtener detalles de una regla            | GetRuleQuery               |
+| ListRulesQueryHandler         | Query Handler | Listar reglas de un usuario              | ListRulesQuery             |
+| GetNotificationQueryHandler   | Query Handler | Obtener detalles de una notificación     | GetNotificationQuery       |
+| ListNotificationsQueryHandler | Query Handler | Listar notificaciones de un usuario      | ListNotificationsQuery     |
+
+#### Event Handlers  
+
+| Nombre                       | Categoría     | Propósito                                        | Evento                    |
+|------------------------------|---------------|--------------------------------------------------|---------------------------|
+| RuleTriggeredHandler         | Event Handler | Procesa condición cumplida y genera notificación | RuleTriggeredEvent        |
+| NotificationSentHandler      | Event Handler | Confirma envío exitoso                           | NotificationSentEvent     |
+| NotificationFailedHandler    | Event Handler | Maneja errores de envío                          | NotificationFailedEvent   |
+
+---
+
+### 4.2.5.4. Infrastructure Layer  
+
+#### RuleRepository  
+
+| Propiedad     | Valor                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------|
+| **Nombre**    | RuleRepository                                                                            |
+| **Categoría** | Repository                                                                                |
+| **Propósito** | Persistir y consultar reglas en base de datos.                                            |
+| **Interfaz**  | IRuleRepository (`save(rule)`, `findById(id)`, `listByUser(userId)`, `deactivate(id)`)    |
+
+#### NotificationRepository  
+
+| Propiedad     | Valor                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------|
+| **Nombre**    | NotificationRepository                                                                    |
+| **Categoría** | Repository                                                                                |
+| **Propósito** | Guardar y consultar notificaciones enviadas.                                              |
+| **Interfaz**  | INotificationRepository (`save(notification)`, `findById(id)`, `listByUser(userId)`)      |
+
+#### ChannelAdapter  
+
+| Propiedad     | Valor                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------|
+| **Nombre**    | ChannelAdapter                                                                            |
+| **Categoría** | Adapter                                                                                   |
+| **Propósito** | Implementar envío por distintos canales (`EmailService`, `SmsGateway`, `PushService`).    |
+| **Interfaz**  | IChannelAdapter (`send(notification, channelConfig)`)                                     |
+
+#### NotificationDbContext  
+
+| Propiedad     | Valor                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------|
+| **Nombre**    | NotificationDbContext                                                                     |
+| **Categoría** | ORM Context                                                                               |
+| **Propósito** | Proveer acceso a tablas de reglas, notificaciones y configuraciones de canal.             |
+
 ### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams. 
 ### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams. 
 #### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams. 
