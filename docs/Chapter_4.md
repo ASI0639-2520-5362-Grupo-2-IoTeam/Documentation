@@ -187,6 +187,8 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
 
  <img src="https://i.postimg.cc/Hk7f30m1/Event-Storming-plantcare-20.jpg" alt="Event Storming Plantcare" width="480"/>
 
+ <img src="https://i.postimg.cc/Pr8cZ98Q/Event-Storming-plantcare-21.jpg" alt="Event Storming Plantcare" width="480"/>
+
 #### 4.1.2. Context Mapping.
 
 En esta sección se explica y evidencia el proceso de elaboración de un conjunto de *context maps*, es decir, visualizaciones de las relaciones estructurales entre los **bounded contexts** identificados en el dominio. El equipo realizó una revisión de la información recolectada durante la fase de *EventStorming* y la utilizó para producir los diseños candidatos.  
