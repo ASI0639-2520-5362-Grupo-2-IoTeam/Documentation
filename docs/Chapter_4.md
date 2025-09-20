@@ -862,7 +862,77 @@ IPlantProfileRepository**
 
 ### 4.2.2.2. Interface Layer. 
 
+En la capa de interfaz del Bounded Context Plant Management se definen los controladores REST que actúan como punto de entrada para solicitudes externas. Estos endpoints permiten a aplicaciones cliente (web, móviles, integraciones con sensores o APIs externas) interactuar con las funciones de creación de perfiles de planta, gestión de estado, configuración de condiciones ideales, archivado y eliminación.
 
+La interfaz está organizada en controladores especializados, cada uno con rutas y acciones bien definidas, garantizando simplicidad, seguridad y separación de responsabilidades.
+
+**PlantProfileController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantProfileController|
+|Categoría	|Controller|
+|Propósito	|Exponer endpoints para la creación, consulta, actualización, archivado y eliminación de perfiles de plantas.|
+|Ruta	|/api/plants|
+
+**Métodos de PlantProfileController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Create	|/	|Crea un nuevo perfil de planta	|CreatePlantProfileCommand|
+|GetById	|/{plantId}	|Obtiene los datos de un perfil de planta	|GetPlantProfileByIdQuery|
+|Update	|/{plantId}	|Actualiza datos generales de la planta	|UpdatePlantProfileCommand|
+|Archive	|/{plantId}/archive	|Archiva el perfil de una planta	|ArchivePlantProfileCommand|
+|Delete	|/{plantId}	|Elimina definitivamente un perfil de planta	|DeletePlantProfileCommand|
+
+**PlantStatusController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantStatusController|
+|Categoría	|Controller|
+|Propósito	|Gestionar el estado de las plantas (ej. salud, crecimiento, últimas mediciones).|
+|Ruta	|/api/plants/{plantId}/status|
+
+**Métodos de PlantStatusController**
+
+|Nombre	|Ruta	|Acción	|Handle|
+|-----------------------|-----------------|---------------|-----------------------------------------------------|
+|UpdateStatus	|/update	|Actualiza el estado actual de la planta	|UpdatePlantStatusCommand|
+|GetStatus|	/	|Obtiene el estado actual de la planta	|GetPlantStatusQuery|
+|GetHistory|	/history	|Devuelve el historial de cambios de estado	|GetPlantHistoryQuery|
+
+**PlantConditionsController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre	|PlantConditionsController|
+|Categoría	|Controller|
+|Propósito	|Configurar y consultar las condiciones ideales de una planta (riego, luz, temperatura).|
+|Ruta	|/api/plants/{plantId}/conditions|
+
+**Métodos de PlantConditionsController**
+
+|Nombre|	Ruta	|Acción	|Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Configure	|/	|Define condiciones ideales de la planta	|ConfigurePlantConditionsCommand|
+|GetConditions|	/	|Consulta condiciones configuradas|	GetPlantConditionsQuery|
+
+**ExternalPlantApiController**
+
+|Propiedad	|Valor|
+|---------------|---------------------------------------------------------------------------------------|
+|Nombre|	ExternalPlantApiController|
+|Categoría	|Controller|
+|Propósito	|Integrarse con API externa de plantas para obtener información de referencia (tipos de planta, cuidados, recomendaciones).|
+|Ruta	|/api/external/plants|
+
+**Métodos de ExternalPlantApiController**
+
+|Nombre	|Ruta	|Acción|	Handle|
+|-----------------------|------------------|---------------|-----------------------------------------------------|
+|Search	|/search?name={plantName}	|Busca información de una planta en API externa|	SearchExternalPlantQuery|
+|GetDetails	|/details/{externalPlantId}|	Obtiene detalles desde API externa	|GetExternalPlantDetailsQuery|
 
 ### 4.2.2.3. Application Layer. 
 ### 4.2.2.4. Infrastructure Layer. 
