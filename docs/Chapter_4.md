@@ -2945,3 +2945,5 @@ _Tabla de métodos de Plans_
 
 [![Billing-Subscription-Design-Diagram.png](https://i.postimg.cc/d3nBYjJX/Billing-Subscription-Design-Diagram.png)](https://postimg.cc/CnBDCDBH)
 
+Anexos:
+[**Link de la exposición grupal:**](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt) https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt 
