@@ -113,6 +113,25 @@ Estos sistemas hacen que la gestión y monitoreo de las plantas sea más ágil, 
 
 ### 5.2.5. Navigation Systems.
 
+Este punto define los sistemas de navegación implementados, los cuales permiten a los usuarios desplazarse de forma fluida y coherente por la aplicación en sus versiones web y mobile. Se prioriza la simplicidad, la accesibilidad y la visibilidad de funciones clave.
+
+#### **Web**
+
+- **Barra de navegación lateral (Sidebar):** Ubicada en la parte lateral, permite el acceso rápido a secciones como *Dashboard*, *Plantas*, *Historial* y *Configuración*. Este diseño mantiene visible lo esencial, incluso al hacer scroll.
+
+- **Enlaces jerárquicos:** Se implementan rutas jerárquicas que permiten al usuario avanzar o retroceder sin perder el contexto.
+
+- **Flujos de usuario optimizados:** Tareas como agregar una planta o configurar un sensor siguen una estructura paso a paso, reduciendo errores y facilitando el proceso, especialmente para nuevos usuarios.
+
+- **Indicadores visuales y estados activos:** El sistema resalta con claridad el menú activo y utiliza iconos e indicadores visuales para reforzar la sección actual, mejorando la orientación dentro del sistema.
+
+#### **Mobile**
+
+- **Navegación inferior (Bottom Navigation):** Presente como barra fija con accesos directos a secciones clave como *Dashboard*, *Plantas*, *Historial* y *Configuración*.
+- **Enlaces jerárquicos:** Permiten regresar o avanzar entre pantallas sin perder contexto, especialmente dentro del detalle de cada planta.
+- **Flujos guiados:** Acciones como añadir una planta o revisar su historial están divididas en pasos claros y secuenciales.
+- **Indicadores visuales:** Estados activos e íconos se usan para mantener siempre visible la ubicación actual del usuario.
+
 ## 5.3. Landing Page UI Design.
 
 ### 5.3.1. Landing Page Wireframe.
