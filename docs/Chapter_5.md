@@ -142,6 +142,76 @@ Este punto define los sistemas de navegación implementados, los cuales permiten
 
 ### 5.4.1. Applications Wireframes.
 
+En esta sección, se presentan los wireframes de la aplicación web y mobile, en la herramienta Figma.
+
+#### Web Application Wireframes
+
+[https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
+
+Onboarding:
+[![Onboard-Wireframe.png](https://i.postimg.cc/prNmfDKW/Onboard-Wireframe.png)](https://postimg.cc/ygP6B3ft)
+
+Sign Up:
+[![Sign-Up-Wireframe.png](https://i.postimg.cc/2yFSngzk/Sign-Up-Wireframe.png)](https://postimg.cc/rRsTkn03)
+
+Sign In:
+[![Sign-In-Wireframe.png](https://i.postimg.cc/ZR6bhXv8/Sign-In-Wireframe.png)](https://postimg.cc/tZCQ3S5J)
+
+Dashboard:
+[![Dashboard-Wireframe.png](https://i.postimg.cc/QtZDSSYM/Dashboard-Wireframe.png)](https://postimg.cc/5HgD25Vc)
+
+Plant Grid:
+[![Plant-Grid-Wireframe.png](https://i.postimg.cc/NFNWhxDV/Plant-Grid-Wireframe.png)](https://postimg.cc/8f6yMMqB)
+
+Plant Detail:
+[![Plant-Detail-Wireframe.png](https://i.postimg.cc/QCMyqTDf/Plant-Detail-Wireframe.png)](https://postimg.cc/1nLBm4fF)
+
+History:
+[![History-Wireframe.png](https://i.postimg.cc/25F9Rw8y/History-Wireframe.png)](https://postimg.cc/yJxy00RC)
+
+Analytics:
+[![Analytics-Wireframe.png](https://i.postimg.cc/TP90H3tX/Analytics-Wireframe.png)](https://postimg.cc/XZr9r4M2)
+
+Community:
+[![Community-Wireframe.png](https://i.postimg.cc/d3zjTkVC/Community-Wireframe.png)](https://postimg.cc/sG4hk2Sf)
+
+Settings:
+[![Settings-Wireframe.png](https://i.postimg.cc/wB6cJdgq/Settings-Wireframe.png)](https://postimg.cc/QFyTGwFw)
+
+#### Mobile Application Wireframes
+
+[https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
+
+Onboarding:
+[![Onboarding-Wireframe.png](https://i.postimg.cc/G3YQZK7y/Onboarding-Wireframe.png)](https://postimg.cc/6TWnZrNW)
+
+Sign Up:
+[![Sign-Up-Wireframe-1.png](https://i.postimg.cc/T3Hgy5N6/Sign-Up-Wireframe-1.png)](https://postimg.cc/QF1HwCr4)
+
+Sign In:
+[![Sign-In-Wireframe-1.png](https://i.postimg.cc/wvNXYxVx/Sign-In-Wireframe-1.png)](https://postimg.cc/xJ0JK2hB)
+
+Dashboard:
+[![Dashboard-Wireframe-1.png](https://i.postimg.cc/d3BTJhZm/Dashboard-Wireframe-1.png)](https://postimg.cc/GT4pQhQH)
+
+Plant Grid:
+[![Plant-Grid-Wireframe-1.png](https://i.postimg.cc/T2CwYM4X/Plant-Grid-Wireframe-1.png)](https://postimg.cc/F1kmDqvP)
+
+Plant Detail:
+[![Plant-Detail-Wireframe-1.png](https://i.postimg.cc/qvCMLtMB/Plant-Detail-Wireframe-1.png)](https://postimg.cc/rDMkywr7)
+
+Analytics:
+[![Analytics-Wireframe-1.png](https://i.postimg.cc/4dwJdVwy/Analytics-Wireframe-1.png)](https://postimg.cc/8JJ8XF2g)
+
+Community:
+[![Community-Wireframe-1.png](https://i.postimg.cc/28gCVzdt/Community-Wireframe-1.png)](https://postimg.cc/HV0qN1h0)
+
+History:
+[![History-Wireframe-1.png](https://i.postimg.cc/jj4TgyV0/History-Wireframe-1.png)](https://postimg.cc/mckKhz28)
+
+Settings:
+[![Settings-Wireframe-1.png](https://i.postimg.cc/Xqp0Yhrp/Settings-Wireframe-1.png)](https://postimg.cc/WqLy956v)
+
 ### 5.4.2. Applications Wireflow Diagrams.
 
 ### 5.4.2. Applications Mock-ups.
