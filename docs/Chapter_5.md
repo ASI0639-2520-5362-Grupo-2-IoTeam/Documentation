@@ -78,6 +78,21 @@ Los sistemas de organización en PlantCare estructuran la información y funcion
 
 ### 5.2.2. Labeling System.
 
+Se han implementado etiquetas **claras, concisas y accesibles** para representar funciones específicas. Estas etiquetas permiten a los usuarios identificar rápidamente cada sección o acción, sin necesidad de interpretación adicional ni conocimientos técnicos.
+
+Las principales etiquetas utilizadas son:
+
+- **Dashboard**
+- **Plants**
+- **Add plant**
+- **History**
+- **Analytics**
+- **Community**
+- **Configuration**
+- **Edit/Delete plant**
+
+Cada etiqueta está acompañada por íconos representativos que refuerzan visualmente su propósito, facilitando la navegación especialmente en interfaces móviles. El enfoque es directo y amigable, asegurando que tanto usuarios principiantes como avanzados puedan comprender rápidamente las funcionalidades disponibles.
+
 ### 5.2.3. SEO Tags and Meta Tags
 
 ### 5.2.4. Searching Systems.
