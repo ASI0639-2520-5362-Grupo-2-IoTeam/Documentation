@@ -64,6 +64,18 @@ La arquitectura de la información es un elemento clave en el diseño y la facil
 
 ### 5.2.1. Organization Systems.
 
+Los sistemas de organización en PlantCare estructuran la información y funcionalidades para que la navegación sea intuitiva, eficiente y centrada en el usuario. Se aplican los siguientes enfoques:
+
+- **Jerárquica (Visual Hierarchy):** Se destacan primero los elementos clave como métricas generales (total de plantas, alertas activas, humedad promedio) y un llamado a la acción claro para la siguiente planta que necesita riego. Este orden visual prioriza las tareas más importantes y urgentes para el usuario.
+
+- **Secuencial (Step-by-step):** Aplicado en flujos como agregar una nueva planta, donde el usuario sigue un proceso guiado para ingresar datos como nombre, tipo, frecuencia de riego y sensor vinculado, de forma progresiva y ordenada.
+
+- **Por Tópicos:** Visible en secciones como Settings, donde las opciones están agrupadas por funciones (perfil, suscripción, dispositivos). Este tipo de organización también se refleja en History, donde las acciones se ordenan cronológicamente.
+
+- **Según Audiencia:** Funciones como la gestión de sensores o los planes de suscripción premium están pensadas para usuarios más avanzados o con múltiples dispositivos, adaptando así la experiencia según el perfil y nivel de compromiso del usuario.
+
+[![image.png](https://i.postimg.cc/wB0jZx9R/image.png)](https://postimg.cc/hJQn7BzK)
+
 ### 5.2.2. Labeling System.
 
 ### 5.2.3. SEO Tags and Meta Tags
