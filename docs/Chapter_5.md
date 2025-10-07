@@ -28,6 +28,36 @@ Este enfoque busca generar una experiencia amigable, que inspire confianza y fom
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines.
 
+El diseño web, mobile e IoT de PlantCare seguirá principios de accesibilidad, usabilidad y consistencia visual, asegurando que la experiencia del usuario sea clara y fluida en distintos dispositivos.
+
+**Colores**  
+Se utilizará la misma paleta de colores definida para la identidad de PlantCare, garantizando coherencia.
+
+| Nombre       | Código HEX | Muestra                                                                                   |
+| ------------ | ---------- | ----------------------------------------------------------------------------------------- |
+| Primary     | #8AC73D    | ![#8AC73D](https://img.shields.io/badge/-8AC73D-8AC73D?style=flat-square&logoColor=white) |
+| Secondary   | #85B88F    | ![#85B88F](https://img.shields.io/badge/-85B88F-85B88F?style=flat-square&logoColor=white) |
+| Accent       | #03383C    | ![#03383C](https://img.shields.io/badge/-03383C-03383C?style=flat-square&logoColor=white) |
+| Background  | #F7F7ED    | ![#F7F7ED](https://img.shields.io/badge/-F7F7ED-F7F7ED?style=flat-square&logoColor=black) |
+| Text | #002933    | ![#002933](https://img.shields.io/badge/-002933-002933?style=flat-square&logoColor=white) |
+
+#### **Tipografía**
+
+- Encabezados: **Raleway** (Google Fonts).
+- Cuerpo de texto: **Raleway** (Google Fonts).
+- Jerarquía visual clara mediante tamaños escalonados (H1-H6).
+
+#### **Componentes UI**
+
+- **Sidebar** en la parte izquierda con enlaces principales.
+- **Cards** para mostrar información de plantas.
+- **Gráficos** para análisis.
+
+#### **Interacciones**
+
+- **Animaciones ligeras** para transiciones de secciones.
+- **Diseño responsive** adaptando las vistas a pantallas pequeñas.
+
 ## 5.2. Information Architecture.
 
 ### 5.2.1. Organization Systems.
