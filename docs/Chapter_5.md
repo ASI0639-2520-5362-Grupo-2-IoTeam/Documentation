@@ -104,6 +104,13 @@ Para optimizar la visibilidad en motores de búsqueda, se proponen las siguiente
 
 ### 5.2.4. Searching Systems.
 
+Los sistemas de búsqueda permiten a los usuarios localizar información específica de manera rápida y eficiente dentro de la aplicación, optimizando el acceso al contenido y mejorando la experiencia de uso.
+
+- **Filtros personalizados** para el historial y planta.
+- **Resultados presentados con etiquetas visuales**, íconos e información clave como el nombre de la planta, humedad actual, último riego y estado general.
+
+Estos sistemas hacen que la gestión y monitoreo de las plantas sea más ágil, especialmente útil para usuarios con múltiples registros o sensores activos.
+
 ### 5.2.5. Navigation Systems.
 
 ## 5.3. Landing Page UI Design.
