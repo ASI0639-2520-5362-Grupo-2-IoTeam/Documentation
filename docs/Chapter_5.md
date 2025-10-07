@@ -60,6 +60,8 @@ Se utilizará la misma paleta de colores definida para la identidad de PlantCare
 
 ## 5.2. Information Architecture.
 
+La arquitectura de la información es un elemento clave en el diseño y la facilidad de uso de un sistema digital. Cuando se implementa adecuadamente, facilita que los usuarios localicen, comprendan y utilicen el contenido de forma clara y eficaz.
+
 ### 5.2.1. Organization Systems.
 
 ### 5.2.2. Labeling System.
