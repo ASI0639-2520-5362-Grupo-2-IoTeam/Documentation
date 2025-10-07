@@ -95,6 +95,13 @@ Cada etiqueta está acompañada por íconos representativos que refuerzan visual
 
 ### 5.2.3. SEO Tags and Meta Tags
 
+Para optimizar la visibilidad en motores de búsqueda, se proponen las siguientes etiquetas:
+
+- **Title:** PlantCare – Cuidado inteligente de tus plantas
+- **Meta Tags Description:** Plataforma digital para el monitoreo y cuidado automatizado de plantas mediante sensores, alertas y recomendaciones personalizadas.
+- **Keywords:** plantas, jardinería, sensores de humedad, riego inteligente, cuidado de plantas, app de plantas, PlantCare
+- **Author:** PlantCare
+
 ### 5.2.4. Searching Systems.
 
 ### 5.2.5. Navigation Systems.
