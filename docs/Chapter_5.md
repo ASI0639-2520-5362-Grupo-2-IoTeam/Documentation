@@ -136,7 +136,19 @@ Este punto define los sistemas de navegación implementados, los cuales permiten
 
 ### 5.3.1. Landing Page Wireframe.
 
+En esta sección, se presentan los wireframes de la Landing Page, hechas en la herramienta Figma.
+
+[https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1)
+
+[![Landing-Page-Wireframe.png](https://i.postimg.cc/zG3tr4XW/Landing-Page-Wireframe.png)](https://postimg.cc/Mn2b0PBK)
+
 ### 5.3.2. Landing Page Mock-up.
+
+En esta sección, se presentan los mock-ups de la Landing Page, hechas en la herramienta Figma.
+
+[https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1)
+
+[![Landing-Page-Mock-Up.png](https://i.postimg.cc/hvLFV67L/Landing-Page-Mock-Up.png)](https://postimg.cc/zHGPrd7v)
 
 ## 5.4. Applications UX/UI Design.
 
