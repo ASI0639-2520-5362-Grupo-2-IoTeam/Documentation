@@ -52,7 +52,6 @@ Para el manejo del proyecto se usará las siguientes herramientas que son clave 
 | **Java** | Lenguaje de programación orientado a objetos utilizado en el desarrollo del backend y componentes del sistema. | [https://www.java.com/](https://www.java.com/) |
 | **Spring Framework** | Framework de desarrollo para Java que facilita la creación de aplicaciones empresariales, especialmente servicios REST y microservicios. | [https://spring.io/projects/spring-framework](https://spring.io/projects/spring-framework) |
 | **Python** | Lenguaje de programación de propósito general utilizado para procesamiento de datos, scripts de automatización y pruebas. | [https://www.python.org/](https://www.python.org/) |
-| **C++** | Lenguaje de programación de alto rendimiento empleado para módulos o componentes que requieren eficiencia en procesamiento. | [https://isocpp.org/](https://isocpp.org/) |
 | **Flutter** | Framework multiplataforma utilizado para el desarrollo de aplicaciones móviles con un solo código base. | [https://flutter.dev/](https://flutter.dev/) |
 
 ---
@@ -87,9 +86,125 @@ Para el manejo del proyecto se usará las siguientes herramientas que son clave 
 
 ### 6.1.2. Source Code Management.
 
+Para desarrollar y documentar nuestra solución, usamos GitHub como plataforma para almacenar tanto la documentación como el código del proyecto. Esta herramienta nos permite monitorear los cambios en cada componente del producto que estamos creando y la utilizaremos también para el control de versiones. Con el fin de garantizar que todo el equipo tenga acceso a la plataforma y que los repositorios para las distintas partes de nuestra solución sean accesibles desde una misma ubicación, hemos establecido una organización en GitHub con el nombre de nuestro producto.
+| Organización | URL |
+|-|-|
+|ASI0639-2520-5362-Grupo 2- PlantCare|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam|
+
+Dentro de nuestra organización en GitHub, se encuentran los repositorios correspondientes a cada uno de los productos que desarrollaremos.
+
+| Repositorio | URL |
+|-|-|
+| FrontendWeb|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| 
+|FrontendMobile|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|
+|LandingPage|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage|
+|Backend|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|
+|Documentation|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Documentation|
+
+**Implementación de GitFlow**
+El flujo de GitFlow facilita un desarrollo estructurado y ordenado. A continuación, se incluye un diagrama que ilustra el proceso general del modelo GitFlow:
+
+**Ramas en GitFlow**
+En cada repositorio se crearán las siguientes ramas clave:
+| **Rama**   | **Descripción** |
+|------------|-----------------|
+| **main**   | Contiene el código estable y definitivo del proyecto. Solo se actualizará con versiones completamente validadas y revisadas por todo el equipo. |
+| **develop**| Almacena el código en desarrollo. Es la rama base para la integración de nuevas características y futuras versiones. Las ramas "feature" y "release" se fusionan en "develop". |
+| **feature/xxx** | Ramas dedicadas a la implementación de nuevas características. Se crean desde "develop" y se nombran de forma descriptiva (ejemplo: `feature/nueva-funcionalidad`). Se fusionan de nuevo a "develop" una vez completado el desarrollo. |
+| **release/xxx** | Utilizada para preparar una nueva versión del código. Se crean desde "develop" y, tras revisión, se fusionan tanto en "main" como en "develop". Las ramas de release se nombrarán siguiendo el formato `release/vX.X.X` (ejemplo: `release/v1.0.0`). |
+| **hotfix/xxx**| Se usan para corregir errores críticos encontrados en "main". Las correcciones se fusionan de vuelta tanto a "main" como a "develop". Las ramas de hotfix seguirán el formato `hotfix/corrección` (ejemplo: `hotfix/correccion-login`). |
+
+**Flujo de Trabajo con GitFlow**
+[![image.png](https://i.postimg.cc/wTzdWgzQ/image.png)](https://postimg.cc/YjdV0chv)
+
+Este enfoque nos permite trabajar de manera colaborativa, asegurando la calidad del código y permitiendo gestionar de forma eficaz las diferentes fases del desarrollo, desde la creación de nuevas características hasta la publicación de versiones estables y la corrección de errores.
+
 ### 6.1.3. Source Code Style Guide & Conventions.
 
+El equipo ha definido una serie de convenciones y guías de estilo para asegurar la consistencia, legibilidad y mantenibilidad del código fuente del proyecto. Todas las convenciones adoptadas se basan en estándares ampliamente reconocidos en la industria y se aplican a cada uno de los lenguajes utilizados en la solución.
+
+### Nomenclatura General
+- Todo el código, nombres de variables, funciones, clases y comentarios se escribirán en **idioma inglés**.
+- Se seguirá una **estructura clara y descriptiva** para la identificación de elementos del código.
+- Los nombres de archivos deberán emplear **minúsculas y guiones medios (kebab-case)** para HTML, CSS y JavaScript.
+- Se evitarán abreviaciones innecesarias y nombres ambiguos.
+
+---
+
+### Convenciones por Lenguaje
+
+#### HTML
+- Se seguirá la guía oficial **HTML Style Guide and Coding Conventions** de W3Schools.
+- Las etiquetas se escribirán en **minúsculas** y se mantendrá una indentación de **2 espacios**.
+- Las clases y los identificadores seguirán la convención **kebab-case**.
+- Todo el código HTML será **semántico**, utilizando correctamente etiquetas como `<header>`, `<main>`, `<section>`, `<article>` y `<footer>`.
+
+#### CSS
+- Se aplicará la convención definida en la **Google HTML/CSS Style Guide**.
+- Los nombres de clases usarán **kebab-case**, por ejemplo: `.main-container`.
+- Los selectores estarán organizados jerárquicamente y el código mantendrá una **indentación de 2 espacios**.
+- Se promoverá el uso de **variables CSS** y **nombres descriptivos** para las reglas.
+
+
+#### JavaScript
+- Se seguirá la **Google JavaScript Style Guide**.
+- Uso de **camelCase** para variables y funciones.
+- Uso de **PascalCase** para clases y constructores.
+- Se declararán variables con `const` o `let`, evitando `var`.
+- Se mantendrá un límite de **80–100 caracteres por línea** y una indentación de **2 espacios**.
+
+#### Java / Spring Framework
+- Se seguirá la **Google Java Style Guide** junto con las **Spring Boot Coding Conventions**.
+- Nombres de clases en **PascalCase** (e.g., `UserAccount`, `ProductService`).
+- Nombres de variables y métodos en **camelCase**.
+- Cada clase Java deberá tener **una sola responsabilidad** y estar correctamente documentada con **JavaDoc**.
+- Los paquetes se nombrarán en **minúsculas**, separados por puntos (`pe.iotteam.project.module`).
+
+#### Python
+- Se aplicará la **PEP 8 – Python Style Guide**.
+- Nombres de variables y funciones en **snake_case**.
+- Nombres de clases en **PascalCase**.
+- Indentación obligatoria de **4 espacios**.
+- Líneas de máximo **79 caracteres**.
+
+#### Flutter / Dart
+- Se adoptará la **Effective Dart Style Guide**.
+- Se usará **camelCase** para variables y métodos, y **PascalCase** para clases.
+- Se priorizará el uso de **widgets reutilizables** y **estructura modular**.
+- Los archivos Dart se nombrarán en **snake_case**.
+
+#### Gherkin (.feature)
+- Los escenarios de prueba seguirán las **Gherkin Conventions for Readable Specifications**.
+- Se escribirá en **lenguaje natural (Given–When–Then)**, manteniendo consistencia en formato y sintaxis.
+- Los nombres de los archivos `.feature` se escribirán en **snake_case**.
+
+### Buenas Prácticas Generales
+- Todo el código deberá estar **documentado** mediante comentarios claros y precisos.  
+- Se realizará **code review** entre los miembros del equipo antes de fusionar cambios al repositorio principal.  
+- Se utilizarán **linters y formateadores automáticos** (Prettier, ESLint, Checkstyle, Black, ClangFormat, etc.) para garantizar uniformidad en el estilo de código.  
+- Las ramas del repositorio seguirán la convención de nombres:  
+  - `feature/<nombre>` para nuevas funcionalidades.  
+  - `fix/<nombre>` para correcciones de errores.  
+  - `hotfix/<nombre>` para parches urgentes.  
+  - `release/<versión>` para versiones estables.
+
 ### 6.1.4. Software Deployment Configuration.
+
+La solución se despliega en distintos entornos de acuerdo con el tipo de producto digital:
+
+| Componente                  | Entorno de Despliegue | Descripción del Proceso de Despliegue |
+|-----------------------------|-----------------------|----------------------------------------|
+| **Backend (Spring Boot)**   | **Azure App Service** | El backend se empaqueta como un contenedor o archivo `.jar` y se despliega en **Azure App Service**. Se configura la conexión con la base de datos, variables de entorno (API keys, credenciales y endpoints) y los servicios IoT relacionados. |
+| **Frontend Web (SPA con Vue.js)** | **Azure Static Web Apps** | El frontend se construye con `npm run build` y los archivos estáticos generados se despliegan automáticamente mediante CI/CD desde GitHub Actions hacia **Azure Static Web Apps**. |
+| **Landing Page (Informativa)** | **Vercel** | La landing page del producto se despliega en **Vercel**, enlazada directamente al repositorio del proyecto. Desde ella se podrá descargar el APK de la aplicación móvil. |
+| **Mobile Application (Flutter)** | **APK disponible en Landing Page** | La aplicación móvil se compila en Flutter (`flutter build apk`) y se publica el archivo `.apk` en la landing page para descarga directa. Incluye integración con el backend mediante REST APIs. |
+| **Base de Datos (PostgreSQL)** | **Azure Database for PostgreSQL** | Base de datos en la nube para usuarios, dispositivos IoT, métricas y registros. Administrada desde el portal de Azure. |
+| **Hardware IoT (Embedded Device)** | **Local Deployment** | Los dispositivos IoT se comunican con el backend a través de APIs REST y MQTT. El firmware se carga localmente en el hardware y se conecta a los endpoints definidos en Azure. |
+
+**Diagrama de Despliegue (C4 Model - Nivel 3)**
+A continuación, se incluye el diagrama de despliegue correspondiente al entorno de producción:
+
+[![image.png](https://i.postimg.cc/BbpJ0nfC/image.png)](https://postimg.cc/tnsKdyT1)
 
 ## 6.2. Landing Page, Services & Applications Implementation.
 
@@ -179,7 +294,15 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 ## Conclusiones y recomendaciones:
  - 
 ## Bibliografía:
- -
+- HTML Style Guide and Coding Conventions – W3Schools: https://www.w3schools.com/html/html5_syntax.asp  
+- Google HTML/CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html  
+- Google JavaScript Style Guide: https://google.github.io/styleguide/jsguide.html  
+- Google Java Style Guide: https://google.github.io/styleguide/javaguide.html  
+- Spring Boot Features: https://docs.spring.io/spring-boot/docs/current/reference/html/features.html  
+- PEP 8 – Python Style Guide: https://peps.python.org/pep-0008/  
+- Effective Dart – Style Guide: https://dart.dev/guides/language/effective-dart/style  
+- Gherkin Reference – Cucumber: https://cucumber.io/docs/gherkin/
+
 ## Anexos:
 [**Link de la exposición grupal TB1:**](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt) https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt 
 
