@@ -149,33 +149,43 @@ En esta sección, se presentan los wireframes de la aplicación web y mobile, en
 [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
 
 Onboarding:
+
 [![Onboard-Wireframe.png](https://i.postimg.cc/prNmfDKW/Onboard-Wireframe.png)](https://postimg.cc/ygP6B3ft)
 
 Sign Up:
+
 [![Sign-Up-Wireframe.png](https://i.postimg.cc/2yFSngzk/Sign-Up-Wireframe.png)](https://postimg.cc/rRsTkn03)
 
 Sign In:
+
 [![Sign-In-Wireframe.png](https://i.postimg.cc/ZR6bhXv8/Sign-In-Wireframe.png)](https://postimg.cc/tZCQ3S5J)
 
 Dashboard:
+
 [![Dashboard-Wireframe.png](https://i.postimg.cc/QtZDSSYM/Dashboard-Wireframe.png)](https://postimg.cc/5HgD25Vc)
 
 Plant Grid:
+
 [![Plant-Grid-Wireframe.png](https://i.postimg.cc/NFNWhxDV/Plant-Grid-Wireframe.png)](https://postimg.cc/8f6yMMqB)
 
 Plant Detail:
+
 [![Plant-Detail-Wireframe.png](https://i.postimg.cc/QCMyqTDf/Plant-Detail-Wireframe.png)](https://postimg.cc/1nLBm4fF)
 
 History:
+
 [![History-Wireframe.png](https://i.postimg.cc/25F9Rw8y/History-Wireframe.png)](https://postimg.cc/yJxy00RC)
 
 Analytics:
+
 [![Analytics-Wireframe.png](https://i.postimg.cc/TP90H3tX/Analytics-Wireframe.png)](https://postimg.cc/XZr9r4M2)
 
 Community:
+
 [![Community-Wireframe.png](https://i.postimg.cc/d3zjTkVC/Community-Wireframe.png)](https://postimg.cc/sG4hk2Sf)
 
 Settings:
+
 [![Settings-Wireframe.png](https://i.postimg.cc/wB6cJdgq/Settings-Wireframe.png)](https://postimg.cc/QFyTGwFw)
 
 #### Mobile Application Wireframes
@@ -183,33 +193,43 @@ Settings:
 [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
 
 Onboarding:
+
 [![Onboarding-Wireframe.png](https://i.postimg.cc/G3YQZK7y/Onboarding-Wireframe.png)](https://postimg.cc/6TWnZrNW)
 
 Sign Up:
+
 [![Sign-Up-Wireframe-1.png](https://i.postimg.cc/T3Hgy5N6/Sign-Up-Wireframe-1.png)](https://postimg.cc/QF1HwCr4)
 
 Sign In:
+
 [![Sign-In-Wireframe-1.png](https://i.postimg.cc/wvNXYxVx/Sign-In-Wireframe-1.png)](https://postimg.cc/xJ0JK2hB)
 
 Dashboard:
+
 [![Dashboard-Wireframe-1.png](https://i.postimg.cc/d3BTJhZm/Dashboard-Wireframe-1.png)](https://postimg.cc/GT4pQhQH)
 
 Plant Grid:
+
 [![Plant-Grid-Wireframe-1.png](https://i.postimg.cc/T2CwYM4X/Plant-Grid-Wireframe-1.png)](https://postimg.cc/F1kmDqvP)
 
 Plant Detail:
+
 [![Plant-Detail-Wireframe-1.png](https://i.postimg.cc/qvCMLtMB/Plant-Detail-Wireframe-1.png)](https://postimg.cc/rDMkywr7)
 
 Analytics:
+
 [![Analytics-Wireframe-1.png](https://i.postimg.cc/4dwJdVwy/Analytics-Wireframe-1.png)](https://postimg.cc/8JJ8XF2g)
 
 Community:
+
 [![Community-Wireframe-1.png](https://i.postimg.cc/28gCVzdt/Community-Wireframe-1.png)](https://postimg.cc/HV0qN1h0)
 
 History:
+
 [![History-Wireframe-1.png](https://i.postimg.cc/jj4TgyV0/History-Wireframe-1.png)](https://postimg.cc/mckKhz28)
 
 Settings:
+
 [![Settings-Wireframe-1.png](https://i.postimg.cc/Xqp0Yhrp/Settings-Wireframe-1.png)](https://postimg.cc/WqLy956v)
 
 ### 5.4.2. Applications Wireflow Diagrams.
@@ -223,33 +243,43 @@ En esta sección, se presentan los wireframes de la aplicación web y mobile, en
 [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
 
 Onboarding:
+
 [![Onboard-Mock-Up.png](https://i.postimg.cc/VkYW0bqV/Onboard-Mock-Up.png)](https://postimg.cc/RNDHjhb7)
 
 Sign Up:
+
 [![Sign-Up-Mock-Up.png](https://i.postimg.cc/vHSZfJfs/Sign-Up-Mock-Up.png)](https://postimg.cc/7f04yQKs)
 
 Sign In:
+
 [![Sign-In-Mock-Up.png](https://i.postimg.cc/wTtp87yh/Sign-In-Mock-Up.png)](https://postimg.cc/TpXSn2cw)
 
 Dashboard:
+
 [![Dashboard-Mock-Up.png](https://i.postimg.cc/5y6ZVR0v/Dashboard-Mock-Up.png)](https://postimg.cc/N2vN8bRf)
 
 Plant Grid:
+
 [![Plant-Grid-Mock-Up.png](https://i.postimg.cc/rwM2dgYT/Plant-Grid-Mock-Up.png)](https://postimg.cc/JG62v3LY)
 
 Plant Detail:
+
 [![Plant-Detail-Mock-Up.png](https://i.postimg.cc/BQZCXKc1/Plant-Detail-Mock-Up.png)](https://postimg.cc/QVP7zVzX)
 
 History:
+
 [![History-Mock-Up.png](https://i.postimg.cc/B6GTsLnm/History-Mock-Up.png)](https://postimg.cc/mc8zyrM9)
 
 Analytics:
+
 [![Analytics-Mock-Up.png](https://i.postimg.cc/gk0vYPmy/Analytics-Mock-Up.png)](https://postimg.cc/yWwJPtJW)
 
 Community:
+
 [![Community-Mock-Up.png](https://i.postimg.cc/jSpNQwNv/Community-Mock-Up.png)](https://postimg.cc/SnGJmKgz)
 
 Settings:
+
 [![Settings-Mock-Up.png](https://i.postimg.cc/d1ByY5XP/Settings-Mock-Up.png)](https://postimg.cc/8J75dmNt)
 
 #### Mobile Application Mock-ups
@@ -257,33 +287,43 @@ Settings:
 [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
 
 Onboarding:
+
 [![Onboard-Mock-Up.png](https://i.postimg.cc/CM9qVnrK/Onboard-Mock-Up.png)](https://postimg.cc/K4rzPj2X)
 
 Sign Up:
+
 [![Sign-Up-Mock-Up-1.png](https://i.postimg.cc/PJ1rHJNW/Sign-Up-Mock-Up-1.png)](https://postimg.cc/H8sC4pwn)
 
 Sign In:
+
 [![Sign-In-Mock-Up-1.png](https://i.postimg.cc/W3ksmzGQ/Sign-In-Mock-Up-1.png)](https://postimg.cc/PpdGTtF4)
 
 Dashboard:
+
 [![Dashboard-Mock-Up-1.png](https://i.postimg.cc/tTWHZfbv/Dashboard-Mock-Up-1.png)](https://postimg.cc/bDy54ms1)
 
 Plant Grid:
+
 [![Plant-Grid-Mock-Up-1.png](https://i.postimg.cc/FsDXL0t7/Plant-Grid-Mock-Up-1.png)](https://postimg.cc/tYZc0Z4j)
 
 Plant Detail:
+
 [![Plant-Detail-Mock-Up-1.png](https://i.postimg.cc/kGqLVgf6/Plant-Detail-Mock-Up-1.png)](https://postimg.cc/bDVmWpXp)
 
 Analytics:
+
 [![Analytics-Mock-Up-1.png](https://i.postimg.cc/fRG2tbby/Analytics-Mock-Up-1.png)](https://postimg.cc/5XmqDbLW)
 
 Community:
+
 [![Community-Mock-Up-1.png](https://i.postimg.cc/XYCxb0kT/Community-Mock-Up-1.png)](https://postimg.cc/3k32XV6B)
 
 History:
+
 [![History-Mock-Up-1.png](https://i.postimg.cc/QNYqKM6P/History-Mock-Up-1.png)](https://postimg.cc/grRhfGbq)
 
 Settings:
+
 [![Settings-Mock-Up-1.png](https://i.postimg.cc/50Nw6c8L/Settings-Mock-Up-1.png)](https://postimg.cc/2qMqKKcS)
 
 ### 5.4.4. Applications User Flow Diagrams.
