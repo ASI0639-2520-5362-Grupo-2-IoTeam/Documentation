@@ -3,6 +3,88 @@
 
 ### 6.1.1. Software Development Environment Configuration.
 
+En esta sección se especificarán las herramientas de software que se usará para el desarrollo del producto digital para las siguientes tareas:
+
+**Project Management**
+
+Para el manejo del proyecto se usará las siguientes herramientas que son clave para la distribución de responsabilidades y reuniones virtuales.
+
+| Nombre del Producto | Propósito                                                                                   | Ruta de referencia o de descarga    |
+|---------------------|---------------------------------------------------------------------------------------------|-------------------------------------|
+| Trello              | Para la asignación de tareas y actividades para cada integrante del grupo en base a nuestras User Stories. | [https://www.trello.com/](https://www.trello.com/) |
+| Discord             | Plataforma virtual para realizar reuniones del grupo para coordinar y asignar actividades.   | [https://discord.com/](https://discord.com/) |
+
+## Requirements Management
+
+| Nombre del Producto | Propósito                                                                                     | Ruta de referencia o de descarga                                           |
+|---------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| UXPressia           | Elaboración de User Personas, Empathy Maps, Jurney Maps e Impact Maps.                         | [https://uxpressia.com/](https://uxpressia.com/)                          |
+| Miro                | Elaboración de As-Is y To-Be Scenario Maps                                                    | [https://miro.com/es/](https://miro.com/es/)                              |
+| Microsoft Stream    | Publicación del video que contiene todas las entrevistas realizadas                            | [https://www.microsoft.com/es-es/microsoft-365/microsoft-stream](https://www.microsoft.com/es-es/microsoft-365/microsoft-stream) |
+
+## Requirements Management
+
+| Nombre del Producto | Propósito                                                                                     | Ruta de referencia o de descarga                                           |
+|---------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| UXPressia           | Elaboración de User Personas, Empathy Maps, Jurney Maps e Impact Maps.                         | [https://uxpressia.com/](https://uxpressia.com/)                          |
+| Miro                | Elaboración de As-Is y To-Be Scenario Maps                                                    | [https://miro.com/es/](https://miro.com/es/)                              |
+| Microsoft Stream    | Publicación del video que contiene todas las entrevistas realizadas y vídeos del producto y equipo                           | [https://www.microsoft.com/es-es/microsoft-365/microsoft-stream](https://www.microsoft.com/es-es/microsoft-365/microsoft-stream) |
+
+## Product UX/UI Design
+
+| Nombre del Producto | Propósito                                                                   | Ruta de referencia o de descarga                                         |
+|---------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Structurizr         | Modelado y documentación de arquitectura de software utilizando diagramas   | [https://structurizr.com/](https://structurizr.com/)                    |
+| LucidChart          | Creación de diagramas de flujo, mapas conceptuales y diagramas UML           | [https://www.lucidchart.com/](https://www.lucidchart.com/)              |
+| Vertabelo           | Modelado de bases de datos a nivel lógico y físico                          | [https://vertabelo.com/](https://vertabelo.com/)                        |
+| Figma               | Elaboración de Wireframes, Mock-ups y Prototypes                            | [https://www.figma.com](https://www.figma.com)                          |
+
+## Software Development
+
+### Tecnologías de Desarrollo
+
+| **Nombre del Producto** | **Propósito** | **Ruta de referencia o descarga** |
+|--------------------------|---------------|-----------------------------------|
+| **HTML (HyperText Markup Language)** | Lenguaje de marcado utilizado para estructurar el contenido de la interfaz del producto digital. | [https://www.w3schools.com/html/](https://www.w3schools.com/html/) |
+| **CSS (Cascading Style Sheets)** | Lenguaje de hojas de estilo empleado para definir la presentación visual y el diseño del frontend. | [https://www.w3schools.com/css/](https://www.w3schools.com/css/) |
+| **JavaScript** | Lenguaje de programación utilizado para agregar interactividad y lógica dinámica en el frontend. | [https://developer.mozilla.org/es/docs/Web/JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) |
+| **Vue.js** | Framework progresivo de JavaScript empleado para la creación de interfaces de usuario reactivas y componentes dinámicos. | [https://vuejs.org/](https://vuejs.org/) |
+| **Java** | Lenguaje de programación orientado a objetos utilizado en el desarrollo del backend y componentes del sistema. | [https://www.java.com/](https://www.java.com/) |
+| **Spring Framework** | Framework de desarrollo para Java que facilita la creación de aplicaciones empresariales, especialmente servicios REST y microservicios. | [https://spring.io/projects/spring-framework](https://spring.io/projects/spring-framework) |
+| **Python** | Lenguaje de programación de propósito general utilizado para procesamiento de datos, scripts de automatización y pruebas. | [https://www.python.org/](https://www.python.org/) |
+| **C++** | Lenguaje de programación de alto rendimiento empleado para módulos o componentes que requieren eficiencia en procesamiento. | [https://isocpp.org/](https://isocpp.org/) |
+| **Flutter** | Framework multiplataforma utilizado para el desarrollo de aplicaciones móviles con un solo código base. | [https://flutter.dev/](https://flutter.dev/) |
+
+---
+
+### Herramientas de Desarrollo
+
+| **Nombre del Producto** | **Propósito** | **Ruta de referencia o descarga** |
+|--------------------------|---------------|-----------------------------------|
+| **IntelliJ IDEA** | Entorno de desarrollo integrado (IDE) para la codificación, depuración y gestión del código fuente en proyectos Java y Spring. | [https://www.jetbrains.com/idea/](https://www.jetbrains.com/idea/) |
+| **Android Studio** | Entorno de desarrollo oficial para la creación, prueba y despliegue de aplicaciones móviles Android. | [https://developer.android.com/studio](https://developer.android.com/studio) |
+| **PyCharm** | IDE especializado en desarrollo con Python, utilizado para programación, testing y mantenimiento de scripts. | [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/) |
+| **CLion** | IDE avanzado para el desarrollo en C y C++, con herramientas integradas de depuración y gestión de proyectos. | [https://www.jetbrains.com/clion/](https://www.jetbrains.com/clion/) |
+## Software Testing
+
+| Nombre del Producto | Propósito                                                                                 | Ruta de referencia o de descarga                                       |
+|---------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Gherkin             | Lenguaje de especificación de pruebas utilizado para escribir nuestros Test en formato más legible. | [https://cucumber.io/docs/gherkin/](https://cucumber.io/docs/gherkin/) |
+
+## Software Deployment
+
+| Nombre del Producto | Propósito                                                 | Ruta de referencia o de descarga                                |
+|---------------------|-----------------------------------------------------------|-----------------------------------------------------------------|
+| Vercel        | Para realizar el despliegue de nuestra Landing Page.       | [https://vercel.com/](https://vercel.com/)           |
+| Azure            | Plataforma para el despliegue y hosting de aplicaciones web y móviles en la nube | [https://azure.microsoft.com/es-mx/get-started/azure-portal](https://azure.microsoft.com/es-mx/get-started/azure-portal)     |
+
+## Software Documentation
+
+| Nombre del Producto | Propósito                                                                | Ruta de referencia o de descarga                                  |
+|---------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Markdown            | Lenguaje de marcado ligero utilizado para documentar todo el desarrollo del producto. | [https://markdown.es/](https://markdown.es/)                      |
+| HackMD              | Herramienta colaborativa para la creación y edición de documentación en Markdown. | [https://hackmd.io/](https://hackmd.io/)                          
+
 ### 6.1.2. Source Code Management.
 
 ### 6.1.3. Source Code Style Guide & Conventions.
