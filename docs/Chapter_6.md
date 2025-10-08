@@ -103,5 +103,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 
 **Figma:**
 Landing Page: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1)
+
 Web App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
+
 Mobile App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
