@@ -515,7 +515,7 @@ Además, explicamos el modelo de negocio: un servicio de suscripción mensual qu
 ***4. Generating Domain Events***
 
 Pedimos a los participantes que escriban en post-its amarillos los "eventos" que ocurren en el proceso. Un evento es algo relevante para el negocio que ya sucedió (se escribe en pasado, ej: "Cliente se registró", "Factura fue pagada").
-[![Big-Picture-Event-Storming.jpg](https://i.postimg.cc/kGD5w2N8/Big-Picture-Event-Storming.jpg)](https://postimg.cc/JHVmz424)
+[![Big-Picture-Event-Storming-5.jpg](https://i.postimg.cc/3N3tTYX8/Big-Picture-Event-Storming-5.jpg)](https://postimg.cc/YGy6NcDZ)
 
 ***5. Sorting Domain Events***
 
@@ -523,7 +523,7 @@ Pedimos al equipo que ordene cronológicamente los eventos colocados en post-its
 
 Este ejercicio no es solo un mero ordenamiento: es el momento más valioso de la sesión. Al debatir si el orden propuesto es correcto, el equipo comienza a revelar diferencias en sus percepciones, asunciones ocultas y malentendidos sobre cómo funciona realmente el proceso. Estas discusiones, lejos de ser conflictos, son oportunidades clave para alinear la comprensión colectiva, identificar brechas en el flujo del negocio y construir un modelo compartido y preciso del dominio.
 
-[![Big-Picture-Event-Storming-1.jpg](https://i.postimg.cc/prnHpzY0/Big-Picture-Event-Storming-1.jpg)](https://postimg.cc/XB3hPZPF)
+[![Big-Picture-Event-Storming-6.jpg](https://i.postimg.cc/FzPVXcFS/Big-Picture-Event-Storming-6.jpg)](https://postimg.cc/ZvddrWdY)
 
 ***6. Adding Actors and External Systems***
 
@@ -535,13 +535,13 @@ Para profundizar en la modelación del dominio, asignamos colores distintos a lo
 
 - Problemas o Dudas : Utulizamos el rojo para detenerminar dudas o problemas en vez de ponernos a debatir o discutir.
 
-[![Big-Picture-Event-Storming-2.jpg](https://i.postimg.cc/1zt5ygTd/Big-Picture-Event-Storming-2.jpg)](https://postimg.cc/sMkRc23P)
+[![Big-Picture-Event-Storming-7.jpg](https://i.postimg.cc/KjsBH2Q5/Big-Picture-Event-Storming-7.jpg)](https://postimg.cc/ctwvvPpK)
 
 ***7. Storytelling***
 
 Se recorre cronológicamente la línea de eventos, desde el inicio hasta el final, narrando la historia que los post-its construyen colectivamente. Esta narrativa permite validar la coherencia del flujo, identificar saltos lógicos, confirmar la secuencia de acciones y detectar eventuales omisiones o redundancias en el proceso.
 
-[![Big-Picture-Event-Storming-3.jpg](https://i.postimg.cc/pTjvdKBs/Big-Picture-Event-Storming-3.jpg)](https://postimg.cc/bDqWCDWn)
+[![Big-Picture-Event-Storming-8.jpg](https://i.postimg.cc/26SqRtqV/Big-Picture-Event-Storming-8.jpg)](https://postimg.cc/TyB2nCJ6)
 
 
 ***8. Reverse storytelling***
