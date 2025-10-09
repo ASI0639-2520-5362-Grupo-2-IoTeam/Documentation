@@ -353,6 +353,10 @@ Vasco Zagaceta tiene 24 años y es estudiante universitario. Vive en un departam
 **Resumen de la Entrevista:** <br>
 La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y anturios, que riega de forma manual siguiendo un calendario, aunque ha perdido algunas plantas por exceso de fertilizante o riego. Actualmente no utiliza ninguna aplicación ni herramienta digital, solo anota fechas en un calendario, pero muestra gran interés en contar con una app que le recuerde los riegos, registre la evolución de sus plantas y le brinde estadísticas o alertas sobre problemas como marchitez, exceso de agua o falta de luz. Además, estaría dispuesta a pagar por una suscripción mensual siempre que el costo sea razonable y la aplicación le aporte beneficios claros, pues considera sus plantas valiosas y desea cuidarlas mejor.
 
+En cuanto a su personalidad, se muestra organizada, paciente y dedicada, con un fuerte apego emocional hacia sus plantas. Prefiere soluciones simples y visuales.
+Usa Instagram y WhatsApp con frecuencia, principalmente desde su Iphone, y navega en Safari.
+No se considera una persona muy tecnológica, pero tiene disposición para aprender si la herramienta es clara. Prefiere interactuar mediante notificaciones o recordatorios visuales y valora un diseño intuitivo y amigable.
+
 ---
 [![entrevistadsad.png](https://i.postimg.cc/zf6LgmMJ/entrevistadsad.png)](https://postimg.cc/94PX6kCS)
 
