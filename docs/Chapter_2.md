@@ -343,7 +343,7 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 
 ---
 
-[![image.png](https://i.postimg.cc/HLTT5Hkm/image.png)](https://postimg.cc/CR6yT38r)
+[![image.png](https://i.postimg.cc/fbxTw0pp/image.png)](https://postimg.cc/Y4CwRjpz)
 
 **Entrevistado:** Maria Sedamano <br>
 **Sexo:** Femenino <br>
