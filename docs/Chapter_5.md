@@ -246,6 +246,22 @@ Settings:
 
 ### 5.4.2. Applications Wireflow Diagrams.
 
+Los Wireflows se utilizan principalmente en el diseño UX y especialmente para aplicaciones que involucran flujos de trabajo e interacciones complejas.
+
+Se pueden visualizar mediante el siguiente link: [https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-1088%2C-2778%2C3837%2C1752%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341](https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-1088%2C-2778%2C3837%2C1752%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341)
+
+**User Goal 1:** Como usuario, quiero acceder a la sección de Analytics, identificar una tendencia, ingresar al Historial para confirmar el insight, y ajustar y guardar exitosamente el nuevo umbral de riego, con el fin de optimizar el cuidado de mis plantas según las condiciones detectadas.
+
+[![Application-User-Flow-Diagram.png](https://i.postimg.cc/ncvVJmmX/Application-User-Flow-Diagram.png)](https://postimg.cc/zVGYwV0N)
+
+**User Goal 2:** Como usuario, quiero ingresar a la vista de Comunidad, y ayudar a otro usuario, con el fin de darles confianza y ampliar sus conocimientos sobre el cuidado de plantas.
+
+[![Application-User-Flow-Diagram-1.png](https://i.postimg.cc/501qsL8S/Application-User-Flow-Diagram-1.png)](https://postimg.cc/Ty7Dwy7K)
+
+**User Goal 3:** Como usuario, quiero navegar a la sección de Configuración y modificar los ajustes, con el fin de adaptar la aplicación perfectamente a mis necesidades.
+
+[![Application-User-Flow-Diagram-2.png](https://i.postimg.cc/TY8m0rGp/Application-User-Flow-Diagram-2.png)](https://postimg.cc/7bVfYJ5k)
+
 ### 5.4.3. Applications Mock-ups.
 
 En esta sección, se presentan los wireframes de la aplicación web y mobile, en la herramienta Figma.
@@ -349,8 +365,6 @@ La presente sección incluye los prototipos interactivos desarrollados para repr
     -   Se implementó un sistema de navegación lateral persistente, que permite desplazarse fácilmente entre secciones clave como Dashboard, Plants, History, Analytics, Community y Settings.
 
     -   Las interacciones siguen un enfoque jerárquico y contextual, facilitando tareas esenciales como revisar el estado de las plantas, visualizar alertas o acceder al historial de riegos.
-
-    -   Se priorizó la claridad visual mediante botones de acción directa como “View Details”, los cuales permiten ejecutar acciones frecuentes sin necesidad de múltiples clics.
 
 - Relación con la arquitectura de información:
 
