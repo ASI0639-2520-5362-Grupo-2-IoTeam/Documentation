@@ -281,14 +281,37 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 #### 6.2.1.4. Development Evidence for Sprint Review.
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 8f4e26c0b0b5256808fb8a38c3b921be1d468776|feat: add index & assets|-|08/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 3bd23767315388fb2f6ad6a8470d1f634c8e2eb6 |fix: html|-|08/10/2025|
+
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | cb91b94dde348ea7064add64934994f4821bad1f | feat: add plant management context| The project was created and Bounded Context: Plant Management was developed. |1/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | a924008e5cb944f226212e19862cab23256567b5|feat: add the IAM bc| -|1/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |3b8886e5fc934e33c22f900cc4194d312ddf50fc |fix: plant structure| -|3/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |61153a62246705040da9c8fd993e1bb5d3aacd89 |feat: applied data mapping|- |3/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 81b53c5e9b06c2672a310cb50b0bbf005b41a578|feat: connected to the database| |5/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 72cfcdc797531de19bf82b96e170e2ca79c85aad|fix: Router| |5/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api |72895a2e707e1c3d298a9fd8a713facbc65e7691 |feat : Add fake api Json Server| |7/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api |60503214bcc1c883075bb95249e24ea78fdddf26 |feat: profile matched w user (in fakeAPI)| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api |f5a7cf6c9282cf8da00a0cec18d531c8a6af44a0 |refactor: remove profile settings section from Settings component| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 18983218667c516de0c4142c6ec345c7bf9425cd|feat: add analytics component and service with routing and sidebar integration| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 18983218667c516de0c4142c6ec345c7bf9425cd|feat: add analytics component and service with routing and sidebar integration| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 7bfc98d924e9122a6771593af64f2d5cc4caf622|chore: remove unused image file| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | || |8/10/2025|
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
+En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas.
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+No hay services para este sprint porque se usó fake-api para el desarrollo del front
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
 ## Conclusiones y recomendaciones:
