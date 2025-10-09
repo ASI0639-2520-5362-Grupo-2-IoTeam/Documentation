@@ -365,7 +365,11 @@ La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y
 **Duración de la Entrevista:** 3:00<br>
 
 **Resumen de la Entrevista:** <br>
-Natalia es una gran aficionada por las plantas y disfruta mucho de cuidarlas en casa, donde ha logrado reunir una gran variedad que va desde coloridas flores hasta frondosos helechos. Ella siempre se ha encargado del riego de manera manual y siguiendo su propia intuición, sin apoyarse en ninguna guía o sistema especializado, lo que le da un toque personal a su rutina diaria. Sin embargo, últimamente ha mostrado interés en explorar nuevas formas de optimizar el cuidado de sus plantas, especialmente a través de la tecnología. Aunque no está muy familiarizada con herramientas digitales, le atrae la idea de probar aplicaciones que le permitan visualizar gráficos y estadísticas sobre el estado de sus plantas, ya que considera que podría aprender mucho de esos datos y tomar mejores decisiones. Además, le resulta muy interesante la posibilidad de contar con una función que le muestre información sobre el clima, para poder adaptar el riego y los cuidados de sus plantas de acuerdo con las condiciones ambientales. Natalia menciona que preferiría acceder a este tipo de servicio mediante una suscripción, siempre y cuando el producto logre convencerla con su utilidad y facilidad de uso.
+Natalia es una persona mayor.  apasionada por la jardinería, con una personalidad curiosa y paciente. Disfruta del cuidado de una amplia variedad de plantas, actividad que considera parte de su estilo de vida. Su método de riego es manual e intuitivo, sin apoyarse en sistemas especializados, lo que refleja un enfoque tradicional pero cercano.
+
+En cuanto a tecnología, no se identifica como una usuaria experta, aunque utiliza con frecuencia su smartphone Android como dispositivo principal. Menciona interés en explorar aplicaciones móviles que ofrezcan gráficos, estadísticas y alertas relacionadas con el riego y el clima. Sus canales de interacción preferidos son las apps móviles y notificaciones, mientras que en navegadores utiliza Google Chrome, aunque su consumo digital es más práctico que intensivo.
+
+No tiene afinidad marcada por marcas específicas, pero se muestra receptiva a opciones reconocidas que transmitan confianza. Está dispuesta a pagar una suscripción si la solución le resulta útil, clara y fácil de usar. Su apertura tecnológica está influenciada por la búsqueda de aprendizaje y mejora en el cuidado de sus plantas, más que por tendencias o modas.
 
 ---
 ### 2.2.3. Análisis de entrevistas. 
