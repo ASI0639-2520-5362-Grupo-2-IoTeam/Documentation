@@ -561,14 +561,13 @@ Al cierre de la sesión, se evalúan los logros alcanzados:
 
 | **Term**                             | **Definition** |
 |--------------------------------------|----------------|
-| **IoT Sensor**                       | Physical device responsible for measuring and transmitting soil humidity data. |
+| **Watering Threshold**                       |The minimum acceptable humidity level for a specific plant, which triggers a notification when reached.|
 | **Humidity Sensor**                    | Component that measures the soil moisture level in the pot. |
 | **Humidity Level**                      | Percentage value indicating the amount of water in the soil. |
-| **Dashboard**                            | Main screen showing the overall status of all registered plants. |
-| **Plant Profile**  | Information linked to a specific plant (species, location, pot, threshold). |
+| **control panel**                            | Main screen showing the overall status of all registered plants. |
+| **Plant Management**  | Information linked to a specific plant (species, location, pot, threshold). |
 | **Push Notification**                           | Mobile message notifying the user about plant status. |
 | **Update Status**                        | Action of confirming in the app that the plant has been watered. |
 | **Receive Notification**               | Action of being alerted when a plant requires watering. |
 | **Register Plant**             | Action of adding a new plant into the system with its data. |
-| **Web Platform/Mobile App**          | Digital interface accessible via computer or smartphone where users view and manage information of plants. |
 | **Device Monitoring**                | Functionality that allows providers to configure, monitor, or troubleshoot installed IoT sensors. |
