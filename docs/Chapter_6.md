@@ -327,9 +327,10 @@ No hay services para este sprint porque se usó fake-api para el desarrollo del 
 - Gherkin Reference – Cucumber: https://cucumber.io/docs/gherkin/
 
 ## Anexos:
-[**Link de la exposición grupal TB1:**](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt) https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/EQfyZeoTjjFFudwchCoJDqoBN3Iwz42BWrWtvN0tTZA9eg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=3geObt 
+**Link de la exposición grupal TB1:**:https://goo.su/JGnClEx
 
-**Landing Page:** [https://plant-care-landing-page-one.vercel.app/] (https://plant-care-landing-page-one.vercel.app/)
+**Trello: **
+https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
 
 **Figma:**
 
@@ -338,3 +339,11 @@ Landing Page: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?nod
 Web App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
 
 Mobile App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
+
+**Despliegues**
+
+**Landing Page:** 
+https://plant-care-landing-page-one.vercel.app/
+
+**Frontweb App:** 
+https://frontendweb-b47l.onrender.com/
