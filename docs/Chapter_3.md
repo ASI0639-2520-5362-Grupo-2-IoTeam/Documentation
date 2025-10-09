@@ -111,55 +111,55 @@ Para el segmento del usuario aficionado se elaboró un Impact Mapping con el obj
 ## 3.3. Product Backlog.
 |Orden|User Story Id|Título|Descripción|Story Points (1/2/3/5/8)|
 |-----|-------------|------|-----------|------------------------|
-| 1     | US-001        | Acceso a la Landing Page                  | Como visitante, quiero acceder a una landing page optimizada desde cualquier dispositivo, para conocer rápidamente los beneficios del producto     | 3                         |
-| 2     | US-002        | Secciones informativas diferenciadas      | Como visitante, quiero ver secciones que muestren cómo el producto beneficia tanto a personas ocupadas como a aficionados                          | 3                         |
-| 3     | US-003        | Call to Action contextual                 | Como visitante, quiero encontrar botones de acción claros y contextualizados según mis intereses                                                   | 2                         |
-| 4     | US-004        | Testimonios segmentados                   | Como visitante, quiero ver testimonios de usuarios reales que representen diferentes perfiles                                                      | 3                         |
-| 5     | US-005        | Registro de usuario                       | Como visitante, quiero registrarme con datos básicos protegidos, para crear una cuenta segura                                                      | 5                         |
-| 6     | US-011        | Registro simplificado de planta           | Como usuario, quiero registrar una nueva planta completando información básica esencial                                                            | 3                         |
-| 7     | US-015        | Visualización unificada de plantas        | Como usuario, quiero ver todas mis plantas en una vista consolidada con estado de salud                                                            | 5                         |
-| 8     | US-016        | Alertas esenciales de riego               | Como persona ocupada, quiero recibir solo notificaciones críticas cuando mis plantas necesiten riego urgente                                       | 5                         |
-| 9     | US-042        | Vinculación simplificada de dispositivo   | Como usuario, quiero vincular nuevos sensores IoT mediante escaneo de código QR                                                                    | 8                         |
-| 10    | US-044        | Recepción de datos en tiempo real         | Como usuario, quiero ver las lecturas de mis sensores actualizarse en tiempo real                                                                  | 5                         |
-| 11    | US-006        | Inicio de sesión                          | Como usuario registrado, quiero autenticarme de forma segura con mis credenciales                                                                  | 3                         |
-| 12    | US-007        | Recuperación de contraseña                | Como usuario, quiero recuperar mi cuenta de forma segura si olvido mis credenciales                                                                | 3                         |
-| 13    | US-012        | Edición rápida de información de planta   | Como usuario, quiero editar la información básica de una planta registrada                                                                         | 2                         |
-| 14    | US-014        | Configuración de parámetros básicos       | Como usuario, quiero definir parámetros esenciales para cada planta                                                                                | 3                         |
-| 15    | US-017        | Notificaciones de temperatura extrema     | Como persona ocupada, quiero ser alertado solo cuando la temperatura represente peligro real                                                       | 3                         |
-| 16    | US-018        | Recordatorios programados simplificados   | Como persona ocupada, quiero recordatorios básicos en horarios convenientes                                                                        | 3                         |
-| 17    | US-036        | Alertas con diagnóstico integrado         | Como usuario, quiero recibir notificaciones que incluyan diagnóstico automático del problema                                                       | 8                         |
-| 18    | US-043        | Configuración inteligente por perfil      | Como usuario, quiero que el sistema configure automáticamente los parámetros del dispositivo según el tipo de planta                               | 5                         |
-| 19    | US-045        | Gestión proactiva de conectividad         | Como usuario, quiero ser notificado proactivamente sobre problemas de conexión del dispositivo                                                     | 5                         |
-| 20    | US-008        | Gestión de sesión                         | Como usuario, quiero que mi sesión se maneje de forma segura                                                                                       | 2                         |
-| 21    | US-009        | Autenticación externa segura              | Como usuario, quiero autenticarme mediante proveedores confiables como Google                                                                      | 5                         |
-| 22    | US-010        | Cerrar sesión                             | Como usuario, quiero cerrar sesión de manera definitiva en todos los dispositivos                                                                  | 2                         |
-| 23    | US-013        | Eliminación confirmada de planta          | Como usuario, quiero eliminar plantas que ya no cuido                                                                                              | 2                         |
-| 24    | US-019        | Monitoreo detallado de humedad            | Como aficionado, quiero monitorear precisamente la humedad del aire                                                                                | 5                         |
-| 25    | US-020        | Visualización avanzada en tiempo real     | Como aficionado, quiero ver datos de sensores en tiempo real con múltiples parámetros                                                              | 8                         |
-| 26    | US-037        | Alertas preventivas basadas en tendencias | Como usuario, quiero recibir advertencias tempranas cuando mis plantas muestren patrones de deterioro                                               | 8                         |
-| 27    | US-038        | Alertas con soluciones escalonadas        | Como usuario, quiero que las alertas sugieran acciones inmediatas y planes a largo plazo                                                           | 5                         |
-| 28    | US-046        | Selección flexible de planes              | Como usuario, quiero elegir entre diferentes modelos de pago según mis necesidades                                                                 | 3                         |
-| 29    | US-021        | Análisis histórico con gráficos avanzados | Como aficionado, quiero analizar tendencias históricas con gráficos interactivos                                                                   | 8                         |
-| 30    | US-022        | Reportes semanales detallados             | Como aficionado, quiero recibir reportes semanales exhaustivos                                                                                     | 5                         |
-| 31    | US-039        | Alertas personalizadas por tipo de usuario| Como usuario, quiero recibir alertas adaptadas a mi nivel de experiencia y disponibilidad                                                           | 5                         |
-| 32    | US-040        | Sistema de confirmación y seguimiento     | Como usuario, quiero confirmar cuando he aplicado las soluciones sugeridas y recibir seguimiento                                                   | 5                         |
-| 33    | US-047        | Gestión segura de métodos de pago         | Como usuario, quiero administrar mi información de pago de forma segura                                                                            | 3                         |
-| 34    | US-023        | Reportes de largo plazo                   | Como aficionado, quiero acceder a reportes mensuales y anuales consolidados                                                                        | 8                         |
-| 35    | US-024        | Exportación para análisis externo         | Como aficionado, quiero exportar datos crudos en formatos analíticos                                                                               | 5                         |
-| 36    | US-025        | Diagnóstico automático en alertas         | Como usuario, quiero que las alertas incluyan diagnóstico automático de causas                                                                     | 5                         |
-| 37    | US-041        | Alertas con conocimiento comunitario      | Como usuario, quiero que las alertas incluyan soluciones validadas por la comunidad                                                                | 5                         |
-| 38    | US-027        | Integración automática a la comunidad     | Como usuario registrado, quiero ser parte automáticamente de la comunidad según mis intereses                                                      | 3                         |
-| 39    | US-028        | Feed comunitario                          | Como usuario, quiero ver un feed personalizado con publicaciones relevantes                                                                        | 5                         |
-| 40    | US-048        | Cancelación flexible de suscripciones     | Como usuario, quiero poder cancelar mi suscripción en cualquier momento                                                                            | 2                         |
-| 41    | US-049        | Transparencia en historial de pagos       | Como usuario, quiero consultar mi historial completo de transacciones                                                                              | 3                         |
-| 42    | US-050        | Recordatorios de renovación               | Como usuario, quiero recibir notificaciones anticipadas sobre renovaciones de suscripción                                                          | 2                         |
-| 43    | US-026        | Historial de diagnósticos                 | Como usuario, quiero revisar el historial de alertas y diagnósticos anteriores                                                                     | 5                         |
-| 44    | US-029        | Compartir experiencias de cuidado         | Como usuario, quiero compartir mis aprendizajes y técnicas exitosas de cuidado                                                                     | 3                         |
-| 45    | US-030        | Compartir progreso con fotos seguras      | Como usuario, quiero compartir el progreso de mis plantas mediante fotos procesadas para privacidad                                                | 5                         |
-| 46    | US-031        | Sistema de feedback para alertas          | Como usuario, quiero evaluar la utilidad de las alertas recibidas                                                                                  | 3                         |
-| 47    | US-032        | Interacción y aprendizaje comunitario     | Como usuario, quiero recibir comentarios y reacciones en mis publicaciones                                                                         | 3                         |
-| 48    | US-033        | Compartir en redes sociales externas      | Como usuario, quiero compartir logros significativos en mis redes sociales                                                                         | 3                         |
-| 49    | US-034        | Moderación proactiva de contenido         | Como administrador, quiero mantener un ambiente seguro y constructivo en la comunidad                                                              | 8                         |
-| 50    | US-035        | Protección automática de privacidad       | Como usuario, quiero que todas mis fotos sean procesadas automáticamente para eliminar información sensible                                        | 5                         |
+| 1 | US-042 | Vinculación simplificada de dispositivo | Como usuario, quiero vincular nuevos sensores IoT mediante escaneo de código QR | 8 |
+| 2 | US-044 | Recepción de datos en tiempo real | Como usuario, quiero ver las lecturas de mis sensores actualizarse en tiempo real | 5 |
+| 3 | US-016 | Alertas esenciales de riego | Como persona ocupada, quiero recibir solo notificaciones críticas cuando mis plantas necesiten riego urgente | 5 |
+| 4 | US-017 | Notificaciones de temperatura extrema | Como persona ocupada, quiero ser alertado solo cuando la temperatura represente peligro real | 3 |
+| 5 | US-018 | Recordatorios programados simplificados | Como persona ocupada, quiero recordatorios básicos en horarios convenientes | 3 |
+| 6 | US-025 | Diagnóstico automático en alertas | Como usuario, quiero que las alertas incluyan diagnóstico automático de causas | 5 |
+| 7 | US-036 | Alertas con diagnóstico integrado | Como usuario, quiero recibir notificaciones que incluyan diagnóstico automático del problema | 8 |
+| 8 | US-037 | Alertas preventivas basadas en tendencias | Como usuario, quiero recibir advertencias tempranas cuando mis plantas muestren patrones de deterioro | 8 |
+| 9 | US-038 | Alertas con soluciones escalonadas | Como usuario, quiero que las alertas sugieran acciones inmediatas y planes a largo plazo | 5 |
+| 10 | US-039 | Alertas personalizadas por tipo de usuario | Como usuario, quiero recibir alertas adaptadas a mi nivel de experiencia y disponibilidad | 5 |
+| 11 | US-040 | Sistema de confirmación y seguimiento | Como usuario, quiero confirmar cuando he aplicado las soluciones sugeridas y recibir seguimiento | 5 |
+| 12 | US-041 | Alertas con conocimiento comunitario | Como usuario, quiero que las alertas incluyan soluciones validadas por la comunidad | 5 |
+| 13 | US-043 | Configuración inteligente por perfil | Como usuario, quiero que el sistema configure automáticamente los parámetros del dispositivo según el tipo de planta | 5 |
+| 14 | US-045 | Gestión proactiva de conectividad | Como usuario, quiero ser notificado proactivamente sobre problemas de conexión del dispositivo | 5 |
+| 15 | US-011 | Registro simplificado de planta | Como usuario, quiero registrar una nueva planta completando información básica esencial | 3 |
+| 16 | US-012 | Edición rápida de información de planta | Como usuario, quiero editar la información básica de una planta registrada | 2 |
+| 17 | US-013 | Eliminación confirmada de planta | Como usuario, quiero eliminar plantas que ya no cuido | 2 |
+| 18 | US-014 | Configuración de parámetros básicos | Como usuario, quiero definir parámetros esenciales para cada planta | 3 |
+| 19 | US-015 | Visualización unificada de plantas | Como usuario, quiero ver todas mis plantas en una vista consolidada con estado de salud | 5 |
+| 20 | US-005 | Registro de usuario | Como visitante, quiero registrarme con datos básicos protegidos, para crear una cuenta segura | 5 |
+| 21 | US-006 | Inicio de sesión | Como usuario registrado, quiero autenticarme de forma segura con mis credenciales | 3 |
+| 22 | US-007 | Recuperación de contraseña | Como usuario, quiero recuperar mi cuenta de forma segura si olvido mis credenciales | 3 |
+| 23 | US-008 | Gestión de sesión | Como usuario, quiero que mi sesión se maneje de forma segura | 2 |
+| 24 | US-009 | Autenticación externa segura | Como usuario, quiero autenticarme mediante proveedores confiables como Google | 5 |
+| 25 | US-010 | Cerrar sesión | Como usuario, quiero cerrar sesión de manera definitiva en todos los dispositivos | 2 |
+| 26 | US-019 | Monitoreo detallado de humedad | Como aficionado, quiero monitorear precisamente la humedad del aire | 5 |
+| 27 | US-020 | Visualización avanzada en tiempo real | Como aficionado, quiero ver datos de sensores en tiempo real con múltiples parámetros | 8 |
+| 28 | US-021 | Análisis histórico con gráficos avanzados | Como aficionado, quiero analizar tendencias históricas con gráficos interactivos | 8 |
+| 29 | US-022 | Reportes semanales detallados | Como aficionado, quiero recibir reportes semanales exhaustivos | 5 |
+| 30 | US-023 | Reportes de largo plazo | Como aficionado, quiero acceder a reportes mensuales y anuales consolidados | 8 |
+| 31 | US-024 | Exportación para análisis externo | Como aficionado, quiero exportar datos crudos en formatos analíticos | 5 |
+| 32 | US-026 | Historial de diagnósticos | Como usuario, quiero revisar el historial de alertas y diagnósticos anteriores | 5 |
+| 33 | US-001 | Acceso a la Landing Page | Como visitante, quiero acceder a una landing page optimizada desde cualquier dispositivo | 3 |
+| 34 | US-002 | Secciones informativas diferenciadas | Como visitante, quiero ver secciones que muestren cómo el producto beneficia tanto a personas ocupadas como a aficionados | 3 |
+| 35 | US-003 | Call to Action contextual | Como visitante, quiero encontrar botones de acción claros y contextualizados según mis intereses | 2 |
+| 36 | US-004 | Testimonios segmentados | Como visitante, quiero ver testimonios de usuarios reales que representen diferentes perfiles | 3 |
+| 37 | US-046 | Selección flexible de planes | Como usuario, quiero elegir entre diferentes modelos de pago según mis necesidades | 3 |
+| 38 | US-047 | Gestión segura de métodos de pago | Como usuario, quiero administrar mi información de pago de forma segura | 3 |
+| 39 | US-048 | Cancelación flexible de suscripciones | Como usuario, quiero poder cancelar mi suscripción en cualquier momento | 2 |
+| 40 | US-049 | Transparencia en historial de pagos | Como usuario, quiero consultar mi historial completo de transacciones | 3 |
+| 41 | US-050 | Recordatorios de renovación | Como usuario, quiero recibir notificaciones anticipadas sobre renovaciones de suscripción | 2 |
+| 42 | US-027 | Integración automática a la comunidad | Como usuario registrado, quiero ser parte automáticamente de la comunidad según mis intereses | 3 |
+| 43 | US-028 | Feed comunitario | Como usuario, quiero ver un feed personalizado con publicaciones relevantes | 5 |
+| 44 | US-029 | Compartir experiencias de cuidado | Como usuario, quiero compartir mis aprendizajes y técnicas exitosas de cuidado | 3 |
+| 45 | US-030 | Compartir progreso con fotos seguras | Como usuario, quiero compartir el progreso de mis plantas mediante fotos procesadas para privacidad | 5 |
+| 46 | US-031 | Sistema de feedback para alertas | Como usuario, quiero evaluar la utilidad de las alertas recibidas | 3 |
+| 47 | US-032 | Interacción y aprendizaje comunitario | Como usuario, quiero recibir comentarios y reacciones en mis publicaciones | 3 |
+| 48 | US-033 | Compartir en redes sociales externas | Como usuario, quiero compartir logros significativos en mis redes sociales | 3 |
+| 49 | US-034 | Moderación proactiva de contenido | Como administrador, quiero mantener un ambiente seguro y constructivo en la comunidad | 8 |
+| 50 | US-035 | Protección automática de privacidad | Como usuario, quiero que todas mis fotos sean procesadas automáticamente para eliminar información sensible | 5 |
 
 Link del trello: https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
