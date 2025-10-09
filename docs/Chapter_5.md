@@ -356,6 +356,22 @@ Settings:
 
 ### 5.4.4. Applications User Flow Diagrams.
 
+Los User Flows que se muestran a continuación ilustran los trayectos principales que un usuario puede tomar dentro de la aplicación, desde el ingreso inicial hasta la adaptación de su experiencia. Cada flujo está diseñado para cumplir un objetivo particular del usuario (User Goal) y se fundamenta en los mockups creados.
+
+Se pueden visualizar mediante el siguiente link: [https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-8930%2C3000%2C4391%2C2005%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341](https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-8930%2C3000%2C4391%2C2005%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341)
+
+**User Goal 1:** Como usuario, quiero aprovechar los datos de la aplicación para optimizar la configuración de cuidado y prevenir futuros problemas de salud en mis plantas, con el fin de mantenerlas sanas y en óptimas condiciones.
+
+[![Application-User-Flow-Diagram-3.png](https://i.postimg.cc/TP7G2qQP/Application-User-Flow-Diagram-3.png)](https://postimg.cc/R3H2Xtkr)
+
+**User Goal 2:** Como usuario, quiero compartir mis experiencias y resultados de jardinería dentro de una comunidad, para recibir consejos valiosos de otros usuarios, resolver problemas de forma colaborativa y ganar confianza en el uso de la tecnología IoT para el cuidado de plantas.
+
+[![Application-User-Flow-Diagram-4.png](https://i.postimg.cc/13yZpYj0/Application-User-Flow-Diagram-4.png)](https://postimg.cc/SJ154Vqj)
+
+**User Goal 3:** Como usuario, quiero que mis plantas alcancen una salud óptima con el mínimo esfuerzo posible, con el fin de mantenerlas siempre en las mejores condiciones sin dedicar demasiado tiempo.
+
+[![Application-User-Flow-Diagram-5.png](https://i.postimg.cc/66RsFXsr/Application-User-Flow-Diagram-5.png)](https://postimg.cc/w36bsnjM)
+
 ## 5.5. Applications Prototyping.
 
 La presente sección incluye los prototipos interactivos desarrollados para representar el comportamiento funcional de la aplicación web y móvil en sus principales vistas. Estos prototipos permiten simular la navegación entre pantallas, validar la lógica de interacción y evaluar la experiencia del usuario antes del desarrollo final.
