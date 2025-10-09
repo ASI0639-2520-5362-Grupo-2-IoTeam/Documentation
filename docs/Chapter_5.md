@@ -341,3 +341,31 @@ Settings:
 ### 5.4.4. Applications User Flow Diagrams.
 
 ## 5.5. Applications Prototyping.
+
+La presente sección incluye los prototipos interactivos desarrollados para representar el comportamiento funcional de la aplicación web y móvil en sus principales vistas. Estos prototipos permiten simular la navegación entre pantallas, validar la lógica de interacción y evaluar la experiencia del usuario antes del desarrollo final.
+
+- Criterios de interacción seleccionados:
+
+    -   Se implementó un sistema de navegación lateral persistente, que permite desplazarse fácilmente entre secciones clave como Dashboard, Plants, History, Analytics, Community y Settings.
+
+    -   Las interacciones siguen un enfoque jerárquico y contextual, facilitando tareas esenciales como revisar el estado de las plantas, visualizar alertas o acceder al historial de riegos.
+
+    -   Se priorizó la claridad visual mediante botones de acción directa como “View Details”, los cuales permiten ejecutar acciones frecuentes sin necesidad de múltiples clics.
+
+- Relación con la arquitectura de información:
+
+    -   Sistema de navegación: jerárquico en la versión de escritorio, con un menú lateral que utiliza íconos y etiquetas textuales claras para mejorar la orientación del usuario.
+
+    -   Organización visual: disposición del contenido en tarjetas informativas, uso de métricas destacadas (como humedad promedio o temperatura) y segmentación de secciones para facilitar la comprensión inmediata.
+
+### Web Application Prototype
+
+[![image.png](https://i.postimg.cc/qqSKHrVC/image.png)](https://postimg.cc/Fkbz02K9)
+
+Link del video demostrativo en Microsoft Stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/ER2OB0Z8ZYxDgETMe6z03FcBhrHLRdMAlxvaR94OMswaEw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gPzSG4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/ER2OB0Z8ZYxDgETMe6z03FcBhrHLRdMAlxvaR94OMswaEw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gPzSG4)
+
+### Mobile Application Prototype
+
+[![image.png](https://i.postimg.cc/0jVvHY3T/image.png)](https://postimg.cc/MffgnQz5)
+
+Link del video demostrativo en Microsoft Stream: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx)
