@@ -222,8 +222,8 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 | **Attendees (to planning meeting)** | |
 | **Sprint Goal & User Stories**   |                                                            |
 | **Sprint Goal**                |       **Our focus is on** *concretar una primera versión de la Landing Page y Frontend.* **We believe it delivers** *un acercamiento real de cómo funcionaría nuestra aplicación en conjunto con una fakeapi,* **to** *testear features y ver que mejoras se implementarían para las siguientes versiones de los mismos* **This will be confirmed** *cuando se termine dicha versión y se pueda probar lo implementado* |
-| **Sprint Velocity**            |                                                                          |
-| **Sum of Story Points**          | Se asignaron  puntos de historia a las tareas completadas respecto a la |
+| **Sprint Velocity**            |  La velocidad del equipo fue de 56 puntos de historia en un periodo de 2 semanas, completando todas las historias priorizadas para esta iteración.                                                                        |
+| **Sum of Story Points**          | Se asignaron 56 puntos de historia a las tareas completadas, correspondientes a historias de usuario vinculadas al desarrollo y despliegue de la Landing Page, primera versión de Frontend Web y la Fake API. |
 
 #### 6.2.1.2. Aspect Leaders and Collaborators.
 
@@ -435,6 +435,14 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 |----|-----|------|-----|----|---|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 8f4e26c0b0b5256808fb8a38c3b921be1d468776|feat: add index & assets|-|08/10/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 3bd23767315388fb2f6ad6a8470d1f634c8e2eb6 |fix: html|-|08/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 3bd23767315388fb2f6ad6a8470d1f634c8e2eb6 |fix: html|-|08/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | f7a038edc245b2e4499290f3ff819aaf04e6339f |feat: Update pricing amounts for Basic and Premium plans|-|09/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 81f85cb3b29bfc53bf13b5c6a0239844c8f1b987 |chore: update README.md|-|09/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 55f55be28a4d47455ccc84ce7712d1310b4cdb01 |chore: team and placeholders|-|09/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 22c65a33922448476a923effe943dec75b0e2538 |chore: terms of use|-|09/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 397b54e180cd00a35a1cc3131575692b37804a96 |chore: cta button|-|09/10/2025|
+
+
 **Frontend Web** 
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
@@ -450,8 +458,21 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 18983218667c516de0c4142c6ec345c7bf9425cd|feat: add analytics component and service with routing and sidebar integration| |8/10/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 18983218667c516de0c4142c6ec345c7bf9425cd|feat: add analytics component and service with routing and sidebar integration| |8/10/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| dev-fake-api | 7bfc98d924e9122a6771593af64f2d5cc4caf622|chore: remove unused image file| |8/10/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | || |8/10/2025|
-
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |f25daea22042efe3d1c1225ed1af6eaa6faf5680 |feat: added sidebar community button| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |372093e8b7bcebf3083fcf3a9d15f778353b9806 |feat: added first version of Community.vue| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 9c08b9af3a5da42b8c187c1fd38cb6d7fb04cf26|fix: fixed community view| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | e4b2317a31b31ee68d1a6cd1c63c7b9ad6a7493a|feat: added post and comments| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | da6d640c6d805aa7193ae0df5d90b592b998e87c|feat: added post reactions| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 159219f5ce1e012216920c278d0f2b8339ac488c|fix: fixed community view| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 4546999ba6eccbf5a48e9c8946d42cd53b76fd19|fix: fixed community style| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | e5790c45c88a7aa4c176c38c21946f25ac5eb488|fix: Deployment config| |8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 6b18425b0479e1438763e9eba295cbe2ad10b2d2|chore: update README.md| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |317fc59c4583ebafd3644be822d5413e3420cb8a |fix: folder reorganization| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |a365cd4a6a23e2f99b7579cfdebe4aa041a088df |fix: sidebar type| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 1f2b5723f97f58a9493975cf98549c6712237f96|fix: sibebar plant| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | ee9e5564f21aa70ae241f8f5131bb06a1c3fe1ec|fix: env production| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | 31d54d3d7d8793b5fe8e33e27500b8ca143248f2|Merge branch 'dev-fake-api'| |9/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop |f05dce492cec7ad844b282bcda3ee2e6d8d5ee35 |feat: add logos| |9/10/2025|
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
@@ -479,7 +500,7 @@ En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará 
 [![image.png](https://i.postimg.cc/XqBNrs7c/image.png)](https://postimg.cc/64wxSLZy)
 [![image.png](https://i.postimg.cc/Nfh21Xq6/image.png)](https://postimg.cc/6T0QKyQq)
 
-Link del vídeo con explicación:
+Link del vídeo con explicación: https://goo.su/x5zV
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 No hay services para este sprint porque se usó fake-api para el desarrollo del front
@@ -512,8 +533,17 @@ Esta aplicación consume los datos proporcionados por la Fake API previamente de
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
 
+
 ## Conclusiones y recomendaciones:
- - 
+ TB1:
+ - Para esta entrega tenemos clara la idea, pero debemos definir sensores y features no claros. Ordenar los bounded context. A su vez debemos divir tareas para el sprint 1 y lo que se debe ir avanzando para el sprint 2.
+ - Nos parece que debemos tener más reuniones para los puntos que se deben observar o comentar de forma grupal. También dedicar tiempo a resolver cada duda de los integrantes del grupo en el desarrollo.
+
+ TP:
+ - En esta entrega ya el front está fijo en los bounded context con algunos detalles en duda y a evaluar luego de la implementación del dispositivo IOT. También se tiene avanzado la app mobile y el backend del trabajo
+ - Como grupo entendemos que nuestro desempeño y organización a mejorado pero no debemos olvidar que somos un grupo numeroso y que las supociciones no deben tener lugar a estas alturas.
+
+
 ## Bibliografía:
 - HTML Style Guide and Coding Conventions – W3Schools: https://www.w3schools.com/html/html5_syntax.asp  
 - Google HTML/CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html  
@@ -526,6 +556,7 @@ Esta aplicación consume los datos proporcionados por la Fake API previamente de
 
 ## Anexos:
 **Link de la exposición grupal TB1:**:https://goo.su/JGnClEx
+**Link de la exposición grupal TP:**:
 
 **Trello: **
 https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
