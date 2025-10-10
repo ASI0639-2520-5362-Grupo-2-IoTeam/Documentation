@@ -536,7 +536,7 @@ Esta aplicación consume los datos proporcionados por la Fake API previamente de
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
-En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.
+En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.Los miembros Rodrigo Chirinos y Alessandro Zevallos trabajaron en la aplicacion movil, por esa razon no tienen tanta participacion en los commmits de la aplicacion web.
 
 
 **Testing**
