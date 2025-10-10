@@ -14,57 +14,54 @@ Para la elaboración del EventStorming, el equipo se organizó para encontrar un
  que ocurren en nuestro sistema. Estos eventos representan hechos importantes que suceden durante el
  proceso de negocio y los capturamos con post-its de color naranja
 
- [![Event-Storming-plantcare.jpg](https://i.postimg.cc/fL76cGK4/Event-Storming-plantcare.jpg)](https://postimg.cc/47dLZFqw)
+ [![Event-Storming-plantcare-22.jpg](https://i.postimg.cc/bJx2R8fZ/Event-Storming-plantcare-22.jpg)](https://postimg.cc/CBK1F310)
 
  **Paso 2: Timeline** Organizamos todos los eventos identificados en una línea temporal, colocándolos en orden
  cronológico para visualizar mejor el flujo del proceso y entender la secuencia natural de acciones en el
  sistema.
 
-[![Event-Storming-plantcare-1.jpg](https://i.postimg.cc/TYsHD26L/Event-Storming-plantcare-1.jpg)](https://postimg.cc/mtQwxshB)
+[![Event-Storming-plantcare-23.jpg](https://i.postimg.cc/gkn2zdtp/Event-Storming-plantcare-23.jpg)](https://postimg.cc/dLcYnMKN)
 
 **Paso 3: Pain and Pivotal points** Identificamos los puntos problemáticos (pain points) y los momentos clave
  (pivotal points) en nuestro proceso. Estos representan áreas que requieren atención especial o que son críticas
  para el funcionamiento del sistema.
 
 
-[![Event-Storming-plantcare-2.jpg](https://i.postimg.cc/NMbdfBD0/Event-Storming-plantcare-2.jpg)](https://postimg.cc/Q99QfLRL)
-
+[![Event-Storming-plantcare-24.jpg](https://i.postimg.cc/D0tkyVmq/Event-Storming-plantcare-24.jpg)](https://postimg.cc/hQb3p5Lj)
 
  **Paso 4: Commands** Agregamos los comandos (representados con post-its azules) que desencadenan los
  eventos. Estos comandos son las acciones que los usuarios o sistemas externos realizan para provocar
  cambios en el sistema
 
-[![Event-Storming-plantcare-3.jpg](https://i.postimg.cc/2jc0sj3c/Event-Storming-plantcare-3.jpg)](https://postimg.cc/YjFNgH6Y)
+[![Event-Storming-plantcare-25.jpg](https://i.postimg.cc/zGq5Lr0W/Event-Storming-plantcare-25.jpg)](https://postimg.cc/VdZ2T3yL)
 
 **Paso 5: Policies** Definimos las políticas o reglas de negocio (con post-its morados) que reaccionan a ciertos
  eventos y generan nuevos eventos como resultado. Estas políticas automatizan decisiones basadas en eventos
  previos.
 
-[![Event-Storming-plantcare-4.jpg](https://i.postimg.cc/d0Y62LS1/Event-Storming-plantcare-4.jpg)](https://postimg.cc/YvdQkq7K)
+[![Event-Storming-plantcare-26.jpg](https://i.postimg.cc/fLcBS6Hb/Event-Storming-plantcare-26.jpg)](https://postimg.cc/0MNpLH1g)
 
 **Paso 6: Read models**  Identificamos los modelos de lectura o vistas que los usuarios necesitan para tomar
  decisiones. Estos representan la información que debe estar disponible en determinados puntos del proceso.
 
- [![Event-Storming-plantcare-5.jpg](https://i.postimg.cc/cCrBxY6D/Event-Storming-plantcare-5.jpg)](https://postimg.cc/kRPbw2Q8)
+ [![Event-Storming-plantcare-27.jpg](https://i.postimg.cc/x8dMj7BX/Event-Storming-plantcare-27.jpg)](https://postimg.cc/Fd27DPrv)
 
   **Paso 7: External System** Marcamos los sistemas externos (con post-its rosados) que interactúan con nuestra
  solución. Estos son componentes fuera de nuestro control directo pero que tienen influencia en el proceso
 
-[![Event-Storming-plantcare-6.jpg](https://i.postimg.cc/pVhGzh2f/Event-Storming-plantcare-6.jpg)](https://postimg.cc/G9Rx1pTt)
+[![Event-Storming-plantcare-28.jpg](https://i.postimg.cc/76tb9LQZ/Event-Storming-plantcare-28.jpg)](https://postimg.cc/1n695yQk)
 
 
 **Paso 8: Aggregates** Agrupamos los comandos y eventos relacionados en unidades lógicas llamadas
  agregados (representados con post-its amarillos). Cada agregado encapsula un conjunto coherente de
  funcionalidades. 
 
- [![Event-Storming-plantcare-7.jpg](https://i.postimg.cc/ZqsHyZ2s/Event-Storming-plantcare-7.jpg)](https://postimg.cc/3ypmsMK2)
+ [![Event-Storming-plantcare-29.jpg](https://i.postimg.cc/sfZZmYy4/Event-Storming-plantcare-29.jpg)](https://postimg.cc/grmJk6xx)
 
   **Paso 9: Bounded Context** Finalmente, identificamos los contextos delimitados o bounded contexts, que son
  áreas de responsabilidad distintas dentro del sistema.
 
- [![Event-Storming-plantcare-8.jpg](https://i.postimg.cc/nz8sWPDc/Event-Storming-plantcare-8.jpg)](https://postimg.cc/Z9cKBjH1)
-
-
+ [![Event-Storming-plantcare-31.jpg](https://i.postimg.cc/FRxQH5Zh/Event-Storming-plantcare-31.jpg)](https://postimg.cc/5YjrsrTr)
 #### 4.1.1.1 Candidate Context Discovery.
 
  A partir del EventStorming realizado en Miro, nuestro equipo llevó a cabo una sesión de Candidate Context
@@ -90,11 +87,11 @@ Detección de agrupaciones naturales: Identificamos patrones y agrupaciones natu
 
 Comenzamos identificando las áreas core del dominio, es decir, aquellas con mayor impacto en la propuesta de valor del sistema.
 
-- Core: Plant Management, Device Management (IoT), Data Telemetry, Analysis & Reporting.
+- Core: Plant Management, Device Management (IoT), Data Telemetry, Analytics.
 
-- Supporting: Auth & Identity, Billing & Subscription, Notification & Rules Engine.
+- Supporting: Auth & Identity,  Subscription, Notification .
 
-- eneric: Platform, Community/Social.
+- generic: , Community.
 
 **2.- Start-with-Simple**
 
@@ -109,7 +106,7 @@ Identificamos eventos clave que marcaban transiciones entre subsistemas. Ejemplo
 
 - “Rule triggered” → frontera entre Notification Engine y Plant Management.
 
-[![Event-Storming-plantcare-8.jpg](https://i.postimg.cc/nz8sWPDc/Event-Storming-plantcare-8.jpg)](https://postimg.cc/Z9cKBjH1)
+[![Event-Storming-plantcare-31.jpg](https://i.postimg.cc/FRxQH5Zh/Event-Storming-plantcare-31.jpg)](https://postimg.cc/5YjrsrTr)
 
 
 __Primer agrupamiento__ 
@@ -127,31 +124,28 @@ Se aislaron los contextos centrales de negocio: Plant Management y Data Telemetr
 
 __Tercer agrupamiento__ 
 
-Se añadieron los contextos complementarios: Notification & Rules Engine y Community/Social, encargados de interacción y comunicación entre usuarios y el sistema.
+Se añadieron los contextos complementarios: Notification y Community, encargados de interacción y comunicación entre usuarios y el sistema.
 
-[![Event-Storming-plantcare-11.jpg](https://i.postimg.cc/gJX0Gq3t/Event-Storming-plantcare-11.jpg)](https://postimg.cc/TLxx9b7n)
-
+[![Event-Storming-plantcare-32.jpg](https://i.postimg.cc/XY5mv6jP/Event-Storming-plantcare-32.jpg)](https://postimg.cc/bZz36M20)
 
 Consolidación final
-El resultado fue un mapa de 9 bounded contexts:
+El resultado fue un mapa de 8 bounded contexts:
 
 - Auth & Identity
 
 - Device Management (IoT)
 
-- Platform
-
-- Billing & Subscription
+- Subscription
 
 - Plant Management
 
 - Data Telemetry
 
-- Analysis & Reporting
+- Analytics
 
-- Notification & Rules Engine
+- Notification 
 
-- Community / Social
+- Community 
 
 Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo la complejidad y facilitando la futura arquitectura basada en microservicios o módulos independientes.
 
@@ -161,7 +155,7 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
  cómo se comunican entre sí mediante comandos, eventos y consultas. A continuación, presentamos los flujos
  de mensaje para cuatro escenarios clave de nuestra aplicación:
 
- [![Event-Storming-plantcare-12.jpg](https://i.postimg.cc/hGf7ZXMc/Event-Storming-plantcare-12.jpg)](https://postimg.cc/LqFXn6rb)
+[![Event-Storming-plantcare-33.jpg](https://i.postimg.cc/GpcKnW40/Event-Storming-plantcare-33.jpg)](https://postimg.cc/yDbcFrhn)
 
 
  [![Event-Storming-plantcare-13.jpg](https://i.postimg.cc/wMdyB0zj/Event-Storming-plantcare-13.jpg)](https://postimg.cc/YGbqnNj5)
@@ -187,7 +181,6 @@ Cada uno de ellos tiene responsabilidades y fronteras bien definidas, reduciendo
 
  <img src="https://i.postimg.cc/Hk7f30m1/Event-Storming-plantcare-20.jpg" alt="Event Storming Plantcare" width="480"/>
 
- <img src="https://i.postimg.cc/Pr8cZ98Q/Event-Storming-plantcare-21.jpg" alt="Event Storming Plantcare" width="480"/>
 
 #### 4.1.2. Context Mapping.
 
@@ -261,25 +254,25 @@ Los diagramas de arquitectura de software nos ayudan a plantear el sistema de nu
 
 Este diagrama representa todos los actores y sistemas del ecosistema PlantCare en un solo nivel: usuarios, PlantCare, servicios externos (Google OAuth2, Stripe), y el dispositivo IoT.
 
-![LandscapeDiagram.png](https://i.ibb.co/5WfLgJmb/C4-landscape.png)
+![LandscapeDiagram.png](../assets/C4-landscape.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
 
-Este diagrama muestra el sistema PlantCare en su entorno, destacando las interacciones con los distintos usuarios (profesionales ocupados, aficionados y desarrolladores), los servicios externos (Google OAuth2 y Stripe) y el dispositivo IoT.
+Este diagrama muestra el sistema PlantCare en su entorno, destacando las interacciones con los distintos usuarios (profesionales ocupados, aficionados y desarrolladores), los servicios externos (Google OAuth2 y Plants API) y el dispositivo IoT.
 
-![ContextDiagram.png](https://i.ibb.co/HfMsWQBy/C4-context.png)
+![ContextDiagram.png](../assets/C4-context.png)
 
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
 
 Detalla la arquitectura interna de PlantCare en términos de contenedores: aplicación web, aplicación móvil, backend, bases de datos (web y móvil) y la Edge App para el dispositivo IoT. También muestra cómo se conectan entre sí y con sistemas externos.
 
-![ContainersDiagram.png](https://i.ibb.co/0yyv9qmT/C4-containerrs.png)
+![ContainersDiagram.png](../assets/C4-containers.png)
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 
 Describe cómo PlantCare se despliega en producción: servidores en la nube (Web Server, App Server, Database Server), dispositivos móviles de los usuarios y el dispositivo IoT físico. Cada contenedor está ubicado en el nodo correspondiente.
 
-![DeploymentDiagram](https://i.ibb.co/ycVyb5k0/C4-deployment.png)
+![DeploymentDiagram.png](https://i.ibb.co/ycVyb5k0/C4-deployment.png)
 
 ## 4.2. Tactical-Level Domain-Driven Design
 En esta sección, el equipo aborda el diseño táctico de la solución siguiendo los principios de Domain‑Driven Design (DDD), traduciendo los Bounded Contexts previamente definidos en patrones y estructuras de código concretos. Cada subcapítulo se centra en uno de los contextos, describiendo sus agregados, repositorios, servicios de dominio y fábricas, así como las variantes y contratos que rigen su comportamiento interno. De este modo, se conecta la visión estratégica del dominio con decisiones de implementación precisas, garantizando que el software refleje fielmente las reglas de negocio y mantenga la coherencia del lenguaje ubicuo.
@@ -730,7 +723,7 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 #### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
-[![12-2025-09-20-03-39.png](https://i.postimg.cc/yYv9PF7K/12-2025-09-20-03-39.png)](https://postimg.cc/3d0dr0yf)
+[![1.png](https://i.postimg.cc/wvDX8QDP/1.png)](https://postimg.cc/phXhK8GY)
 
 ## 4.2.2. Bounded Context: Plant Management
 ### 4.2.2.1. Domain Layer. 
@@ -1761,7 +1754,7 @@ Esta capa concreta las abstracciones definidas en el dominio a través de reposi
 
 #### 4.2.3.6.2. Bounded Context Database Design Diagram.
 
-[![12-2025-09-20-03-59.png](https://i.postimg.cc/2yjts4MY/12-2025-09-20-03-59.png)](https://postimg.cc/tZfDPV9v)
+[![2.png](https://i.postimg.cc/MK6yNRHs/2.png)](https://postimg.cc/0r4MJzpm)
 
 ## 4.2.4. Bounded Context: Data Telemetry
 
