@@ -311,7 +311,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Registro en la appweb</td>
             <td>Registro de la app y guardado de datos en la db</td>
             <td>02</td>
-            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Ernesto Casaverde, Alexander Cantoral, Rogrigo Chirinos y Alessandro Zevallos</td>
             <td>In-Progress</td>
         </tr>
         <tr>
@@ -321,7 +321,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Inicio de sesión en la appweb</td>
             <td>Inicio de sesión mediante un token</td>
             <td>03</td>
-            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Ernesto Casaverde, Alexander Cantoral, Rogrigo Chirinos y Alessandro Zevallos</td>
             <td>Done</td>
         </tr>
         <tr>
@@ -331,7 +331,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Cerrar sesión</td>
             <td>Cerrar sesión actual</td>
             <td>03</td>
-            <td>Ernesto Casaverde</td>
+            <td>Ernesto Casaverde, Rogrigo Chirinos y Alessandro Zevallos</td>
             <td>Done</td>
         </tr>
         <tr>
@@ -341,7 +341,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Registro de planta</td>
             <td>Planta lista a ser medida en la app</td>
             <td>02</td>
-            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Ernesto Casaverde y Alexander Cantoral, Rogrigo Chirinos y Alessandro Zevallos</td>
             <td>Done</td>
         </tr>
         <tr>
@@ -351,7 +351,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Edición de perfil de planta</td>
             <td>Edición de datos de planta</td>
             <td>02</td>
-            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Ernesto Casaverde, Alexander Cantoral y Alessandro Zevallos</td>
             <td>In-Progress</td>
         </tr>
         <tr>
@@ -371,7 +371,7 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
             <td>Gráficas de datos de plantas del usuario</td>
             <td>Se muetra un gráfico historico de la planta</td>
             <td>02</td>
-            <td>Fabian Reyes</td>
+            <td>Fabian Reyes y Alessandro Zevallos</td>
             <td>In-Progress</td>
         </tr>
         <tr>
