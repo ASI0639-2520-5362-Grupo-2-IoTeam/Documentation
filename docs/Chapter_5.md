@@ -362,15 +362,15 @@ Se pueden visualizar mediante el siguiente link: [https://lucid.app/lucidchart/4
 
 **User Goal 1:** Como usuario, quiero aprovechar los datos de la aplicación para optimizar la configuración de cuidado y prevenir futuros problemas de salud en mis plantas, con el fin de mantenerlas sanas y en óptimas condiciones.
 
-[![Application-User-Flow-Diagram-3.png](https://i.postimg.cc/TP7G2qQP/Application-User-Flow-Diagram-3.png)](https://postimg.cc/R3H2Xtkr)
+[![Application-User-Flow-Diagram-6.png](https://i.postimg.cc/VN1jXHTV/Application-User-Flow-Diagram-6.png)](https://postimg.cc/68j2XzBr)
 
 **User Goal 2:** Como usuario, quiero compartir mis experiencias y resultados de jardinería dentro de una comunidad, para recibir consejos valiosos de otros usuarios, resolver problemas de forma colaborativa y ganar confianza en el uso de la tecnología IoT para el cuidado de plantas.
 
-[![Application-User-Flow-Diagram-4.png](https://i.postimg.cc/13yZpYj0/Application-User-Flow-Diagram-4.png)](https://postimg.cc/SJ154Vqj)
+[![Application-User-Flow-Diagram-7.png](https://i.postimg.cc/pTShc0Gh/Application-User-Flow-Diagram-7.png)](https://postimg.cc/cgQLrcN0)
 
 **User Goal 3:** Como usuario, quiero que mis plantas alcancen una salud óptima con el mínimo esfuerzo posible, con el fin de mantenerlas siempre en las mejores condiciones sin dedicar demasiado tiempo.
 
-[![Application-User-Flow-Diagram-5.png](https://i.postimg.cc/66RsFXsr/Application-User-Flow-Diagram-5.png)](https://postimg.cc/w36bsnjM)
+[![Application-User-Flow-Diagram-8.png](https://i.postimg.cc/JzQQYLbR/Application-User-Flow-Diagram-8.png)](https://postimg.cc/zyVW34tQ)
 
 ## 5.5. Applications Prototyping.
 
