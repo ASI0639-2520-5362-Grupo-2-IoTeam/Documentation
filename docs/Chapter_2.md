@@ -10,7 +10,7 @@ Fue uno de los primeros dispositivos IoT diseñados para monitorear plantas. Est
 Xiaomi Mi Flora (Mi Home Plant Monitor)
 Es un dispositivo de bajo costo que mide humedad del suelo, luz, fertilidad y temperatura, integrándose con la aplicación Mi Home de Xiaomi. Su principal fortaleza radica en el precio accesible y la facilidad de uso, lo que le ha permitido masificarse en diversos mercados internacionales. Representa un competidor directo de PlantCare por ofrecer un ecosistema IoT sencillo, aunque con menor personalización en las recomendaciones.
 
-KORU – IoT Smart Plant Pot 🪴
+KORU – IoT Smart Plant Pot 
 Es una maceta inteligente de gama premium que incorpora sensores de humedad, temperatura, luz y calidad del aire, con un enfoque en diseño estético y sostenibilidad. Se conecta a una aplicación móvil que guía al usuario en el cuidado de sus plantas. Su modelo de negocio se orienta a un segmento de clientes con alto poder adquisitivo y afinidad por el diseño y la decoración moderna.
 
 **¿Por qué llevar a cabo este análisis?**
@@ -297,7 +297,13 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 **Duración de la Entrevista:** 03:56 <br>
 
 **Resumen de la Entrevista:** <br>
-Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regarlas unas 3 veces al mes debido a permanecer ocupado por la universidad. Cuenta con 3 plantas en su departamento. Dedica entre 1 a 2 horas por semana para regarlas, además, no usa ningún recordatorio para no olvidar regarlas. Nos cuenta además que comparte las plantas con su abuelita, compartiendo ambos la responsabilidad de cuidar las plantas. Menciona que es complicado tener plantas en su departamento, debido al poco espacio que tiene en su hogar, lo que le limita mucho los lugares en los que puede colocarlos. Considera útil el hecho de usar un dispositivo IoT para no estar tan al pendiente y poder recordar con mayor facilidad el cuidado de sus plantas.
+Oscar es un estudiante universitario joven que comparte la responsabilidad del cuidado de sus plantas con su abuelita. Tiene una personalidad práctica y enfocada en sus estudios, lo que lo lleva a dedicar poco tiempo a la jardinería, aunque le interesa mantener sus plantas sanas. Actualmente cuida tres plantas en su departamento, un espacio reducido que representa una dificultad constante para ubicar las macetas de forma adecuada.
+
+Su método de riego es manual y poco estructurado. Tiende a olvidar regarlas unas tres veces al mes, especialmente en semanas de alta carga académica. Suele dedicar entre 1 a 2 horas semanales al cuidado de sus plantas, aunque admite que esto varía. No utiliza recordatorios ni herramientas digitales para el seguimiento de riego, lo que refleja un enfoque más reactivo que planificado.
+
+En términos tecnológicos, Oscar se considera un usuario intermedio, habituado al uso de su smartphone Android y laptop para actividades académicas y personales. Aunque no ha utilizado apps específicas para el cuidado de plantas, muestra interés en dispositivos IoT que le ayuden a automatizar el riego o enviar recordatorios. Considera útil cualquier solución que le permita aligerar su carga mental y mejorar la constancia en el cuidado de sus plantas.
+
+Sus canales de interacción preferidos son las notificaciones móviles y, en menor medida, apps con interfaces simples y visuales. Utiliza Google Chrome como navegador principal, pero su consumo digital está centrado en la practicidad y el cumplimiento de tareas. No tiene lealtad hacia marcas específicas, pero valora la simplicidad, funcionalidad y bajo costo. Aunque no mencionó explícitamente estar dispuesto a pagar por una solución, valoraría una herramienta que lo ayude a mantener sus plantas sin añadirle estrés adicional.
 
 ---
 [![image.png](https://i.ibb.co/MyyNDg2t/Captura-de-pantalla-2025-09-12-222330.png)](https://ibb.co/xKK5S2CB)
@@ -311,10 +317,28 @@ Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regar
 **Duración de la Entrevista:** 9:39 <br>
 
 **Resumen de la Entrevista:** <br>
-Stefano nos cuenta que le gusta tener plantas en su casa ya que considera que le da un aspecto distinto a su casa, piensa que le da vida y disfruta de tenerlas. Sin embargo, al ser actualmente una persona ocupada no le da el tiempo necesario a regarlas o a darles el mantenimiento debido. Entre las mayores dificultades esta principalmente la falta de tiempo y el estrés por jornada laboral, estos factores hacen que olvide frecuentemente darle mantenimiento a sus plantas. Afirma que la solución PlantCare sería de gran ayuda, ya que le ayudaria a no simplemente tener un monitoreo de ellas, sino además poder darles el mantenimiento debido sin necesidad de estar recordandolo por su cuenta.
+Stefano nos cuenta que le gusta tener plantas en su casa, ya que considera que aportan un aspecto diferente y agradable al ambiente, dándole vida y frescura a su hogar. Disfruta de verlas crecer y mantener un espacio verde, pues le transmiten calma y equilibrio. Sin embargo, reconoce que actualmente, debido a su rutina laboral exigente y a la falta de tiempo libre, no puede dedicarles la atención que desearía. Entre las mayores dificultades que enfrenta se encuentran la falta de tiempo, el cansancio y el estrés acumulado por su jornada laboral, factores que lo llevan a olvidar con frecuencia regarlas o brindarles el mantenimiento necesario, lo que en ocasiones afecta su estado.
+Por ello, considera que la solución PlantCare sería de gran ayuda para él, ya que le permitiría monitorear el estado de sus plantas y recibir recordatorios automáticos sin tener que preocuparse constantemente por hacerlo de forma manual. Valora especialmente la posibilidad de contar con un sistema que automatice o facilite el riego y el seguimiento, ayudándole a mantener sus plantas saludables incluso en momentos de alta carga de trabajo. Además, comenta que utiliza principalmente su celular (iPhone), computadora y laptop, lo que demuestra que tiene un buen manejo de la tecnología y estaría dispuesto a integrar una aplicación digital a su rutina diaria siempre que esta sea intuitiva, práctica y visualmente atractiva. En general, Stefano representa el perfil de un usuario ocupado que busca una solución tecnológica confiable y eficiente para mantener su hogar verde sin descuidar sus responsabilidades laborales.
+---
+
+[![Captura-de-pantalla-2025-10-09-191408.png](https://i.postimg.cc/ry4KFp0L/Captura-de-pantalla-2025-10-09-191408.png)](https://postimg.cc/F199TNVP)
+
+
+**Entrevistado:** Arturo <br>
+**Sexo:** Masculino <br>
+**Edad:** 25 <br>
+**Domicilio:** San Juan de Miraflores  <br>
+**Inicio de la Entrevista:** 9:41 <br>
+**Duración de la Entrevista:** 6m 25s <br>
+
+**Resumen de la Entrevista:** <br>
+Arturo nos comenta que le gusta cuidar sus plantas, nos comenta que hay ocasiones en las que olvida regar sus plantas, lo cual le genera tristesa ya que le gusta mucho el aspecto que tiene las mismas en su apartamento y en su oficina. Le dedica dairiamente 30 min al cuidado de sus plantas, debido a la importancia que le da, ya que para el significan vida, como algo simbolico. El para recordar cuidarlas, usa el recordatorio de su celular, pero en ocasiones, no recuerda hacerlo , por mas que el celular le avise. El esta muy abierto al hecho de usar una app IOT que le ayude al cuidado de sus plantas, estando abierto tambien a la posibilidad de pagar un monto moderable por la membresia de la app. 
+
 
 ---
 ##### Segmento 2: Aficionados que cuidan varias macetas en casa
+
+[![Interview-Image.jpg](https://i.postimg.cc/XvqWz2Sh/Interview-Image.jpg)](https://postimg.cc/yDM2JyNX)
 
 **Entrevistado:** Ana <br>
 **Sexo:** Femenino <br>
@@ -324,7 +348,11 @@ Stefano nos cuenta que le gusta tener plantas en su casa ya que considera que le
 **Duración de la Entrevista:** 4:05<br>
 
 **Resumen de la Entrevista:** <br>
-Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y lirios, que colecciona con dedicación. Las riega cada 3 o 4 días, aunque en algunas ocasiones se ha olvidado de hacerlo. En particular, recuerda el caso de un pino que murió por falta de conocimiento en su cuidado. Considera útil una aplicación que le permita seguir la evolución de sus plantas y consultar estadísticas, lo cual le ayudaría a evitar situaciones similares. Además, sugiere que una integración con el pronóstico del clima sería beneficiosa, ya que las condiciones climáticas variables afectan directamente a sus plantas.
+Ana posee de siete a ocho macetas con plantas, particularmente lirios y rosas, a las cuales cuida con dedicación. Las riega cada tres o cuatro días, aunque en ocasiones olvida hacerlo, lo que ha afectado a algunas de ellas. Especialmente recuerda un pino que murió debido a su inexperiencia, una situación que la motivó a investigar recursos para perfeccionar el cuidado de sus plantas y prevenir errores similares.
+
+Le resulta sumamente beneficiosa una aplicación que le permita registrar el desarrollo, la salud y el progreso de sus vegetales, así como acceder a datos visuales y estadísticas acerca de su bienestar. También sugiere que la aplicación se vincule con la predicción del tiempo, ya que reconoce que el clima variable, como la humedad o el calor, impacta de manera directa en sus plantas. Esto le ofrecería la oportunidad de anticiparse a posibles problemas y mejorar sus hábitos de riego o de luz solar.
+
+En cuanto a su perfil tecnológico, Ana emplea con mayor frecuencia su ordenador portátil con Windows y su teléfono inteligente Android de Samsung, utilizando en su mayoría Google Chrome para hacer búsquedas en línea. Usa estos dispositivos principalmente para su labor docente, lo que resalta su habilidad con las herramientas digitales y su disposición para emplear nuevas aplicaciones que sean fáciles de usar, efectivas y visualmente atractivas. Ana es una usuaria que se dedica a la prevención, la educación y el cuidado consciente de sus plantas, todo esto apoyado por la tecnología.
 
 ---
 
@@ -338,12 +366,11 @@ Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y
 **Duración de la Entrevista:** 3:00<br>
 
 **Resumen de la Entrevista:** <br>
-Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalmente suculentas y helechos. Actualmente no utiliza ninguna herramienta para organizar el riego, guiándose solo por observación, lo que en ocasiones ha provocado la muerte de algunas plantas por exceso de agua. Le interesa llevar un historial de la salud de sus plantas y considera útil contar con gráficas y estadísticas de humedad. Estaría dispuesto a invertir en tecnología siempre que no sea costosa y facilite el cuidado, valorando especialmente funciones como alertas de riego personalizadas y adaptación al clima local. Prefiere una compra única de hardware en lugar de pagar suscripciones mensuales.
-
+Vasco Zagaceta tiene 24 años y es estudiante universitario. Vive en un departamento en la ciudad y cuida unas 15 plantas, principalmente suculentas y helechos, como hobby relacionado con su interés ambiental. Se describe como distraído pero responsable con su entorno y abierto a la tecnología. No utiliza herramientas para organizar el riego, guiándose solo por observación, lo que ha provocado algunas pérdidas por exceso de agua. Usa un celular Android y una laptop con Windows, navega en Google Chrome y se informa principalmente a través de redes sociales como Instagram, YouTube y Pinterest. Tiene buen manejo tecnológico, aunque no sigue marcas o influencers específicos. Le interesa una solución digital sencilla, visual y accesible que le permita llevar un historial del estado de sus plantas, mostrar estadísticas de humedad y enviar alertas de riego personalizadas según el clima local. Prefiere una compra única de hardware antes que una suscripción mensual. Su perfil refleja a un usuario joven, urbano y ambientalista que busca integrar la tecnología en su rutina de forma práctica, sostenible y sin complicaciones.
 
 ---
 
-[![image.png](https://i.postimg.cc/HLTT5Hkm/image.png)](https://postimg.cc/CR6yT38r)
+[![image.png](https://i.postimg.cc/fbxTw0pp/image.png)](https://postimg.cc/Y4CwRjpz)
 
 **Entrevistado:** Maria Sedamano <br>
 **Sexo:** Femenino <br>
@@ -353,6 +380,10 @@ Vasco Zagaceta es un aficionado que cuida unas 15 plantas en casa, principalment
 **Duración de la Entrevista:** 26:15<br>
 **Resumen de la Entrevista:** <br>
 La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y anturios, que riega de forma manual siguiendo un calendario, aunque ha perdido algunas plantas por exceso de fertilizante o riego. Actualmente no utiliza ninguna aplicación ni herramienta digital, solo anota fechas en un calendario, pero muestra gran interés en contar con una app que le recuerde los riegos, registre la evolución de sus plantas y le brinde estadísticas o alertas sobre problemas como marchitez, exceso de agua o falta de luz. Además, estaría dispuesta a pagar por una suscripción mensual siempre que el costo sea razonable y la aplicación le aporte beneficios claros, pues considera sus plantas valiosas y desea cuidarlas mejor.
+
+En cuanto a su personalidad, se muestra organizada, paciente y dedicada, con un fuerte apego emocional hacia sus plantas. Prefiere soluciones simples y visuales.
+Usa Instagram y WhatsApp con frecuencia, principalmente desde su Iphone, y navega en Safari.
+No se considera una persona muy tecnológica, pero tiene disposición para aprender si la herramienta es clara. Prefiere interactuar mediante notificaciones o recordatorios visuales y valora un diseño intuitivo y amigable.
 
 ---
 [![entrevistadsad.png](https://i.postimg.cc/zf6LgmMJ/entrevistadsad.png)](https://postimg.cc/94PX6kCS)
@@ -365,18 +396,26 @@ La señora María tiene unas 15 macetas en casa, principalmente con orquídeas y
 **Duración de la Entrevista:** 3:00<br>
 
 **Resumen de la Entrevista:** <br>
-Natalia es una gran aficionada por las plantas y disfruta mucho de cuidarlas en casa, donde ha logrado reunir una gran variedad que va desde coloridas flores hasta frondosos helechos. Ella siempre se ha encargado del riego de manera manual y siguiendo su propia intuición, sin apoyarse en ninguna guía o sistema especializado, lo que le da un toque personal a su rutina diaria. Sin embargo, últimamente ha mostrado interés en explorar nuevas formas de optimizar el cuidado de sus plantas, especialmente a través de la tecnología. Aunque no está muy familiarizada con herramientas digitales, le atrae la idea de probar aplicaciones que le permitan visualizar gráficos y estadísticas sobre el estado de sus plantas, ya que considera que podría aprender mucho de esos datos y tomar mejores decisiones. Además, le resulta muy interesante la posibilidad de contar con una función que le muestre información sobre el clima, para poder adaptar el riego y los cuidados de sus plantas de acuerdo con las condiciones ambientales. Natalia menciona que preferiría acceder a este tipo de servicio mediante una suscripción, siempre y cuando el producto logre convencerla con su utilidad y facilidad de uso.
+Natalia es una persona mayor.  apasionada por la jardinería, con una personalidad curiosa y paciente. Disfruta del cuidado de una amplia variedad de plantas, actividad que considera parte de su estilo de vida. Su método de riego es manual e intuitivo, sin apoyarse en sistemas especializados, lo que refleja un enfoque tradicional pero cercano.
+
+En cuanto a tecnología, no se identifica como una usuaria experta, aunque utiliza con frecuencia su smartphone Android como dispositivo principal. Menciona interés en explorar aplicaciones móviles que ofrezcan gráficos, estadísticas y alertas relacionadas con el riego y el clima. Sus canales de interacción preferidos son las apps móviles y notificaciones, mientras que en navegadores utiliza Google Chrome, aunque su consumo digital es más práctico que intensivo.
+
+No tiene afinidad marcada por marcas específicas, pero se muestra receptiva a opciones reconocidas que transmitan confianza. Está dispuesta a pagar una suscripción si la solución le resulta útil, clara y fácil de usar. Su apertura tecnológica está influenciada por la búsqueda de aprendizaje y mejora en el cuidado de sus plantas, más que por tendencias o modas.
 
 ---
 ### 2.2.3. Análisis de entrevistas. 
 
 __Analisis De Entrevista Segmento 1:__
 
-Las entrevistas realizadas a profesionales que residen en departamentos y tienen entre 1 a 5 plantas (como Oscar, Stefano y Arturo) evidencian una necesidad común de soluciones que mitiguen el estrés y la culpa asociados al olvido del riego debido a sus agendas saturadas. El 100% de los entrevistados afirmó olvidar regar sus plantas con frecuencia (desde 3 veces al mes hasta "bastante seguido"), atribuyendo este problema a la carga laboral, la universidad y el estrés cotidiano. Además, todos manifestaron sentimientos de frustración o culpa al notar una planta marchita, ya que perciben su cuidado como una responsabilidad descuidada. Actualmente, ninguno utiliza aplicaciones o recordatorios efectivos, y los que intentan usar alertas genéricas (como notificaciones del teléfono) las encuentran insuficientes por perderse entre otras prioridades. Sin embargo, mostraron un interés unánime en recibir notificaciones automatizadas en el celular que les indiquen cuándo regar, valorando especialmente la idea de un sistema pasivo que les libere de la carga mental de recordar. Estos hallazgos validan la propuesta de una solución IoT como "Plant Care" para este segmento, centrada en la simplicidad, la autonomía y la tranquilidad, con un modelo de precios accesible que se ajuste al mercado o una suscripción baja por un servicio básico pero confiable.
+Las tres entrevistas revelan que los usuarios valoran tener plantas por el bienestar y la estética que aportan, pero enfrentan dificultades para cuidarlas debido a la falta de tiempo, el olvido y, en algunos casos, el espacio limitado. Oscar, estudiante universitario, olvida regarlas varias veces al mes; Stefano, profesional ocupado, las descuida por su carga laboral y estrés; y Arturo, aunque usa recordatorios, también olvida hacerlo a veces, pese a su gran aprecio por las plantas.
+Todos usan dispositivos tecnológicos y muestran interés en una solución digital que facilite el cuidado. Coinciden en que PlantCare sería muy útil para automatizar el riego y los recordatorios, reduciendo el esfuerzo y los olvidos. Incluso, Arturo estaría dispuesto a pagar por la membresía.
+En síntesis, las entrevistas confirman una necesidad clara: las personas quieren cuidar sus plantas, pero requieren una herramienta inteligente que automatice tareas y les ayude a mantenerlas saludables sin demandar tiempo ni atención constante. PlantCare se presenta así como una solución práctica, eficiente y emocionalmente valiosa.
 
 __Analisis De Entrevista Segmento 2:__
 
-Las entrevistas realizadas a personas con colecciones de 5 a 20 plantas (como Paco, Rodrigo, Marilina y Natalia) reflejan una necesidad compartida de optimizar el cuidado mediante datos precisos y recomendaciones personalizadas, más allá de simples recordatorios. El 100% de los entrevistados ha perdido plantas por exceso o falta de riego, y todos utilizan métodos empíricos para organizarse (desde memoria y observación visual hasta calendarios físicos), lo cual consideran insuficiente para evitar errores. Además, mostraron un interés explícito en funcionalidades avanzadas como historiales de evolución, gráficas de humedad, integración con el clima local y diagnósticos que expliquen por qué una planta se marchita (por exceso de agua, falta de luz, etc.). A diferencia del segmento ocupado, estos usuarios buscan profundizar en su hobby y desean herramientas que les permitan aprender y tomar decisiones basadas en datos. En cuanto al modelo de pago, prefieren una compra única del hardware, pero se mostraron abiertos a suscripciones mensuales si los beneficios (como recomendaciones personalizadas o alertas inteligentes) justifican el costo. Esta consistencia en las respuestas valida la propuesta de valor de "Plant Care" como un asistente inteligente para aficionados, con funcionalidades avanzadas que transformen el cuidado empírico en una práctica basada en datos y recomendaciones específicas.
+Las entrevistas con Ana, Vasco, María y Natalia reflejan distintos perfiles de usuarios con un interés común: el gusto por las plantas y el deseo de cuidarlas adecuadamente, aunque todos enfrentan dificultades relacionadas con el riego, los olvidos y la falta de información sobre las condiciones ambientales. Ana destaca por ser una usuaria metódica y previsora; cuida entre siete y ocho macetas y busca una herramienta que le permita registrar el progreso de sus plantas, visualizar estadísticas y anticiparse a problemas climáticos. Vasco, en cambio, es un usuario joven, urbano y ambientalista que cuida alrededor de 15 plantas. Aunque tiene buen manejo tecnológico, su problema principal es el exceso o falta de riego, por lo que valora una app visual, sencilla y práctica que ofrezca alertas personalizadas y monitoreo de humedad, prefiriendo pagar una sola vez por el hardware antes que una suscripción mensual.
+María representa un perfil más tradicional, pero muy comprometido con el cuidado de sus plantas. Utiliza calendarios manuales para registrar riegos, aunque reconoce haber perdido algunas por exceso de fertilizante o agua. Muestra gran interés en una aplicación que le recuerde tareas, registre avances y alerte sobre problemas, y estaría dispuesta a pagar una suscripción razonable si la herramienta le ofrece beneficios tangibles y facilidad de uso. Por último, Natalia, una usuaria mayor con amplia experiencia en jardinería, mantiene un enfoque tradicional pero está abierta a la tecnología si le ayuda a mejorar sus hábitos de cuidado. Le atraen especialmente las apps con gráficos, estadísticas y notificaciones visuales, siempre que sean claras y accesibles.
+En conjunto, las entrevistas evidencian que los principales retos en el cuidado de las plantas son la falta de constancia, los errores de riego y la influencia del clima, y que existe una alta disposición a adoptar soluciones tecnológicas siempre que sean simples, visuales y realmente útiles. PlantCare se presenta como una solución ideal al ofrecer un sistema IoT capaz de automatizar recordatorios, monitorear el estado de las plantas y brindar información contextual según el clima, adaptándose a distintos tipos de usuarios: desde los más experimentados y metódicos hasta los más tradicionales o principiantes.
 
 ## 2.3. Needfinding.
 
@@ -515,7 +554,7 @@ Además, explicamos el modelo de negocio: un servicio de suscripción mensual qu
 ***4. Generating Domain Events***
 
 Pedimos a los participantes que escriban en post-its amarillos los "eventos" que ocurren en el proceso. Un evento es algo relevante para el negocio que ya sucedió (se escribe en pasado, ej: "Cliente se registró", "Factura fue pagada").
-[![Big-Picture-Event-Storming.jpg](https://i.postimg.cc/kGD5w2N8/Big-Picture-Event-Storming.jpg)](https://postimg.cc/JHVmz424)
+[![Big-Picture-Event-Storming-5.jpg](https://i.postimg.cc/3N3tTYX8/Big-Picture-Event-Storming-5.jpg)](https://postimg.cc/YGy6NcDZ)
 
 ***5. Sorting Domain Events***
 
@@ -523,7 +562,7 @@ Pedimos al equipo que ordene cronológicamente los eventos colocados en post-its
 
 Este ejercicio no es solo un mero ordenamiento: es el momento más valioso de la sesión. Al debatir si el orden propuesto es correcto, el equipo comienza a revelar diferencias en sus percepciones, asunciones ocultas y malentendidos sobre cómo funciona realmente el proceso. Estas discusiones, lejos de ser conflictos, son oportunidades clave para alinear la comprensión colectiva, identificar brechas en el flujo del negocio y construir un modelo compartido y preciso del dominio.
 
-[![Big-Picture-Event-Storming-1.jpg](https://i.postimg.cc/prnHpzY0/Big-Picture-Event-Storming-1.jpg)](https://postimg.cc/XB3hPZPF)
+[![Big-Picture-Event-Storming-6.jpg](https://i.postimg.cc/FzPVXcFS/Big-Picture-Event-Storming-6.jpg)](https://postimg.cc/ZvddrWdY)
 
 ***6. Adding Actors and External Systems***
 
@@ -535,13 +574,13 @@ Para profundizar en la modelación del dominio, asignamos colores distintos a lo
 
 - Problemas o Dudas : Utulizamos el rojo para detenerminar dudas o problemas en vez de ponernos a debatir o discutir.
 
-[![Big-Picture-Event-Storming-2.jpg](https://i.postimg.cc/1zt5ygTd/Big-Picture-Event-Storming-2.jpg)](https://postimg.cc/sMkRc23P)
+[![Big-Picture-Event-Storming-7.jpg](https://i.postimg.cc/KjsBH2Q5/Big-Picture-Event-Storming-7.jpg)](https://postimg.cc/ctwvvPpK)
 
 ***7. Storytelling***
 
 Se recorre cronológicamente la línea de eventos, desde el inicio hasta el final, narrando la historia que los post-its construyen colectivamente. Esta narrativa permite validar la coherencia del flujo, identificar saltos lógicos, confirmar la secuencia de acciones y detectar eventuales omisiones o redundancias en el proceso.
 
-[![Big-Picture-Event-Storming-3.jpg](https://i.postimg.cc/pTjvdKBs/Big-Picture-Event-Storming-3.jpg)](https://postimg.cc/bDqWCDWn)
+[![Big-Picture-Event-Storming-8.jpg](https://i.postimg.cc/26SqRtqV/Big-Picture-Event-Storming-8.jpg)](https://postimg.cc/TyB2nCJ6)
 
 
 ***8. Reverse storytelling***
@@ -561,11 +600,11 @@ Al cierre de la sesión, se evalúan los logros alcanzados:
 
 | **Term**                             | **Definition** |
 |--------------------------------------|----------------|
-| **IoT Sensor**                       | Physical device responsible for measuring and transmitting soil humidity data. |
+| **Watering Threshold**                       |The minimum acceptable humidity level for a specific plant, which triggers a notification when reached.|
 | **Humidity Sensor**                    | Component that measures the soil moisture level in the pot. |
 | **Humidity Level**                      | Percentage value indicating the amount of water in the soil. |
-| **Dashboard**                            | Main screen showing the overall status of all registered plants. |
-| **Plant Profile**  | Information linked to a specific plant (species, location, pot, threshold). |
+| **control panel**                            | Main screen showing the overall status of all registered plants. |
+| **Plant Management**  | Information linked to a specific plant (species, location, pot, threshold). |
 | **Push Notification**                           | Mobile message notifying the user about plant status. |
 | **Update Status**                        | Action of confirming in the app that the plant has been watered. |
 | **Receive Notification**               | Action of being alerted when a plant requires watering. |
