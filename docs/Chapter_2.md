@@ -609,4 +609,5 @@ Al cierre de la sesión, se evalúan los logros alcanzados:
 | **Update Status**                        | Action of confirming in the app that the plant has been watered. |
 | **Receive Notification**               | Action of being alerted when a plant requires watering. |
 | **Register Plant**             | Action of adding a new plant into the system with its data. |
+| **Web Platform/Mobile App**          | Digital interface accessible via computer or smartphone where users view and manage information of plants. |
 | **Device Monitoring**                | Functionality that allows providers to configure, monitor, or troubleshoot installed IoT sensors. |
