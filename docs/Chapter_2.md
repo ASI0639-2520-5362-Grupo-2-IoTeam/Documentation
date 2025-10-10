@@ -314,6 +314,22 @@ Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regar
 Stefano nos cuenta que le gusta tener plantas en su casa ya que considera que le da un aspecto distinto a su casa, piensa que le da vida y disfruta de tenerlas. Sin embargo, al ser actualmente una persona ocupada no le da el tiempo necesario a regarlas o a darles el mantenimiento debido. Entre las mayores dificultades esta principalmente la falta de tiempo y el estrés por jornada laboral, estos factores hacen que olvide frecuentemente darle mantenimiento a sus plantas. Afirma que la solución PlantCare sería de gran ayuda, ya que le ayudaria a no simplemente tener un monitoreo de ellas, sino además poder darles el mantenimiento debido sin necesidad de estar recordandolo por su cuenta.
 
 ---
+
+[![Captura-de-pantalla-2025-10-09-191408.png](https://i.postimg.cc/ry4KFp0L/Captura-de-pantalla-2025-10-09-191408.png)](https://postimg.cc/F199TNVP)
+
+
+**Entrevistado:** Arturo <br>
+**Sexo:** Masculino <br>
+**Edad:** 25 <br>
+**Domicilio:** San Juan de Miraflores  <br>
+**Inicio de la Entrevista:** 9:41 <br>
+**Duración de la Entrevista:** 6m 25s <br>
+
+**Resumen de la Entrevista:** <br>
+Arturo nos comenta que le gusta cuidar sus plantas, nos comenta que hay ocasiones en las que olvida regar sus plantas, lo cual le genera tristesa ya que le gusta mucho el aspecto que tiene las mismas en su apartamento y en su oficina. Le dedica dairiamente 30 min al cuidado de sus plantas, debido a la importancia que le da, ya que para el significan vida, como algo simbolico. El para recordar cuidarlas, usa el recordatorio de su celular, pero en ocasiones, no recuerda hacerlo , por mas que el celular le avise. El esta muy abierto al hecho de usar una app IOT que le ayude al cuidado de sus plantas, estando abierto tambien a la posibilidad de pagar un monto moderable por la membresia de la app. 
+
+
+---
 ##### Segmento 2: Aficionados que cuidan varias macetas en casa
 
 **Entrevistado:** Ana <br>
