@@ -45,7 +45,8 @@ Ciclo 2025-20
 
 | **Versión** | **Fecha**  | **Autor/es**                                                                                                                                                                                                                                                           | **Descripción y Modificación** |
 | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| 1.0         | 19/05/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | Desarrollo del capítulo I,II, III y IV |
+| 1.0         | 19/09/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | Desarrollo del capítulo I,II, III y IV |
+| 1.1         | 9/10/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | - Desarrollo del capítulo V y VI<br>Primera versión de la Landing Page y FrontendWeb |
 
 ## Project Report Collaboration Insights
 
@@ -54,12 +55,17 @@ Ciclo 2025-20
 
 Github Collaboration Insights proporciona un cronograma que muestra las principales ramas y los procesos de fusión que han ocurrido. Todas las ramas se han generado siguiendo los principios de GitFlow, lo que garantiza una organización efectiva al utilizar un sistema de control de versiones.
 
-Alexander Alberto Cantoral Sedamano (AlexlmL)
 
 Se divieron las siguientes ramas para la colaboración en el proyecto:
 
 main
 develop
+feature/chapter01
+feature/chapter02
+feature/chapter03
+feature/chapter04
+feature/chapter05
+feature/chapter06
 
 ## Contenido
 

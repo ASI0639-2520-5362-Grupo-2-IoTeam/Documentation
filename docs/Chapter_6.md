@@ -428,6 +428,10 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
     </tbody>
 </table>
 
+[![image.png](https://i.postimg.cc/JhWs9D5x/image.png)](https://postimg.cc/zy0DhfMH)
+
+Link del trello: https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare 
+
 #### 6.2.1.4. Development Evidence for Sprint Review.
 
 **Landing Page:**
