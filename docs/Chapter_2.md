@@ -297,7 +297,13 @@ Las entrevitas están agrupadas en el siguiente link subido a Stream de Office:
 **Duración de la Entrevista:** 03:56 <br>
 
 **Resumen de la Entrevista:** <br>
-Oscar nos comenta que riega sus plantas de manera poco frecuente, y olvida regarlas unas 3 veces al mes debido a permanecer ocupado por la universidad. Cuenta con 3 plantas en su departamento. Dedica entre 1 a 2 horas por semana para regarlas, además, no usa ningún recordatorio para no olvidar regarlas. Nos cuenta además que comparte las plantas con su abuelita, compartiendo ambos la responsabilidad de cuidar las plantas. Menciona que es complicado tener plantas en su departamento, debido al poco espacio que tiene en su hogar, lo que le limita mucho los lugares en los que puede colocarlos. Considera útil el hecho de usar un dispositivo IoT para no estar tan al pendiente y poder recordar con mayor facilidad el cuidado de sus plantas.
+Oscar es un estudiante universitario joven que comparte la responsabilidad del cuidado de sus plantas con su abuelita. Tiene una personalidad práctica y enfocada en sus estudios, lo que lo lleva a dedicar poco tiempo a la jardinería, aunque le interesa mantener sus plantas sanas. Actualmente cuida tres plantas en su departamento, un espacio reducido que representa una dificultad constante para ubicar las macetas de forma adecuada.
+
+Su método de riego es manual y poco estructurado. Tiende a olvidar regarlas unas tres veces al mes, especialmente en semanas de alta carga académica. Suele dedicar entre 1 a 2 horas semanales al cuidado de sus plantas, aunque admite que esto varía. No utiliza recordatorios ni herramientas digitales para el seguimiento de riego, lo que refleja un enfoque más reactivo que planificado.
+
+En términos tecnológicos, Oscar se considera un usuario intermedio, habituado al uso de su smartphone Android y laptop para actividades académicas y personales. Aunque no ha utilizado apps específicas para el cuidado de plantas, muestra interés en dispositivos IoT que le ayuden a automatizar el riego o enviar recordatorios. Considera útil cualquier solución que le permita aligerar su carga mental y mejorar la constancia en el cuidado de sus plantas.
+
+Sus canales de interacción preferidos son las notificaciones móviles y, en menor medida, apps con interfaces simples y visuales. Utiliza Google Chrome como navegador principal, pero su consumo digital está centrado en la practicidad y el cumplimiento de tareas. No tiene lealtad hacia marcas específicas, pero valora la simplicidad, funcionalidad y bajo costo. Aunque no mencionó explícitamente estar dispuesto a pagar por una solución, valoraría una herramienta que lo ayude a mantener sus plantas sin añadirle estrés adicional.
 
 ---
 [![image.png](https://i.ibb.co/MyyNDg2t/Captura-de-pantalla-2025-09-12-222330.png)](https://ibb.co/xKK5S2CB)
