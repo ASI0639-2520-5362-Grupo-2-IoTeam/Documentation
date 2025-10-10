@@ -532,6 +532,27 @@ Esta aplicación consume los datos proporcionados por la Fake API previamente de
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
+En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.
+
+
+**Testing**
+[![image.png](https://i.postimg.cc/FRyQdzMy/image.png)](https://postimg.cc/DJwNRvy0)
+[![image.png](https://i.postimg.cc/cLg2t6YH/image.png)](https://postimg.cc/HrmBfY6D)
+
+---
+**Landing Page**
+[![image.png](https://i.postimg.cc/76VWrzvW/image.png)](https://postimg.cc/XGr8wpYf)
+[![image.png](https://i.postimg.cc/tC7m87Bt/image.png)](https://postimg.cc/Mv2DQZ2v)
+
+---
+**Frontend Web**
+[![image.png](https://i.postimg.cc/xTWg75JH/image.png)](https://postimg.cc/RNLcJcTV)
+[![image.png](https://i.postimg.cc/tR6z6Pvw/image.png)](https://postimg.cc/mhbMfcsy)
+
+---
+**Documentación**
+
+
 
 
 ## Conclusiones y recomendaciones:
