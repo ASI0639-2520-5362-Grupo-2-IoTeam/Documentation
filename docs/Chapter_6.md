@@ -556,18 +556,33 @@ Esta aplicación consume los datos proporcionados por la Fake API previamente de
 
 ## Anexos:
 **Link de la exposición grupal TB1:**:https://goo.su/JGnClEx
+
 **Link de la exposición grupal TP:**:
 
-**Trello: **
+**Trello:**
 https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
 
-**Figma:**
+**Wireframes & Mock-Ups:**
 
 Landing Page: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=45-2&t=GWLix1KIlk7wI6Qs-1)
 
 Web App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=13-3315&t=3nMXXTmW2i14bcze-1)
 
 Mobile App: [https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1](https://www.figma.com/design/soYjRW2pgWZNuAPj7SOik1/PlantCare?node-id=8-2270&t=3nMXXTmW2i14bcze-1)
+
+**Applications Wireflow Diagrams:**
+
+[https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-1088%2C-2778%2C3837%2C1752%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a3410](https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-1088%2C-2778%2C3837%2C1752%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341)
+
+**User Flow Diagram:**
+
+[https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-8930%2C3000%2C4391%2C2005%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341](https://lucid.app/lucidchart/4b0365af-e9c3-4dd8-8d37-09ced3e121e4/edit?viewport_loc=-8930%2C3000%2C4391%2C2005%2C0_0&invitationId=inv_ebe9c381-d702-46b5-83d5-7a684d13a341)
+
+**Applications Prototyping:**
+
+Web Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/ER2OB0Z8ZYxDgETMe6z03FcBhrHLRdMAlxvaR94OMswaEw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gPzSG4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/ER2OB0Z8ZYxDgETMe6z03FcBhrHLRdMAlxvaR94OMswaEw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=gPzSG4)
+
+Mobile Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx)
 
 **Despliegues**
 
