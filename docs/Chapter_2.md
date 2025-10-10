@@ -342,7 +342,11 @@ Arturo nos comenta que le gusta cuidar sus plantas, nos comenta que hay ocasione
 **Duración de la Entrevista:** 4:05<br>
 
 **Resumen de la Entrevista:** <br>
-Ana nos comenta que tiene entre 7 y 8 plantas en macetas, principalmente rosas y lirios, que colecciona con dedicación. Las riega cada 3 o 4 días, aunque en algunas ocasiones se ha olvidado de hacerlo. En particular, recuerda el caso de un pino que murió por falta de conocimiento en su cuidado. Considera útil una aplicación que le permita seguir la evolución de sus plantas y consultar estadísticas, lo cual le ayudaría a evitar situaciones similares. Además, sugiere que una integración con el pronóstico del clima sería beneficiosa, ya que las condiciones climáticas variables afectan directamente a sus plantas.
+Ana posee de siete a ocho macetas con plantas, particularmente lirios y rosas, a las cuales cuida con dedicación. Las riega cada tres o cuatro días, aunque en ocasiones olvida hacerlo, lo que ha afectado a algunas de ellas. Especialmente recuerda un pino que murió debido a su inexperiencia, una situación que la motivó a investigar recursos para perfeccionar el cuidado de sus plantas y prevenir errores similares.
+
+Le resulta sumamente beneficiosa una aplicación que le permita registrar el desarrollo, la salud y el progreso de sus vegetales, así como acceder a datos visuales y estadísticas acerca de su bienestar. También sugiere que la aplicación se vincule con la predicción del tiempo, ya que reconoce que el clima variable, como la humedad o el calor, impacta de manera directa en sus plantas. Esto le ofrecería la oportunidad de anticiparse a posibles problemas y mejorar sus hábitos de riego o de luz solar.
+
+En cuanto a su perfil tecnológico, Ana emplea con mayor frecuencia su ordenador portátil con Windows y su teléfono inteligente Android de Samsung, utilizando en su mayoría Google Chrome para hacer búsquedas en línea. Usa estos dispositivos principalmente para su labor docente, lo que resalta su habilidad con las herramientas digitales y su disposición para emplear nuevas aplicaciones que sean fáciles de usar, efectivas y visualmente atractivas. Ana es una usuaria que se dedica a la prevención, la educación y el cuidado consciente de sus plantas, todo esto apoyado por la tecnología.
 
 ---
 
