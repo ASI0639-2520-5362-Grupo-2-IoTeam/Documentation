@@ -303,16 +303,61 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main |470d2f91608953bfd54945bd73d0882c2dde48a2| docs: testing sprint 1||8/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main |2a58b524ed74891185b089582c45e82c0a06f92a| chore: update README.md||9/10/2025|
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas.
+
+**Landing Page**
+*Evidencia del ejecución:*
+[![image.png](https://i.postimg.cc/CKfVHRVm/image.png)](https://postimg.cc/t1yf9CJx)
+[![image.png](https://i.postimg.cc/Kj17RhTc/image.png)](https://postimg.cc/tnHnMfD8)
+[![image.png](https://i.postimg.cc/nhbKc5cw/image.png)](https://postimg.cc/0bnKVVSp)
+[![image.png](https://i.postimg.cc/YSt1QWgK/image.png)](https://postimg.cc/gxBXWrNN)
+
+**Aplicación web**
+*Evidencia del ejecución:*
+[![image.png](https://i.postimg.cc/vBHcZ7VS/image.png)](https://postimg.cc/5HTxPCpw)
+[![image.png](https://i.postimg.cc/QNzHjTxR/image.png)](https://postimg.cc/vDWQzDnz)
+[![image.png](https://i.postimg.cc/6Qzpg7Px/image.png)](https://postimg.cc/PLpH8qhS)
+[![image.png](https://i.postimg.cc/fTXXFKjX/image.png)](https://postimg.cc/yk1k30GY)
+[![image.png](https://i.postimg.cc/13rFR3dg/image.png)](https://postimg.cc/TKh1CffG)
+[![image.png](https://i.postimg.cc/RFy6p634/image.png)](https://postimg.cc/njKhCLYP)
+[![image.png](https://i.postimg.cc/XqBNrs7c/image.png)](https://postimg.cc/64wxSLZy)
+[![image.png](https://i.postimg.cc/Nfh21Xq6/image.png)](https://postimg.cc/6T0QKyQq)
+
+Link del vídeo con explicación:
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 No hay services para este sprint porque se usó fake-api para el desarrollo del front
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 
+Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
+
+Landing Page:
+Para la Landing Page, se optó por utilizar la plataforma Vercel, debido a su facilidad de uso, integración directa con GitHub y despliegues automáticos mediante GitHub Actions.
+Esto permite que cualquier cambio en el repositorio principal genere automáticamente una nueva versión publicada, garantizando un proceso de entrega continua y eficiente.
+*Evidencia del despliegue:*
+[![image.png](https://i.postimg.cc/CKfVHRVm/image.png)](https://postimg.cc/t1yf9CJx)
+
+FakeApi:
+Con el propósito de proporcionar datos de prueba a la aplicación web durante el desarrollo, se implementó una Fake API también desplegada en Vercel.
+Esta elección se basó en la rapidez de implementación, la compatibilidad con proyectos Node.js y la simplicidad para realizar despliegues ligeros de endpoints REST sin necesidad de infraestructura adicional.
+*Evidencia del despliegue:*
+[![Imagen-de-Whats-App-2025-10-09-a-las-18-24-19-1f6368ae.jpg](https://i.postimg.cc/L89XTByY/Imagen-de-Whats-App-2025-10-09-a-las-18-24-19-1f6368ae.jpg)](https://postimg.cc/3dqYrpQY)
+[![image.png](https://i.postimg.cc/Gtm7Kfsg/image.png)](https://postimg.cc/7GjnYm9S)
+
+Aplicacion web:
+La aplicación web principal fue desplegada en la plataforma Render, aprovechando su integración con repositorios de GitHub, su plan gratuito y la facilidad de configurar despliegues automáticos.
+Esta aplicación consume los datos proporcionados por la Fake API previamente desplegada, asegurando la correcta comunicación entre ambos servicios.
+*Evidencia del despliegue:*
+[![Imagen-de-Whats-App-2025-10-09-a-las-16-34-15-44fbe4e1.jpg](https://i.postimg.cc/3rGdJw4d/Imagen-de-Whats-App-2025-10-09-a-las-16-34-15-44fbe4e1.jpg)](https://postimg.cc/XXVVs4gb)
+[![image.png](https://i.postimg.cc/XqjhhJtm/image.png)](https://postimg.cc/XGPQBVjk)
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
+
 
 ## Conclusiones y recomendaciones:
  - 
