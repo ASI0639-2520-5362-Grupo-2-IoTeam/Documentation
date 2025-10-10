@@ -262,28 +262,180 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
         </tr>
         <!-- Fila de separación -->
         <tr>
-            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Task for US009</td>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Tasks</td>
         </tr>
         <tr>
-            <td>US00</td>
-            <td></td>
+            <td>US-001</td>
+            <td>Acceso a la Landing Page</td>
             <td>01</td>
-            <td>
-            </td>
-            <td>-</td>
+            <td>Diseño de LandingPage</td>
+            <td>Landing Page disponible en cualquier dispositivo con un diseño responsive</td>
             <td>02</td>
-            <td></td>
+            <td>Renzo Silva Morales</td>
             <td>Done</td>
         </tr>
+        <tr>
+            <td>US-002</td>
+            <td>Secciones informativas diferenciadas</td>
+            <td>02</td>
+            <td>Secciones de la LandingPage</td>
+            <td>Landing Page con secciones diferencias y ordenadas</td>
+            <td>03</td>
+            <td>Renzo Silva Morales y Alexander Cantoral</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-003</td>
+            <td>Call to Action contextual</td>
+            <td>02</td>
+            <td>Secciones de la LandingPage</td>
+            <td>Diseño y uso de botones CtA</td>
+            <td>02</td>
+            <td>Renzo Silva Morales y Alexander Cantoral</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-004</td>
+            <td>Testimonios segmentados</td>
+            <td>04</td>
+            <td>Testimonios de la LandingPage</td>
+            <td>Testimonios de segmentos objetivo</td>
+            <td>02</td>
+            <td>Renzo Silva Morales y Alexander Cantoral</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-005</td>
+            <td>Registro de usuario</td>
+            <td>05</td>
+            <td>Registro en la appweb</td>
+            <td>Registro de la app y guardado de datos en la db</td>
+            <td>02</td>
+            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-006</td>
+            <td>Inicio de sesión</td>
+            <td>06</td>
+            <td>Inicio de sesión en la appweb</td>
+            <td>Inicio de sesión mediante un token</td>
+            <td>03</td>
+            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-010</td>
+            <td>Cerrar sesión</td>
+            <td>07</td>
+            <td>Cerrar sesión</td>
+            <td>Cerrar sesión actual</td>
+            <td>03</td>
+            <td>Ernesto Casaverde</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-011</td>
+            <td>Registro simplificado de planta</td>
+            <td>06</td>
+            <td>Registro de planta</td>
+            <td>Planta lista a ser medida en la app</td>
+            <td>02</td>
+            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-012</td>
+            <td>Edición rápida de información de planta</td>
+            <td>07</td>
+            <td>Edición de perfil de planta</td>
+            <td>Edición de datos de planta</td>
+            <td>02</td>
+            <td>Ernesto Casaverde y Alexander Cantoral</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-013</td>
+            <td>Eliminación confirmada de planta</td>
+            <td>08</td>
+            <td>Eliminación de perfil de planta</td>
+            <td>Eliminación de datos de planta</td>
+            <td>02</td>
+            <td>Ernesto Casaverde</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-021</td>
+            <td>Análisis histórico con gráficos avanzados</td>
+            <td>09</td>
+            <td>Gráficas de datos de plantas del usuario</td>
+            <td>Se muetra un gráfico historico de la planta</td>
+            <td>02</td>
+            <td>Fabian Reyes</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-022</td>
+            <td>Reportes semanales detallados</td>
+            <td>10</td>
+            <td>Gráficas de datos semanales de las plantas del usuario</td>
+            <td>Reportes semanales de los datos recolectados</td>
+            <td>02</td>
+            <td>Fabian Reyes</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-023</td>
+            <td>Reportes de largo plazo</td>
+            <td>11</td>
+            <td>Gráficas de largo plazo</td>
+            <td>Desempeño mostrado en gráficas para el usuario</td>
+            <td>02</td>
+            <td>Fabian Reyes</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-027</td>
+            <td>Integración automática a la comunidad</td>
+            <td>12</td>
+            <td>Entrada a Comunidad</td>
+            <td>Los usuarios pueden ingresar al apartado de comunidad</td>
+            <td>03</td>
+            <td>Francisco Hurtado</td>
+            <td>Done</td>
+        </tr>
+        <tr>
+            <td>US-028</td>
+            <td>Feed comunitario</td>
+            <td>13</td>
+            <td>Feed de la comunidad</td>
+            <td>Feed generado por la propia comunidad</td>
+            <td>02</td>
+            <td>Francisco Hurtado</td>
+            <td>In-Progress</td>
+        </tr>
+        <tr>
+            <td>US-032</td>
+            <td>Recibir feedback de la comunidad</td>
+            <td>14</td>
+            <td>Publicación de comentarios por otros miembros</td>
+            <td>Al hacer una publicación otros usuarios puden comentar</td>
+            <td>02</td>
+            <td>Francisco Hurtado</td>
+            <td>In-Progress</td>
+        </tr>
+
     </tbody>
 </table>
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
+
+**Landing Page:**
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 8f4e26c0b0b5256808fb8a38c3b921be1d468776|feat: add index & assets|-|08/10/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | 3bd23767315388fb2f6ad6a8470d1f634c8e2eb6 |fix: html|-|08/10/2025|
-
+**Frontend Web** 
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb| develop | cb91b94dde348ea7064add64934994f4821bad1f | feat: add plant management context| The project was created and Bounded Context: Plant Management was developed. |1/10/2025|
@@ -340,6 +492,7 @@ Landing Page:
 Para la Landing Page, se optó por utilizar la plataforma Vercel, debido a su facilidad de uso, integración directa con GitHub y despliegues automáticos mediante GitHub Actions.
 Esto permite que cualquier cambio en el repositorio principal genere automáticamente una nueva versión publicada, garantizando un proceso de entrega continua y eficiente.
 *Evidencia del despliegue:*
+[![Imagen-de-Whats-App-2025-10-09-a-las-20-16-46-a8c07509.jpg](https://i.postimg.cc/90W735WS/Imagen-de-Whats-App-2025-10-09-a-las-20-16-46-a8c07509.jpg)](https://postimg.cc/YGs9gPLf)
 [![image.png](https://i.postimg.cc/CKfVHRVm/image.png)](https://postimg.cc/t1yf9CJx)
 
 FakeApi:
