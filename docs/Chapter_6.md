@@ -229,13 +229,13 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 
 | Team Member (Apellido, Nombre) | GitHub Username |Auth & Indentity<br>Leader (L) /Collaborator (C)| Plant Management<br>Leader (L) /Collaborator (C)| Analysis & Reporting <br>Leader (L) /Collaborator (C)| Community<br>Leader (L) /Collaborator (C)|
 |-------------|---------|--------------|-------|-----|----|
-|Casaverde De La Cruz, Ernesto David|
-|Cantoral Sedamano, Alexander Alberto|
-|Chirinos Zúñiga, Rodrigo Manuel |
-|Hurtado Palomino, Francisco Juan |
-|Reyes Trujillano, Fabian Alonso|
-| Silva Morales, Renzo Cesar |
-|Zevallos Linares, Alessandro Netto |
+|Casaverde De La Cruz, Ernesto David| ErnestGreenhouse| L | L| -|-|
+|Cantoral Sedamano, Alexander Alberto| AlexlmL| L | L |-|-
+|Chirinos Zúñiga, Rodrigo Manuel | zrodrigochirinos| C | C |C|C|
+|Hurtado Palomino, Francisco Juan | franmanic2|-|-|C|L|
+|Reyes Trujillano, Fabian Alonso| FabianTG25| -|-|L|C|
+| Silva Morales, Renzo Cesar | rrenzosilva |-|C|C|C|
+|Zevallos Linares, Alessandro Netto | OutBreakAZL | C | C|C|C|
 #### 6.2.1.3. Sprint Backlog 1.
 
 <table>
