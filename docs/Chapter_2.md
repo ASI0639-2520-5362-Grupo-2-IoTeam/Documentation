@@ -332,6 +332,8 @@ Arturo nos comenta que le gusta cuidar sus plantas, nos comenta que hay ocasione
 ---
 ##### Segmento 2: Aficionados que cuidan varias macetas en casa
 
+[![Interview-Image.jpg](https://i.postimg.cc/XvqWz2Sh/Interview-Image.jpg)](https://postimg.cc/yDM2JyNX)
+
 **Entrevistado:** Ana <br>
 **Sexo:** Femenino <br>
 **Edad:** 57 años<br>
