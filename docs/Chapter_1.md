@@ -36,11 +36,60 @@ Con la finalidad de poder conocer y comprender con mayor precisión las necesida
 ### 1.2.2 Lean UX Process.
 
 #### 1.2.2.1. Lean UX Problem Statements.
-__PlantCare__ fue diseñado para lograr que cualquier persona pueda mantener plantas saludables en su hogar con mínimo esfuerzo, obteniendo bienestar y tranquilidad.
 
-Hemos observado que el producto IOT no está cumpliendo esta meta para personas ocupadas y personas amateur, lo cual está causando estrés por olvidar el riego, muerte de plantas y la consiguiente frustración y desistimiento de la jardinería doméstica en nuestro negocio.
+##### Dominio:
 
-¿Cómo podríamos mejorar __PlantCare__ para que nuestros clientes tengan más éxito basado en un aumento en la tasa de supervivencia de las plantas, una reducción del tiempo semanal dedicado al cuidado y un aumento en la sensación de tranquilidad reportada por los usuarios?
+El sector de aplicación es cuidado doméstico de plantas mediante IoT y software móvil, con foco en hogares urbanos (departamentos y oficinas) que buscan soluciones de bajo esfuerzo para mantener plantas saludables. El enfoque combina hardware (sensores de humedad), conectividad, analítica ligera y una aplicación web y móvil para automatizar monitoreo, notificaciones y recomendaciones por especie, optimizando tiempo y reduciendo la ansiedad asociada al cuidado de plantas.
+
+##### Segmentos de Clientes
+
+__Segmento 1 — Personas ocupadas (departamentos / oficinas)__
+
+- Edad aproximada: 25–55 años.
+- Poseen pocas plantas (1–5) con valor decorativo.
+- Necesitan soluciones “set-and-forget”: configuración simple, - notificaciones fiables, mínima interacción diaria.
+- Sus principales requisitos: tranquilidad, fiabilidad y ahorro de tiempo.
+
+__Segmento 2 — Aficionados amateurs__
+
+- Edad aproximada: 30–65 años.
+- Tienen colecciones más grandes (5–20 plantas).
+- Buscan aprendizaje, datos históricos y recomendaciones por especie.
+- Sus principales requisitos: perfiles de planta, gráficos/historial, y control sobre configuraciones avanzadas.
+
+##### Puntos de Dolor (Pain Points)
+
+- Olvido y ansiedad por el riego: los usuarios olvidan regar y temen perder plantas.
+- Muertes o deterioro de plantas: pérdidas económicas y emocionales al no detectar condiciones críticas a tiempo.
+- Falsas alertas / falta de confianza: notificaciones incorrectas que erosionan la confianza en el sistema.
+- Sensores inexactos o defectuosos: hardware sin calibración provoca errores en decisiones.
+- Tiempo y complejidad: configurar y mantener varias macetas puede ser tedioso.
+- Falta de conocimiento: los usuarios no siempre saben las necesidades específicas por especie.
+- Soluciones fragmentadas o caras: alternativas en el mercado son costosas, complejas o no integradas (hardware + software).
+
+##### Brecha Identificada (Gap)
+
+Existe una carencia de soluciones domésticas que sean integradas, confiables y asequibles, con características específicas:
+
+- Confiabilidad técnica: sensores calibrados + algoritmos que minimicen falsas alertas.
+- Experiencia simple: onboarding y configuración pensados para usuarios ocupados.
+- Personalización por especie: perfiles de planta y recomendaciones accionables.
+- Modelo de precios claro: planes escalables, adaptados a distintos tamaños de colección.
+- Captura de feedback in-app: mecanismo sencillo para que el usuario marque alertas útiles/incorrectas y así mejorar el sistema.
+
+##### Visión / Estrategia
+Visión: Democratizar el cuidado de plantas en el hogar transformando la tecnología en una experiencia confiable y de bajo esfuerzo que entregue tranquilidad, plantas más saludables y aprendizaje progresivo.
+
+Estrategia (resumen de iniciativas):
+
+- Producto: desarrollar una solución hardware + app modular y de bajo costo: sensores de humedad calibrables, notificaciones inteligentes, perfiles de planta y dashboard multi-maceta.
+- Calidad y confianza: priorizar QA de hardware, algoritmos de calibración y captura de feedback para mantener falsas alertas <10%.
+- MVP enfocado: lanzar funciones críticas primero (conexión de primera maceta, notificaciones configurables).
+- Medición y metas: alinear desarrollo con KPIs concretos: Activación ≥40% (1 maceta en 7 días), Retención ≥25% a 30 días, Conversión 3–7% a 90 días, Falsas alertas <10%.
+- Monetización: modelo básico (hasta 3 macetas / Premium hasta 10 + pago por maceta extra).
+- Comunidad y aprendizaje: crear canales para compartir aprendizajes, recomendaciones.
+
+
 #### 1.2.2.2. Lean UX Assumptions.
 
 Para desarrollar la aplicación PlantCare, partimos de varias suposiciones clave que guiarán nuestro proceso de diseño y desarrollo. Estas suposiciones están basadas en una comprensión inicial de las necesidades y problemas de nuestros usuarios objetivo, así como en los resultados esperados para el negocio. A medida que avanzamos en el desarrollo, estas suposiciones se validarán mediante pruebas y retroalimentación continua para asegurar que la solución propuesta cumpla con las expectativas y resuelva eficazmente los desafíos identificados.
@@ -126,27 +175,33 @@ Segmento 2: Aficionados amateurs (55+ años) con más plantas y interés en opti
 - Resolveremos esto a través de un riguroso control de calidad del hardware, algoritmos de calibración y una fácil reposición de sensores defectuosos.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
-Para asegurar que nuestra solución esté alineada con las necesidades y expectativas de nuestros usuarios, hemos formulado las siguientes hipótesis utilizando el enfoque Lean UX. Este enfoque nos permitirá validar nuestras suposiciones a través de iteraciones constantes y ajustes basados en el feedback de los usuarios
+Para asegurar que nuestra solución esté alineada con las necesidades y expectativas de nuestros usuarios, hemos formulado las siguientes hipótesis utilizando el enfoque Lean UX. Este enfoque nos permitirá validar nuestras suposiciones a través de iteraciones constantes y ajustes basados en el feedback de los usuarios.
 
 
-- **Creemos que** implementar notificaciones push basadas en la humedad real del suelo  
-**para** personas ocupadas (Segmento 1)  
-**lograremos** brindarles tranquilidad y reducir la muerte de sus plantas.  
-**Sabremos que somos exitosos cuando** el ≥40% de los usuarios active al menos una maceta en la primera semana y el ≥60% de las notificaciones sean actuadas en un plazo de 24 horas.
+- **Creemos que** lograremos Activación: ≥40%
+**si** personas ocupadas y aficionados nuevos
+**alcanzan** confianza inmediata sobre el funcionamiento del sistema tras la primera experiencia de uso
+**con una demo interactiva** en la app que simula la lectura de humedad y envía una notificación de prueba.
 
+- **Creemos que lograremos** Retención: ≥25% a 30 días
+**si** personas ocupadas (Segmento 1)
+**alcanzan** tranquilidad continua y respuestas rápidas cuando reciben alertas
+**con notificaciones push** calibradas por especie y contexto.
 
+- **Creemos que lograremos** Retención: ≥25% a 30 días
+**si** aficionados amateurs (Segmento 2)
+**alcanzan** mayor engagement y utilidad por disponer de datos históricos relevantes
+**con historial y gráficas** de humedad/riego accesibles desde la pantalla principal.
 
-- **Creemos que** comunicar mensajes de marketing que destacan el "ahorro de tiempo" y la "tranquilidad"  
-**para** profesionales ocupados (Segmento 1)  
-**lograremos** aumentar significativamente su interés en probar la aplicación.  
-**Sabremos que somos exitosos cuando** los anuncios con estos mensajes logren un CTR ≥20% mayor que los anuncios con mensajes genéricos.
+- **Creemos que lograremos** Retención: ≥25% a 30 días
+**si** ambos segmentos
+**alcanzan mayor** confianza en las alertas gracias a la mejora continua del sistema
+**con un mecanismo simple de feedback** para marcar alertas “útiles / incorrectas”.
 
-
-
-- **Creemos que** ofrecer un plan Premium que incluya historial detallado, gráficas y perfiles personalizados por especie  
-**para** aficionados amateurs con más de 5 plantas (Segmento 2)  
-**lograremos** monetizar su deseo de optimizar el cuidado de su colección.  
-**Sabremos que somos exitosos cuando** ≥10% de los usuarios de este segmento con más de 5 macetas se conviertan al plan Premium dentro de los primeros 60 días de uso.
+- **Creemos que lograremos** Monetización: conversión 3%–7% en 90 días
+**si** aficionados con >5 macetas (Segmento 2)
+**alcanzan** una percepción clara de valor agregado por funcionalidades avanzadas
+**con un plan Premium** que incluye perfiles por especie, historial extendido y análisis avanzados.
 
 #### 1.2.2.4. Lean UX Canvas.
 <table border="1" cellpadding="10" cellspacing="0">
@@ -158,22 +213,23 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     <tr>
         <td>
             <strong>Business Problem</strong><br>
-            Muchas personas (profesionales ocupados, aficionados con colecciones y adultos mayores con limitaciones) olvidan o no pueden mantener niveles de humedad óptimos en sus macetas. Resultado: plantas estresadas o muertas, frustración y pérdida de bienestar estético/psicológico. Necesitamos una solución sencilla y accesible que automatice el monitoreo y genere recordatorios fiables.
+            Muchas personas (profesionales ocupados y aficionados con colecciones domésticas) olvidan o no pueden mantener niveles de humedad óptimos en sus macetas. Esto resulta en plantas deterioradas o muertas, generando frustración, pérdida de dinero y estrés. Se requiere una solución accesible y confiable que automatice el monitoreo, reduzca las falsas alertas y genere confianza en las notificaciones.
         </td>
         <td>
             <strong>Solutions</strong><br>
-            - Kit IoT con sensor de humedad por maceta.<br> 
-            - App móvil con notificaciones push cuando la humedad cae bajo umbrales.<br> 
-            - Perfiles de planta.<br> 
-            - Historial básico.<br> 
-            - Gestión de macetas.
+            - Sensores de humedad calibrables por maceta.<br> 
+            - App móvil/web con notificaciones push inteligentes.<br> 
+            - Perfiles de planta personalizados según especie.<br> 
+            - Historial y gráficas de humedad/riegos.<br> 
+            - Gestión de múltiples macetas (añadir, editar, eliminar).<br> 
+            - Planes de suscripción escalables (Básico, Premium, extra por maceta)
         </td>
         <td>
             <strong>Business Outcomes</strong><br>
-            - Activación: ≥40% conectan ≥1 maceta en la primera semana.<br> 
-            - Retención: 30-day retention ≥25%.<br> 
-            - Monetización: 3–7% conversión a suscripción en 90 días.<br> 
-            - Calidad: reducir falsas alertas <10% para mejorar retención.
+            - <strong>Activación:</strong> ≥40% conectan ≥1 maceta en los primeros 7 días.<br> 
+            - <strong>Retención:</strong> ≥25% de usuarios activos a los 30 días.<br> 
+            - <strong>Monetización:</strong> 3–7% conversión a plan pago en 90 días.<br> 
+            - <strong>Calidad:</strong> Falsas alertas <10% del total de notificaciones.
         </td>
     </tr>
     <tr>
@@ -184,22 +240,27 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
         </td>
         <td>
             <strong>Hypotheses</strong><br>
-            - Creemos que las notificaciones push fiables sobre la humedad reducirán los olvidos de riego y aumentarán la satisfacción de los usuarios. Sabremos si ≥60% de las notificaciones resultan en una acción de riego (autorreporte o confirmación) y el NPS asociado a la funcionalidad es >30. cuando entreguemos notificaciones push fiables cuando la humedad de la maceta caiga por debajo del umbral recomendado. <br> 
-            Creemos que comunicar claramente el ahorro de tiempo y la reducción del riesgo de perder plantas aumentará la intención de compra  Sabremos si el CTR dirigidas a personas ocupadas supera al grupo control en ≥20%. cuando  usemos mensajes creativos orientados a “ahorro de tiempo” y tranquilidad frente a un mensaje genérico. <br> 
-            Creemos que aficionados con >5 macetas estarán dispuestos a pagar por historial y perfiles personalizados. Sabremos si ≥20% de los usuarios con más de 5 macetas se convierten a Premium cuando estas funciones estén disponibles. cuando ofrezcamos ajustes finos en Premium.
+            - <strong>H1:</strong> Creemos que lograremos <em>Activación ≥40%</em> si los nuevos usuarios alcanzan confianza inmediata con el sistema al experimentar una <em>demo interactiva</em> que simula lectura y notificación de prueba.<br><br> 
+            - <strong>H2:</strong> Creemos que lograremos <em>Retención ≥25% a 30 días</em> si las personas ocupadas experimentan <em>tranquilidad</em> al recibir <em>notificaciones push precisas y calibradas por especie</em>.<br><br> 
+            - <strong>H3:</strong> Creemos que lograremos <em>Retención ≥25%</em> si los aficionados obtienen <em>valor continuo</em> a través de <em>historiales y gráficas de humedad/riego</em> accesibles desde la pantalla principal.<br><br> 
+            - <strong>H4:</strong> Creemos que lograremos <em>confianza sostenida</em> y retención si ambos segmentos pueden <em>marcar alertas útiles o incorrectas</em> mediante un mecanismo de feedback simple.<br><br> 
+            - <strong>H5:</strong> Creemos que lograremos <em>Monetización 3–7%</em> si los usuarios con >5 macetas perciben <em>valor agregado</em> en un <em>plan Premium</em> con perfiles por especie y análisis avanzados. </td> <td> 
         </td>
         <td>
-            <strong>User Outcomes & Benefits</strong><br>
-            - Tranquilidad (no olvidar regar).<br>
-            - Menos plantas muertas / mejor salud de plantas.<br>
-            - Ahorro de tiempo (no controlar manualmente).<br>
-            - Aprendizaje gradual (recomendaciones que mejoran - cuidado).
+            <strong>User Outcomes & Benefits</strong><br> 
+            - Tranquilidad y confianza en el cuidado automatizado.<br> 
+            - Plantas más saludables y menos pérdidas.<br> 
+            - Ahorro de tiempo y esfuerzo en el riego.<br> 
+            - Aprendizaje progresivo mediante insights por especie.<br> 
+            - Confianza sostenida gracias a la precisión de alertas y sensores.
         </td>
     </tr>
     <tr>
         <td>
             <strong>What's the most important thing we need to learn first?</strong><br>
-            Si los usuarios realmente actúan sobre las notificaciones y perciben suficiente valor y si hay voluntad de pagar por esa comodidad.
+            - Si los usuarios confían en las alertas y las perciben como útiles.<br> 
+            - Si las notificaciones generan acciones reales (riego, revisión).<br> 
+            - Si existe disposición a pagar por planes con funciones avanzadas.
         </td>
         <td colspan="2">
             <strong>What's the least amount of work we need to do to learn the next most important?</strong><br>
@@ -212,10 +273,13 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
     </tr>
 </table>
 
-## 1.3. Segmentos objetivos
+
+
+
+## 1.3. Segmentos objetivo
 
 Para asegurar el éxito de PlantCare, hemos identificado dos segmentos clave que serán el foco principal de nuestras estrategias de desarrollo y marketing. Estos segmentos representan a nuestros usuarios ideales y nos permitirán adaptar nuestras funcionalidades y servicios a sus necesidades específicas, maximizando así el impacto de la plataforma.
 
-- **Segmento 1 – Personas ocupadas (departamentos/oficinas):** profesionales con jornada completa, viven en departamentos, suelen tener 1–5 plantas decorativas. Buscan soluciones que requieran poco mantenimiento y ofrezcan tranquilidad.
+- **Segmento 1 – Personas ocupadas (departamentos/oficinas):** La mayoría de las personas en este grupo son expertos con edades comprendidas entre 25 y 45 años, que viven en zonas urbanas de Lima Metropolitana y están empleados a tiempo completo o mediante un modelo híbrido. Generalmente poseen entre una y cinco plantas ornamentales en sus hogares o lugares de trabajo, que utilizan para embellecer sus entornos, reducir el estrés y fomentar su bienestar. Sin embargo, su vida apresurada y la falta de tiempo dificultan el adecuado cuidado de las plantas, lo que les genera frustración cuando estas se deterioran o mueren.
 
-- **Segmento 2 – Aficionados:** personas con más plantas (5–20), desean optimizar salud de sus colecciones, les interesa las recomendaciones para diferentes especies.
+- **Segmento 2 – Aficionados:** Esta agrupación está compuesta por personas de entre 30 y 65 años, quienes muestran un interés constante en la jardinería y el cuidado de las plantas en casa. Su meta es optimizar el bienestar de sus plantas, lo cual se logra mediante la regulación de elementos como la humedad, el tipo de suelo y la frecuencia del riego. Poseen entre 5 y 20 plantas de distintas especies. <br> Este público tiene una preferencia especial por los atributos avanzados: personalización por especie, gráficos de comparación, sugerencias basadas en información y registros de riego. Para ellos, PlantCare es una herramienta tecnológica que mezcla la precisión, el aprendizaje constante y un manejo eficiente de sus recursos y tiempo.
