@@ -635,7 +635,57 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 **Landing Page:**
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | ||-|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main |e968b926008e303eaa6b04bca0dbf14e5ae797a8 |fix: translate|-|4/11/2025|
+
+**FrontendWeb:**
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|786e10c53a6ea7712875fcb635f5837bdeb7183c|feat(iam): implement Google Sign-In authentication flow|-|25/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|2fc1cd8b6cda7785aa92495ea7a19e183a0a0c68|Delete .env|-|25/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|e9865d6b1b11a4f73dfebb612ac955b1a6b9514d|Merge branch 'develop'|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|2c74a72a963f87386e96b77c6caa197cf4599d33|feat(iam): update Authentication.Service.ts|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|004bd8e72735ff690471c409ad764f098bafd05d|feat: subscription with simulation of payment|TODO: Business rules|29/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|a194fec7e5d351a3718709d2e7aaf1bed29ea111|chore: update of businnes rules|-|29/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|d2154764952860889fe80ae3f642463f6af379a2|Merge pull request #1 from ASI0639-2520-5362-Grupo-2-IoTeam/feat/subscription|Feat/subscription|29/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|716d66ece9ede9ab1a45315428fdcafd5b59d98c|feat: add Firebase files|-|2/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|bb10bcca27d551190a6fa948a9c47a1315bc7f4b|fix: subscription dark theme|-|3/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|53dc132e5cbc2f34168ef878d338feb3c2680859|feat: connect the GET request to the backend|-|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|5073bddff886c325961809a7ee608d76c7263507|fix: correct data mapping|-|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|a6be8e6782c14b15741b0d9996f10859268a406f|fix: router plant form|-|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|1d76cb66caa8286f14ec9327b4d6cfeffccc5ee8|Merge pull request #2 from ASI0639-2520-5362-Grupo-2-IoTeam/main|Fix: Desorden de Ernesto|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|b28c053ba32e83a2c0afbd5bdf6e476080ad3e32|fix: npm build errors|-|/11/2025|
+
+**Backend:**
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/community|9859e3fcc3f3d72ee1bfaff33889257d9a51ed8a|chore: domain layer|-|20/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/community|2a4ee3004d75a7f73385bc9cd68cda833291565f|chore: repositories layer|-|21/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/community|38ca75468aad2eab81ddad6cd197c27f84411a04|chore: application layer|TODO: interface layer and finish the documentation of the code of this bc|22/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/community|5ceacad16d6a5fa1a05e59d953145c104e9fed77|fix: role coherence in community|-|22/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|aa28b6682f41b53b4729f0345966e7c47ef62c88|Merge pull request #2 from ASI0639-2520-5362-Grupo-2-IoTeam/feat/community|Feat/community|24/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|fe1ed0f8d7370d1beb66d5ea9769869154868a18|feat(iam): implement Google Sign-In authentication flow|-|25/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/subscription|6d70813fe30193faf6558f89e82d48fd78e3ac2f|chore: subscription domain layer|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/subscription|e2639c9aae5dcc0aba86d4def0935663f3cbfd5e|chore: subscription infrastructure layer|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/subscription|3acf15faae3858669b77979f4e3b51f7d321fb51|chore: subscription application layer|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/subscription|b1770e7ed006dd256c3f9d63cb668a4c2ad9d40d|chore: subscription interfaces layer|-|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|feat/subscription|a520c4dbd67f7575729b7665daa4a1717d1c514b|chore: business rules|Todo: EnableMethodSecurity for getsuscriptions for only useradmins|27/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|f08f2267f063763866ace314a97e818edba2d4b2|Merge pull request #3 from ASI0639-2520-5362-Grupo-2-IoTeam/feat/subscription|Feat/subscription|29/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|1977aae39338ed24790bcaae49f6377228ec5d2f|chore: connection with frontend web|-|29/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|4d665ddc5bbad944b1fc72f1dbf2a1c6a1d67bcd|Add deployment link to README|-|30/10/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|a488f6fd9a4ee0a1af88b1b72f8cedbebb8370c9|feat(iam): integrate Google OAuth for mobile app|-|2/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|859f64787a382cb6573af01e86a19b8226676313|chore: railway database|-|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|a6b1b53db5a233977c196bcfda8f27e736989961|feat:I added the IoT device parameters to the plant|-|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|a873af800dcb7db478611724d03b1f7654383451|feat: update application.properties|-|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|40388164020a353c55cf17d62e0a159fa8dd6902|Add or update the Azure App Service build and deployment workflow config|-|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|15d79a0baeb10b19710fe42ce2ea92f7eca4b651|feat: add the sensor data to plant|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|5364cb1d11d457405c548a77d08259f1350a17cc|fix: Update database|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|093e013bd44b1fab9304e85b5fd4bc08b51332df|feat: state logic and irrigation|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|||-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|b88f86ac0c6f08802b89e93629004393174cb28a|feat: data connected to the edge and front end|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|6a4aca3c077b2e3bc670857cf1c725e8d4b4bd00|fix: errores de ernesto|Hagan bien sus commits|8/11/2025|
+
+**
+
 
 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
