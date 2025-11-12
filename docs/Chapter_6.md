@@ -626,6 +626,8 @@ Web Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u2
 
 Mobile Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx)
 
+Wowki Prototype: [https://wokwi.com/projects/446895569616462849](https://wokwi.com/projects/446895569616462849)
+
 **Despliegues**
 
 **Landing Page:** 
