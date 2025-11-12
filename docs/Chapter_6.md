@@ -560,8 +560,35 @@ En esta sección se evidencia la colaboración ella durante el sprint en diferen
 
 
 6.2.2. Sprint 2
+En este sprint se desarrolló la segunda versión de la landing page y del frontend web. Además, se presentó la primera versión funcional del prototipo IoT, junto con los módulos iniciales del backend y del frontend móvil.
 6.2.2.1. Sprint Planning 2.
+
+**Aspecto**                      | **Detalles**                                                                                                           |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background**   |                                                                                                                        |
+| **Date**                         | 1/10/2025                                                                                                             |
+| **Time**                         | 3:00 pm                                                                                                                |
+| **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
+| **Prepared By**                  | IoTeam                                                                                                             |
+| **Attendees (to planning meeting)** | |
+| **Sprint Goal & User Stories**   |                                                            |
+| **Sprint Goal**                |       **Our focus is on** *concretar una primera versión de la Landing Page y Frontend.* **We believe it delivers** *un acercamiento real de cómo funcionaría nuestra aplicación en conjunto con una fakeapi,* **to** *testear features y ver que mejoras se implementarían para las siguientes versiones de los mismos* **This will be confirmed** *cuando se termine dicha versión y se pueda probar lo implementado* |
+| **Sprint Velocity**            |  La velocidad del equipo fue de 56 puntos de historia en un periodo de 2 semanas, completando todas las historias priorizadas para esta iteración.                                                                        |
+| **Sum of Story Points**          | Se asignaron 56 puntos de historia a las tareas completadas, correspondientes a historias de usuario vinculadas al desarrollo y despliegue de la Landing Page, primera versión de Frontend Web y la Fake API. |
+
+
 6.2.2.2. Aspect Leaders and Collaborators.
+
+| Team Member (Apellido, Nombre) | GitHub Username |Auth & Indentity<br>Leader (L) /Collaborator (C)| Plant Management<br>Leader (L) /Collaborator (C)| Analysis & Reporting <br>Leader (L) /Collaborator (C)| Community<br>Leader (L) /Collaborator (C)|Subscription<br>Leader (L) /Collaborator (C)|
+|-------------|---------|--------------|-------|-----|----|---|
+|Casaverde De La Cruz, Ernesto David| ErnestGreenhouse| - | L| -|-|
+|Cantoral Sedamano, Alexander Alberto| AlexlmL| C | C |-|C|L|
+|Chirinos Zúñiga, Rodrigo Manuel | zrodrigochirinos|-|-|-|-|-|
+|Hurtado Palomino, Francisco Juan | franmanic2|-|-|-|C|-|
+|Reyes Trujillano, Fabian Alonso| FabianTG25| -|-|L|-|-|
+| Silva Morales, Renzo Cesar | rrenzosilva |-|-|-|C|-|
+|Zevallos Linares, Alessandro Netto | OutBreakAZL |C|C|-|-|-|
+
 6.2.2.3. Sprint Backlog 2.
 6.2.2.4. Development Evidence for Sprint Review.
 6.2.2.5. Testing Suite Evidence for Sprint Review.
