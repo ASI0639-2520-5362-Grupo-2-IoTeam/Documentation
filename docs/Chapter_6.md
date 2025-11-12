@@ -241,8 +241,8 @@ En este sprint presentamos el avance en la primera versión de la Landing Page y
 <table>
     <thead>
         <tr>
-            <td>Sprint #2</td>
-            <td colspan="7">Sprint 2</td>
+            <td>Sprint #</td>
+            <td colspan="7">Sprint 1</td>
         </tr>
         <tr>
             <td colspan="2">User Story</td>
@@ -566,15 +566,15 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 **Aspecto**                      | **Detalles**                                                                                                           |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | **Sprint Planning Background**   |                                                                                                                        |
-| **Date**                         | 1/10/2025                                                                                                             |
-| **Time**                         | 3:00 pm                                                                                                                |
-| **Location**                     | La reunión se realizó de forma virtual por la plataforma Discord                                                        |
+| **Date**                         | 30/10/2025                                                                                                             |
+| **Time**                         | 12:00 pm                                                                                                                |
+| **Location**                     | La reunión se realizó de forma presencial                                             |
 | **Prepared By**                  | IoTeam                                                                                                             |
 | **Attendees (to planning meeting)** | |
 | **Sprint Goal & User Stories**   |                                                            |
-| **Sprint Goal**                |       **Our focus is on** *concretar una primera versión de la Landing Page y Frontend.* **We believe it delivers** *un acercamiento real de cómo funcionaría nuestra aplicación en conjunto con una fakeapi,* **to** *testear features y ver que mejoras se implementarían para las siguientes versiones de los mismos* **This will be confirmed** *cuando se termine dicha versión y se pueda probar lo implementado* |
-| **Sprint Velocity**            |  La velocidad del equipo fue de 56 puntos de historia en un periodo de 2 semanas, completando todas las historias priorizadas para esta iteración.                                                                        |
-| **Sum of Story Points**          | Se asignaron 56 puntos de historia a las tareas completadas, correspondientes a historias de usuario vinculadas al desarrollo y despliegue de la Landing Page, primera versión de Frontend Web y la Fake API. |
+| **Sprint Goal**                |**Our focus** is on consolidar la segunda versión de la Landing Page y del Frontend Web, **and to deliver** la primera versión funcional del prototipo IoT, Backend y Frontend Móvil. **We believe this delivers** una base sólida para la integración del ecosistema completo (web, móvil e IoT), **allowing us to** evaluar la interoperabilidad entre componentes y definir mejoras para los próximos sprints. **This will be confirmed** una vez completadas las pruebas de comunicación y funcionamiento entre los módulos desarrollados. |
+| **Sprint Velocity**            |  La velocidad del equipo fue de  puntos de historia en un periodo de 4 semanas, completando la mayoría de las historias priorizadas para esta iteración, centradas en la integración del entorno web, móvil e IoT.|
+| **Sum of Story Points**          | Se asignaron  puntos de historia a las tareas completadas, correspondientes a historias de usuario relacionadas con el desarrollo y despliegue de la segunda versión de la Landing Page, el Frontend Web, y las primeras versiones del prototipo IoT, Backend y Frontend Móvil.|
 
 
 6.2.2.2. Aspect Leaders and Collaborators.
@@ -590,12 +590,118 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 |Zevallos Linares, Alessandro Netto | OutBreakAZL |C|C|-|-|-|
 
 6.2.2.3. Sprint Backlog 2.
+
+<table>
+    <thead>
+        <tr>
+            <td>Sprint #</td>
+            <td colspan="7">Sprint 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">User Story</td>
+            <td colspan="6">Work-Item / Task</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Estimation (Hours)</td>
+            <td>Assigned To</td>
+            <td>Status (To-do / In-Process / To-Review / Done)</td>
+        </tr>
+        <!-- Fila de separación -->
+        <tr>
+            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Tasks</td>
+        </tr>
+        <tr>
+            <td>US-00</td>
+            <td>-</td>
+            <td>0</td>
+            <td>-</td>
+            <td>-</td>
+            <td>0</td>
+            <td></td>
+            <td>Done</td>
+        </tr>
+    </tbody>
+</table>
+
 6.2.2.4. Development Evidence for Sprint Review.
+
+**Landing Page:**
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main | ||-|/11/2025|
+
 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main || docs: ||2025|
+
 6.2.2.6. Execution Evidence for Sprint Review.
+
+En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas.
+
+
+
 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
 6.2.2.8. Software Deployment Evidence for Sprint Review.
+Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
+
+Landing Page:
+Para la Landing Page, se optó por utilizar la plataforma Vercel, debido a su facilidad de uso, integración directa con GitHub y despliegues automáticos mediante GitHub Actions.
+Esto permite que cualquier cambio en el repositorio principal genere automáticamente una nueva versión publicada, garantizando un proceso de entrega continua y eficiente.
+*Evidencia del despliegue:*
+
+Aplicacion web:
+La aplicación web principal fue desplegada en la plataforma Render, aprovechando su integración con repositorios de GitHub, su plan gratuito y la facilidad de configurar despliegues automáticos.
+Esta aplicación consume los datos proporcionados por el backend, asegurando la correcta comunicación entre ambos servicios.
+*Evidencia del despliegue:*
+
+Aplicación móvil:
+
+
+Backend Documentation:
+
+
+Aplicación Edge:
+
+
+
 6.2.2.9. Team Collaboration Insights during Sprint.
+
+En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.
+
+
+**Testing**
+
+----
+**Landing Page**
+
+---
+
+**Aplicación Web**
+
+---
+
+**Aplicación Móvil**
+
+---
+
+**Backend**
+
+---
+
+**Aplicación Edge**
+
+---
+
 6.3. Validation Interviews.
 6.3.1. Diseño de Entrevistas.
 6.3.2. Registro de Entrevistas.
