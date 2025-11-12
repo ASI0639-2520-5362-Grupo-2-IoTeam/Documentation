@@ -229,7 +229,7 @@ Para asegurar que nuestra solución esté alineada con las necesidades y expecta
             - <strong>Activación:</strong> ≥40% conectan ≥1 maceta en los primeros 7 días.<br> 
             - <strong>Retención:</strong> ≥25% de usuarios activos a los 30 días.<br> 
             - <strong>Monetización:</strong> 3–7% conversión a plan pago en 90 días.<br> 
-            - <strong>Calidad:</strong> Falsas alertas <10% del total de notificaciones.
+            - <strong>Calidad:</strong> Falsas alertas <10% del total de notificaciones.            
         </td>
     </tr>
     <tr>
