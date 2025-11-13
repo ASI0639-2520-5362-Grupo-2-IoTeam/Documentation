@@ -684,7 +684,33 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|b88f86ac0c6f08802b89e93629004393174cb28a|feat: data connected to the edge and front end|-|8/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|6a4aca3c077b2e3bc670857cf1c725e8d4b4bd00|fix: errores de ernesto|Hagan bien sus commits|8/11/2025|
 
-**
+**Fronend Mobile:**
+
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|a0ca87ec2b94353e2c5820abe5871279a5d8a45c|feat(iam): add Google auth files|-|1/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|7ade7cc2db668816910680fc96662c6828804f4e|fix(iam): update auth_provider file|-|1/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|2bfaba06c6ecee214ef0846cf919d3ea3f8f2ad0|feat(iam): update file|-|1/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|87b698bd3a2f0d7369a81e50e2f4f8f97528ff4d|feat(iam): implement Google Sign-In authentication flow|-|1/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|feat/subscription|ba01aacedae188ca90f66d67f4dff608b58119e6|feat: subscription and emulation of payment method|TODO: payment history and payment method and link of deployment of backend product|2/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|6c7a866e14e88a9fab96170dbad5ba19bed12173|feat(iam): update Google auth files|-|2/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|68da4a2df32c65bb94c66c383571044a1878dc76|Merge pull request #2 from ASI0639-2520-5362-Grupo-2-IoTeam/feat/subscriptions|feat: subscription and emulation of payment method|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|46782234c45f81adfa708480ca7fc41783ae1e90|chore: add ddd structure|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|a9f34ec6bbdea03c4476c8a4dc84fde4efb927d7|feat: update plant_repository|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|feat/plants|e0847b184b7e348db75413e099dffcb3a3402385|feat: Connect the backend and add the view for the details.|-|8/11/2025|
+
+**Edge Service:**
+|Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
+|----|-----|------|-----|----|---|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|92d25bb0fff6f5be938d20064a636cd7efef6831|bounded context iam and plant management performed|-|6/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|3466d8df3af47151f6d033ba0f47e3e1087419fb|Configuring parameters for the database and authentication|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|eb32b8aaf001da8c9855ea0a1e9433ff9648f285|fix variables for deployment|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|7be575f7d7f9f68df19bbe347bc6ca858c235cb1|fix deply v4|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|778ec425a6a6492177ad85e371327ab1393201de|add get plants|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|e093269c5e00b7ff7875cb038cd1806421585a06|add device iot|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|4615ab1da08f56e450ecc2b29a70bde3e5a85716|fix url database|-|7/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|4775b2d1c2f9ff60dd6df2ff4103471eaaadebbf|quit id database|-|7/11/2025|
+
 
 
 6.2.2.5. Testing Suite Evidence for Sprint Review.
