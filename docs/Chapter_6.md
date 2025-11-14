@@ -559,9 +559,9 @@ En esta sección se evidencia la colaboración ella durante el sprint en diferen
 [![image.png](https://i.postimg.cc/tJJxksh1/image.png)](https://postimg.cc/gL9jkktd)
 
 
-6.2.2. Sprint 2
+### 6.2.2. Sprint 2
 En este sprint se desarrolló la segunda versión de la landing page y del frontend web. Además, se presentó la primera versión funcional del prototipo IoT, junto con los módulos iniciales del backend y del frontend móvil.
-6.2.2.1. Sprint Planning 2.
+#### 6.2.2.1. Sprint Planning 2.
 
 **Aspecto**                      | **Detalles**                                                                                                           |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -577,7 +577,7 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 | **Sum of Story Points**          | Se asignaron 68 puntos de historia a las tareas completadas, correspondientes a historias de usuario relacionadas con el desarrollo y despliegue de la segunda versión de la Landing Page, el Frontend Web, y las primeras versiones del prototipo IoT, Backend y Frontend Móvil.|
 
 
-6.2.2.2. Aspect Leaders and Collaborators.
+#### 6.2.2.2. Aspect Leaders and Collaborators.
 
 | Team Member (Apellido, Nombre) | GitHub Username |Auth & Indentity<br>Leader (L) /Collaborator (C)| Plant Management<br>Leader (L) /Collaborator (C)| Analysis & Reporting <br>Leader (L) /Collaborator (C)| Community<br>Leader (L) /Collaborator (C)|Subscription<br>Leader (L) /Collaborator (C)|
 |-------------|---------|--------------|-------|-----|----|---|
@@ -589,7 +589,7 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 | Silva Morales, Renzo Cesar | rrenzosilva |-|-|-|C|-|
 |Zevallos Linares, Alessandro Netto | OutBreakAZL |C|C|-|-|-|
 
-6.2.2.3. Sprint Backlog 2.
+#### 6.2.2.3. Sprint Backlog 2.
 
 <table>
   <thead>
@@ -749,23 +749,23 @@ Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|4615ab1da08f56e450ecc2b29a70bde3e5a85716|fix url database|-|7/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service|main|4775b2d1c2f9ff60dd6df2ff4103471eaaadebbf|quit id database|-|7/11/2025|
 
-
-
-6.2.2.5. Testing Suite Evidence for Sprint Review.
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main || docs: ||2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main |2d6b1515307510ef114010f016d4e25cb560b540|docs: us for sprint 2|-|14/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Testing| main |3f9dd729c33da7190bd3aa83da5adfc6f5d80d99| docs: ts for sprint 2 |-|14/11/2025|
 
-6.2.2.6. Execution Evidence for Sprint Review.
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
 
 En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas.
 
 
 
-6.2.2.7. Services Documentation Evidence for Sprint Review.
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
-6.2.2.8. Software Deployment Evidence for Sprint Review.
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
 
 Landing Page:
@@ -792,7 +792,7 @@ Aplicación Edge:
 
 
 
-6.2.2.9. Team Collaboration Insights during Sprint.
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.
 
