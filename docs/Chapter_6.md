@@ -761,6 +761,10 @@ Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 
 En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará pruebas.
 
+Ejecución del prototipo físico: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/IQBpfjcLz-U0TKRLadThT8qZAUIJlcP98tkqA-9j6uqi90Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mnLTZ5 
+Link corto: https://goo.su/o5rD7dM 
+Ejecución del proyecto en conjunto con el prototipo simulado:
+
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
@@ -780,11 +784,14 @@ Esta aplicación consume los datos proporcionados por el backend, asegurando la 
 
 Aplicación móvil:
 
+La aplicación móvil fue desplegada en releases y conectada a firebase para hacer pruebas de validación con los segmentos objetivo.
 
 
 [![image.png](https://i.postimg.cc/4dFYz2SY/image.png)](https://postimg.cc/njBVx2Zx)
 [![image.png](https://i.postimg.cc/FF8fzqc5/image.png)](https://postimg.cc/23djX022)
 [![image.png](https://i.postimg.cc/xdf8BSrt/image.png)](https://postimg.cc/mPnTFJgH)
+
+
 Backend Documentation:
 
 
