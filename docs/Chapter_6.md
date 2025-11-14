@@ -778,11 +778,155 @@ En esta sección se evidencia la colaboración ella durante el sprint en diferen
 
 ---
 
-6.3. Validation Interviews.
-6.3.1. Diseño de Entrevistas.
-6.3.2. Registro de Entrevistas.
-6.3.3. Evaluaciones según heurísticas.
-6.4. Video About-the-Product.
+## 6.3. Validation Interviews.
+
+### 6.3.1. Diseño de Entrevistas.
+
+**1. Introducción de la Entrevista**
+
+Objetivo:
+Validar la propuesta de valor, comprensión, navegabilidad y experiencia de usuario del sistema PlantCare en sus tres componentes: Landing Page, Aplicación Móvil y Aplicación Web.
+
+Script para el entrevistador:
+
+“Queremos validar una solución basada en IoT para el monitoreo y cuidado de plantas.”
+
+“No estamos evaluando su desempeño, sino la claridad y facilidad de uso del producto.”
+
+“Le pedimos que navegue libremente y piense en voz alta mientras interactúa con la plataforma.”
+
+“Cualquier duda, comentario o sugerencia es bienvenida.”
+
+**2. Preguntas Generales sobre el Usuario**
+
+¿Tiene plantas en casa o en su entorno cercano?
+
+¿Cuántas plantas tiene aproximadamente?
+
+¿Ha utilizado previamente alguna aplicación relacionada al cuidado de plantas?
+
+¿Qué tan familiarizado está con sistemas o dispositivos IoT?
+
+¿Qué problemas enfrenta actualmente para cuidar adecuadamente sus plantas?
+
+¿Qué tan cómodo se siente utilizando aplicaciones móviles y aplicaciones web?
+
+**3. Validación de la Landing Page**
+**3.1 Preguntas antes de usar la Landing Page**
+
+¿Qué cree que ofrece el producto con base en la primera impresión?
+
+¿Qué elementos llaman más su atención al ingresar?
+
+¿Percibe el diseño como confiable y profesional?
+
+**3.2 Tareas (User Flows – Landing Page)**
+
+“Identifique qué problema soluciona el sistema.”
+
+“Revise la sección donde se explica cómo funciona la solución.”
+
+“Acceda a la aplicación web o a la aplicación móvil mediante los botones o enlaces disponibles.”
+
+**3.3 Preguntas después de usar la Landing Page**
+
+¿El mensaje principal del producto le resultó claro?
+
+¿Pudo comprender adecuadamente el funcionamiento del sistema IoT?
+
+¿La navegación le resultó intuitiva?
+
+¿Hubo alguna parte que le generó confusión o que modificaría?
+
+¿La Landing Page le motivaría a usar la aplicación?
+
+**4. Validación de la Aplicación Móvil**
+**4.1 Preguntas antes de usar la Aplicación Móvil**
+
+¿Qué espera encontrar en una aplicación destinada al cuidado de plantas?
+
+¿Qué información considera más importante monitorear?
+
+**4.2 Tareas (User Flows – Aplicación Móvil)**
+
+Flujo 1 – Visualización del estado general (Dashboard)
+
+“Acceda al Dashboard e indique qué información comprende.”
+
+Flujo 2 – Visualizar detalles de una planta
+
+“Entre al detalle de una planta e indique qué información encuentra y cómo la interpreta.”
+
+Flujo 3 – Acceder a Configuración
+
+“Ingrese a la sección de Configuración e intente modificar algún ajuste disponible.”
+
+**4.3 Preguntas después de usar la Aplicación Móvil**
+
+¿Qué tan fácil fue encontrar la información o funciones que buscaba?
+
+¿La información del Dashboard le resultó clara y útil?
+
+¿Qué parte de la aplicación considera más útil y cuál menos útil?
+
+¿Experimentó confusión en algún punto del proceso?
+
+¿Cómo percibe el diseño y la organización visual de la aplicación?
+
+¿Agregarías o eliminaría alguna funcionalidad?
+
+**5. Validación de la Aplicación Web**
+**5.1 Preguntas antes de usar la Aplicación Web**
+
+¿Qué funcionalidades esperaría encontrar en una plataforma web para el monitoreo de plantas?
+
+¿Qué información o herramientas considera más importantes desde la versión de escritorio?
+
+**5.2 Tareas (User Flows – Aplicación Web)**
+
+Flujo 1 – Inicio de sesión
+
+“Ingrese a la plataforma utilizando el formulario de acceso.”
+
+Flujo 2 – Visualización del estado general de las plantas
+
+“Revise el Dashboard general e indique qué información comprende.”
+
+Flujo 3 – Agregar o editar un dispositivo IoT
+
+“Agregue un nuevo dispositivo IoT o edite uno existente, si es posible.”
+
+Flujo 4 – Visualizar reportes o datos históricos
+
+“Busque información histórica, métricas o reportes relevantes.”
+
+**5.3 Preguntas después de usar la Aplicación Web**
+
+¿La navegación en la plataforma le pareció intuitiva?
+
+¿Los títulos y nombres de las secciones son claros y comprensibles?
+
+¿La distribución de la información es adecuada?
+
+¿Hubo alguna parte que le generó confusión?
+
+¿Percibe coherencia visual y funcional respecto a la versión móvil?
+
+**6. Cierre de la Entrevista**
+
+¿Qué valoración general (en una escala del 1 al 10) asignaría a las plataformas?
+
+¿Utilizaría el sistema PlantCare si estuviera disponible actualmente?
+
+¿Qué aspecto considera más convincente del producto?
+
+¿Qué aspecto considera menos convincente?
+
+¿Tiene algún comentario adicional o sugerencia?
+
+### 6.3.2. Registro de Entrevistas.
+### 6.3.3. Evaluaciones según heurísticas.
+### 6.4. Video About-the-Product.
 
 
 ## Conclusiones y recomendaciones:
