@@ -684,11 +684,11 @@ Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|d2154764952860889fe80ae3f642463f6af379a2|Merge pull request #1 from ASI0639-2520-5362-Grupo-2-IoTeam/feat/subscription|Feat/subscription|29/10/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|716d66ece9ede9ab1a45315428fdcafd5b59d98c|feat: add Firebase files|-|2/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|bb10bcca27d551190a6fa948a9c47a1315bc7f4b|fix: subscription dark theme|-|3/11/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|53dc132e5cbc2f34168ef878d338feb3c2680859|feat: connect the GET request to the backend|-|/11/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|5073bddff886c325961809a7ee608d76c7263507|fix: correct data mapping|-|/11/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|a6be8e6782c14b15741b0d9996f10859268a406f|fix: router plant form|-|/11/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|1d76cb66caa8286f14ec9327b4d6cfeffccc5ee8|Merge pull request #2 from ASI0639-2520-5362-Grupo-2-IoTeam/main|Fix: Desorden de Ernesto|/11/2025|
-|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|b28c053ba32e83a2c0afbd5bdf6e476080ad3e32|fix: npm build errors|-|/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|53dc132e5cbc2f34168ef878d338feb3c2680859|feat: connect the GET request to the backend|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|5073bddff886c325961809a7ee608d76c7263507|fix: correct data mapping|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|a6be8e6782c14b15741b0d9996f10859268a406f|fix: router plant form|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|1d76cb66caa8286f14ec9327b4d6cfeffccc5ee8|Merge pull request #2 from ASI0639-2520-5362-Grupo-2-IoTeam/main|Fix: Desorden de Ernesto|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb|develop|b28c053ba32e83a2c0afbd5bdf6e476080ad3e32|fix: npm build errors|-|8/11/2025|
 
 **Backend:**
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
@@ -718,6 +718,8 @@ Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|||-|8/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|b88f86ac0c6f08802b89e93629004393174cb28a|feat: data connected to the edge and front end|-|8/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|6a4aca3c077b2e3bc670857cf1c725e8d4b4bd00|fix: errores de ernesto|Hagan bien sus commits|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|06b6f95037e818b53639f3f6ed684441e50fbdf4|feat: Add user profile and achievements management module|-|9/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend|develop|87f0e1b43f0b69c1b77c8b69661366b544af8e9f|feat: Implement sensor data ingestion and querying functionality|-|12/11/2025|
 
 **Fronend Mobile:**
 
@@ -733,6 +735,7 @@ Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|46782234c45f81adfa708480ca7fc41783ae1e90|chore: add ddd structure|-|7/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|a9f34ec6bbdea03c4476c8a4dc84fde4efb927d7|feat: update plant_repository|-|7/11/2025|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|feat/plants|e0847b184b7e348db75413e099dffcb3a3402385|feat: Connect the backend and add the view for the details.|-|8/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile|develop|a6025c569e8c8f964d78a0909940cc3a79dbf8bc|chore:firebase connection|-|13/11/2025|
 
 **Edge Service:**
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
