@@ -573,8 +573,8 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 | **Attendees (to planning meeting)** | |
 | **Sprint Goal & User Stories**   |                                                            |
 | **Sprint Goal**                |**Our focus** is on consolidar la segunda versión de la Landing Page y del Frontend Web, **and to deliver** la primera versión funcional del prototipo IoT, Backend y Frontend Móvil. **We believe this delivers** una base sólida para la integración del ecosistema completo (web, móvil e IoT), **allowing us to** evaluar la interoperabilidad entre componentes y definir mejoras para los próximos sprints. **This will be confirmed** una vez completadas las pruebas de comunicación y funcionamiento entre los módulos desarrollados. |
-| **Sprint Velocity**            |  La velocidad del equipo fue de  puntos de historia en un periodo de 4 semanas, completando la mayoría de las historias priorizadas para esta iteración, centradas en la integración del entorno web, móvil e IoT.|
-| **Sum of Story Points**          | Se asignaron  puntos de historia a las tareas completadas, correspondientes a historias de usuario relacionadas con el desarrollo y despliegue de la segunda versión de la Landing Page, el Frontend Web, y las primeras versiones del prototipo IoT, Backend y Frontend Móvil.|
+| **Sprint Velocity**            |  La velocidad del equipo fue de  17 puntos de historia por semana en un periodo de 4 semanas, completando la mayoría de las historias priorizadas para esta iteración, centradas en la integración del entorno web, móvil e IoT.|
+| **Sum of Story Points**          | Se asignaron 68 puntos de historia a las tareas completadas, correspondientes a historias de usuario relacionadas con el desarrollo y despliegue de la segunda versión de la Landing Page, el Frontend Web, y las primeras versiones del prototipo IoT, Backend y Frontend Móvil.|
 
 
 6.2.2.2. Aspect Leaders and Collaborators.
@@ -743,6 +743,10 @@ Esta aplicación consume los datos proporcionados por el backend, asegurando la 
 Aplicación móvil:
 
 
+
+[![image.png](https://i.postimg.cc/4dFYz2SY/image.png)](https://postimg.cc/njBVx2Zx)
+[![image.png](https://i.postimg.cc/FF8fzqc5/image.png)](https://postimg.cc/23djX022)
+[![image.png](https://i.postimg.cc/xdf8BSrt/image.png)](https://postimg.cc/mPnTFJgH)
 Backend Documentation:
 
 
