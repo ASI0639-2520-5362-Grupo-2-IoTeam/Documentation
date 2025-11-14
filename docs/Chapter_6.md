@@ -592,43 +592,77 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 6.2.2.3. Sprint Backlog 2.
 
 <table>
-    <thead>
-        <tr>
-            <td>Sprint #</td>
-            <td colspan="7">Sprint 2</td>
-        </tr>
-        <tr>
-            <td colspan="2">User Story</td>
-            <td colspan="6">Work-Item / Task</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Id</td>
-            <td>Title</td>
-            <td>Id</td>
-            <td>Title</td>
-            <td>Description</td>
-            <td>Estimation (Hours)</td>
-            <td>Assigned To</td>
-            <td>Status (To-do / In-Process / To-Review / Done)</td>
-        </tr>
-        <!-- Fila de separación -->
-        <tr>
-            <td colspan="8" style="text-align: center; background-color: #e0e0e0;">Work-Item / Tasks</td>
-        </tr>
-        <tr>
-            <td>US-00</td>
-            <td>-</td>
-            <td>0</td>
-            <td>-</td>
-            <td>-</td>
-            <td>0</td>
-            <td></td>
-            <td>Done</td>
-        </tr>
-    </tbody>
+  <thead>
+    <tr><td>Sprint #</td><td colspan="7">Sprint 2</td></tr>
+    <tr><td colspan="2">User Story</td><td colspan="6">Work-Item / Task</td></tr>
+    <tr>
+      <td>Id</td><td>Título</td>
+      <td>Task ID</td><td>Título</td><td>Descripción</td><td>Horas</td><td>Asignado a</td><td>Status</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="8" style="text-align:center;background:#e0e0e0;">Autenticación y Seguridad</td></tr>
+<tr><td>US-005</td><td>Registro de usuario</td><td>T1</td><td>Crear UI y formulario</td><td>Diseño de campos, validaciones y eventos</td><td>4</td><td> Ernesto Casaverde, Rodrigo Chirinos, Alessandro Zevallos, Alexander Cantoral</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>T2</td><td>Crear endpoint POST /authentication/signup</td><td>API REST con DDD (application-domain-infra)</td><td>6</td><td>Alexander Cantoral</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>T3</td><td>Persistencia en BD</td><td>Implementación en capa Repository</td><td>3</td><td>Alexander Cantoral, Rodrigo Chirinos</td><td>Done</td></tr>
+<tr><td>US-006</td><td>Inicio de sesión</td><td>T4</td><td>UI y conexión con backend</td><td>Consumo de endpoint /authentication/signin</td><td>4</td><td>Rodrigo Chirinos</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>T5</td><td>Manejo de JWT y refresh token</td><td>Almacenamiento seguro local</td><td>4</td><td>Alexander Cantoral, Rodrigo Chirinos</td><td>Done</td></tr>
+<tr><td>US-009</td><td>Autenticación externa (Google)</td><td>T6</td><td>Integración Google OAuth</td><td>Configuración de keys y callback</td><td>6</td><td>Rodrigo Chirinos</td><td>Done</td></tr>
+<tr><td>US-008</td><td>Gestión de sesión</td><td>T7</td><td>Middleware de protección de rutas</td><td>Guard para Web y Móvil</td><td>3</td><td>UN</td><td>Done</td></tr>
+
+
+<tr><td colspan="8" style="text-align:center;background:#e0e0e0;">Gestión Básica de Plantas</td></tr>
+
+<tr><td>US-015</td><td>Mostrar plantas del usuario</td><td>T8</td><td>Crear UI y listado</td><td>Tabla / Cards con detalle básico</td><td>5</td><td>UN</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>T9</td><td>Endpoint GET /plants/user</td><td>Implementación en DDD + mapping</td><td>4</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td>US-011</td><td>Registro simplificado de planta</td>
+<td>T18</td><td>Diseño de formulario UI para nueva planta</td>
+<td>Inputs básicos (nombre, tipo, foto, parámetros esenciales)</td>
+<td>4</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td></td><td></td>
+<td>T19</td><td>Endpoint POST /plants</td>
+<td>Creación en capa Application + Domain + Repository (DDD)</td>
+<td>5</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td></td><td></td>
+<td>T20</td><td>Validaciones y feedback visual</td>
+<td>Control de errores y confirmación de registro</td>
+<td>2</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td>US-012</td><td>Edición rápida de planta</td>
+<td>T21</td><td>UI de edición y reutilización de formulario</td>
+<td>Precarga de datos del endpoint GET /plants/{plantId}</td>
+<td>4</td><td>Ernesto Casaverde</td><td>In-Progress</td></tr>
+<tr><td></td><td></td>
+<td>T22</td><td>Endpoint PUT /plants/{plantId}</td>
+<td>Actualizar atributos básicos y sincronizar cambios</td>
+<td>4</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td>US-013</td><td>Eliminación confirmada de planta</td>
+<td>T23</td><td>Diálogo de confirmación UI</td>
+<td>Prevención de eliminación accidental</td>
+<td>2</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td></td><td></td>
+<td>T24</td><td>Endpoint DELETE /plants/{plantId}</td>
+<td>Soft delete con estado en base de datos</td>
+<td>3</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+<tr><td colspan="8" style="text-align:center;background:#e0e0e0;">Herramientas Avanzadas para Aficionados</td></tr>
+<tr><td>US-021</td><td>Análisis histórico con gráficos</td><td>T10</td><td>UI con gráficos</td><td>Charts dinámicos con datos reales / simulados</td><td>6</td><td>Fabian Reyes</td><td>Done</td></tr>
+<tr><td>US-022</td><td>Reportes detallados semanales</td><td>T11</td><td>Generación de reportes</td><td>Query + formateo a UI</td><td>5</td><td>Fabian Reyes</td><td>Done</td></tr>
+<tr><td>US-023</td><td>Reportes largo plazo</td><td>T12</td><td>Filtrados avanzados e históricos</td><td>Comparación y tendencias</td><td>5</td><td>FR</td><td>Fabian Reyes</td></tr>
+<tr><td colspan="8" style="text-align:center;background:#e0e0e0;">IoT & Edge Computing</td></tr>
+<tr><td>US-042</td><td>Vinculación dispositivo IoT</td><td>T13</td><td>Conexión Edge</td><td>Creación de punto de acceso de configuración</td><td>6</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+    <tr><td></td><td></td><td>T14</td><td>Simulación de sensor</td><td>Mock de datos ambientales</td><td>3</td><td>Ernesto Casaverde, Alexander Cantoral</td><td>Done</td></tr>
+
+<tr><td>US-044</td><td>Datos en tiempo real</td><td>T15</td><td>Embeded Services Deploy</td><td>Recepción en frontend</td><td>5</td><td>Ernesto Casaverde</td><td>Done</td></tr>
+
+<tr><td colspan="8" style="text-align:center;background:#e0e0e0;">Subscripciones y Pagos</td></tr>
+
+<tr><td>US-046</td><td>Planes de subscripción</td><td>T16</td><td>UI UX selección de plan</td><td>Design e interacción</td><td>4</td><td>Alexander Cantoral</td><td>Done</td></tr>
+
+<tr><td>US-048</td><td>Cancelación de suscripción</td><td>T17</td><td>Lógica de backend con estados</td><td>API /subscriptions/cancelled</td><td>4</td><td>Alexander Cantoral</td><td>Done</td></tr>
+
+  </tbody>
 </table>
+
+Link del trello: https://trello.com/b/ZYepAQXn/1asi0572-2520-3443-plantcare
 
 6.2.2.4. Development Evidence for Sprint Review.
 
@@ -636,6 +670,7 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
 |----|-----|------|-----|----|---|
 |https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage| main |e968b926008e303eaa6b04bca0dbf14e5ae797a8 |fix: translate|-|4/11/2025|
+|https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/LandingPage|main|c12a22e62766f1e256da7b7806ac96c860a7628e|fix: call to action, about the team|-|14/11/2025|
 
 **FrontendWeb:**
 |Repository| Branch| Commit Id| Commit Message |Commit Message Body| Commited on (Date)|
