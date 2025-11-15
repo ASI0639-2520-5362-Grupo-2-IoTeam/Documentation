@@ -1313,9 +1313,9 @@ Link resubido a youtube: https://youtu.be/v68_VwtRPwA
 - APIRESTFUL GUIDE: https://restfulapi.net/ 
 
 ## Anexos:
-**Link de la exposición grupal TB1:**:https://goo.su/JGnClEx
+**Link de la exposición grupal TB1:**https://goo.su/JGnClEx
 
-**Link de la exposición grupal TB2:**
+**Link de la exposición grupal TB2:**https://goo.su/Gzdhp
 
 **Trello:**
 https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
@@ -1342,8 +1342,7 @@ Web Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u2
 
 Mobile Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx)
 
-Wowki Prototype: [https://wokwi.com/projects/446895569616462849](https://wokwi.com/projects/
-446895569616462849)
+Wowki Prototype: [https://wokwi.com/projects/447644125509635073](https://wokwi.com/projects/447644125509635073)
 
 Wowki con edge services: https://wokwi.com/projects/446905492492819457 
 
