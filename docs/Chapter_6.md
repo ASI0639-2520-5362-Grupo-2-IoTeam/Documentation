@@ -1112,6 +1112,21 @@ En cuanto a usabilidad, la navegación y los títulos son intuitivos y la inform
 
 Como observaciones, se sugiere aclarar un poco más la interpretación de los datos de los sensores para usuarios novatos; también convendría simplificar la configuración inicial. Finalmente, propone mayor personalización (frecuencia de notificaciones, más tipos de plantas) para aumentar la utilidad sin perder la simplicidad.
 
+[![Captura-de-pantalla-2025-11-14-235934.png](https://i.postimg.cc/Z5PVzKFP/Captura-de-pantalla-2025-11-14-235934.png)](https://postimg.cc/LJXzzSWh)
+**Entrevistado:** Natalia Ramirez <br>
+**Sexo:** Femenino <br>
+**Edad:** 61 años<br>
+**Domicilio:** San Martin de Porres <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 0.00   <br>
+
+**Resumen de la Entrevista:** <br>
+En general, el usuario entendió bien la propuesta de la aplicación: la pantalla principal comunica claramente el estado de la planta y los datos esenciales como temperatura, humedad y luz. Consideró que la app es útil y práctica para quienes suelen olvidar el riego, valorando especialmente el calendario que muestra la última y la próxima fecha estimada (valoración general: 8/10). También destacó que recibir alertas cuando la planta necesita agua sería una de las funciones más importantes.
+
+Sobre la usabilidad, el usuario mencionó que la interfaz es clara, pero algo cargada: las tarjetas son grandes y la información aparece un poco dispersa. Aunque la temperatura es fácil de interpretar, indicadores como el nivel de luz (por ejemplo, 750 lm) no resultan evidentes para usuarios sin experiencia. La descripción de la planta le pareció útil, pero demasiado larga para leerla completa de inmediato.
+
+Entre las observaciones, sugirió agrupar los indicadores ambientales en un solo bloque para hacer la pantalla más compacta y rápida de leer. También señaló que el botón de eliminar planta está muy expuesto y puede generar errores, recomendando añadir una confirmación adicional. Finalmente, comentó que sería útil entender mejor cómo se calcula la próxima fecha de riego y ofrecer una versión corta del texto descriptivo para mejorar la experiencia sin perder información.
+
 ---
 
 
