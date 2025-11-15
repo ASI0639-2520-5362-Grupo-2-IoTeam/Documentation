@@ -1120,15 +1120,18 @@ Como observaciones, se sugiere aclarar un poco más la interpretación de los da
 
 
 ## Conclusiones y recomendaciones:
- TB1:
- - Para esta entrega tenemos clara la idea, pero debemos definir sensores y features no claros. Ordenar los bounded context. A su vez debemos divir tareas para el sprint 1 y lo que se debe ir avanzando para el sprint 2.
- - Nos parece que debemos tener más reuniones para los puntos que se deben observar o comentar de forma grupal. También dedicar tiempo a resolver cada duda de los integrantes del grupo en el desarrollo.
 
- TP:
- - En esta entrega ya el front está fijo en los bounded context con algunos detalles en duda y a evaluar luego de la implementación del dispositivo IOT. También se tiene avanzado la app mobile y el backend del trabajo
- - Como grupo entendemos que nuestro desempeño y organización a mejorado pero no debemos olvidar que somos un grupo numeroso y que las supociciones no deben tener lugar a estas alturas.
+**TB1:**
+- Para esta etapa inicial se logró consolidar la idea principal del proyecto; sin embargo, fue evidente la necesidad de definir con mayor precisión los sensores a utilizar y las funcionalidades específicas a implementar. Asimismo, se identificó la importancia de organizar adecuadamente los *bounded contexts* y dividir de manera estratégica las tareas correspondientes al Sprint 1, dejando planificado lo que deberá desarrollarse en el Sprint 2.
+- Se concluyó que será necesario incrementar la frecuencia de reuniones técnicas y de seguimiento, con el objetivo de resolver dudas de forma colaborativa y asegurar alineamiento entre todos los integrantes del equipo durante el desarrollo.
 
- TB2:
+**TP:**
+- En esta entrega se alcanzó una estructura más sólida del Frontend acorde a los *bounded contexts*, aunque aún permanecen algunos detalles pendientes que serán evaluados tras la integración con el dispositivo IoT. Además, se registra un avance significativo en la aplicación móvil y el backend.
+- Como equipo reconocemos una mejora notable en la organización y el rendimiento colectivo; no obstante, al ser un grupo numeroso, es fundamental evitar suposiciones y promover una comunicación clara y constante para garantizar sincronización total.
+
+**TB2:**
+- Durante el proceso se aprendió que los pendientes deben gestionarse con mayor rigurosidad, respaldados en la documentación técnica requerida para cada componente del software. Asimismo, la distribución de tareas durante este Sprint fue adecuada y permitió un avance equilibrado, aunque se identificaron oportunidades de mejora en la coordinación general del equipo para futuros incrementos.
+
 
 
 ## Bibliografía:
