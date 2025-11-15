@@ -570,7 +570,7 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 | **Time**                         | 12:00 pm                                                                                                                |
 | **Location**                     | La reunión se realizó de forma presencial                                             |
 | **Prepared By**                  | IoTeam                                                                                                             |
-| **Attendees (to planning meeting)** | |
+| **Attendees (to planning meeting)** |Alexander Cantoral, Ernesto Casaverde, Rodrigo Chirinos, Alessandro Zevallos, Fabian Reyes |
 | **Sprint Goal & User Stories**   |                                                            |
 | **Sprint Goal**                |**Our focus** is on consolidar la segunda versión de la Landing Page y del Frontend Web, **and to deliver** la primera versión funcional del prototipo IoT, Backend y Frontend Móvil. **We believe this delivers** una base sólida para la integración del ecosistema completo (web, móvil e IoT), **allowing us to** evaluar la interoperabilidad entre componentes y definir mejoras para los próximos sprints. **This will be confirmed** una vez completadas las pruebas de comunicación y funcionamiento entre los módulos desarrollados. |
 | **Sprint Velocity**            |  La velocidad del equipo fue de  17 puntos de historia por semana en un periodo de 4 semanas, completando la mayoría de las historias priorizadas para esta iteración, centradas en la integración del entorno web, móvil e IoT.|
@@ -583,10 +583,8 @@ En este sprint se desarrolló la segunda versión de la landing page y del front
 |-------------|---------|--------------|-------|-----|----|---|
 |Casaverde De La Cruz, Ernesto David| ErnestGreenhouse| - | L| -|-|
 |Cantoral Sedamano, Alexander Alberto| AlexlmL| C | C |-|C|L|
-|Chirinos Zúñiga, Rodrigo Manuel | zrodrigochirinos|-|-|-|-|-|
-|Hurtado Palomino, Francisco Juan | franmanic2|-|-|-|C|-|
+|Chirinos Zúñiga, Rodrigo Manuel | zrodrigochirinos|L|-|-|-|-|
 |Reyes Trujillano, Fabian Alonso| FabianTG25| -|-|L|-|-|
-| Silva Morales, Renzo Cesar | rrenzosilva |-|-|-|C|-|
 |Zevallos Linares, Alessandro Netto | OutBreakAZL |C|C|-|-|-|
 
 #### 6.2.2.3. Sprint Backlog 2.
