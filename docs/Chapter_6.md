@@ -1091,6 +1091,32 @@ Flujo 4 – Visualizar reportes o datos históricos
 ### 6.3.2. Registro de Entrevistas.
 
 #### Segmento objetivo 1: Personas ocupadas (departamentos/oficinas)
+[![Image-validation-interview.png](https://i.postimg.cc/Xq9DZ7Ws/Captura-de-pantalla-2025-11-15-110522.png)](https://postimg.cc/sGDJqzvW)
+
+**Entrevistado:** Carlos <br>
+**Sexo:** Masculino <br>
+**Edad:** 21 años<br>
+**Domicilio:** San Martin de Porres <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 00:00   <br>
+
+**Resumen de la Entrevista:** <br>
+Carlos comprendió claramente la propuesta de PlantCare sobre el cuidado automatizado de plantas mediante IoT y una aplicación. Consideró que la Landing Page es atractiva y motivadora, y confirmó que utilizaría el producto, valorándolo con un 9 sobre 10.
+En cuanto a la usabilidad, aunque la navegación y los títulos son intuitivos y el Dashboard es claro y relevante (humedad, temperatura), se hizo una observación importante sobre la velocidad, indicando que el sistema se percibe como lento. Adicionalmente, se sugiere aclarar la interpretación de los datos de los sensores para novatos, simplificar la configuración inicial y permitir mayor personalización (frecuencia de notificaciones, más tipos de plantas) sin perder la simplicidad.
+
+[![Image-validation-interview.png](https://i.postimg.cc/TwsXjPZ1/image.png)](https://postimg.cc/TLnSfT2v)
+
+**Entrevistado:** Facundo <br>
+**Sexo:** Masculino <br>
+**Edad:** 23 años<br>
+**Domicilio:** Los Olivos <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 00:00   <br>
+
+**Resumen de la Entrevista:** <br>
+Facundo evaluó la aplicación con un notable 8.5 sobre 10, ya que comprendió muy bien su propósito y la encontró tanto útil como práctica. Resaltó que la función más valiosa para él fue el sistema de alertas de agua.
+
+Durante su análisis de la usabilidad, Facundo fue claro en que el diseño de la interfaz y la presentación de los indicadores (luz, humedad, etc.) le parecían correctos y fáciles de entender. Sin embargo, identificó un único problema significativo: la velocidad. Su observación central fue que la aplicación se sentía lenta en su funcionamiento, siendo este el único punto de fricción que experimentó.
 
 #### Segmento objetivo 2: Aficionados que cuidan varias macetas en casa
 
