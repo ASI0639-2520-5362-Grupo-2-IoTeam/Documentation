@@ -1098,7 +1098,7 @@ Flujo 4 – Visualizar reportes o datos históricos
 **Edad:** 21 años<br>
 **Domicilio:** San Martin de Porres <br>
 **Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 00:00   <br>
+**Duración de la Entrevista:** 09:55   <br>
 
 **Resumen de la Entrevista:** <br>
 Carlos comprendió claramente la propuesta de PlantCare sobre el cuidado automatizado de plantas mediante IoT y una aplicación. Consideró que la Landing Page es atractiva y motivadora, y confirmó que utilizaría el producto, valorándolo con un 9 sobre 10.
@@ -1110,8 +1110,8 @@ En cuanto a la usabilidad, aunque la navegación y los títulos son intuitivos y
 **Sexo:** Masculino <br>
 **Edad:** 23 años<br>
 **Domicilio:** Los Olivos <br>
-**Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 00:00   <br>
+**Inicio de la Entrevista:** 09:55 <br>
+**Duración de la Entrevista:** 17:56   <br>
 
 **Resumen de la Entrevista:** <br>
 Facundo evaluó la aplicación con un notable 8.5 sobre 10, ya que comprendió muy bien su propósito y la encontró tanto útil como práctica. Resaltó que la función más valiosa para él fue el sistema de alertas de agua.
@@ -1126,8 +1126,8 @@ Durante su análisis de la usabilidad, Facundo fue claro en que el diseño de la
 **Sexo:** Femenino <br>
 **Edad:** 57 años<br>
 **Domicilio:** Puente Piedra <br>
-**Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 00:00   <br>
+**Inicio de la Entrevista:** 17:56 <br>
+**Duración de la Entrevista:** 25:02   <br>
 
 **Resumen de la Entrevista:** <br>
 En general, Ana encontró el mensaje del producto claro: la idea de cuidar plantas de forma automatizada con IoT y la app se entiende bien. La Landing Page resulta atractiva y motivadora, afirmó que sí usaría PlantCare (valoración general: 8/10), destacando la automatización y las recomendaciones personalizadas como lo más convincente.
@@ -1141,8 +1141,8 @@ Como observaciones, se sugiere aclarar un poco más la interpretación de los da
 **Sexo:** Femenino <br>
 **Edad:** 61 años<br>
 **Domicilio:** San Martin de Porres <br>
-**Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 0.00   <br>
+**Inicio de la Entrevista:** 25:02 <br>
+**Duración de la Entrevista:** 30:46   <br>
 
 **Resumen de la Entrevista:** <br>
 En general, el usuario entendió bien la propuesta de la aplicación: la pantalla principal comunica claramente el estado de la planta y los datos esenciales como temperatura, humedad y luz. Consideró que la app es útil y práctica para quienes suelen olvidar el riego, valorando especialmente el calendario que muestra la última y la próxima fecha estimada (valoración general: 8/10). También destacó que recibir alertas cuando la planta necesita agua sería una de las funciones más importantes.
@@ -1157,8 +1157,8 @@ Entre las observaciones, sugirió agrupar los indicadores ambientales en un solo
 **Sexo:** Masculino <br>
 **Edad:** 21 años<br>
 **Domicilio:** San Miguel <br>
-**Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 00:00   <br>
+**Inicio de la Entrevista:** 30:46 <br>
+**Duración de la Entrevista:** 37:49   <br>
 
 **Resumen de la Entrevista:** <br>
 El entrevistado cuenta con varias plantas y se siente cómodo usando aplicaciones móviles y web. Conoce lo básico sobre IoT y enfrenta problemas comunes como olvidar el riego y no saber cuánta agua o luz requieren sus plantas.
@@ -1177,8 +1177,8 @@ Calificó el sistema con 8.5/10 y afirmó que lo usaría. Destacó como mayor fo
 **Sexo:** Masculino <br>
 **Edad:** 21 años<br>
 **Domicilio:** San Miguel <br>
-**Inicio de la Entrevista:** 00:00 <br>
-**Duración de la Entrevista:** 00:00   <br>
+**Inicio de la Entrevista:** 37:49 <br>
+**Duración de la Entrevista:** 45:33   <br>
 
 **Resumen de la Entrevista:** <br>
 El entrevistado posee entre 6 y 8 plantas y se siente cómodo usando aplicaciones móviles y web. Actualmente organiza el riego de memoria y ha perdido plantas por exceso o falta de agua, por lo que considera útil una herramienta que le permita seguimiento y recordatorios. Le interesan gráficos simples, historial y funciones adicionales como recomendaciones según el clima.
