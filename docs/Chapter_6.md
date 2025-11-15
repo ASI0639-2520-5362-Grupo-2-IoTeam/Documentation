@@ -870,58 +870,77 @@ Los siguientes commits corresponden al conjunto de cambios realizados durante es
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
 
-Landing Page:
-Para la Landing Page, se optó por utilizar la plataforma Vercel, debido a su facilidad de uso, integración directa con GitHub y despliegues automáticos mediante GitHub Actions.
-Esto permite que cualquier cambio en el repositorio principal genere automáticamente una nueva versión publicada, garantizando un proceso de entrega continua y eficiente.
-*Evidencia del despliegue:*
+**Landing Page:**
+La Landing Page fue desplegada en **Vercel**, plataforma seleccionada por su integración nativa con GitHub y capacidad de realizar **despliegues automáticos mediante GitHub Actions** bajo un enfoque *CI/CD*.  
+Cada actualización realizada en la rama principal genera automáticamente una nueva versión publicada, asegurando reducción en tiempos de entrega y consistencia en versiones liberadas.
+[![image.png](https://i.postimg.cc/7PddkCDJ/image.png)](https://postimg.cc/Jt3P3zsR)
+[![image.png](https://i.postimg.cc/9QjkDvDG/image.png)](https://postimg.cc/3dn16fCR)
 
-Aplicacion web:
-La aplicación web principal fue desplegada en la plataforma Render, aprovechando su integración con repositorios de GitHub, su plan gratuito y la facilidad de configurar despliegues automáticos.
-Esta aplicación consume los datos proporcionados por el backend, asegurando la correcta comunicación entre ambos servicios.
-*Evidencia del despliegue:*
+**Aplicacion web:**
+La aplicación web principal fue desplegada en **Render**, aprovechando su integración con repositorios GitHub y soporte para **deploy continuo automático**.  
+Esta aplicación realiza consumo activo de los servicios expuestos por el Backend, validando una correcta comunicación entre servicios dentro de la arquitectura distribuida.
+[![Imagen-de-Whats-App-2025-11-14-a-las-19-27-06-8cb02933.jpg](https://i.postimg.cc/xd6pF8tH/Imagen-de-Whats-App-2025-11-14-a-las-19-27-06-8cb02933.jpg)](https://postimg.cc/SXzGnS0N)
+[![image.png](https://i.postimg.cc/y8Bf1cG8/image.png)](https://postimg.cc/ZC7PjBZG)
+[![image.png](https://i.postimg.cc/fLF2DPG6/image.png)](https://postimg.cc/8JRBbZPH)
+[![image.png](https://i.postimg.cc/4y6zqFsB/image.png)](https://postimg.cc/hQGz7sJd)
 
-Aplicación móvil:
+**Aplicación móvil:**
 
-La aplicación móvil fue desplegada en releases y conectada a firebase para hacer pruebas de validación con los segmentos objetivo.
-
+La aplicación móvil fue empaquetada y distribuida mediante el sistema de **Releases** y conectada a **Firebase App Distribution**, permitiendo publicar versiones de prueba para usuarios internos y segmentos del público objetivo.  
+Esta estrategia facilitó la validación temprana de funcionalidades, recopilación de métricas y pruebas de experiencia de usuario real.
 
 [![image.png](https://i.postimg.cc/4dFYz2SY/image.png)](https://postimg.cc/njBVx2Zx)
 [![image.png](https://i.postimg.cc/FF8fzqc5/image.png)](https://postimg.cc/23djX022)
 [![image.png](https://i.postimg.cc/xdf8BSrt/image.png)](https://postimg.cc/mPnTFJgH)
+[![image.png](https://i.postimg.cc/GmhkgQNQ/image.png)](https://postimg.cc/1f2nfpyn)
 
+**Backend Documentation:**
+El Backend fue desplegado en **Microsoft Azure App Service**, habilitando acceso público al conjunto de servicios REST documentados con Swagger.  
+El despliegue se automatizó mediante **GitHub Actions**, implementando pipelines de integración y entrega continua, asegurando disponibilidad inmediata tras cada cambio validado.
 
-Backend Documentation:
+[![image.png](https://i.postimg.cc/ryNR645H/image.png)](https://postimg.cc/jCCSPLg6)
+[![image.png](https://i.postimg.cc/BQZLJvgv/image.png)](https://postimg.cc/Lh76T2Gd)
 
+**Aplicación Edge:**
 
-Aplicación Edge:
+El Edge Service fue desplegado en **Render**, lo que permitió habilitar un punto de conexión liviano para recibir y registrar datos desde los dispositivos IoT.  
+Junto con ello, se configuró la documentación generada con Flasgger y el almacenamiento remoto de datos para habilitar pruebas integradas desde el backend.
 
-
+[![Imagen-de-Whats-App-2025-11-14-a-las-19-27-40-be0edc54.jpg](https://i.postimg.cc/rp7xmLpC/Imagen-de-Whats-App-2025-11-14-a-las-19-27-40-be0edc54.jpg)](https://postimg.cc/McbvPNVv)
+[![image.png](https://i.postimg.cc/4NwcccdV/image.png)](https://postimg.cc/HVcjDVbk)
+[![image.png](https://i.postimg.cc/DwMbjK1r/image.png)](https://postimg.cc/SncsR3TR)
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 En esta sección se evidencia la colaboración ella durante el sprint en diferentes repositorios de la organización.
 
-
-**Testing**
-
-----
-**Landing Page**
-
----
-
 **Aplicación Web**
-
+[![image.png](https://i.postimg.cc/wTP6nxbz/image.png)](https://postimg.cc/56BdCJVK)
+[![image.png](https://i.postimg.cc/jdJVwHvk/image.png)](https://postimg.cc/GHrg6sWk)
+Link del repositorio:https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendWeb
 ---
 
 **Aplicación Móvil**
 
+Cabe aclarar que en la primera captura los commits del compañero Francisco Hurtado solo fueron en su rama pero a la hora de hacer merge su rama solo daba errores apesar de que su bounded context tuvo el plazo más largo de desarrollo.
+
+[![image.png](https://i.postimg.cc/Pf0XRr7k/image.png)](https://postimg.cc/bdHfG886)
+[![image.png](https://i.postimg.cc/vZsQG2M3/image.png)](https://postimg.cc/QHfLbbFT)
+Link del repositorio: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile
 ---
 
-**Backend**
+**Backend Services**
 
+[![image.png](https://i.postimg.cc/wBgnGSHT/image.png)](https://postimg.cc/NKCNyC5W)
+[![image.png](https://i.postimg.cc/XqGP5WKf/image.png)](https://postimg.cc/kRCwrkpG)
+Link del repositorio: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend
 ---
 
-**Aplicación Edge**
+**Edge Services**
+
+[![image.png](https://i.postimg.cc/x1nSwkyP/image.png)](https://postimg.cc/D8jDswNW)
+[![image.png](https://i.postimg.cc/632srCts/image.png)](https://postimg.cc/5YVk1YXp)
+Link del repositorio: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/plantcare-edge-service 
 
 ---
 
@@ -1109,6 +1128,8 @@ Como observaciones, se sugiere aclarar un poco más la interpretación de los da
  - En esta entrega ya el front está fijo en los bounded context con algunos detalles en duda y a evaluar luego de la implementación del dispositivo IOT. También se tiene avanzado la app mobile y el backend del trabajo
  - Como grupo entendemos que nuestro desempeño y organización a mejorado pero no debemos olvidar que somos un grupo numeroso y que las supociciones no deben tener lugar a estas alturas.
 
+ TB2:
+
 
 ## Bibliografía:
 - HTML Style Guide and Coding Conventions – W3Schools: https://www.w3schools.com/html/html5_syntax.asp  
@@ -1120,10 +1141,12 @@ Como observaciones, se sugiere aclarar un poco más la interpretación de los da
 - Effective Dart – Style Guide: https://dart.dev/guides/language/effective-dart/style  
 - Gherkin Reference – Cucumber: https://cucumber.io/docs/gherkin/
 
+- APIRESTFUL GUIDE: https://restfulapi.net/ 
+
 ## Anexos:
 **Link de la exposición grupal TB1:**:https://goo.su/JGnClEx
 
-**Link de la exposición grupal TP:**:
+**Link de la exposición grupal TB2:**
 
 **Trello:**
 https://trello.com/invite/b/68c86d7198904c22ad495559/ATTI1228cc42e45b59fc718edf5cbbc642a2966B6FD6/1asi0572-2520-3443-plantcare
@@ -1159,3 +1182,13 @@ https://plant-care-landing-page-one.vercel.app/
 
 **Frontweb App:** 
 https://frontendweb-b47l.onrender.com/
+
+**Mobile App**
+Link de release: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile/releases/tag/v1.0.0
+Link de distribución: https://appdistribution.firebase.dev/i/68e0c80717f3fdfa
+
+**Backend Services**
+https://plantcare-awcchhb2bfg3hxgf.canadacentral-01.azurewebsites.net/swagger-ui/index.html# 
+
+**Edge Services**
+https://plantcare-edge-service.onrender.com/apidocs/
