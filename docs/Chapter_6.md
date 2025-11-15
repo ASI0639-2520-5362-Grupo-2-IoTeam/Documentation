@@ -1172,6 +1172,8 @@ Calificó el sistema con 8/10 y afirmó que lo usaría, destacando como principa
 ### 6.3.3. Evaluaciones según heurísticas.
 ### 6.4. Video About-the-Product.
 
+Link del vídeo about the product: upc-pre-202520-1asi0572-3443-IoTeam-performance-tb2
+Link resubido a youtube: https://youtu.be/v68_VwtRPwA 
 
 ## Conclusiones y recomendaciones:
 
@@ -1230,7 +1232,14 @@ Web Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u2
 
 Mobile Application Prototype: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c362_upc_edu_pe/EUp1F0x6NpNGmcnWxEIED-kBeIuYPmkCeOyooGUNKfKkWQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jAriNx)
 
-Wowki Prototype: [https://wokwi.com/projects/446895569616462849](https://wokwi.com/projects/446895569616462849)
+Wowki Prototype: [https://wokwi.com/projects/446895569616462849](https://wokwi.com/projects/
+446895569616462849)
+
+Wowki con edge services: https://wokwi.com/projects/446905492492819457 
+
+
+About the product vídeo: https://goo.su/gCaFYoZ
+About the team vídeo: https://goo.su/92KEs
 
 **Despliegues**
 
