@@ -1170,6 +1170,92 @@ Calificó el sistema con 8/10 y afirmó que lo usaría, destacando como principa
 
 
 ### 6.3.3. Evaluaciones según heurísticas.
+
+Esta sección contiene el proceso de evaluación realizado durante las sesiones de validación de usabilidad, con base en heurísticas de Usabilidad (Nielsen), Arquitectura de Información e Inclusive Design de la experiencia propuesta. El análisis identifica los problemas encontrados, la heurística violada, su impacto y recomendaciones, aplicando la Escala de Severidad correspondiente según el Anexo D: Formato para Evaluación UX según Heurísticas.
+
+### Escala de Severidad
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial: puede superarse fácilmente y ocurre con baja frecuencia. No requiere acción inmediata. |
+| **2** | Problema menor: ocurre con más frecuencia, afecta usabilidad general. Prioridad baja para próxima versión. |
+| **3** | Problema mayor: impacta de manera significativa en la experiencia. Debe ser resuelto con prioridad alta. |
+| **4** | Problema crítico: impide continuar con el uso del sistema. Debe corregirse antes del lanzamiento. |
+
+---
+
+### Tabla Resumen de Problemas Detectados
+
+| # | Problema identificado | Escala | Heurística / Principio violado |
+|---|-----------------------|--------|--------------------------------|
+| 1 | La configuración inicial del sensor IoT resulta confusa para usuarios nuevos. | **3** | Usabilidad – Ayuda y documentación |
+| 2 | Indicadores ambientales como luminosidad (lm) no son fáciles de interpretar. | **3** | Usabilidad – Correspondencia con el mundo real |
+| 3 | El botón “Eliminar planta” está muy expuesto y puede presionarse accidentalmente. | **3** | Usabilidad – Prevención de errores |
+| 4 | El detalle de la planta contiene demasiado texto, lo que sobrecarga visualmente. | **2** | Arquitectura de Información – Minimizar carga cognitiva |
+| 5 | La sección de análisis avanzado no es clara y no se percibe como útil. | **2** | Usabilidad – Visibilidad de información relevante |
+| 6 | La Landing Page no explica claramente el proceso de instalación de los sensores. | **2** | Usabilidad – Reconocimiento antes que recuerdo |
+| 7 | Personalización limitada en notificaciones y recomendaciones. | **1** | Flexibilidad y eficiencia de uso |
+| 8 | La configuración avanzada en la versión web genera confusión para usuarios generales. | **2** | Usabilidad – Consistencia y estándares |
+
+---
+
+### Descripción de Problemas
+
+#### **Problema #1 – Configuración inicial del sensor IoT confusa**
+**Escala:** 3  
+**Heurística violada:** Usabilidad – Ayuda y documentación  
+**Descripción:**  
+Durante la configuración inicial del dispositivo IoT, los usuarios indicaron incertidumbre sobre los pasos necesarios y cómo validar que el sensor está activo correctamente.  
+**Recomendación:**  
+Implementar un asistente paso a paso con imágenes o video corto y estados visuales durante el proceso.
+
+---
+
+#### **Problema #2 – Indicadores ambientales poco interpretables**
+**Escala:** 3  
+**Heurística violada:** Usabilidad – Correspondencia con el mundo real  
+**Descripción:**  
+Valores como 750 lm (luminosidad) o porcentajes de humedad no resultan claros sin referencia contextual.  
+**Recomendación:**  
+Usar etiquetas visuales y rangos interpretables (Ej. *Baja / Adecuada / Alta*) o descripción comparativa.
+
+---
+
+#### **Problema #3 – Botón “Eliminar planta” expuesto**
+**Escala:** 3  
+**Heurística violada:** Usabilidad – Prevención de errores  
+**Descripción:**  
+El botón de eliminación está ubicado en una zona de acceso inmediato, lo cual puede llevar a activaciones accidentales.  
+**Recomendación:**  
+Reubicar la acción dentro de un menú secundario e incluir ventana de confirmación.
+
+---
+
+#### **Problema #4 – Texto extenso dentro del detalle de planta**
+**Escala:** 2  
+**Heurística violada:** Arquitectura de Información – Minimizar carga cognitiva  
+**Descripción:**  
+Los usuarios describieron la vista como “cargada” y difícil de leer rápidamente.  
+**Recomendación:**  
+Agregar opción *Leer más / Resumen*, mostrando inicialmente la versión corta.
+
+---
+
+#### **Problema #5 – Sección de análisis avanzado poco comprensible**
+**Escala:** 2  
+**Heurística violada:** Usabilidad – Visibilidad y relevancia de información  
+**Descripción:**  
+La sección no comunica claramente su propósito ni beneficios, por lo que se percibe poco relevante.  
+**Recomendación:**  
+Simplificar contenido o incluir ejemplos prácticos de valor agregado.
+
+---
+
+#### **Conclusión General**
+La evaluación heurística permitió identificar oportunidades de mejora en términos de claridad, comprensión e interpretación de la información, sin identificar errores críticos (nivel 4). Los problemas de severidad 3 deben priorizarse para la siguiente iteración, especialmente aquellos relacionados con comprensión técnica y prevención de errores.
+
+Se concluye que la experiencia general es positiva, consistente entre dispositivos y con fundamentos sólidos de diseño; sin embargo, requiere optimización orientada a usuarios no técnicos y al proceso de configuración inicial.
+
 ### 6.4. Video About-the-Product.
 
 Link del vídeo about the product: upc-pre-202520-1asi0572-3443-IoTeam-performance-tb2
