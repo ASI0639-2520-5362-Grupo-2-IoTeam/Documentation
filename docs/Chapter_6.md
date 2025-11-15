@@ -1072,6 +1072,30 @@ Flujo 4 – Visualizar reportes o datos históricos
 ¿Tiene algún comentario adicional o sugerencia?
 
 ### 6.3.2. Registro de Entrevistas.
+
+#### Segmento objetivo 1: Personas ocupadas (departamentos/oficinas)
+
+#### Segmento objetivo 2: Aficionados que cuidan varias macetas en casa
+
+[![Image-validation-interview.png](https://i.postimg.cc/wMCGcrFG/Image-validation-interview.png)](https://postimg.cc/GTjKbqWF)
+
+**Entrevistado:** Ana <br>
+**Sexo:** Femenino <br>
+**Edad:** 57 años<br>
+**Domicilio:** Puente Piedra <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 00:00   <br>
+
+**Resumen de la Entrevista:** <br>
+En general, Ana encontró el mensaje del producto claro: la idea de cuidar plantas de forma automatizada con IoT y la app se entiende bien. La Landing Page resulta atractiva y motivadora, afirmó que sí usaría PlantCare (valoración general: 8/10), destacando la automatización y las recomendaciones personalizadas como lo más convincente.
+
+En cuanto a usabilidad, la navegación y los títulos son intuitivos y la información está bien distribuida; el Dashboard muestra datos relevantes (humedad, temperatura) y es fácil de leer. La función más valorada son las notificaciones de cuidado; en cambio, la sección de análisis avanzado se percibe como menos útil para ella.
+
+Como observaciones, se sugiere aclarar un poco más la interpretación de los datos de los sensores para usuarios novatos; también convendría simplificar la configuración inicial. Finalmente, propone mayor personalización (frecuencia de notificaciones, más tipos de plantas) para aumentar la utilidad sin perder la simplicidad.
+
+---
+
+
 ### 6.3.3. Evaluaciones según heurísticas.
 ### 6.4. Video About-the-Product.
 
