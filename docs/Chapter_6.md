@@ -1127,6 +1127,45 @@ Sobre la usabilidad, el usuario mencionó que la interfaz es clara, pero algo ca
 
 Entre las observaciones, sugirió agrupar los indicadores ambientales en un solo bloque para hacer la pantalla más compacta y rápida de leer. También señaló que el botón de eliminar planta está muy expuesto y puede generar errores, recomendando añadir una confirmación adicional. Finalmente, comentó que sería útil entender mejor cómo se calcula la próxima fecha de riego y ofrecer una versión corta del texto descriptivo para mejorar la experiencia sin perder información.
 
+[![image.png](https://i.postimg.cc/3N0JkwKW/image.png)](https://postimg.cc/9wVjSCwj)
+
+**Entrevistado:** Derek <br>
+**Sexo:** Masculino <br>
+**Edad:** 21 años<br>
+**Domicilio:** San Miguel <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 00:00   <br>
+
+**Resumen de la Entrevista:** <br>
+El entrevistado cuenta con varias plantas y se siente cómodo usando aplicaciones móviles y web. Conoce lo básico sobre IoT y enfrenta problemas comunes como olvidar el riego y no saber cuánta agua o luz requieren sus plantas.
+
+La Landing Page le pareció clara, profesional e intuitiva. Entendió rápidamente que PlantCare es un sistema IoT para monitoreo de plantas, y destacó que la navegación está bien organizada. Como mejora, sugeriría explicar un poco más el proceso de instalación de los sensores. La página le motivaría a usar la aplicación.
+
+En la aplicación móvil encontró la información de forma rápida y clara. Valoró especialmente el monitoreo en tiempo real y el diseño moderno. Consideró menos útil la sección de recomendaciones, señalando que podría personalizarse más. Sugirió incorporar un historial de riego y crecimiento.
+
+En la aplicación web encontró navegación clara, títulos comprensibles y una distribución adecuada de la información. No identificó confusiones y percibió coherencia visual con la app móvil.
+
+Calificó el sistema con 8.5/10 y afirmó que lo usaría. Destacó como mayor fortaleza el monitoreo y las alertas, y como aspecto menos convincente la poca personalización de las recomendaciones. Propuso integrar sugerencias automáticas basadas en datos y un historial de evolución de las plantas.
+
+[![image.png](https://i.postimg.cc/hvNvsdyW/image.png)](https://postimg.cc/ctMd4rGX)
+
+**Entrevistado:** Vasco <br>
+**Sexo:** Masculino <br>
+**Edad:** 21 años<br>
+**Domicilio:** San Miguel <br>
+**Inicio de la Entrevista:** 00:00 <br>
+**Duración de la Entrevista:** 00:00   <br>
+
+**Resumen de la Entrevista:** <br>
+El entrevistado posee entre 6 y 8 plantas y se siente cómodo usando aplicaciones móviles y web. Actualmente organiza el riego de memoria y ha perdido plantas por exceso o falta de agua, por lo que considera útil una herramienta que le permita seguimiento y recordatorios. Le interesan gráficos simples, historial y funciones adicionales como recomendaciones según el clima.
+
+La Landing Page le resultó clara, profesional y motivadora. Entendió la propuesta del sistema IoT, aunque sugirió explicar mejor la instalación de los sensores.
+
+En la aplicación móvil encontró la información de manera directa, destacando el Dashboard y las alertas de riego como las funciones más útiles. La configuración inicial del sensor fue el único punto que generó confusión. Consideró adecuado el diseño y propuso añadir consejos simples.
+
+En la aplicación web valoró la navegación intuitiva, los gráficos de humedad y la organización de la información. Tuvo dificultades solo en la configuración avanzada. Percibió coherencia con la versión móvil.
+
+Calificó el sistema con 8/10 y afirmó que lo usaría, destacando como principal fortaleza el monitoreo en tiempo real y como punto a mejorar la configuración inicial.
 ---
 
 
