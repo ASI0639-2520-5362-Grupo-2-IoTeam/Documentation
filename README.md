@@ -46,7 +46,7 @@ Ciclo 2025-20
 | **Versión** | **Fecha**  | **Autor/es**                                                                                                                                                                                                                                                           | **Descripción y Modificación** |
 | ----------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | 1.0         | 19/09/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | Desarrollo del capítulo I,II, III y IV |
-| 1.1         | 9/10/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Francisco Juan Hurtado Palomino<br>- Fabian Alonso Reyes Trujillano <br>- Renzo Cesar Silva Morales <br>- Alessandro Netto Zevallos Linares | - Desarrollo del capítulo V y VI<br>Primera versión de la Landing Page y FrontendWeb |
+| 1.1         | 9/10/2025 | - Casaverde De La Cruz, Ernesto David <br>- Cantoral Sedamano, Alexander Alberto <br>- Chirinos Zúñiga, Rodrigo Manuel <br>- Fabian Alonso Reyes Trujillano <br>- Alessandro Netto Zevallos Linares | - Desarrollo del capítulo V y VI<br>Primera versión de la Landing Page y FrontendWeb |
 
 ## Project Report Collaboration Insights
 
