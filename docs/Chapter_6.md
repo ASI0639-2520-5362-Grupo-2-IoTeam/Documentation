@@ -1335,7 +1335,6 @@ https://frontendweb-b47l.onrender.com/
 
 **Mobile App**
 Link de release: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/FrontendMobile/releases/tag/v1.0.0
-Link de distribución: https://appdistribution.firebase.dev/i/68e0c80717f3fdfa
 
 **Backend Services**
 https://plantcare-awcchhb2bfg3hxgf.canadacentral-01.azurewebsites.net/swagger-ui/index.html# 
