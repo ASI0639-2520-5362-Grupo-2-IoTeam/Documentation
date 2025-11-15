@@ -764,10 +764,15 @@ En esta sección se evidenciará lo desarrollado para el sprint y se adjuntará 
 Ejecución del prototipo físico: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/IQBpfjcLz-U0TKRLadThT8qZAUIJlcP98tkqA-9j6uqi90Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mnLTZ5 
 Link corto: https://goo.su/o5rD7dM 
 Ejecución del proyecto en conjunto con el prototipo simulado:
-
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/IQAoypD-3alPRJe3zfnGn-aHASX8eYh4rg-9-lYytU5W-H4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=x8fLfW
+Link corto: https://goo.su/JcHVn 
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+
+Link Backend Services: https://plantcare-awcchhb2bfg3hxgf.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
+Link Edge Services: https://plantcare-edge-service.onrender.com/apidocs/#/
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
