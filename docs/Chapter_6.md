@@ -768,11 +768,104 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u20181b152_upc_edu_pe/IQAoypD-
 Link corto: https://goo.su/JcHVn 
 
 
-#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
+Durante este Sprint se realizó la documentación y despliegue de los servicios del Backend y del Edge Service, exponiendo los endpoints correspondientes mediante OpenAPI (Swagger). Se logró integrar los módulos desarrollados y asegurar su accesibilidad para el Frontend y para pruebas externas a través del despliegue en servicios Cloud.
 
-Link Backend Services: https://plantcare-awcchhb2bfg3hxgf.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/
-Link Edge Services: https://plantcare-edge-service.onrender.com/apidocs/#/
+Los servicios se encuentran documentados mediante OpenAPI y accesibles en las siguientes URLs:
+
+| Servicio | Link de Documentación |
+|----------|------------------------|
+| **Backend Services** | https://plantcare-awcchhb2bfg3hxgf.canadacentral-01.azurewebsites.net/swagger-ui/index.html#/ |
+| **Edge Services** | https://plantcare-edge-service.onrender.com/apidocs/#/ |
+
+**Repositorio de Web Services**
+- Backend repository: https://github.com/ASI0639-2520-5362-Grupo-2-IoTeam/Backend
+
+**Commits relacionados con documentación y despliegue**
+
+Los siguientes commits corresponden al conjunto de cambios realizados durante este Sprint sobre la documentación, despliegue y exposición de Web Services:
+
+**IDs de commits del Backend Services**
+
+- aa28b6682f41b53b4729f0345966e7c47ef62c88
+- f08f2267f063763866ace314a97e818edba2d4b2
+- 1977aae39338ed24790bcaae49f6377228ec5d2f
+- 4d665ddc5bbad944b1fc72f1dbf2a1c6a1d67bcd
+- a488f6fd9a4ee0a1af88b1b72f8cedbebb8370c9
+- 859f64787a382cb6573af01e86a19b8226676313
+- a6b1b53db5a233977c196bcfda8f27e736989961
+- a873af800dcb7db478611724d03b1f7654383451
+- 40388164020a353c55cf17d62e0a159fa8dd6902
+- 15d79a0baeb10b19710fe42ce2ea92f7eca4b651
+- 5364cb1d11d457405c548a77d08259f1350a17cc
+- 093e013bd44b1fab9304e85b5fd4bc08b51332df
+- b88f86ac0c6f08802b89e93629004393174cb28a
+- 6a4aca3c077b2e3bc670857cf1c725e8d4b4bd00
+- 06b6f95037e818b53639f3f6ed684441e50fbdf4
+- 87f0e1b43f0b69c1b77c8b69661366b544af8e9f
+
+**IDs de commits del Edge Services**
+
+- 92d25bb0fff6f5be938d20064a636cd7efef6831
+- 3466d8df3af47151f6d033ba0f47e3e1087419fb
+- eb32b8aaf001da8c9855ea0a1e9433ff9648f285
+- 7be575f7d7f9f68df19bbe347bc6ca858c235cb1
+- 778ec425a6a6492177ad85e371327ab1393201de
+- e093269c5e00b7ff7875cb038cd1806421585a06
+- 4615ab1da08f56e450ecc2b29a70bde3e5a85716
+- 4775b2d1c2f9ff60dd6df2ff4103471eaaadebbf
+
+**Endpoints Documentados en OpenAPI – Backend Services**
+
+| Endpoint | HTTP Verb | Descripción | Parámetros | Ejemplo Response |
+|----------|-----------|-------------|------------|------------------|
+| `/api/v1/analytics/imports` | POST | Importar datos de sensores | Body (JSON) | `{"message":"Import successful"}` |
+| `/api/v1/analytics/devices/{deviceId}/data` | GET | Obtener datos de un dispositivo específico | `deviceId` (path) | `[ { "temp": 24, "humidity": 65 } ]` |
+| `/api/v1/analytics/data` | GET | Obtener todos los datos de sensores | - | `[ { "temp": 22, "humidity": 70 } ]` |
+| `/api/v1/subscriptions` | GET | Listar suscripciones | - | `[ { "userId":"123", "status":"active" } ]` |
+| `/api/v1/subscriptions` | POST | Crear o actualizar una suscripción | Body (JSON) | `{ "message":"subscription updated" }` |
+| `/api/v1/subscriptions/{userId}/cancelled` | POST | Cancelar suscripción | `userId` (path) | `{ "status":"cancelled" }` |
+| `/api/v1/subscriptions/{userId}/active` | POST | Reactivar suscripción | `userId` (path) | `{ "status":"active" }` |
+| `/api/v1/subscriptions/{userId}` | GET | Obtener suscripción de usuario | `userId` (path) | `{ "userId":"xyz", "status":"active" }` |
+| `/api/v1/users/profile/avatar` | POST | Subir avatar de usuario | Multipart file | `{ "message":"avatar uploaded" }` |
+| `/api/v1/users/profile` | GET | Obtener perfil del usuario | - | `{ "name":"Alex", "email":"user@mail.com" }` |
+| `/api/v1/users/profile` | PATCH | Actualizar perfil | Body (JSON) | `{ "message":"profile updated" }` |
+| `/api/v1/users/stats` | GET | Obtener estadísticas | - | `{ "wateringCount":12 }` |
+| `/api/v1/users/achievements` | GET | Obtener logros | - | `[ { "achievement":"first plant" } ]` |
+| `/api/community/comments` | POST | Agregar comentario en la comunidad | Body (JSON) | `{ "message":"comment added" }` |
+| `/api/v1/plants/{plantId}` | GET | Obtener planta por ID | `plantId` (path) | `{ "id":"1", "name":"Ficus" }` |
+| `/api/v1/plants/{plantId}` | PUT | Actualizar planta | `plantId` (path), Body (JSON) | `{ "message":"updated successfully" }` |
+| `/api/v1/plants/{plantId}` | DELETE | Eliminar planta | `plantId` (path) | `{ "message":"deleted successfully" }` |
+| `/api/v1/plants` | POST | Crear una nueva planta | Body (JSON) | `{ "message":"plant created" }` |
+| `/api/v1/plants/{plantId}/watering` | POST | Regar planta específica | `plantId` (path) | `{ "status":"watered" }` |
+| `/api/v1/users/{userId}/plants` | GET | Obtener plantas por usuario | `userId` (path) | `[ { id:1, name:"Orchid"} ]` |
+| `/api/v1/authentication/google/signin` | POST | Login con Google | Body (JSON) | `{ "token":"jwt_token" }` |
+| `/api/community/members` | GET | Listar miembros de la comunidad | - | `[ {name:"Luis", role:"admin"} ]` |
+| `/api/community/members` | POST | Registrar nuevo miembro | Body (JSON) | `{ "message":"member registered" }` |
+| `/api/community/posts` | GET | Obtener publicaciones de la comunidad | - | `[ { "title":"Mi planta creció!" }]` |
+| `/api/community/posts` | POST | Crear una nueva publicación | Body (JSON) | `{ "message":"post created" }` |
+| `/api/community/posts/{postId}` | DELETE | Eliminar publicación | `postId` (path) | `{ "message":"post deleted" }` |
+| `/api/v1/authentication/signup` | POST | Registrar usuario | Body (JSON) | `{ "message":"user created" }` |
+| `/api/v1/authentication/signin` | POST | Iniciar sesión | Body (JSON) | `{ "token":"jwt_token" }` |
+
+**Endpoints Documentados en OpenAPI – Edge Services**
+
+| Endpoint | HTTP Verb | Descripción | Parámetros | Ejemplo Response |
+|----------|-----------|-------------|------------|------------------|
+| `/plants` | GET | Obtener todos los registros de datos de plantas | - | `[ { "plantId":1, "humidity":72, "temperature":24.5 } ]` |
+| `/plants` | POST | Añadir nuevos datos recibidos desde el dispositivo IoT | Body (JSON) | `{ "message":"data stored successfully" }` |
+
+**Evidencia en Imágenes**
+
+[![image.png](https://i.postimg.cc/fRWK45GT/image.png)](https://postimg.cc/RN8fK1Cj)
+[![image.png](https://i.postimg.cc/5NrwG1SS/image.png)](https://postimg.cc/mtQzzvqP)
+[![image.png](https://i.postimg.cc/YSKQr3V3/image.png)](https://postimg.cc/Hrzr3QTc)
+[![image.png](https://i.postimg.cc/QtS7qrMg/image.png)](https://postimg.cc/xJJq0hMq)
+
+---
+
+[![image.png](https://i.postimg.cc/908Gcj5X/image.png)](https://postimg.cc/ZvN9L25X)
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 Durante el sprint, se llevaron a cabo las actividades necesarias para el despliegue de los productos. A continuación, se describen las acciones realizadas para cada uno de ellos:
